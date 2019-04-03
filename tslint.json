@@ -7,7 +7,8 @@
     "rules": {
       "semicolon": false,
       "member-access": [true, "no-public"],
-      "no-empty": false
+      "no-empty": false,
+      "trailing-comma": true
     },
     "rulesDirectory": []
 }

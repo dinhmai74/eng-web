@@ -1,16 +1,19 @@
 import React, { Component } from "react";
 import "./App.css";
 import logo from "./logo.svg";
+import { Trans } from 'react-i18next';
 
 class App extends Component {
-  public render() {
+  render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.tsx</code> and save to reload.
+            Edit <code>src/App.tsx</code> <code>
+            </code>
           </p>
+          <Trans>welcome</Trans>
           <a
             className="App-link"
             href="https://reactjs.org"
