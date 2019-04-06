@@ -1,5 +1,5 @@
-import i18n from "i18next";
-import { initReactI18next, useTranslation } from "react-i18next";
+import i18n from 'i18next';
+import { initReactI18next, useTranslation } from 'react-i18next';
 
 // the translations
 // (tip move them in a JSON file and import them)
@@ -10,7 +10,7 @@ export const translate = t;
 
 const resources = {
   en: {
-    translation: require("./languages/en.json"),
+    translation: require('./languages/en.json'),
   },
 };
 
@@ -19,7 +19,7 @@ i18n
   .init({
     resources,
     // tslint:disable-next-line: object-literal-sort-keys
-    lng: "en",
+    lng: 'en',
 
     keySeparator: false, // we do not use keys in form messages.welcome
 

@@ -8,7 +8,8 @@
       "semicolon": false,
       "member-access": [true, "no-public"],
       "no-empty": false,
-      "trailing-comma": true
+      "trailing-comma": true,
+      "quotemark": [true, "single", "jsx-double"]
     },
     "rulesDirectory": []
 }

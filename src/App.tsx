@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import "./App.css";
-import logo from "./logo.svg";
+import React, { Component } from 'react';
 import { Trans } from 'react-i18next';
+import './App.css';
+import logo from './logo.svg';
 
 class App extends Component {
   render() {
@@ -10,8 +10,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.tsx</code> <code>
-            </code>
+            Edit <code>src/App.tsx</code> <code />
           </p>
           <Trans>welcome</Trans>
           <a
