@@ -1,3 +1,4 @@
+import HomeScreen from 'containers/home-screen';
 import React, { Component } from 'react';
 import { Trans } from 'react-i18next';
 import './App.css';
@@ -21,6 +22,7 @@ class App extends Component {
           >
             Learn React
           </a>
+          <HomeScreen/>
         </header>
       </div>
     );

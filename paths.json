@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "containers/*": ["src/containers/*"],
+      "api/*" : ["src/api/*"],
+      "localization/*" : ["src/localization/*"],
+      "redux/*" : ["src/redux/*"],
+      "components/*" : ["src/components/*"],
+      "stories/*" : ["src/components/stories/*"],
+      "tools/*" : ["src/tools/*"],
+      "themes/*" : ["src/themes/*"]
+    }
+  }
+}
