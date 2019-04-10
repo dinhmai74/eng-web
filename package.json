@@ -36,7 +36,6 @@
     "eject": "react-scripts eject",
     "validate": "npm-run-all --parallel lint compile",
     "precommit": "npm run validate",
-    "prepush": "npm run validate",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -52,6 +51,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-knobs": "^5.0.6",
     "@storybook/addon-links": "^5.0.6",
     "@storybook/addons": "^5.0.6",
     "@storybook/react": "^5.0.6",
