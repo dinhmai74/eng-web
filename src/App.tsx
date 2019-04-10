@@ -3,8 +3,8 @@ import HomeScreen from 'containers/home-screen'
 import React, { Component } from 'react'
 import { Trans } from 'react-i18next'
 import './App.css'
-import './semantic/dist/semantic.min.css';
 import logo from './logo.svg'
+import './semantic/dist/semantic.min.css'
 
 class App extends Component {
   render() {

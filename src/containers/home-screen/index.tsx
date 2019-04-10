@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class HomeScreen extends Component {
   render() {
     return (
-      <div >
+      <div>
         <p>text</p>
       </div>
-    );
+    )
   }
 }
 
-export default HomeScreen;
+export default HomeScreen
