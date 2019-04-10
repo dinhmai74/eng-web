@@ -9,7 +9,8 @@
       "components/*" : ["src/components/*"],
       "stories/*" : ["src/components/stories/*"],
       "tools/*" : ["src/tools/*"],
-      "themes/*" : ["src/themes/*"]
+      "themes/*" : ["src/themes/*"],
+      "sematic/*": ["src/semantic*"]
     }
   }
 }

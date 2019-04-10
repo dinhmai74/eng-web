@@ -5,7 +5,7 @@
     ],
     "jsRules": {},
     "rules": {
-      "semicolon": false,
+      "semicolon": [true, "never"],
       "member-access": [true, "no-public"],
       "no-empty": false,
       "trailing-comma": true,
