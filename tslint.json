@@ -8,6 +8,7 @@
       "semicolon": [true, "never"],
       "member-access": [true, "no-public"],
       "no-empty": false,
+      "no-empty-interface": false,
       "trailing-comma": true,
       "quotemark": [true, "single", "jsx-double"]
     },
