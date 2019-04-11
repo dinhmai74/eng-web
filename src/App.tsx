@@ -1,4 +1,7 @@
 import { Hero, Navbar } from '@front10/landing-page-book/dist/components'
+import '@front10/landing-page-book/dist/themes/default/index.legacy_browsers.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'font-awesome/css/font-awesome.min.css'
 import React, { Component } from 'react'
 import { Trans } from 'react-i18next'
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
