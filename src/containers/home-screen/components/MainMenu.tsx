@@ -1,33 +1,24 @@
 import 'bootstrap'
 import React, { Component } from 'react'
-import { Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import {
-  Button,
-  Dropdown,
-  Header,
-  Icon,
-  Menu,
-  MenuItemProps,
-} from 'semantic-ui-react'
+import { MenuItemProps } from 'semantic-ui-react'
+import styled from 'styled-components'
 
 import { tran } from 'localization/i18n'
-import { useTranslation } from 'react-i18next'
-import { Redirect } from 'react-router'
-import styled from 'styled-components'
 import { strings } from 'tools/index'
 interface IState {
   activeItem: string | undefined
 }
 
-const StyledLink = styled(Link)`
-  color: black
-  :hover {
-    color: black;
-  }
-`
-
 interface IProps {}
+
+const StyledNavbar = styled(Navbar)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+`
 
 class MainMenu extends Component<IProps, IState> {
   state = {
@@ -43,16 +34,16 @@ class MainMenu extends Component<IProps, IState> {
   }
 
   render() {
-    const { activeItem } = this.state
-
     return (
-      <Navbar bg="light" expand="lg">
+      <StyledNavbar bg="light" expand="lg" sticky="top">
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <NavDropdown title={tran('whyChooseUs')} id="basic-nav-dropdown">
-              <NavDropdown.Item href={strings.routeReasonChoseUs}>{tran('reasonChooseUs')}</NavDropdown.Item>
+              <NavDropdown.Item href={strings.routeReasonChoseUs}>
+                {tran('reasonChooseUs')}
+              </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>
@@ -64,7 +55,7 @@ class MainMenu extends Component<IProps, IState> {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
+      </StyledNavbar>
     )
   }
 }
