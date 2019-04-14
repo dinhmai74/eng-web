@@ -6,7 +6,12 @@ import 'font-awesome/css/font-awesome.min.css'
 import React, { Component } from 'react'
 import { Trans } from 'react-i18next'
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
-import { HomeScreen, ReasonChoseUsScreen } from './containers'
+import {
+  FindCourseScreen,
+  HomeScreen,
+  ReasonChoseUsScreen,
+  TestScreen,
+} from './containers'
 import './semantic/dist/semantic.min.css'
 import { strings } from './tools'
 
@@ -15,11 +20,17 @@ class App extends Component {
     return (
       <Route>
         <div className="App">
-          <Route exact path="/" component={HomeScreen} />
+          <Route exact path={strings.routeHome} component={HomeScreen} />
           <Route
             exact
-            path={`${strings.routeReasonChoseUs}`}
+            path={strings.routeReasonChoseUs}
             component={ReasonChoseUsScreen}
+          />
+          <Route exact path={strings.routeTest} component={TestScreen} />
+          <Route
+            exact
+            path={strings.routeFindCourse}
+            component={FindCourseScreen}
           />
         </div>
       </Route>
