@@ -1353,7 +1353,7 @@
 .ui.grid > .red.column,
 .ui.grid > .row > .red.column {
   background-color: #f03f37 !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Orange */
@@ -1361,7 +1361,7 @@
 .ui.grid > .orange.column,
 .ui.grid > .row > .orange.column {
   background-color: #FE9A76 !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Yellow */
@@ -1369,7 +1369,7 @@
 .ui.grid > .yellow.column,
 .ui.grid > .row > .yellow.column {
   background-color: #FFD700 !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Olive */
@@ -1377,7 +1377,7 @@
 .ui.grid > .olive.column,
 .ui.grid > .row > .olive.column {
   background-color: #32CD32 !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Green */
@@ -1385,15 +1385,15 @@
 .ui.grid > .green.column,
 .ui.grid > .row > .green.column {
   background-color: #016936 !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Teal */
 .ui.grid > .teal.row,
 .ui.grid > .teal.column,
 .ui.grid > .row > .teal.column {
-  background-color: #008080 !important;
-  color: #FFFFFF;
+  background-color: #ffffff !important;
+  color: #ffffff;
 }
 
 /* Blue */
@@ -1401,7 +1401,7 @@
 .ui.grid > .blue.column,
 .ui.grid > .row > .blue.column {
   background-color: #0E6EB8 !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Violet */
@@ -1409,7 +1409,7 @@
 .ui.grid > .violet.column,
 .ui.grid > .row > .violet.column {
   background-color: #EE82EE !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Purple */
@@ -1417,7 +1417,7 @@
 .ui.grid > .purple.column,
 .ui.grid > .row > .purple.column {
   background-color: #B413EC !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Pink */
@@ -1425,7 +1425,7 @@
 .ui.grid > .pink.column,
 .ui.grid > .row > .pink.column {
   background-color: #FF1493 !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Brown */
@@ -1433,7 +1433,7 @@
 .ui.grid > .brown.column,
 .ui.grid > .row > .brown.column {
   background-color: #A52A2A !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Grey */
@@ -1441,7 +1441,7 @@
 .ui.grid > .grey.column,
 .ui.grid > .row > .grey.column {
   background-color: #A0A0A0 !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Black */
@@ -1449,7 +1449,7 @@
 .ui.grid > .black.column,
 .ui.grid > .row > .black.column {
   background-color: #000000 !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /*----------------------

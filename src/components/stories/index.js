@@ -12,7 +12,8 @@ import {
 } from "@storybook/addon-knobs"
 import { storiesOf } from "@storybook/react"
 import styled from "styled-components"
-import 'semantic/dist/semantic.min.css';
+import 'semantic/dist/semantic.min.css'
+import './InformationForm.story'
 import './menu.story'
 
 
