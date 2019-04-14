@@ -1,11 +1,12 @@
 import 'bootstrap'
 import React, { Component } from 'react'
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import { Nav, Navbar, NavDropdown, NavItem } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { MenuItemProps } from 'semantic-ui-react'
 import styled from 'styled-components'
 
 import { tran } from 'localization/i18n'
+import NavLink from 'react-bootstrap/NavLink'
 import { strings } from 'tools/index'
 interface IState {
   activeItem: string | undefined
@@ -38,7 +39,9 @@ class MainMenu extends Component<IProps, IState> {
       <StyledNavbar bg="light" expand="lg" sticky="top">
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
         <Navbar.Collapse id="basic-navbar-nav">
+          {/* drops down why chose us */}
           <Nav className="mr-auto">
             <NavDropdown title={tran('whyChooseUs')} id="basic-nav-dropdown">
               <NavDropdown.Item href={strings.routeReasonChoseUs}>
@@ -53,6 +56,18 @@ class MainMenu extends Component<IProps, IState> {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
+
+            {/* free test */}
+            <NavItem>
+              <NavLink href={strings.routeTest}>{tran('freeTest')} </NavLink>
+            </NavItem>
+
+            {/* find courses */}
+            <NavItem>
+              <NavLink href={strings.routeFindCourse}>
+                {tran('findCourses')}{' '}
+              </NavLink>
+            </NavItem>
           </Nav>
         </Navbar.Collapse>
       </StyledNavbar>
