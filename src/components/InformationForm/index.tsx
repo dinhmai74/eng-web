@@ -1,12 +1,12 @@
 import { Header, Hero, Image } from '@front10/landing-page-book/dist/components'
+import 'App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React, { Component } from 'react'
 import { Box, Flex } from 'rebass'
 import { Button } from 'semantic-ui-react'
 import styled from 'styled-components'
 import { colors } from 'themes'
-import Title from './Title';
-import 'App.css'
+import Title from './Title'
 
 interface IProps {}
 
@@ -33,8 +33,7 @@ class InformationForm extends Component<IProps, IState> {
         <Flex>
           <Title />
         </Flex>
-        <Flex>
-        </Flex>
+        <Flex />
       </Container>
     )
   }
