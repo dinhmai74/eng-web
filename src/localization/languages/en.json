@@ -1,4 +1,39 @@
 {
   "welcome": "Welcome to react",
-  "whyChoseUs": "Why chose us?"
+  "whyChoseUs": "Why chose us?",
+
+  "reason1": "REASON 1",
+  "tileReason1": "THE CERTIFIED ENGLISH LEARNING METHOD FOR BUSY ADULTS",
+  "contentR1": "The Wall Street English language course levels are accurately aligned to the English language levels of CEFR (Common European Framework of Reference), equivalent to BULATS which is designed and delivered by Cambridge and achieves ISO 9001:2000 and ISO 9001:2008. 97% of students who follow our method achieve their language goals. You can be next!",
+  "contentRef1R1": "An English learning method for busy adults",
+  "contentRef2R1": "Wall Street English international certificates",
+
+  "reason2": "REASON 2",
+  "tileReason2": "GUARANTEED SUCCESS OR YOUR MONEY BACK",
+  "contentR2": "Unbelievable, right? But this is our guarantee.",
+
+  "reason3": "REASON 3",
+  "tileReason3": "FLEXIBLE SCHEDULE, UNLIMITED STUDY TIME",
+  "contentR3": "Wall Street English offers a flexible study schedule so you can study at a time that suits you – from 09:30 to 21:00 on weekdays and from 09:30 to 20:00 on the weekend.",
+
+  "reason4": "REASON 4",
+  "tileReason4": "MAXIMUM 4 to 5 STUDENTS PER CLASS",
+  "contentR4": "Our small teacher-led classes help you interact with our native English-speaking teachers, apply what you learn in real-life situations and get direct feedback. You are the center of the class.", 
+
+  "reason5": "REASON 5",
+  "tileReason5": "PASSIONATE AND QUALIFIED NATIVE ENGLISH-SPEAKING TEACHERS",
+  "contentR5": "We are proud to offer professional and highly-qualified native English-speaking teachers from the USA, the UK, Canada and Australia who have TESOL/ CELTA certificates.",
+
+  "reason6": "REASON 6",
+  "tileReason6": "100% ENGLISH ENVIRONMENT",
+  "contentR6": "You can learn English faster and speak more naturally in our 100% English environment.",
+
+  "reason7": "REASON 7",
+  "tileReason7": "RELIABLE SUPPORT SYSTEM",
+  "contentR7": "You will be accompanied by our Educational Consultants and Tutors throughout your course. Besides, you can call our hotline at (028) 6288 3570 that Student Care Team can listen and help you solve any problems you have.", 
+
+  "reason8": "REASON 8",
+  "tileReason8": "THE WALL STREET ENGLISH GLOBAL COMMUNITY",
+  "contentR8": "Our center community can also be found in our Global Online Community, where our staff and students from around the world gather to connect, learn, practise and share learning and life experiences.",
+  "contentRefR8": "What students say about us"
 }
