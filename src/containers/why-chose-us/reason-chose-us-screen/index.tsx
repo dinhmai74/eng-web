@@ -1,6 +1,7 @@
 import ReasonCard from 'components/ReasonCard/index'
 import { tran } from 'localization/i18n'
 import React, { PureComponent } from 'react'
+import Container from 'react-bootstrap/Container'
 import { Header } from 'semantic-ui-react'
 
 import { images } from 'themes/index'
@@ -15,7 +16,7 @@ class ReasonChoseUsScreen extends PureComponent<IProps, State> {
 
   render() {
     return (
-      <div className="container">
+      <Container>
         <h1 className="container-header">
           Choose Wall Street English right now
         </h1>
@@ -86,8 +87,7 @@ class ReasonChoseUsScreen extends PureComponent<IProps, State> {
           contentRef={tran('contentRefR8')}
           image={images.reason8}
         />
-        <Header as="h2">Choose Wall Street English right now</Header>
-      </div>
+      </Container>
     )
   }
 }
