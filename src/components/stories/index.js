@@ -14,12 +14,20 @@ import {
 import { storiesOf } from "@storybook/react";
 import styled from "styled-components";
 import "semantic/dist/semantic.min.css";
-import "./menu.story";
 
 import { Welcome } from "@storybook/react/demo";
 import { Button, SemanticCOLORS } from "semantic-ui-react";
 import { oneOf } from "prop-types";
 import ReasonChoseUsScreen from "containers/why-chose-us/reason-chose-us-screen/index";
+import Block from "components/Block/index";
+
+storiesOf("Block", module).add("to Storybook", () => (
+  <Block
+    // image={require("")}
+    title="Multimedia lessons"
+    content="You will learn vocabulary and pronunciation by watching real-life situations. Your speaking skills will be developed naturally by listening and repeating vocabulary in the lessons."
+  />
+));
 
 storiesOf("Reason", module).add("to Storybook", () => <ReasonChoseUsScreen />);
 
