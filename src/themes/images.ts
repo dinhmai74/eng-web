@@ -15,5 +15,12 @@ export const images = {
   icon4: '/asset/images/why-choose-wse/UniqueMethod/icon-4.png',
   icon5: '/asset/images/why-choose-wse/UniqueMethod/icon-5.png',
   icon6: '/asset/images/why-choose-wse/UniqueMethod/icon-6.png',
-  footer: '/asset/images/why-choose-wse/UniqueMethod/footer.png'
+  footer: '/asset/images/why-choose-wse/UniqueMethod/footer.png',
+
+  // wall street english
+  img1: '/asset/images/why-choose-wse/WallStreetEnglish/img-1.png',
+  img2: '/asset/images/why-choose-wse/WallStreetEnglish/img-2.jpg',
+  img3: '/asset/images/why-choose-wse/WallStreetEnglish/img-3.jpg',
+  img4: '/asset/images/why-choose-wse/WallStreetEnglish/img-4.jpg',
+  img5: '/asset/images/why-choose-wse/WallStreetEnglish/img-5.png'
 }
