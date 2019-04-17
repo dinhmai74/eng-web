@@ -19,7 +19,6 @@ class App extends Component {
   render() {
     return (
       <Route>
-        <div className="App">
           <Route exact path={strings.routeHome} component={HomeScreen} />
           <Route
             exact
@@ -32,7 +31,6 @@ class App extends Component {
             path={strings.routeFindCourse}
             component={FindCourseScreen}
           />
-        </div>
       </Route>
     )
   }

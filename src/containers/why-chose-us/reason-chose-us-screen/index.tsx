@@ -4,7 +4,7 @@ import React, { PureComponent } from 'react'
 import Container from 'react-bootstrap/Container'
 import { Header } from 'semantic-ui-react'
 
-import { images } from 'themes/index'
+import { images } from 'themes'
 import './styles.css'
 
 interface IProps {}
