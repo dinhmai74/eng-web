@@ -1,8 +1,6 @@
 import Block from 'components/Block/index'
 import * as React from 'react'
-import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
 import { images } from 'themes/index'
 
 import { tran } from 'localization/i18n'
@@ -54,6 +52,10 @@ export default class UniqueMethod extends React.Component<IProps, IState> {
             title={tran('titleMethod6')}
             content={tran('contentMethod6')}
           />
+        </div>
+        <div className="images-text">
+          <img src={images.footer} />
+          <div className="centered">THE METHOD THAT MAKES A DIFFERENCE!</div>
         </div>
       </Container>
     )

@@ -6,3 +6,18 @@
 h1 {
     text-align: center
 }
+img {
+  max-width: 100%;
+}
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.images-text {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}

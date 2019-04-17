@@ -1,3 +1,4 @@
+// tslint:disable: object-literal-sort-keys
 export const images = {
   reason1: require('../../public/asset/images/why-choose-wse/8Reason/reason-1.png'),
   reason2: require('../../public/asset/images/why-choose-wse/8Reason/reason-2.png'),
@@ -13,5 +14,6 @@ export const images = {
   icon3: require('../../public/asset/images/why-choose-wse/UniqueMethod/icon-3.png'),
   icon4: require('../../public/asset/images/why-choose-wse/UniqueMethod/icon-4.png'),
   icon5: require('../../public/asset/images/why-choose-wse/UniqueMethod/icon-5.png'),
-  icon6: require('../../public/asset/images/why-choose-wse/UniqueMethod/icon-6.png')
+  icon6: require('../../public/asset/images/why-choose-wse/UniqueMethod/icon-6.png'),
+  footer: require('../../public/asset/images/why-choose-wse/UniqueMethod/footer.png')
 }
