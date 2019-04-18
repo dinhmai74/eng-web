@@ -1,6 +1,83 @@
 {
+  "reason1": "REASON 1",
+  "tileReason1": "THE CERTIFIED ENGLISH LEARNING METHOD FOR BUSY ADULTS",
+  "contentR1": "The Wall Street English language course levels are accurately aligned to the English language levels of CEFR (Common European Framework of Reference), equivalent to BULATS which is designed and delivered by Cambridge and achieves ISO 9001:2000 and ISO 9001:2008. 97% of students who follow our method achieve their language goals. You can be next!",
+  "contentRef1R1": "An English learning method for busy adults",
+  "contentRef2R1": "Wall Street English international certificates",
+
+  "reason2": "REASON 2",
+  "tileReason2": "GUARANTEED SUCCESS OR YOUR MONEY BACK",
+  "contentR2": "Unbelievable, right? But this is our guarantee.",
+
+  "reason3": "REASON 3",
+  "tileReason3": "FLEXIBLE SCHEDULE, UNLIMITED STUDY TIME",
+  "contentR3": "Wall Street English offers a flexible study schedule so you can study at a time that suits you – from 09:30 to 21:00 on weekdays and from 09:30 to 20:00 on the weekend.",
+
+  "reason4": "REASON 4",
+  "tileReason4": "MAXIMUM 4 to 5 STUDENTS PER CLASS",
+  "contentR4": "Our small teacher-led classes help you interact with our native English-speaking teachers, apply what you learn in real-life situations and get direct feedback. You are the center of the class.", 
+
+  "reason5": "REASON 5",
+  "tileReason5": "PASSIONATE AND QUALIFIED NATIVE ENGLISH-SPEAKING TEACHERS",
+  "contentR5": "We are proud to offer professional and highly-qualified native English-speaking teachers from the USA, the UK, Canada and Australia who have TESOL/ CELTA certificates.",
+
+  "reason6": "REASON 6",
+  "tileReason6": "100% ENGLISH ENVIRONMENT",
+  "contentR6": "You can learn English faster and speak more naturally in our 100% English environment.",
+
+  "reason7": "REASON 7",
+  "tileReason7": "RELIABLE SUPPORT SYSTEM",
+  "contentR7": "You will be accompanied by our Educational Consultants and Tutors throughout your course. Besides, you can call our hotline at (028) 6288 3570 that Student Care Team can listen and help you solve any problems you have.", 
+
+  "reason8": "REASON 8",
+  "tileReason8": "THE WALL STREET ENGLISH GLOBAL COMMUNITY",
+  "contentR8": "Our center community can also be found in our Global Online Community, where our staff and students from around the world gather to connect, learn, practise and share learning and life experiences.",
+  "contentRefR8": "What students say about us",
+
+  "titleMethod1": "Multimedia lessons",
+  "contentMethod1": "You will learn vocabulary and pronunciation by watching real-life situations. Your speaking skills will be developed naturally by listening and repeating vocabulary in the lessons.",
+
+  "titleMethod2": "English in action",
+  "contentMethod2": "After each multimedia lesson, you will review it with a tutor or native English-speaking teacher.",
+
+  "titleMethod3": "Digital books",
+  "contentMethod3": "You will practice other skills such as reading, writing and grammar at your home, office, school or anywhere with an internet connection.",
+
+  "titleMethod4": "Encounter class",
+  "contentMethod4": "There are no more than 5 students in a class, all at the same level. You can feel comfortable when talking to native English-speaking teachers who will help you improve your pronunciation, grammar and confidence.",
+
+  "titleMethod5": "Complementary class",
+  "contentMethod5": "These classes are held on a wide variety of current topics - career, business, study and travel - and are taught by our highly-qualified teachers.",
+
+  "titleMethod6": "Social Club",
+  "contentMethod6": "You can connect with other students and practice English in a fun and sociable way.",
+
+  "titleWallStreet1": "Make more of life through learning",
+  "contentWallStreet1": "Everyone is born with a dream. At Wall Street English, we help you to achieve yours...",
+  "topWallStreet2": "DREAM ABOUT",
+  "bottomWallStreet2": "STUDYING ABROAD",
+  "leftWallStreet3": "DREAM ABOUT A BETTER CAREER",
+  "rightWallStreet3": "DREAM ABOUT TRAVELLING THE WORLD",
+  "WallStreet4": "DREAM ABOUT A MORE SUCCESSFUL BUSINESS",
+
+  "topTitlePayment": "Invest in your future easily with our flexible school fee payment policy.",
+  "bottomTitlePayment": "Wall Street English supports you throughout your English studies with many flexible payment options:",
+  "bonus": "Chương trình hỗ trợ tài chính đặc biệt từ WSE và VPBank: Chỉ cần trả trước 50% học phí - Trả góp 0% phần còn lại - Không cần chứng minh thu nhập - Không phát sinh thêm chi phí - Không cần có sẵn thẻ ngân hàng.",
+  "titlePayment1": "One-time payment",
+  "contentPayment1": "Students can make a one-time payment for the whole course by cash, bank transfer or credit card.",
+  "titlePayment2": "Multiple payments",
+  "contentPayment2": "Students can split the course fee into three payments.", 
+  "titlePayment3": "Pay in installments",
+  "contentPayment3": "Students who have HSBC, ANZ, Sacombank, Vietinbank, Shinhan & Citibank credit cards can pay in installments with an interest rate of 0% over 6 - 12 months.",
+
   "welcome": "Welcome to react",
-  "whyChoseUs": "Why chose us?",
+  "whyChooseUs": "Why choose us?",
+  "reasonChooseUs": "Reason choose us",
+  "studyProgram": "Study program",
+  "learnEnglishForBusyPeople": "EXPERIENCE ENGLISH LEARNING METHOD FOR BUSY ADULTS",
+  "explore": "Explore",
+  "freeTest": "Free Tests",
+  "findCourses": "Find courses",
   "infoTitle": "Do you want to experience the unique learning method?",
   "submit": "Submit"
 }

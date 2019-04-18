@@ -8,11 +8,11 @@ export const tran = (text: string): string => i18n.t(text)
 
 const resources = {
   en: {
-    translation: require('./languages/en.json'),
+    translation: require('./languages/en.json')
   },
   vi: {
-    translation: require('./languages/vi.json'),
-  },
+    translation: require('./languages/vi.json')
+  }
 }
 
 i18n
@@ -20,13 +20,13 @@ i18n
   .init({
     resources,
     // tslint:disable-next-line: object-literal-sort-keys
-    lng: 'vi',
+    lng: 'en',
 
     keySeparator: false, // we do not use keys in form messages.welcome
 
     interpolation: {
-      escapeValue: false, // react already safes from xss
-    },
+      escapeValue: false // react already safes from xss
+    }
   })
 
 export default i18n
