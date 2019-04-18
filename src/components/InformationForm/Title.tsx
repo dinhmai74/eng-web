@@ -1,3 +1,4 @@
+import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
 import { Header } from 'semantic-ui-react'
 import styled from 'styled-components'
@@ -11,6 +12,7 @@ const StyledHeader = styled(Header)`
   color: ${colors.white};
   border-left: 5px ${colors.main} solid;
   padding: 5px;
+  text-align: left;
 `
 
 class Title extends Component<IProps, IState> {
@@ -18,11 +20,7 @@ class Title extends Component<IProps, IState> {
   state = {}
 
   render() {
-    return (
-      <StyledHeader as="h4">
-        Bạn muốn trải nghiệm phương pháp học độc đáo của Wall Street English?
-      </StyledHeader>
-    )
+    return <StyledHeader as="h2">{tran('infoTitle')}</StyledHeader>
   }
 }
 
