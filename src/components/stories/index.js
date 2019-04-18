@@ -15,7 +15,7 @@ import styled from "styled-components"
 import 'semantic/dist/semantic.min.css'
 import './InformationForm.story'
 import './menu.story'
-
+import './course-progress.story'
 
 import { Welcome } from "@storybook/react/demo"
 import { Button,SemanticCOLORS, } from "semantic-ui-react"

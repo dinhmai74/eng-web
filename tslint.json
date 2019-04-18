@@ -10,7 +10,8 @@
       "no-empty": false,
       "no-empty-interface": false,
       "trailing-comma": true,
-      "quotemark": [true, "single", "jsx-double"]
+      "quotemark": [true, "single", "jsx-double"],
+      "object-literal-sort-keys": false
     },
     "rulesDirectory": []
 }
