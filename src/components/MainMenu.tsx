@@ -5,7 +5,7 @@ interface IState {
   activeItem: string | undefined
 }
 
-export class Menu extends Component<typeof SemanticMenu, IState> {
+export class MainMenu extends Component<typeof SemanticMenu, IState> {
   state = {
     activeItem: 'editorials',
   }
@@ -43,4 +43,4 @@ export class Menu extends Component<typeof SemanticMenu, IState> {
   }
 }
 
-export default SemanticMenu
+export default MainMenu

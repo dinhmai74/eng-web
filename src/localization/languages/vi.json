@@ -4,7 +4,13 @@
   "reasonChooseUs": "1 tỉ lí do chọn chúng tôi",
   "studyProgram": "Chương trình học",
   "learnEnglishForBusyPeople": "Phương pháp học tiếng Anh dành cho người lớn bận rộn",
-  "explore": "Tìm hiểu thêm",
+  "explore": "Tìm hiểu", 
   "freeTest": "Free Tests",
-  "findCourses": "Tìm khoá học phù hợp"
+  "findCourses": "Tìm khoá học phù hợp",
+  "infoTitle": "Bạn muốn trải nghiệm phương pháp học độc đáo của chúng tôi?",
+  "infoFullName": "Tên của bạn",
+  "infoContact": "Email của bạn",
+  "infoPhoneNumber": "Số điện thoại",
+  "infoYourIdea": "Ý kiến của bạn",
+  "submit": "Xác nhận"
 }
