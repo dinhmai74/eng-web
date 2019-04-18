@@ -22,5 +22,10 @@ export const images = {
   img2: '/asset/images/why-choose-wse/WallStreetEnglish/img-2.jpg',
   img3: '/asset/images/why-choose-wse/WallStreetEnglish/img-3.jpg',
   img4: '/asset/images/why-choose-wse/WallStreetEnglish/img-4.jpg',
-  img5: '/asset/images/why-choose-wse/WallStreetEnglish/img-5.png'
+  img5: '/asset/images/why-choose-wse/WallStreetEnglish/img-5.png',
+
+  paymentBanner: '/asset/images/why-choose-wse/Payment/payment-banner.jpg',
+  payment: '/asset/images/why-choose-wse/Payment/payment.png',
+  paymentTimes: '/asset/images/why-choose-wse/Payment/payment-times.png',
+  paymentAll: '/asset/images/why-choose-wse/Payment/payment-all.png'
 }

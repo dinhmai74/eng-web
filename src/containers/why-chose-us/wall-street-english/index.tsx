@@ -18,14 +18,6 @@ const P = styled.p`
   font-size: 20px;
 `
 
-const LeftContainer = styled.div`
-  border-left: 1px solid #38546d;
-  /* height: 80px; */
-  /* position: absolute;
-  right: 249px;
-  top: 10px; */
-`
-
 export interface IProps {}
 
 export default class WallStreetEnglish extends React.PureComponent<

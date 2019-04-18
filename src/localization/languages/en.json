@@ -1,7 +1,4 @@
 {
-  "welcome": "Welcome to react",
-  "whyChoseUs": "Why chose us?",
-
   "reason1": "REASON 1",
   "tileReason1": "THE CERTIFIED ENGLISH LEARNING METHOD FOR BUSY ADULTS",
   "contentR1": "The Wall Street English language course levels are accurately aligned to the English language levels of CEFR (Common European Framework of Reference), equivalent to BULATS which is designed and delivered by Cambridge and achieves ISO 9001:2000 and ISO 9001:2008. 97% of students who follow our method achieve their language goals. You can be next!",
@@ -62,6 +59,16 @@
   "leftWallStreet3": "DREAM ABOUT A BETTER CAREER",
   "rightWallStreet3": "DREAM ABOUT TRAVELLING THE WORLD",
   "WallStreet4": "DREAM ABOUT A MORE SUCCESSFUL BUSINESS",
+
+  "topTitlePayment": "Invest in your future easily with our flexible school fee payment policy.",
+  "bottomTitlePayment": "Wall Street English supports you throughout your English studies with many flexible payment options:",
+  "bonus": "Chương trình hỗ trợ tài chính đặc biệt từ WSE và VPBank: Chỉ cần trả trước 50% học phí - Trả góp 0% phần còn lại - Không cần chứng minh thu nhập - Không phát sinh thêm chi phí - Không cần có sẵn thẻ ngân hàng.",
+  "titlePayment1": "One-time payment",
+  "contentPayment1": "Students can make a one-time payment for the whole course by cash, bank transfer or credit card.",
+  "titlePayment2": "Multiple payments",
+  "contentPayment2": "Students can split the course fee into three payments.", 
+  "titlePayment3": "Pay in installments",
+  "contentPayment3": "Students who have HSBC, ANZ, Sacombank, Vietinbank, Shinhan & Citibank credit cards can pay in installments with an interest rate of 0% over 6 - 12 months.",
 
   "welcome": "Welcome to react",
   "whyChooseUs": "Why choose us?",
