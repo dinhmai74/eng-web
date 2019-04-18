@@ -9,11 +9,15 @@ import {
   select,
   boolean,
   object,
-  array
-} from "@storybook/addon-knobs";
-import { storiesOf } from "@storybook/react";
-import styled from "styled-components";
-import "semantic/dist/semantic.min.css";
+  array,
+} from "@storybook/addon-knobs"
+import { storiesOf } from "@storybook/react"
+import styled from "styled-components"
+import 'semantic/dist/semantic.min.css'
+import 'App.css'
+
+import './InformationForm.story'
+import './menu.story'
 
 import { Welcome } from "@storybook/react/demo";
 import { Button, SemanticCOLORS } from "semantic-ui-react";
