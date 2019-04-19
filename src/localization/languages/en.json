@@ -79,5 +79,13 @@
   "freeTest": "Free Tests",
   "findCourses": "Find courses",
   "infoTitle": "Do you want to experience the unique learning method?",
-  "submit": "Submit"
+  "submit": "Submit",
+  "home": "Home",
+  "page": "Page",
+  "find": "Find",
+  "course": "Course",
+  "free": "Free",
+  "tests": "Tests",
+  "study": "Study",
+  "program": "Program"
 }

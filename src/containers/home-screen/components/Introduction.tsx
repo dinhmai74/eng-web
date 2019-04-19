@@ -1,19 +1,20 @@
 import {
   Header,
   Hero,
-  Image,
+  Image
 } from '@front10/landing-page-book/dist/components'
 import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
 import { Button, Icon } from 'semantic-ui-react'
 import styled from 'styled-components'
+import { images } from 'themes'
 
 interface IProps {}
 
 interface IState {}
 
 const Container = styled.div`
-  margin: auto ;
+  margin: auto;
 `
 
 class Introduction extends Component<IProps, IState> {
@@ -23,14 +24,15 @@ class Introduction extends Component<IProps, IState> {
   render() {
     return (
       <Hero
-        opacity={1}
-        overlayColor="#373D45"
-        particlesSugar="crazyStars"
+        opacity={0.7}
+        overlayColor={'black'}
+        image={images.bgInstruction1}
+        particles={false}
         minHeight="100vh"
       >
         <Container>
           <Image
-            src="https://front10.com/landing-page-book/images/logo/front10.png"
+            src={images.bgInstruction}
             rounded
             width="160"
             alt="Front10 logo"
@@ -39,7 +41,7 @@ class Introduction extends Component<IProps, IState> {
             {tran('learnEnglishForBusyPeople')}
           </Header>
           <div className="mt-5">
-            <Button animated secondary >
+            <Button animated secondary>
               <Button.Content visible>{tran('explore')}</Button.Content>
               <Button.Content hidden>
                 <Icon name="arrow right" />

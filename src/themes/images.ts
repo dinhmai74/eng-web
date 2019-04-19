@@ -27,5 +27,9 @@ export const images = {
   paymentBanner: '/asset/images/why-choose-wse/Payment/payment-banner.jpg',
   payment: '/asset/images/why-choose-wse/Payment/payment.png',
   paymentTimes: '/asset/images/why-choose-wse/Payment/payment-times.png',
-  paymentAll: '/asset/images/why-choose-wse/Payment/payment-all.png'
+  paymentAll: '/asset/images/why-choose-wse/Payment/payment-all.png',
+
+  // home screen
+  bgInstruction: '/asset/images/aga-putra-125108-unsplash.jpg',
+  bgInstruction1: '/asset/images/caleb-woods-219350-unsplash.jpg'
 }
