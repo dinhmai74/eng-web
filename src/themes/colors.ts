@@ -12,13 +12,6 @@ export const colors = {
   transparentOrange: '#fbc3a2',
   salmon: '#f58b7d',
   yellow: '#FFE128',
-  lightRed: '#ef2c3a',
-  lightBlue: '#003c78',
-  lightCyan: '#66c9dc',
-  darkCyan: '#009dba',
-  darkBLue: '#153359',
-  transparentOrange: '#fbc3a2',
-  salmon: '#f58b7d',
   darkWhite: '#fafafa',
   darkGrays: '#3f3f3f'
 }

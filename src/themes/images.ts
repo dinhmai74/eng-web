@@ -29,7 +29,12 @@ export const images = {
   paymentTimes: '/asset/images/why-choose-wse/Payment/payment-times.png',
   paymentAll: '/asset/images/why-choose-wse/Payment/payment-all.png',
 
+  // home screen
+  bgInstruction: '/asset/images/aga-putra-125108-unsplash.jpg',
+  bgInstruction1: '/asset/images/caleb-woods-219350-unsplash.jpg',
   // general course
   general: '/asset/images/general-course/general.jpg',
-  preparation: 'asset/images/general-course/preparation.jpg'
+  preparation: '/asset/images/general-course/preparation.jpg',
+  bgFindCourse: '/asset/images/general-course/bg.jpg',
+  logoFindCourse: '/asset/images/general-course/logo.png'
 }

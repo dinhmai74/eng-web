@@ -80,7 +80,14 @@
   "findCourses": "Find courses",
   "infoTitle": "Do you want to experience the unique learning method?",
   "submit": "Submit",
-
+  "home": "Home",
+  "page": "Page",
+  "find": "Find",
+  "course": "Course",
+  "free": "Free",
+  "tests": "Tests",
+  "study": "Study",
+  "program": "Program",
   "Overview": "Overview",
   "Levels": "Levels",
   "generalCoursesContent": "Wall Street English is the top choice of busy adults. Over 45 years of existence and development globally, Wall Street English has become a system of professional English training centers with more than 3 million students. 97% of them were successful.",
@@ -89,5 +96,7 @@
   "titleDescription": "Study IELTS on Wall Street English method to help you accomplish 2 goals simultaneously:",
   "titleDescriptionCircle1": "Develop all four language skills: Listening, Speaking, Reading and Writing to achieve IELTS score as desired.",
   "titleDescriptionCircle2": "Conquer the dream success “Speak English confidently”",
-  "forwardLink": " Looking for more information"
+  "forwardLink": " Looking for more information",
+  "about": "About",
+  "us": "Us"
 }

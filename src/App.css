@@ -10,6 +10,10 @@
   font-family: Baomoi;
 }
 
+.app__background--transparent {
+  background: transparent;
+}
+
 .App {
   text-align: center;
 }
@@ -33,6 +37,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.app__text--white{
+  color: white;
 }
 
 @keyframes App-logo-spin {
