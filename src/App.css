@@ -1,3 +1,15 @@
+@font-face {
+  font-family: Baomoi;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/Baomoi_gdi.ttf"),
+    url("/assets/fonts/Baomoi-SemiBold_gdi.ttf");
+}
+
+* {
+  font-family: Baomoi;
+}
+
 .App {
   text-align: center;
 }

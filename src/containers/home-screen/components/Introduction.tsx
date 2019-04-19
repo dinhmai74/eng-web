@@ -1,5 +1,4 @@
 import {
-  Container,
   Header,
   Hero,
   Image,
@@ -7,10 +6,15 @@ import {
 import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
 import { Button, Icon } from 'semantic-ui-react'
+import styled from 'styled-components'
 
 interface IProps {}
 
 interface IState {}
+
+const Container = styled.div`
+  margin: auto ;
+`
 
 class Introduction extends Component<IProps, IState> {
   static defaultProps: {}
@@ -35,7 +39,7 @@ class Introduction extends Component<IProps, IState> {
             {tran('learnEnglishForBusyPeople')}
           </Header>
           <div className="mt-5">
-            <Button animated secondary marginRight="1">
+            <Button animated secondary >
               <Button.Content visible>{tran('explore')}</Button.Content>
               <Button.Content hidden>
                 <Icon name="arrow right" />
