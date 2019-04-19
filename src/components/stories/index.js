@@ -27,7 +27,9 @@ import ReasonChoseUsScreen from "containers/why-chose-us/reason-chose-us-screen/
 import UniqueMethod from "containers/why-chose-us/unique-method/index";
 import Block from "components/Block/index";
 import { images } from "themes/index";
+
 import "./test.story";
+import './GeneralCourse.story'
 
 storiesOf("Block", module).add("to Storybook", () => (
   <Block

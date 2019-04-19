@@ -27,5 +27,9 @@ export const images = {
   paymentBanner: '/asset/images/why-choose-wse/Payment/payment-banner.jpg',
   payment: '/asset/images/why-choose-wse/Payment/payment.png',
   paymentTimes: '/asset/images/why-choose-wse/Payment/payment-times.png',
-  paymentAll: '/asset/images/why-choose-wse/Payment/payment-all.png'
+  paymentAll: '/asset/images/why-choose-wse/Payment/payment-all.png',
+
+  // general course
+  general: '/asset/images/general-course/general.jpg',
+  preparation: 'asset/images/general-course/preparation.jpg'
 }
