@@ -130,7 +130,7 @@ export default class GeneralCourse extends React.Component<
               }}
             >
               <div style={{ padding: '40px' }}>
-                <Title>IELTS Preparation</Title>
+                <Title>{tran('titlePreparation')}</Title>
                 <TitleDescription>
                   {tran('titleDescription')}
                 </TitleDescription>
@@ -143,7 +143,7 @@ export default class GeneralCourse extends React.Component<
                   {tran('titleDescriptionCircle2')}
                 </TitleDescription>
                 <Link href=" " target="_blank">
-                  Tìm hiểu thêm{' '}
+                  {tran('forwardLink')}
                 </Link>
               </div>
               <PreparationImage>
