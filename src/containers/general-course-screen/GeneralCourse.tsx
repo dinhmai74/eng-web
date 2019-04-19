@@ -35,9 +35,7 @@ const StyledHeader1 = styled.h3`
   font-size: 30px;
   margin-bottom: 20px;
 `
-const PreparationImage = styled.div`
- 
-`
+const PreparationImage = styled.div``
 const Description = styled.div`
   font-size: 20px;
 `
@@ -74,7 +72,6 @@ const TitleDescription = styled.div`
   margin-bottom: 15px;
 `
 const Dot = styled.div`
-  
   display: inline-block;
   width: 8px;
   height: 8px;
@@ -141,7 +138,7 @@ export default class GeneralCourse extends React.Component<
                 </Link>
               </div>
               <PreparationImage>
-                <img src={images.preparation}  />
+                <img src={images.preparation} />
               </PreparationImage>
             </div>
           </div>

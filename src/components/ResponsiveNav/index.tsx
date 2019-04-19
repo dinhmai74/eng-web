@@ -61,6 +61,22 @@ class ResponsiveNav extends React.Component<IProps, IState> {
               </a>
             </li>
 
+            <li className="menu__item nav-item">
+              <a href={strings.routeReasonChoseUs} className="menu__link">
+                <span className="menu__title">
+                  <span className="menu__first-word" data-hover={tran('about')}>
+                    {tran('about')}
+                  </span>
+                  <span
+                    className="menu__second-word"
+                    data-hover={tran('us')}
+                  >
+                    {tran('us')}
+                  </span>
+                </span>
+              </a>
+            </li>
+
             {/* find course */}
             <li className="menu__item nav-item">
               <a href={strings.routeFindCourse} className="menu__link">
@@ -77,23 +93,9 @@ class ResponsiveNav extends React.Component<IProps, IState> {
                 </span>
               </a>
             </li>
+
             <li className="menu__item nav-item">
-              <a href="#" className="menu__link">
-                <span className="menu__title">
-                  <span className="menu__first-word" data-hover={tran('study')}>
-                    {tran('study')}
-                  </span>
-                  <span
-                    className="menu__second-word"
-                    data-hover={tran('program')}
-                  >
-                    {tran('program')}
-                  </span>
-                </span>
-              </a>
-            </li>
-            <li className="menu__item nav-item">
-              <a href="#" className="menu__link">
+              <a href={strings.routeTest} className="menu__link">
                 <span className="menu__title">
                   <span className="menu__first-word" data-hover={tran('free')}>
                     {tran('free')}
