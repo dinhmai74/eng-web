@@ -31,5 +31,8 @@ export const images = {
 
   // home screen
   bgInstruction: '/asset/images/aga-putra-125108-unsplash.jpg',
-  bgInstruction1: '/asset/images/caleb-woods-219350-unsplash.jpg'
+  bgInstruction1: '/asset/images/caleb-woods-219350-unsplash.jpg',
+  // general course
+  general: '/asset/images/general-course/general.jpg',
+  preparation: 'asset/images/general-course/preparation.jpg'
 }

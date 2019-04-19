@@ -18,15 +18,18 @@ import 'App.css'
 
 import './InformationForm.story'
 import './menu.story'
+import './course-progress.story'
 
-import { Welcome } from "@storybook/react/demo";
-import { Button, SemanticCOLORS } from "semantic-ui-react";
+import { Welcome } from "@storybook/react/demo"
+import { Button,SemanticCOLORS, } from "semantic-ui-react"
 import { oneOf } from "prop-types";
 import ReasonChoseUsScreen from "containers/why-chose-us/reason-chose-us-screen/index";
 import UniqueMethod from "containers/why-chose-us/unique-method/index";
 import Block from "components/Block/index";
 import { images } from "themes/index";
+
 import "./test.story";
+import './GeneralCourse.story'
 
 storiesOf("Block", module).add("to Storybook", () => (
   <Block
