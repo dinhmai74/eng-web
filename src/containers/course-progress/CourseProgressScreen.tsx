@@ -132,17 +132,15 @@ export default class GeneralCourse extends React.Component<
               <div style={{ padding: '40px' }}>
                 <Title>IELTS Preparation</Title>
                 <TitleDescription>
-                  Học IELTS theo phương pháp Wall Street English giúp bạn thực
-                  hiện đồng thời 2 mục tiêu:
+                  {tran('titleDescription')}
                 </TitleDescription>
                 <TitleDescription>
                   <Dot />
-                  Phát triển đều bốn kỹ năng ngôn ngữ: Nghe, Nói, Đọc, Viết để
-                  đạt điểm IELTS như mong muốn.
+                  {tran('titleDescriptionCircle1')}
                 </TitleDescription>
                 <TitleDescription>
                   <Dot />
-                  Chinh phục thành công ước mơ “Nói tiếng Anh tự tin"
+                  {tran('titleDescriptionCircle2')}
                 </TitleDescription>
                 <Link href=" " target="_blank">
                   Tìm hiểu thêm{' '}
