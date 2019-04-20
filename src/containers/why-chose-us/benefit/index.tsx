@@ -1,5 +1,7 @@
+import { tran } from 'localization/i18n'
 import * as React from 'react'
 import { Box, Flex } from 'rebass'
+import { Icon } from 'semantic-ui-react'
 import styled from 'styled-components'
 import { images } from 'themes'
 
@@ -23,11 +25,14 @@ export default class Benefit extends React.Component<IProps, IState> {
   render() {
     return (
       <div style={{ marginLeft: 400, marginRight: 400 }}>
-        <Title style={{ textAlign: 'center', fontSize: 25 }}>
-          At Wall Street English we always strive to improve our service and
-          create new tools to help students speak English more confidently and
-          reach their goals more quickly. Wall Street English students have a
-          number of highly valuable privileges:
+        <Title
+          style={{
+            textAlign: 'center',
+            fontSize: 25,
+            marginTop: 40
+          }}
+        >
+          {tran('titleBenefitPage')}
         </Title>
 
         <Flex bg="#FAFAFA">
@@ -38,16 +43,15 @@ export default class Benefit extends React.Component<IProps, IState> {
             marginTop={4}
             marginBottom={4}
           >
-            <h2>English Anytime & Benefit</h2>
-            <p style={{ textAlign: 'justify' }}>
-              We know it's hard for busy adults to spend time studying after
-              work. Therefore, English Anytime can help you learn English
-              anytime and anywhere with an Internet connection. Students can
-              also benefit from the Wall Street English global community - where
-              you can connect with other Wall Street English students around the
-              world and access our funny English tips library for free.
+            <h2>{tran('titleBenefit1')}</h2>
+            <p style={{ textAlign: 'justify', fontSize: 20 }}>
+              {tran('contentBenefit1')}
             </p>
+            <a style={{ fontSize: 18 }} href={''}>
+              {tran('contentBenefitRef')}
+            </a>
           </Box>
+
           <Box width={1 / 3} marginRight={3} marginTop={4} marginBottom={4}>
             <img src={images.village} />
           </Box>
@@ -58,11 +62,13 @@ export default class Benefit extends React.Component<IProps, IState> {
             <img src={images.learnWin} />
           </Box>
           <Box width={2 / 3} marginRight={4}>
-            <h2>Learn & Win</h2>
-            <p style={{ textAlign: 'justify' }}>
-              At Wall Street English, students can redeem rewards and valuable
-              gifts for their efforts with our exclusive Learn & Win program.
+            <h2>{tran('titleBenefit2')}</h2>
+            <p style={{ textAlign: 'justify', fontSize: 20 }}>
+              {tran('contentBenefit2')}
             </p>
+            <a style={{ fontSize: 18 }} href={''}>
+              {tran('contentBenefitRef')}
+            </a>
           </Box>
         </Flex>
 
@@ -74,15 +80,13 @@ export default class Benefit extends React.Component<IProps, IState> {
             marginTop={4}
             marginBottom={4}
           >
-            <h2>Connect with other students and learn more</h2>
-            <p>
-              "If you want to go fast, go alone . If you want to go far, go
-              together . " Tell your friends about Wall Street English and you
-              can go far together on your English learning journey. Extend your
-              course and continue to improve your English skills in our 100%
-              English environment and get attractive incentives exclusively for
-              students.
+            <h2>{tran('titleBenefit3')}</h2>
+            <p style={{ textAlign: 'justify', fontSize: 20 }}>
+              {tran('contentBenefit3')}
             </p>
+            <a style={{ fontSize: 18 }} href={''}>
+              {tran('contentBenefitRef')}
+            </a>
           </Box>
           <Box width={1 / 3} marginRight={3} marginTop={4} marginBottom={4}>
             <img src={images.course} />

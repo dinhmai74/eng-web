@@ -31,12 +31,12 @@ export const images = {
 
   village: '/asset/images/why-choose-wse/Benefit/village.png',
   learnWin: '/asset/images/why-choose-wse/Benefit/learnwin.png',
-  course: '/asset/images/why-choose-wse/Benefit/course.png'
-  
+  course: '/asset/images/why-choose-wse/Benefit/course.png',
+
   // home screen
   bgInstruction: '/asset/images/aga-putra-125108-unsplash.jpg',
   bgInstruction1: '/asset/images/caleb-woods-219350-unsplash.jpg',
-  
+
   // general course
   general: '/asset/images/general-course/general.jpg',
   preparation: '/asset/images/general-course/preparation.jpg',
