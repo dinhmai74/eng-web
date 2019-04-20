@@ -1,10 +1,10 @@
 import { InformationForm } from 'components'
+import { ResponsiveNav } from 'components'
 import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
 import { Button, Icon } from 'semantic-ui-react'
 import styled from 'styled-components'
 import Introduction from './components/Introduction'
-import MainMenu from './components/MainMenu'
 
 const StyledInfoForm = styled(InformationForm)`
   margin: 20px 25%;
@@ -13,12 +13,11 @@ const StyledInfoForm = styled(InformationForm)`
 class HomeScreen extends Component {
   render() {
     return (
-      <div>
-        <MainMenu />
-
+      <>
+        <ResponsiveNav />
         <Introduction />
         <StyledInfoForm />
-      </div>
+      </>
     )
   }
 }

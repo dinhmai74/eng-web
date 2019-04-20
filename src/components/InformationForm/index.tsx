@@ -1,4 +1,3 @@
-import 'App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import CustomInput, { IFormCondition } from 'components/InformationForm/CustomInput'
 import { tran } from 'localization/i18n'
