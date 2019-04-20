@@ -61,7 +61,7 @@ function ReasonCard(props: IProps) {
     </div>
   ) : isLastItem ? (
     <div>
-      <a className="card-left__groupButton" href={ref}>
+      <a className="card-left__groupButton" href={ref1}>
         <p>
           <Icon name="arrow alternate circle right" color="red" size="big" />
           {contentRef}
@@ -71,8 +71,8 @@ function ReasonCard(props: IProps) {
   ) : null
 
   return (
-    <div className="card-container">
-      <div className="card">
+    <div>
+      <div className="card-container">
         <div className="card-left">
           <Image src={image} />
           <Label key="big" size="big">

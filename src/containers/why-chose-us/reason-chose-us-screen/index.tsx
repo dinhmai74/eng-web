@@ -83,7 +83,7 @@ class ReasonChoseUsScreen extends PureComponent<IProps, State> {
           reason={tran('reason8')}
           title={tran('tileReason8')}
           content={tran('contentR8')}
-          ref="http://wallstreetenglish.edu.vn/en/our-method/our-certificates.html"
+          ref1="http://wallstreetenglish.edu.vn/en/our-method/our-certificates.html"
           contentRef={tran('contentRefR8')}
           image={images.reason8}
         />
