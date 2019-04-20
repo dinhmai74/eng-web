@@ -3,12 +3,16 @@ import * as React from 'react'
 import { Box, Flex } from 'rebass'
 import { Icon } from 'semantic-ui-react'
 import styled from 'styled-components'
-import { images } from 'themes'
+import { colors, images } from 'themes/index'
 
 const Title = styled.div`
   margin-bottom: 40px;
   text-align: center;
   font-size: 25px;
+`
+
+const H2 = styled.h2`
+  color: ${colors.lightBlue};
 `
 
 export interface IProps {}
@@ -43,7 +47,7 @@ export default class Benefit extends React.Component<IProps, IState> {
             marginTop={4}
             marginBottom={4}
           >
-            <h2>{tran('titleBenefit1')}</h2>
+            <H2>{tran('titleBenefit1')}</H2>
             <p style={{ textAlign: 'justify', fontSize: 20 }}>
               {tran('contentBenefit1')}
             </p>
@@ -62,7 +66,7 @@ export default class Benefit extends React.Component<IProps, IState> {
             <img src={images.learnWin} />
           </Box>
           <Box width={2 / 3} marginRight={4}>
-            <h2>{tran('titleBenefit2')}</h2>
+            <H2>{tran('titleBenefit2')}</H2>
             <p style={{ textAlign: 'justify', fontSize: 20 }}>
               {tran('contentBenefit2')}
             </p>
@@ -80,7 +84,7 @@ export default class Benefit extends React.Component<IProps, IState> {
             marginTop={4}
             marginBottom={4}
           >
-            <h2>{tran('titleBenefit3')}</h2>
+            <H2>{tran('titleBenefit3')}</H2>
             <p style={{ textAlign: 'justify', fontSize: 20 }}>
               {tran('contentBenefit3')}
             </p>
