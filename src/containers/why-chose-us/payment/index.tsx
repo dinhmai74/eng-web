@@ -49,19 +49,29 @@ export default class Payment extends React.PureComponent<IProps, any> {
                   marginTop: 40,
                   marginLeft: 40,
                   width: '50%',
-                  color: '#003C78'
+                  color: '#003C78',
+                  fontSize: 22
                 }}
               >
                 {tran('topTitlePayment')}
               </div>
             </Flex>
-            <Flex fontSize={3}>
-              <div style={{ marginTop: 20, marginLeft: 40, width: '50%' }}>
+
+            <Flex>
+              <div
+                style={{
+                  marginTop: 20,
+                  marginLeft: 40,
+                  width: '50%',
+                  fontSize: 22
+                }}
+              >
                 {tran('bottomTitlePayment')}
               </div>
             </Flex>
           </Box>
         </div>
+
         <GridContainer>
           <Block
             image={images.payment}
@@ -74,6 +84,7 @@ export default class Payment extends React.PureComponent<IProps, any> {
             content={tran('contentPayment2')}
           />
         </GridContainer>
+
         <Flex justifyContent="center" marginBottom={10}>
           <Block
             image={images.paymentAll}
@@ -81,9 +92,10 @@ export default class Payment extends React.PureComponent<IProps, any> {
             content={tran('contentPayment3')}
           />
         </Flex>
+
         <div
           style={{
-            fontSize: 20,
+            fontSize: 24,
             color: '#001B35',
             marginLeft: 20,
             marginRight: 20
