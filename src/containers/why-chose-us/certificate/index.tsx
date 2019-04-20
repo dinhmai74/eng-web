@@ -1,14 +1,20 @@
+import CerBlock from 'components/CerBlock'
+import { tran } from 'localization/i18n'
 import * as React from 'react'
+import { Box, Flex } from 'rebass'
 import styled from 'styled-components'
+import { colors, images } from 'themes/index'
 
 const H2 = styled.h2`
   text-align: center;
+  margin-bottom: 30px;
+  color: ${colors.lightBlue};
 `
 
 const P = styled.p`
   text-align: center;
-  word-wrap: break-word;
   font-size: 20px;
+  margin-bottom: 30px;
 `
 
 export interface IProps {}
@@ -24,23 +30,31 @@ export default class Certificate extends React.Component<IProps, IState> {
 
   render() {
     return (
-      <div style={{ marginLeft: 400, marginRight: 400 }}>
-        <H2>
-          Wall Street English represents the GOLD STANDARD of certification
-          accepted around the world
-        </H2>
+      <div style={{ marginLeft: 200, marginRight: 200 }}>
+        <H2>{tran('titleCer')}</H2>
+        <P>{tran('firstContentCer')}</P>
+        <P>{tran('secondContentCer')}</P>
 
-        <P>
-          Wall Street English was the first global English language school to
-          achieve this standard and prove its international merit.
-        </P>
+        <Flex justifyContent="center" marginBottom={5}>
+          <img src={images.certificate} />
+        </Flex>
 
-        <P>
-          Wall Street English conducted a global study with University of
-          Cambridge ESOL Examinations which aligned the Wall Street English
-          curriculum with the globally recognized Common European Framework
-          Reference for Languages (CEFR) scale of English proficiency.
-        </P>
+        <Flex>
+          <Box>
+            <CerBlock
+              image={images.cefr}
+              title={tran('titleBlockCer1')}
+              content={tran('contentBlockCer1')}
+            />
+          </Box>
+          <Box>
+            <CerBlock
+              image={images.bulats}
+              title={tran('tileBlockCer2')}
+              content={tran('contentBlockCer2')}
+            />
+          </Box>
+        </Flex>
       </div>
     )
   }

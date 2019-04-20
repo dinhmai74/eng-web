@@ -33,6 +33,12 @@ export const images = {
   learnWin: '/asset/images/why-choose-wse/Benefit/learnwin.png',
   course: '/asset/images/why-choose-wse/Benefit/course.png',
 
+  // certificate
+  certificate:
+    '/asset/images/why-choose-wse/certificate/certificate-conclusion-1.png',
+  bulats: '/asset/images/why-choose-wse/certificate/bulats.jpg',
+  cefr: '/asset/images/why-choose-wse/certificate/cefr.jpg',
+
   // home screen
   bgInstruction: '/asset/images/aga-putra-125108-unsplash.jpg',
   bgInstruction1: '/asset/images/caleb-woods-219350-unsplash.jpg',
