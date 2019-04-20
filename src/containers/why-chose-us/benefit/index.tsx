@@ -7,11 +7,9 @@ import { colors, images } from 'themes/index'
 
 const Title = styled.div`
   margin-bottom: 40px;
-  text-align: center;
   font-size: 25px;
-  text-algin: center;
-  font-size: 25;
   margin-top: 40;
+  text-align: center;
 `
 
 const H2 = styled.h2`
@@ -32,9 +30,7 @@ export default class Benefit extends React.Component<IProps, IState> {
   render() {
     return (
       <div style={{ marginLeft: 400, marginRight: 400 }}>
-        <Title>
-          {tran('titleBenefitPage')}
-        </Title>
+        <Title>{tran('titleBenefitPage')}</Title>
 
         <Flex bg="#FAFAFA">
           <Box
