@@ -13,9 +13,10 @@ const NumberLevel = styled.div`
   background-color: ${colors.transparentOrange};
   display: block;
   width: 15px;
-  margin: 0 auto 0 4px;
+  margin: 0 2px 0 4px;
   float: left;
   border-radius: 20px;
+  /* width: 50%; */
 `
 const TextChart = styled.span`
   position: absolute;

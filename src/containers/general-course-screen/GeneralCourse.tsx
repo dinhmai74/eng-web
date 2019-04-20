@@ -8,43 +8,25 @@ import styled from 'styled-components'
 import { flex } from 'styled-system'
 import { colors, images } from 'themes/index'
 import Chart from './components/Chart'
-
+import Overview from "./components/Overview"
 const Wrapper = styled.div`
-  margin-right: auto;
-  margin-left: auto;
+  /* margin-right: auto;
+  margin-left: auto; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 40px;
 `
-const Section = styled.div`
-  flex-direction: row;
-  display: flex;
-  margin-top: 40px;
-`
-const Content = styled.div`
-  text-align: left;
-  font-size: 20px;
-  color: black;
-  margin-right: 40px;
-`
-const Instruction = styled.div`
-  color: white;
-  margin-left: 20px;
-  margin-top: 40px;
-`
-const StyledHeader1 = styled.h3`
-  color: ${colors.lightBlue};
-  font-size: 30px;
-  margin-bottom: 20px;
-`
+
 const PreparationImage = styled.div``
 const Description = styled.div`
   font-size: 20px;
 `
 const Level = styled.div`
   font-size: 16px;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-bottom: 130px;
+  padding-left: 80px;
+  padding-right: 80px;
   text-align: center;
+
+  
 `
 const Courses = styled.div`
   background-color: ${colors.darkWhite};
@@ -59,7 +41,7 @@ const StyledHeader2 = styled.div`
 `
 const StyleImage = styled.div`
   width: 100%;
-  margin-right: -15px;
+  
 `
 const Title = styled.div`
   font-size: 30px;
@@ -99,15 +81,7 @@ export default class GeneralCourse extends React.Component<
     return (
       <Container>
         <Wrapper>
-          <Section>
-            <Instruction>
-              <StyledHeader1>{tran('Overview')}</StyledHeader1>
-              <Content>{tran('generalCoursesContent')}</Content>
-            </Instruction>
-            <StyleImage>
-              <img className="" src={images.general} />
-            </StyleImage>
-          </Section>
+          <Overview />
           <Courses>
             <Level>
               <StyledHeader2>{tran('Levels')}</StyledHeader2>

@@ -10,17 +10,19 @@ interface IState {}
 const Container = styled.div`
   display: flex;
   justify-content: center;
+  padding-top: 130px;
 `
 const TableChart = styled.div`
-  border: 0;
-  margin-left: 100px;
-  margin-right: 100px;
+  /* border: 0; */
   border-collapse: separate;
-  margin-bottom: 30px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
 `
 const Th = styled.th`
   padding-left: 40px;
   padding-bottom: 10px;
+
 `
 const TBody = styled.tbody`
   text-align: center;
@@ -30,6 +32,12 @@ const Td = styled.td`
   width: 200px;
   height: 40px;
 `
+const Col = styled.div`
+  display: flex;
+  flex-direction: row;
+  /* justify-content: start; */
+
+`
 class Chart extends Component<IProps, IState> {
   static defaultProps: {}
   state = {}
@@ -37,18 +45,17 @@ class Chart extends Component<IProps, IState> {
   render() {
     return (
       <Container>
-        <div>
           <TableChart>
             <thead>
               <tr>
-                <Th>
-                  <div>
+                <Th >
+                  <Col >
                     <LevelNumber number={1} />
                     <LevelNumber number={2} />
-                  </div>
+                  </Col>
                 </Th>
                 <Th>
-                  <div>
+                  <Col >
                     <LevelNumber
                       number={3}
                       style={{ backgroundColor: colors.salmon }}
@@ -61,10 +68,10 @@ class Chart extends Component<IProps, IState> {
                       number={5}
                       style={{ backgroundColor: colors.salmon }}
                     />
-                  </div>
+                  </Col>
                 </Th>
                 <Th>
-                  <div>
+                  <Col>
                     <LevelNumber
                       number={6}
                       style={{ backgroundColor: colors.lightRed }}
@@ -81,10 +88,10 @@ class Chart extends Component<IProps, IState> {
                       number={9}
                       style={{ backgroundColor: colors.lightRed }}
                     />
-                  </div>
+                  </Col>
                 </Th>
                 <Th>
-                  <div>
+                  <Col>
                     <LevelNumber
                       number={10}
                       style={{ backgroundColor: colors.lightCyan }}
@@ -101,10 +108,10 @@ class Chart extends Component<IProps, IState> {
                       number={13}
                       style={{ backgroundColor: colors.lightCyan }}
                     />
-                  </div>
+                  </Col>
                 </Th>
                 <Th>
-                  <div>
+                  <Col>
                     <LevelNumber
                       number={14}
                       style={{ backgroundColor: colors.darkCyan }}
@@ -121,10 +128,10 @@ class Chart extends Component<IProps, IState> {
                       number={17}
                       style={{ backgroundColor: colors.darkCyan }}
                     />
-                  </div>
+                  </Col>
                 </Th>
                 <Th>
-                  <div>
+                  <Col>
                     <LevelNumber
                       number={18}
                       style={{ backgroundColor: colors.darkBLue }}
@@ -137,7 +144,7 @@ class Chart extends Component<IProps, IState> {
                       number={20}
                       style={{ backgroundColor: colors.darkBLue }}
                     />
-                  </div>
+                  </Col>
                 </Th>
               </tr>
             </thead>
@@ -150,7 +157,6 @@ class Chart extends Component<IProps, IState> {
               <Td>MASTERY</Td>
             </TBody>
           </TableChart>
-        </div>
       </Container>
     )
   }
