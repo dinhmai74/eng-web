@@ -9,6 +9,9 @@ const Title = styled.div`
   margin-bottom: 40px;
   text-align: center;
   font-size: 25px;
+  text-algin: center;
+  font-size: 25;
+  margin-top: 40;
 `
 
 const H2 = styled.h2`
@@ -29,13 +32,7 @@ export default class Benefit extends React.Component<IProps, IState> {
   render() {
     return (
       <div style={{ marginLeft: 400, marginRight: 400 }}>
-        <Title
-          style={{
-            textAlign: 'center',
-            fontSize: 25,
-            marginTop: 40
-          }}
-        >
+        <Title>
           {tran('titleBenefitPage')}
         </Title>
 
