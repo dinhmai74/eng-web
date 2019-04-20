@@ -1,7 +1,7 @@
 export const colors = {
   error: 'red',
   footerColor: '#000639',
-  gray: 'gray',
+  gray: '#767676',
   main: '#f03f37',
   white: '#ffffff',
   lightRed: '#ef2c3a',
@@ -13,5 +13,7 @@ export const colors = {
   salmon: '#f58b7d',
   yellow: '#FFE128',
   darkWhite: '#fafafa',
-  darkGrays: '#3f3f3f'
+  darkGrays: '#3f3f3f',
+  border: '#EBEBEB',
+  text: '#484848'
 }

@@ -16,6 +16,7 @@ import styled from "styled-components"
 import 'semantic/dist/semantic.min.css'
 import 'App.css'
 
+import './footer.story'
 import './InformationForm.story'
 import './menu.story'
 import './course-progress.story'

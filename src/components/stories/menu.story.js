@@ -1,7 +1,6 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
+import React from "react";
+import { storiesOf } from "@storybook/react";
 
-import {Menu  } from 'components'
+import { ResponsiveNav } from "components";
 
-storiesOf('Menu', module)
-  .add('default', () => <Menu/>);
+storiesOf("Menu", module).add("default", () => <ResponsiveNav />);

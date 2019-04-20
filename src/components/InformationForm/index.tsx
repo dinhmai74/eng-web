@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import CustomInput, { IFormCondition } from 'components/InformationForm/CustomInput'
 import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
+import { Flex } from 'rebass'
 import { Button } from 'semantic-ui-react'
 import styled from 'styled-components'
 import { colors } from 'themes'
@@ -10,6 +11,10 @@ import Title from './Title'
 
 const StyledButton = styled(Button)`
   position: relative;
+`
+
+const CenterView = styled(Flex)`
+ justify-content: center;
 `
 
 const FormContainer = styled.div`
@@ -143,9 +148,12 @@ class InformationForm extends Component<IProps, IState> {
             onChange={(e: any) => this.handleOnChange('ideaField', e)}
           />
         </Content>
-        <StyledButton secondary onClick={this.handleSubmit}>
-          Submit
-        </StyledButton>
+
+        <CenterView>
+          <StyledButton secondary onClick={this.handleSubmit}>
+            {tran('submit')}
+          </StyledButton>
+        </CenterView>
       </FormContainer>
     )
   }
