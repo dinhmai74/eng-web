@@ -113,5 +113,10 @@
   "infoFullName": "Your name",
   "infoContact": "Your email",
   "infoPhoneNumber": "Your number",
-  "infoYourIdea": "Your opinion"
+  "infoYourIdea": "Your opinion",
+
+  "fTitleLearnEnglish": "Learn english",
+  "fTitleFreeTest": "Free tests",
+  "fContentLearningMethod": "Learning method",
+  "general": "General"
 }
