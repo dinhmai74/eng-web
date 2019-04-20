@@ -3,11 +3,12 @@ import { tran } from 'localization/i18n'
 import * as React from 'react'
 import { Box, Flex } from 'rebass'
 import styled from 'styled-components'
-import { images } from 'themes'
+import { colors, images } from 'themes/index'
 
 const H2 = styled.h2`
   text-align: center;
   margin-bottom: 30px;
+  color: ${colors.lightBlue};
 `
 
 const P = styled.p`
