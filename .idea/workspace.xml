@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d13e700d-ba00-47fc-9324-1d60db022ffc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Column.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/TextLink.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/stories/footer.story.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InformationForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InformationForm/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stories/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stories/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stories/menu.story.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stories/menu.story.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/localization/languages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/localization/languages/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/localization/languages/vi.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/localization/languages/vi.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/themes/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/themes/colors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/themes/images.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/themes/images.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +19,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/InformationForm/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
+            <state relative-caret-position="588">
               <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
             </state>
           </provider>
@@ -45,18 +30,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="298">
               <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#81#0" expanded="true" />
-              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/themes/images.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/themes/images.ts">
+        <entry file="file://$PROJECT_DIR$/src/themes/colors.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="392">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -76,7 +67,6 @@
         <option value="$PROJECT_DIR$/tslint.json" />
         <option value="$PROJECT_DIR$/src/tools/string-helper.ts" />
         <option value="$PROJECT_DIR$/src/components/InformationForm/CustomInput.tsx" />
-        <option value="$PROJECT_DIR$/src/themes/colors.ts" />
         <option value="$PROJECT_DIR$/src/components/Footer/TextLink.tsx" />
         <option value="$PROJECT_DIR$/src/localization/languages/en.json" />
         <option value="$PROJECT_DIR$/src/localization/languages/vi.json" />
@@ -84,6 +74,7 @@
         <option value="$PROJECT_DIR$/src/components/Footer/index.tsx" />
         <option value="$PROJECT_DIR$/src/components/InformationForm/index.tsx" />
         <option value="$PROJECT_DIR$/src/App.tsx" />
+        <option value="$PROJECT_DIR$/src/themes/colors.ts" />
       </list>
     </option>
   </component>
@@ -119,7 +110,56 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="eng-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eng-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eng-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eng-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eng-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eng-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eng-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eng-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="InformationForm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eng-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eng-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eng-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eng-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="home-screen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eng-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eng-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -266,7 +306,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17807000" />
+    <option name="totallyTimeSpent" value="17841000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,13 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/themes/colors.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@front10/landing-page-book/dist/components/ContactInfo/ContactInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -493,7 +526,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/InformationForm/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
+        <state relative-caret-position="588">
           <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
@@ -502,16 +535,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#81#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/themes/images.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="448">
+          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/themes/colors.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
         </state>
       </provider>
     </entry>
