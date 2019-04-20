@@ -22,6 +22,7 @@ import "./menu.story";
 import "./course-progress.story";
 import "./payment.story";
 import "./benefit.story";
+import "./certificate.story";
 
 import { Welcome } from "@storybook/react/demo";
 import { Button, SemanticCOLORS } from "semantic-ui-react";
@@ -29,18 +30,6 @@ import { oneOf } from "prop-types";
 import ReasonChoseUsScreen from "containers/why-chose-us/reason-chose-us-screen/index";
 import UniqueMethod from "containers/why-chose-us/unique-method/index";
 import Block from "components/Block/index";
-
-storiesOf("Block", module).add("to Storybook", () => (
-  <Block
-    image={images.icon1}
-    title="Multimedia lessons"
-    content="You will learn vocabulary and pronunciation by watching real-life situations. Your speaking skills will be developed naturally by listening and repeating vocabulary in the lessons."
-  />
-));
-
-storiesOf("Unique Method", module).add("to Storybook", () => <UniqueMethod />);
-
-storiesOf("Reason", module).add("to Storybook", () => <ReasonChoseUsScreen />);
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
