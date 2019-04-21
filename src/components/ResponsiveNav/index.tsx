@@ -8,13 +8,20 @@ import { strings } from 'tools'
 import './button.scss'
 import './style.scss'
 
-interface IProps {}
+interface IProps {
+  chosenIndex: number
+  bgColor: string
+}
 
 interface IState {
   isToggled: boolean
 }
 
 class ResponsiveNav extends React.Component<IProps, IState> {
+  static defaultProps = {
+    chosenIndex: 0,
+    bgColor: 'transparent'
+  }
   state = {
     isToggled: false
   }
@@ -26,9 +33,10 @@ class ResponsiveNav extends React.Component<IProps, IState> {
   }
 
   render() {
-    const { isToggled } = this.state
+    const { isToggled} = this.state
+    const { chosenIndex , bgColor} = this.props
     return (
-      <nav className="navigation navbar navbar-expand-lg">
+      <nav className="navigation navbar navbar-expand-lg" style={{backgroundColor: bgColor}}>
         <button
           className={`navbar-toggler e-button ${isToggled && 'open'}`}
           onClick={this.handleToggleButtonPress}
@@ -48,7 +56,7 @@ class ResponsiveNav extends React.Component<IProps, IState> {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav menu">
-            <li className="menu__item menu__item--main nav-item">
+            <li className={`menu__item ${0 === chosenIndex && 'menu__item--main'} nav-item`}>
               <a href={strings.routeHome} className="menu__link">
                 <span className="menu__title">
                   <span className="menu__first-word" data-hover="Home">
@@ -61,8 +69,8 @@ class ResponsiveNav extends React.Component<IProps, IState> {
               </a>
             </li>
 
-            <li className="menu__item nav-item">
-              <a href={strings.routeReasonChoseUs} className="menu__link">
+            <li className={`menu__item ${1 === chosenIndex && 'menu__item--main'} nav-item`}>
+              <a href={strings.routeWhyChoseUs} className="menu__link">
                 <span className="menu__title">
                   <span className="menu__first-word" data-hover={tran('about')}>
                     {tran('about')}
@@ -78,11 +86,11 @@ class ResponsiveNav extends React.Component<IProps, IState> {
             </li>
 
             {/* find course */}
-            <li className="menu__item nav-item">
-              <a href={strings.routeFindCourse} className="menu__link">
+            <li className={`menu__item ${2 === chosenIndex && 'menu__item--main'} nav-item`}>
+              <a href={strings.routeGeneralCourse} className="menu__link">
                 <span className="menu__title">
-                  <span className="menu__first-word" data-hover={tran('find')}>
-                    {tran('find')}
+                  <span className="menu__first-word" data-hover={tran('general')}>
+                    {tran('general')}
                   </span>
                   <span
                     className="menu__second-word"
@@ -94,7 +102,7 @@ class ResponsiveNav extends React.Component<IProps, IState> {
               </a>
             </li>
 
-            <li className="menu__item nav-item">
+            <li className={`menu__item ${3 === chosenIndex && 'menu__item--main'} nav-item`}>
               <a href={strings.routeTest} className="menu__link">
                 <span className="menu__title">
                   <span className="menu__first-word" data-hover={tran('free')}>

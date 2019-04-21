@@ -10,9 +10,9 @@ interface IState {}
 
 const StyledHeader = styled(Header)`
   color: ${colors.white};
-  border-left: 5px ${colors.main} solid;
+  font-size: 3rem;
   padding: 5px;
-  text-align: left;
+  text-align: center;
 `
 
 class Title extends Component<IProps, IState> {
@@ -20,7 +20,7 @@ class Title extends Component<IProps, IState> {
   state = {}
 
   render() {
-    return <StyledHeader as="h2">{tran('infoTitle')}</StyledHeader>
+    return <StyledHeader as="h1">{tran('infoTitle')}</StyledHeader>
   }
 }
 

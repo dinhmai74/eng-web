@@ -1,6 +1,7 @@
 import FindCourseScreen from './find-course-screens/FindCourseScreen'
 import HomeScreen from './home-screen'
 import TestScreen from './test-screens/TestScreen'
-import ReasonChoseUsScreen from './why-chose-us/reason-chose-us-screen'
+import WhyChoseUs from './why-chose-us'
+import GeneralCourse from './general-course-screen'
 
-export { HomeScreen, ReasonChoseUsScreen, TestScreen, FindCourseScreen }
+export { HomeScreen, WhyChoseUs, TestScreen, FindCourseScreen, GeneralCourse }

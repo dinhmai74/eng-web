@@ -2,10 +2,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import CustomInput, { IFormCondition } from 'components/InformationForm/CustomInput'
 import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
-import { Flex } from 'rebass'
+import { Flex, Box } from 'rebass'
 import { Button } from 'semantic-ui-react'
 import styled from 'styled-components'
-import { colors } from 'themes'
+
+import { colors, images } from 'themes'
 import { emailRex, notEmptyRex } from 'tools'
 import Title from './Title'
 
@@ -14,24 +15,28 @@ const StyledButton = styled(Button)`
 `
 
 const CenterView = styled(Flex)`
+margin-top: 50px;
  justify-content: center;
 `
 
-const FormContainer = styled.div`
-  background: ${colors.footerColor};
+const FormContainer = styled('div')`
+  background-image: url(${images.bgMap});
+  //background-color: #212529;
+  background-color: black;
   padding: 1.5em 5em;
   max-height: 930px;
 `
 
-const Content = styled.div`
-  margin: 20px 5px;
+const Content = styled(Flex)`
+  margin: 30px 5px;
+  width: 100%;
 `
 
 interface IProps {
   handleSubmit: (state: IState) => void
 }
 
-interface  IErrorField {
+interface IErrorField {
   nameField: IFormCondition[]
   emailField: IFormCondition[]
   phoneNumberField: IFormCondition[]
@@ -45,6 +50,7 @@ interface IState {
   ideaField: string
   error: IErrorField,
   showError: boolean,
+
   [rest: string]: any
 }
 
@@ -66,21 +72,22 @@ class InformationForm extends Component<IProps, IState> {
   private refIdeaField: any
   private refPhoneNumberField: any
   private refEmailField: any
+
   constructor(props: IProps) {
     super(props)
     this.state = {
-    emailField: '',
-    error: {
-      emailField: [EmailCondition, NotEmptyCondition],
-      ideaField: [NotEmptyCondition],
-      nameField: [NotEmptyCondition],
-      phoneNumberField: [NotEmptyCondition]
-    },
-    ideaField: '',
-    nameField: '',
-    phoneNumberField: null,
-    showError: false
-   }
+      emailField: '',
+      error: {
+        emailField: [EmailCondition, NotEmptyCondition],
+        ideaField: [NotEmptyCondition],
+        nameField: [NotEmptyCondition],
+        phoneNumberField: [NotEmptyCondition]
+      },
+      ideaField: '',
+      nameField: '',
+      phoneNumberField: null,
+      showError: false
+    }
   }
 
   /**
@@ -93,7 +100,9 @@ class InformationForm extends Component<IProps, IState> {
       showError: true
     }, () => {
       this.forceFieldValidate()
-      if (this.props.handleSubmit) { this.props.handleSubmit(this.state) }
+      if (this.props.handleSubmit) {
+        this.props.handleSubmit(this.state)
+      }
     })
   }
 
@@ -106,47 +115,54 @@ class InformationForm extends Component<IProps, IState> {
   /**
    * Private methods
    */
- forceFieldValidate = () => {
-   this.refEmailField.validate()
-   this.refNameField.validate()
-   this.refPhoneNumberField.validate()
-   this.refIdeaField.validate()
- }
+  forceFieldValidate = () => {
+    this.refEmailField.validate()
+    this.refNameField.validate()
+    this.refPhoneNumberField.validate()
+    this.refIdeaField.validate()
+  }
 
   render() {
-    const { error , showError } = this.state
+    const {error, showError} = this.state
     return (
       <FormContainer {...this.props}>
-        <Title />
-        <Content>
-          <CustomInput
-            ref={(c) => this.refNameField = c}
-            isShowError={showError}
-            errorConditions={error.nameField}
-            placeholder={tran('infoFullName')}
-            onChange={(e: any) => this.handleOnChange('nameField', e)}
-          />
-          <CustomInput
-            ref={(c) => this.refEmailField = c}
-            isShowError={showError}
-            errorConditions={error.emailField}
-            placeholder={tran('infoContact')}
-            onChange={(e: any) => this.handleOnChange('emailField', e)}
-          />
-          <CustomInput
-            ref={(c) => this.refPhoneNumberField = c}
-            isShowError={showError}
-            errorConditions={error.phoneNumberField}
-            placeholder={tran('infoPhoneNumber')}
-            onChange={(e: any) => this.handleOnChange('phoneNumberField', e)}
-          />
-          <CustomInput
-            ref={(c) => this.refIdeaField = c}
-            isShowError={showError}
-            errorConditions={error.ideaField}
-            placeholder={tran('infoYourIdea')}
-            onChange={(e: any) => this.handleOnChange('ideaField', e)}
-          />
+        <Title/>
+        <Content >
+          <Box width={1 / 2}
+          >
+            <CustomInput
+              ref={(c) => this.refNameField = c}
+              isShowError={showError}
+              errorConditions={error.nameField}
+              placeholder={tran('infoFullName')}
+              onChange={(e: any) => this.handleOnChange('nameField', e)}
+            />
+            <CustomInput
+              ref={(c) => this.refEmailField = c}
+              isShowError={showError}
+              errorConditions={error.emailField}
+              placeholder={tran('infoContact')}
+              onChange={(e: any) => this.handleOnChange('emailField', e)}
+            />
+            <CustomInput
+              ref={(c) => this.refPhoneNumberField = c}
+              isShowError={showError}
+              placeholder={tran('infoPhoneNumber')}
+              onChange={(e: any) => this.handleOnChange('phoneNumberField', e)}
+            />
+          </Box>
+
+          <Box width={1 / 2} height={1} >
+            <CustomInput
+              ref={(c) => this.refIdeaField = c}
+              style={{marginTop: 30}}
+              type={'textarea'}
+              isShowError={showError}
+              errorConditions={error.ideaField}
+              placeholder={tran('infoYourIdea')}
+              onChange={(e: any) => this.handleOnChange('ideaField', e)}
+            />
+          </Box>
         </Content>
 
         <CenterView>
@@ -160,7 +176,8 @@ class InformationForm extends Component<IProps, IState> {
 }
 
 InformationForm.defaultProps = {
-  handleSubmit: (state: IState) => {}
+  handleSubmit: (state: IState) => {
+  }
 }
 
 const informationForm = InformationForm

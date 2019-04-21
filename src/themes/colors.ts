@@ -1,5 +1,5 @@
 export const colors = {
-  footerColor: '#000639',
+  footerColor: '#13283b',
   gray: '#767676',
   main: '#f03f37',
   white: '#ffffff',
@@ -13,7 +13,11 @@ export const colors = {
   transparentOrange: '#fbc3a2',
   salmon: '#f58b7d',
   border: '#EBEBEB',
-  text: '#484848',
+  text: '#1f4160',
   darkGrays: '#3f3f3f',
   error: 'red',
+  bgSecondary: '#f8f9fa',
+  bgMain: '#ffffff',
+  bgHero: '#383d45',
+  black: 'black'
 }
