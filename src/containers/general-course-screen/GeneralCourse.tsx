@@ -1,3 +1,4 @@
+import ResponsiveNav from 'components/ResponsiveNav'
 import { tran } from 'localization/i18n'
 import * as React from 'react'
 import { Container } from 'react-bootstrap'
@@ -12,7 +13,6 @@ import Chart from './components/Chart'
 const Wrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `
 const Section = styled.div`
   flex-direction: row;
@@ -98,6 +98,7 @@ export default class GeneralCourse extends React.Component<
   render() {
     return (
       <Container>
+        <ResponsiveNav bgColor={colors.black} chosenIndex={2}/>
         <Wrapper>
           <Section>
             <Instruction>

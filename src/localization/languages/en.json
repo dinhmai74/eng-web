@@ -110,13 +110,18 @@
   "forwardLink": " Looking for more information",
   "about": "About",
   "us": "Us",
-  "infoFullName": "Your name",
-  "infoContact": "Your email",
+  "infoFullName": "Your name*",
+  "infoContact": "Your email*",
   "infoPhoneNumber": "Your number",
-  "infoYourIdea": "Your opinion",
+  "infoYourIdea": "Message*",
 
   "fTitleLearnEnglish": "Learn english",
   "fTitleFreeTest": "Free tests",
   "fContentLearningMethod": "Learning method",
-  "general": "General"
+  "general": "General",
+  "experienceYears": "Years of experience \n and development",
+  "territories": "Territories",
+  "centers": "Centers",
+  "students": "Students",
+  "titleWhatWeHave": "What we have"
 }

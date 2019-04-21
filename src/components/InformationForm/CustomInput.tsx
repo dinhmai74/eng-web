@@ -1,5 +1,6 @@
 import _ from 'lodash'
 import React, { Component } from 'react'
+import { TextArea } from 'semantic-ui-react'
 import styled from 'styled-components'
 import { colors } from 'themes'
 
@@ -12,7 +13,7 @@ interface IStyledFormInputProps {
 const StyledFormInput = styled.input`
   width: ${(p) => p.width};
   display: block;
-  margin: auto;
+  margin: 20px auto;
   border: 0;
   border-bottom: 1px solid ${(props: IStyledFormInputProps) => props.error ? colors.error : colors.gray};
   padding: 20px 25px;
@@ -23,7 +24,27 @@ const StyledFormInput = styled.input`
   :focus {
     outline: none;
     border-bottom: 1px
-      ${(props: IStyledFormInputProps) => props.error ? colors.error : colors.yellow};
+      ${(props: IStyledFormInputProps) => props.error ? colors.error : colors.white};
+    border-style: solid;
+    text-align: center;
+  }
+`
+
+const StyledTextArea = styled(TextArea)`
+  width: ${(p) => p.width};
+  height: 90%;
+  display: block;
+  margin: auto;
+  border: 1px solid ${(props: IStyledFormInputProps) => props.error ? colors.error : colors.gray};
+  padding: 20px 25px;
+  color: white;
+  background: transparent;
+  text-align: center;
+
+  :focus {
+    outline: none;
+    border-bottom: 1px
+      ${(props: IStyledFormInputProps) => props.error ? colors.error : colors.white};
     border-style: solid;
     text-align: center;
   }
@@ -34,11 +55,14 @@ export interface IFormCondition {
   message: string
 }
 
+export type ICustomInputType = 'input' | 'textarea'
+
 interface IProps {
   error: boolean,
   errorConditions: IFormCondition[],
   isShowError: boolean,
   onChange: (e: string) => void
+  type?: ICustomInputType
 }
 
 interface IState {
@@ -90,14 +114,22 @@ class CustomInput extends Component<
   }
 
   render() {
-    const {error, isShowError, width, ...rest} = this.props
-    const borderColor = colors.yellow
+    const {error, isShowError, width, type, ...rest} = this.props
+    const borderColor = colors.white
     const {isEligible} = this.state
 
     let localError = false
     if ((!isEligible && isShowError) || error) {
       localError = true
     }
+
+    if (type === 'textarea') {
+      return(
+        <StyledTextArea {...rest} borderColor={borderColor} width={width} error={localError}
+                                  onChange={this.onChange}/>
+      )
+    }
+
     return <StyledFormInput {...rest} borderColor={borderColor} width={width} error={localError}
                             onChange={this.onChange}/>
   }
@@ -109,7 +141,8 @@ CustomInput.defaultProps = {
   errorConditions: [],
   onChange: (e: string) => {
   },
-  isShowError: false
+  isShowError: false,
+  type: 'input'
 }
 
 export default CustomInput

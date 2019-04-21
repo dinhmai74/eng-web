@@ -9,13 +9,16 @@ import { Button, Icon } from 'semantic-ui-react'
 import styled from 'styled-components'
 import { images } from 'themes'
 
-interface IProps {}
-
-interface IState {}
-
 const Container = styled.div`
   margin: auto;
 `
+
+const StyledText = styled('span')`
+  margin-right: 5px;
+`
+
+interface IProps {}
+interface IState {}
 
 class Introduction extends Component<IProps, IState> {
   static defaultProps: {}
@@ -41,9 +44,10 @@ class Introduction extends Component<IProps, IState> {
             {tran('learnEnglishForBusyPeople')}
           </Header>
           <div className="mt-5">
-            <Button animated secondary>
+            <Button animated secondary >
               <Button.Content visible>{tran('explore')}</Button.Content>
               <Button.Content hidden>
+                <StyledText>{tran('explore')}</StyledText>
                 <Icon name="arrow right" />
               </Button.Content>
             </Button>

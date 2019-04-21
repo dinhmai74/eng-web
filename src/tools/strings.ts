@@ -1,6 +1,7 @@
 export const strings = {
   routeFindCourse: '/find-course',
   routeHome: '/',
-  routeReasonChoseUs: '/reason-chose-us',
+  routeWhyChoseUs: '/about-us',
   routeTest: '/free-test',
+  routeGeneralCourse: '/general-course'
 }

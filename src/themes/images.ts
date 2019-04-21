@@ -34,8 +34,9 @@ export const images = {
   course: '/asset/images/why-choose-wse/Benefit/course.png',
 
   // home screen
-  bgInstruction: '/asset/images/aga-putra-125108-unsplash.jpg',
-  bgInstruction1: '/asset/images/caleb-woods-219350-unsplash.jpg',
+  bgInstruction: '/asset/images/home/aga-putra-125108-unsplash.jpg',
+  bgInstruction1: '/asset/images/home/caleb-woods-219350-unsplash.jpg',
+  bgMap: '/asset/images/home/map-image.png',
 
   // general course
   general: '/asset/images/general-course/general.jpg',
