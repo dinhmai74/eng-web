@@ -62,7 +62,7 @@
 
   "topTitlePayment": "Invest in your future easily with our flexible school fee payment policy.",
   "bottomTitlePayment": "Wall Street English supports you throughout your English studies with many flexible payment options:",
-  "bonus": "Chương trình hỗ trợ tài chính đặc biệt từ WSE và VPBank: Chỉ cần trả trước 50% học phí - Trả góp 0% phần còn lại - Không cần chứng minh thu nhập - Không phát sinh thêm chi phí - Không cần có sẵn thẻ ngân hàng.",
+  "bonus": "Special financial support program from WSE and VPBank: Just pay 50% in advance - 0% installment payment - No need to prove income - No additional costs - No bank card required.",
   "titlePayment1": "One-time payment",
   "contentPayment1": "Students can make a one-time payment for the whole course by cash, bank transfer or credit card.",
   "titlePayment2": "Multiple payments",
@@ -116,7 +116,7 @@
   "titleDescriptionCircle1": "Develop all four language skills: Listening, Speaking, Reading and Writing to achieve IELTS score as desired.",
   "titleDescriptionCircle2": "Conquer the dream success “Speak English confidently”",
   "forwardLink": " Looking for more information",
-  "about": "About",
+  "about": "Chose",
   "us": "Us",
   "infoFullName": "Your name*",
   "infoContact": "Your email*",
@@ -131,5 +131,13 @@
   "territories": "Territories",
   "centers": "Centers",
   "students": "Students",
-  "titleWhatWeHave": "What we have"
+  "titleWhatWeHave": "What we have",
+  "titleReasonChoseUs": "Reason chose us",
+  "subReasonChoseUs": " There are lots of English teaching centers, but we are the only one designed for busy adults just like you.",
+  "titleUniqueMethod": "Unique Method",
+ "subUniqueMethod": "Our method has a number of outstanding features:",
+  "titleBenefit": "Benefit",
+  "subBenefit": "At Wall Street English we always strive to improve our service and create new tools to help students speak English more confidently and reach their goals more quickly. Wall Street English students have a number of highly valuable privileges:\n",
+  "titlePayment": "Payment",
+  "titleCertificate": "Certificate"
 }

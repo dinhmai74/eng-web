@@ -27,17 +27,14 @@ export default class WallStreetEnglish extends React.PureComponent<
   render() {
     return (
       <Container>
-        <Flex>
-          <Flex width={1 / 3} justifyContent="center">
-            <img src={images.img1} />
-          </Flex>
-          <Box width={2 / 3}>
+        <Flex p={5}>
+          <Box width={3 / 3}>
             <H2>{tran('titleWallStreet1')}</H2>
             <P>{tran('contentWallStreet1')}</P>
           </Box>
         </Flex>
 
-        <Flex>
+        <Flex >
           <Flex
             alignItems="center"
             justifyContent="flex-end"
@@ -70,7 +67,7 @@ export default class WallStreetEnglish extends React.PureComponent<
               color="white"
               fontSize={3}
             >
-              <Box marginLeft={3}>{tran('leftWallStreet3')}</Box>
+              <Box p={1} marginLeft={3}>{tran('leftWallStreet3')}</Box>
             </Flex>
           </Flex>
 
@@ -85,7 +82,7 @@ export default class WallStreetEnglish extends React.PureComponent<
               color="white"
               fontSize={3}
             >
-              <Box marginLeft={3}>{tran('rightWallStreet3')}</Box>
+              <Box p={1} marginLeft={3}>{tran('rightWallStreet3')}</Box>
             </Flex>
           </Flex>
         </Flex>

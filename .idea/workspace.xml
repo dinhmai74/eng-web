@@ -2,46 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d13e700d-ba00-47fc-9324-1d60db022ffc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/asset/images/home/home-overview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/images/home/map-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/stories/CustomFlipNumber.story.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/general-course-screen/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/home-screen/components/ArchivedOverview/ArchivedOverview.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/home-screen/components/ArchivedOverview/components/CustomFlipNumber/Atoms.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/home-screen/components/ArchivedOverview/components/CustomFlipNumber/CustomFlipNumber.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/home-screen/components/ArchivedOverview/components/CustomFlipNumber/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/home-screen/components/ArchivedOverview/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/home-screen/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/why-chose-us/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/themes/metrics.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/aga-putra-125108-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/home/aga-putra-125108-unsplash.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/images/caleb-woods-219350-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/images/home/caleb-woods-219350-unsplash.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InformationForm/CustomInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InformationForm/CustomInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InformationForm/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InformationForm/Title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InformationForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InformationForm/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ResponsiveNav/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResponsiveNav/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stories/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stories/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ReasonCard/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ReasonCard/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/general-course-screen/GeneralCourse.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/general-course-screen/GeneralCourse.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/home-screen/components/Introduction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/home-screen/components/Introduction.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/home-screen/components/MainMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/home-screen/components/MainMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/home-screen/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/home-screen/HomeScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/test-screens/TestScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/test-screens/TestScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/home-screen/HomeScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/home-screen/HomeScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/why-chose-us/benefit/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/why-chose-us/benefit/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/why-chose-us/payment/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/why-chose-us/payment/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/why-chose-us/reason-chose-us-screen/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/why-chose-us/reason-chose-us-screen/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/why-chose-us/unique-method/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/why-chose-us/unique-method/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/why-chose-us/wall-street-english/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/why-chose-us/wall-street-english/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/localization/languages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/localization/languages/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/themes/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/themes/colors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/themes/images.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/themes/images.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/themes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/themes/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tools/strings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/strings.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,42 +27,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/containers/home-screen/components/ArchivedOverview/ArchivedOverview.tsx">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="476">
+              <caret line="40" column="63" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
               <folding>
-                <element signature="e#0#127#0" expanded="true" />
-                <element signature="e#275#401#0" expanded="true" />
+                <element signature="e#0#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/containers/general-course-screen/GeneralCourse.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="69" column="17" lean-forward="true" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/reason-chose-us-screen/index.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="522">
+              <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -99,61 +52,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx">
+        <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/payment/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="286">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/MainMenu.tsx">
+        <entry file="file://$PROJECT_DIR$/src/localization/languages/en.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-282">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="594">
+              <caret line="141" column="34" selection-start-line="141" selection-start-column="34" selection-end-line="141" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/home-screen/components/MainMenu.tsx">
+        <entry file="file://$PROJECT_DIR$/src/containers/home-screen/HomeScreen.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+            <state relative-caret-position="370">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding>
-                <element signature="e#86#152#0" expanded="true" />
+                <element signature="e#0#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ResponsiveNav/style.scss">
+        <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/wall-street-english/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tools/strings.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            <state relative-caret-position="616">
+              <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -186,11 +121,9 @@
         <option value="$PROJECT_DIR$/src/containers/home-screen/package.json" />
         <option value="$PROJECT_DIR$/src/themes/metrics.ts" />
         <option value="$PROJECT_DIR$/src/themes/index.ts" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/components/Footer/index.tsx" />
         <option value="$PROJECT_DIR$/src/containers/home-screen/components/ArchivedOverview/components/CustomFlipNumber/Atoms.tsx" />
         <option value="$PROJECT_DIR$/src/containers/home-screen/components/ArchivedOverview/components/CustomFlipNumber/CustomFlipNumber.tsx" />
-        <option value="$PROJECT_DIR$/src/containers/home-screen/HomeScreen.tsx" />
         <option value="$PROJECT_DIR$/src/themes/images.ts" />
         <option value="$PROJECT_DIR$/src/components/InformationForm/Title.tsx" />
         <option value="$PROJECT_DIR$/src/components/InformationForm/index.tsx" />
@@ -198,18 +131,25 @@
         <option value="$PROJECT_DIR$/src/components/ResponsiveNav/style.scss" />
         <option value="$PROJECT_DIR$/src/themes/colors.ts" />
         <option value="$PROJECT_DIR$/src/containers/general-course-screen/package.json" />
-        <option value="$PROJECT_DIR$/src/localization/languages/en.json" />
-        <option value="$PROJECT_DIR$/src/containers/general-course-screen/GeneralCourse.tsx" />
         <option value="$PROJECT_DIR$/src/containers/test-screens/TestScreen.tsx" />
         <option value="$PROJECT_DIR$/src/containers/why-chose-us/package.json" />
-        <option value="$PROJECT_DIR$/src/containers/why-chose-us/reason-chose-us-screen/index.tsx" />
         <option value="$PROJECT_DIR$/src/containers/index.ts" />
         <option value="$PROJECT_DIR$/src/App.tsx" />
-        <option value="$PROJECT_DIR$/src/tools/strings.ts" />
-        <option value="$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx" />
         <option value="$PROJECT_DIR$/src/containers/home-screen/components/MainMenu.tsx" />
         <option value="$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx" />
         <option value="$PROJECT_DIR$/src/containers/home-screen/components/ArchivedOverview/ArchivedOverview.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/why-chose-us/reason-chose-us-screen/index.tsx" />
+        <option value="$PROJECT_DIR$/src/components/ReasonCard/styles.css" />
+        <option value="$PROJECT_DIR$/src/containers/why-chose-us/unique-method/index.tsx" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/containers/why-chose-us/benefit/index.tsx" />
+        <option value="$PROJECT_DIR$/src/tools/strings.ts" />
+        <option value="$PROJECT_DIR$/src/containers/home-screen/HomeScreen.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/why-chose-us/wall-street-english/index.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/why-chose-us/payment/index.tsx" />
+        <option value="$PROJECT_DIR$/src/localization/languages/en.json" />
+        <option value="$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/general-course-screen/GeneralCourse.tsx" />
       </list>
     </option>
   </component>
@@ -273,14 +213,6 @@
             <path>
               <item name="eng-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="eng-web" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="asset" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eng-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eng-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -288,6 +220,13 @@
               <item name="eng-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eng-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eng-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="course-progress" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eng-web" type="b2602c69:ProjectViewProjectNode" />
@@ -295,6 +234,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="general-course-screen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eng-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eng-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="home-screen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eng-web" type="b2602c69:ProjectViewProjectNode" />
@@ -337,7 +283,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
@@ -474,7 +420,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38202000" />
+    <option name="totallyTimeSpent" value="40680000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -489,7 +435,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20648344" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20648344" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -522,7 +468,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24486572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20648344" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -559,52 +505,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Footer/Column" />
-    <entry file="file://$PROJECT_DIR$/src/localization/languages/vi.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.test.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Footer/Column.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Footer/TextLink.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@front10/landing-page-book/dist/components/ContactInfo/ContactInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="212" column="2" selection-start-line="212" selection-start-column="2" selection-end-line="212" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/course-progress/CourseProgressScreen.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2441">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -655,9 +559,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/home-screen/components/ArchivedOverview/components/CustomFlipNumber/test.tsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/home-screen/components/ArchivedOverview/components/CustomFlipNumber/test.tsx" />
     <entry file="file://$PROJECT_DIR$/src/components/stories/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="728">
@@ -724,13 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Footer/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
@@ -755,13 +650,6 @@
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/wall-street-english/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -791,16 +679,6 @@
           <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/home-screen/HomeScreen.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -839,23 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/localization/languages/en.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/general-course-screen/GeneralCourse.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="100" column="60" selection-start-line="100" selection-start-column="60" selection-end-line="100" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/test-screens/TestScreen.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -873,20 +734,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/reason-chose-us-screen/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -894,9 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-          <folding>
-            <element signature="e#86#152#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -904,23 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tools/strings.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -934,14 +768,14 @@
     <entry file="file://$PROJECT_DIR$/src/containers/home-screen/components/MainMenu.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
-          <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="69" column="17" lean-forward="true" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+        <state relative-caret-position="581">
+          <caret line="76" column="25" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -952,6 +786,122 @@
           <folding>
             <element signature="e#0#127#0" expanded="true" />
             <element signature="e#275#401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/course-progress/CourseProgressScreen.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ReasonCard/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/reason-chose-us-screen/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ReasonCard/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="74" column="32" lean-forward="true" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/unique-method/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/benefit/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/strings.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/wall-street-english/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/home-screen/HomeScreen.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/payment/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/localization/languages/en.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="141" column="34" selection-start-line="141" selection-start-column="34" selection-end-line="141" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="40" column="63" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/general-course-screen/GeneralCourse.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
