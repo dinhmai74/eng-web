@@ -17,7 +17,7 @@ export const images = {
   icon6: '/asset/images/why-choose-wse/UniqueMethod/icon-6.png',
   footer: '/asset/images/why-choose-wse/UniqueMethod/footer.png',
 
-  // wall street english
+  // Duckie english
   img1: '/asset/images/why-choose-wse/WallStreetEnglish/img-1.png',
   img2: '/asset/images/why-choose-wse/WallStreetEnglish/img-2.jpg',
   img3: '/asset/images/why-choose-wse/WallStreetEnglish/img-3.jpg',
