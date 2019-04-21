@@ -38,7 +38,7 @@ class Introduction extends Component<IProps, IState> {
             src={images.bgInstruction}
             rounded
             width="160"
-            alt="Front10 logo"
+            alt="duckie logo"
           />
           <Header textAlign="center" textColor="white">
             {tran('learnEnglishForBusyPeople')}

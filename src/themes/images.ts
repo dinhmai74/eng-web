@@ -17,7 +17,7 @@ export const images = {
   icon6: '/asset/images/why-choose-wse/UniqueMethod/icon-6.png',
   footer: '/asset/images/why-choose-wse/UniqueMethod/footer.png',
 
-  // wall street english
+  // Duckie english
   img1: '/asset/images/why-choose-wse/WallStreetEnglish/img-1.png',
   img2: '/asset/images/why-choose-wse/WallStreetEnglish/img-2.jpg',
   img3: '/asset/images/why-choose-wse/WallStreetEnglish/img-3.jpg',
@@ -42,6 +42,7 @@ export const images = {
   // home screen
   bgInstruction: '/asset/images/home/aga-putra-125108-unsplash.jpg',
   bgInstruction1: '/asset/images/home/caleb-woods-219350-unsplash.jpg',
+  logo: '/asset/images/logo.png',
   bgMap: '/asset/images/home/map-image.png',
 
   // general course

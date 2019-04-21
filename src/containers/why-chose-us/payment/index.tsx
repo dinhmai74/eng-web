@@ -1,8 +1,8 @@
 import { tran } from 'localization/i18n'
 import * as React from 'react'
-import { Box, Flex } from 'rebass'
+import { Box, Flex, Text } from 'rebass'
 import styled from 'styled-components'
-import { images } from 'themes'
+import { colors, images } from 'themes'
 
 import Block from 'components/Block/index'
 
@@ -93,16 +93,17 @@ export default class Payment extends React.PureComponent<IProps, any> {
           />
         </Flex>
 
-        <div
+        <Text
           style={{
-            fontSize: 24,
-            color: '#001B35',
-            marginLeft: 20,
-            marginRight: 20
+            fontSize: '1.5rem',
+            textAlign: 'center',
           }}
+          p={2}
+          color={colors.text}
+          lineHeight={2}
         >
           {tran('bonus')}
-        </div>
+        </Text>
       </Container>
     )
   }

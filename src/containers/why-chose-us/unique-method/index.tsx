@@ -20,7 +20,6 @@ export default class UniqueMethod extends React.Component<IProps, IState> {
   render() {
     return (
       <Container>
-        <h1>Our method has a number of outstanding features:</h1>
         <div className="grid-container">
           <Block
             image={images.icon1}

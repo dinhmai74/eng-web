@@ -132,7 +132,7 @@ export default class GeneralCourse extends React.Component<
               <div style={{ padding: '40px' }}>
                 <Title>IELTS Preparation</Title>
                 <TitleDescription>
-                  Học IELTS theo phương pháp Wall Street English giúp bạn thực
+                  Học IELTS theo phương pháp của chúng tôi giúp bạn thực
                   hiện đồng thời 2 mục tiêu:
                 </TitleDescription>
                 <TitleDescription>
