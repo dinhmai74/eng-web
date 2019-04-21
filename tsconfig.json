@@ -6,7 +6,8 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "allowJs": false,
+    "noImplicitAny": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -19,7 +20,18 @@
     "noEmit": true,
     "jsx": "preserve"
   },
+  "exclude": [
+    "src/semantic",
+    "node_modules"
+  ],
   "include": [
-    "src"
+    "src",
+    "public"
+  ],
+  "extends": "./paths.json",
+  "rootDirs": [
+    "src",
+    "stories",
+    "public"
   ]
 }

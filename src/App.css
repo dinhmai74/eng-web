@@ -1,3 +1,23 @@
+@font-face {
+  font-family: Baomoi;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/Baomoi_gdi.ttf"),
+    url("/assets/fonts/Baomoi-SemiBold_gdi.ttf");
+}
+
+* {
+    font-family: Baomoi, sans-serif;
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.app__background--transparent {
+  background: transparent;
+}
+
 .App {
   text-align: center;
 }
@@ -21,6 +41,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.app__text--white{
+  color: white;
 }
 
 @keyframes App-logo-spin {

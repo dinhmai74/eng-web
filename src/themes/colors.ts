@@ -1,0 +1,23 @@
+export const colors = {
+  footerColor: '#13283b',
+  gray: '#767676',
+  main: '#f03f37',
+  white: '#ffffff',
+  darkWhite: '#fafafa',
+  yellow: '#FFE128',
+  lightRed: '#ef2c3a',
+  lightBlue: '#003c78',
+  darkBLue: '#153359',
+  lightCyan: '#66c9dc',
+  darkCyan: '#009dba',
+  transparentOrange: '#fbc3a2',
+  salmon: '#f58b7d',
+  border: '#EBEBEB',
+  text: '#1f4160',
+  darkGrays: '#3f3f3f',
+  error: 'red',
+  bgSecondary: '#f8f9fa',
+  bgMain: '#ffffff',
+  bgHero: '#383d45',
+  black: 'black'
+}
