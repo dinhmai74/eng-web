@@ -8,9 +8,8 @@ import * as serviceWorker from './serviceWorker'
 
 // @ts-ignore
 ReactDOM.render(
-  <BrowserRouter>
     <App />
-  </BrowserRouter>,
+ ,
   document.getElementById('root'),
 )
 

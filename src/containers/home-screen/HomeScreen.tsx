@@ -6,17 +6,25 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Introduction from './components/Introduction'
 
+const StyledIntro = styled(Introduction)`
+ position: absolute;
+ z-index: 99;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ top: 0;
+`
+
 class HomeScreen extends Component {
   render() {
     return (
       <>
-        <ResponsiveNav />
-        <Introduction />
-        <WallStreetEnglish/>
-        <ArchivedOverview/>
-      </>
-    )
-  }
-}
+         <StyledIntro />
+         <WallStreetEnglish/>
+         <ArchivedOverview/>
+       </>
+     )
+   }
+ }
 
 export default HomeScreen

@@ -13,7 +13,6 @@ class TestScreen extends Component<IProps, IState> {
   render() {
     return (
       <div style={{padding: '20px'}}>
-        <ResponsiveNav chosenIndex={3} bgColor={colors.black} />
         <p>TestScreen</p>
       </div>
     )

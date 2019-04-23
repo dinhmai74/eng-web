@@ -9,11 +9,9 @@ import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
 import { colors } from 'themes'
 
-interface IProps {
-}
+interface IProps {}
 
-interface IState {
-}
+interface IState {}
 
 class WhyChoseUsScreen extends Component<IProps, IState> {
   static defaultProps = {}
@@ -22,28 +20,34 @@ class WhyChoseUsScreen extends Component<IProps, IState> {
   render() {
     return (
       <div>
-        <ResponsiveNav bgColor={colors.black} chosenIndex={1} />
-        <br/>
-        <br/>
-        <br/>
-        <Section title={tran('titleReasonChoseUs')} subTitle={tran('subReasonChoseUs')}>
-          <ReasonChoseUsScreen/>
+        <br />
+        <br />
+        <br />
+        <Section
+          title={tran('titleReasonChoseUs')}
+          subTitle={tran('subReasonChoseUs')}
+        >
+          <ReasonChoseUsScreen />
         </Section>
 
-        <Section bgColor={'light'} title={tran('titleUniqueMethod')} subTitle={tran('subUniqueMethod')}>
-          <UniqueMethod/>
+        <Section
+          bgColor={'light'}
+          title={tran('titleUniqueMethod')}
+          subTitle={tran('subUniqueMethod')}
+        >
+          <UniqueMethod />
         </Section>
 
-        <Section  title={tran('titleBenefit')} >
-          <Benefit/>
+        <Section title={tran('titleBenefit')}>
+          <Benefit />
         </Section>
 
-        <Section bgColor={'light'} title={tran('titleCertificate')} >
-          <Certificate/>
+        <Section bgColor={'light'} title={tran('titleCertificate')}>
+          <Certificate />
         </Section>
 
-        <Section title={tran('titlePayment')} >
-          <Payment/>
+        <Section title={tran('titlePayment')}>
+          <Payment />
         </Section>
       </div>
     )

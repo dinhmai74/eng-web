@@ -1,4 +1,6 @@
-import AnimatedNumber from 'animated-number-react'
+// import AnimatedNumber from 'animated-number-react'
+import AnimatedNumber from 'react-animated-number'
+
 import {
   Header,
   Hero,
