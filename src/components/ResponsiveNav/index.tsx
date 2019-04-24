@@ -1,16 +1,16 @@
 import 'App.css'
 import 'bootstrap'
-import { tran } from 'localization/i18n'
 import React from 'react'
-import {withRouter, RouteComponentProps} from 'react-router-dom'
-import { Nav, Navbar, NavDropdown, NavItem } from 'react-bootstrap'
+import { Link} from 'react-scroll'
+import { withRouter, RouteComponentProps } from 'react-router-dom'
+import { Nav} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
-import { Text } from 'rebass'
+import { images } from 'themes'
 import { strings } from 'tools'
 import './button.scss'
 import './style.scss'
-import { routes } from 'tools/routes'
 import styled from 'styled-components'
+import { IRoute } from 'tools/routes'
 
 const Background = styled.div`
   position: absolute;
@@ -23,6 +23,14 @@ const Background = styled.div`
 `
 
 interface IProps extends RouteComponentProps {
+  /*** @property {propTypes.array} routes - display route */
+  routes: IRoute[],
+  /*** @property {propTypes.string} home icon - icon home display */
+  homeIcon?: string,
+  /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
+  hiddenRoute?: string[],
+  /*** @property {propTypes.boolean} render One page - nav for one page or not */
+  renderOnePage?: boolean,
 }
 
 interface IState {
@@ -34,7 +42,12 @@ interface IState {
 
 class ResponsiveNav extends React.Component<IProps, IState> {
   static defaultProps = {
+    routes: [],
+    homeIcon: images.logo,
+    hiddenRoute: [],
+    renderOnePage: false
   }
+
   state = {
     isToggled: false,
     isTop: true,
@@ -47,7 +60,7 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     document.addEventListener('scroll', () => {
       const isTop = window.scrollY < 100
       if (isTop !== this.state.isTop) {
-        this.setState({ isTop })
+        this.setState({isTop})
       }
     })
 
@@ -79,11 +92,92 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     }))
   }
 
+  renderRouteContent = (r) => {
+    return (
+      <span className="menu__title">
+        <span className="menu__first-word" data-hover={r.first}>
+          {r.first}
+        </span>
+        <span className="menu__second-word" data-hover={r.second}>
+          {r.second}
+        </span>
+      </span>
+    )
+  }
+
+  renderNormalNav = (routes) => {
+    return routes.map((r) => {
+      const routeContent = this.renderRouteContent(r)
+      return (
+        <li className={`menu__item`}>
+          <Nav.Link
+            key={r.path}
+            as={NavLink}
+            activeClassName="menu__item--main"
+            exact
+            to={r.path}
+            className="menu__link"
+          >
+            {routeContent}
+          </Nav.Link>
+        </li>
+      )
+    })
+  }
+
+  renderOnePageNav = (routes) => {
+    return routes.map((r) => {
+      const routeContent = this.renderRouteContent(r)
+      return (
+        <li className={`menu__item`}>
+          <Link
+            key={r.path}
+            activeClass="menu__item--main"
+            exact
+            to={r.path}
+            className="menu__link"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={300}
+          >
+            {routeContent}
+          </Link>
+        </li>
+      )
+    })
+  }
+
+  renderListRouteItems = () => {
+    const {routes, renderOnePage} = this.props
+    if (renderOnePage) {
+      return this.renderOnePageNav(routes)
+    }
+    return this.renderNormalNav(routes)
+  }
+
   render() {
     const {isToggled, isTop, bg, path} = this.state
+    const {routes, homeIcon, hiddenRoute} = this.props
+    if (hiddenRoute && hiddenRoute.includes(path)) {
+      return null
+    }
+
+    const listItems = this.renderListRouteItems()
+
     return (
-      <nav className="navigation navbar navbar-expand-lg fixed-top " >
-        {(!isTop || path !== '/') && <Background/>}
+      <nav className="navigation navbar navbar-expand-lg fixed-top ">
+        {(!isTop || path !== '/' || isToggled) && <Background/>}
+        <Nav.Link
+          key={strings.routeHome}
+          as={NavLink}
+          style={{marginLeft: 50}}
+          exact
+          to={strings.routeHome} className="navbar-brand"
+        >
+          <img src={homeIcon} width="30" height="30" alt=""/>
+        </Nav.Link>
+
         <button
           className={`navbar-toggler e-button ${isToggled && 'open'}`}
           onClick={this.handleToggleButtonPress}
@@ -103,28 +197,7 @@ class ResponsiveNav extends React.Component<IProps, IState> {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav menu">
-            {
-              routes.map((r) => (
-                <li className={`menu__item 'menu__item--main'} `}>
-                  <Nav.Link
-                    key={r.path}
-                    as={NavLink}
-                    activeClassName="menu__item--main"
-                    exact
-                    to={r.path} className="menu__link"
-                  >
-                    <span className="menu__title">
-                  <span className="menu__first-word" data-hover={r.first}>
-                    {r.first}
-                  </span>
-                  <span className="menu__second-word" data-hover={r.second}>
-                    {r.second}
-                  </span>
-                </span>
-                  </Nav.Link>
-                </li>
-              ))
-            }
+            {listItems}
           </ul>
         </div>
       </nav>

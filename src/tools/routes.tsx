@@ -8,12 +8,25 @@ import {
 import { tran } from 'localization/i18n'
 import { strings } from './strings'
 
-export const routes = [
+export interface IRoute {
+ path: string,
+ first: string,
+ second: string,
+ Component?: any
+}
+
+export const routes: IRoute[] = [
   {
     path: strings.routeHome,
     first: tran('home'),
     second: tran('page'),
     Component: HomeScreen
+  },
+  {
+    path: strings.routeWhyChoseUs,
+    first: tran('chose'),
+    second: tran('us'),
+    Component: WhyChoseUs
   },
   {
     path: strings.routeFindCourse,
@@ -22,24 +35,15 @@ export const routes = [
     Component: FindCourseScreen
   },
   {
-    path: strings.routeWhyChoseUs,
-    first: tran('chose'),
-    second: tran('us'),
-    name: 'chose us',
-    Component: WhyChoseUs
-  },
-  {
     path: strings.routeTest,
     first: tran('free'),
     second: tran('tests'),
-    name: 'test',
     Component: TestScreen
   },
   {
     path: strings.routeGeneralCourse,
     first: tran('general'),
     second: tran('course'),
-    name: 'general course',
     Component: GeneralCourse
   }
 ]

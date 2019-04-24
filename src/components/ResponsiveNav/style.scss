@@ -46,6 +46,9 @@ a {
   display: inline-block;
   white-space: nowrap;
   margin: 10px;
+  :hover{
+    cursor: pointer;
+  }
 
   // @media screen and (max-width: $small) {
   //   @include hide-menu-items(2);

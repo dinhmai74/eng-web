@@ -10,11 +10,16 @@ import styled from 'styled-components'
 import { images } from 'themes'
 
 const Container = styled.div`
-  margin: auto;
+  margin: auto ;
+  max-width: 930px;
 `
 
 const StyledText = styled('span')`
   margin-right: 5px;
+`
+
+const StyledHeader = styled(Header)`
+ font-size: 3em;
 `
 
 interface IProps {}
@@ -32,17 +37,13 @@ class Introduction extends Component<IProps, IState> {
         image={images.bgInstruction1}
         particles={false}
         minHeight="100vh"
+        headerMargin={'5'}
+        headerPadding={'5'}
       >
         <Container>
-          <Image
-            src={images.bgInstruction}
-            rounded
-            width="160"
-            alt="duckie logo"
-          />
-          <Header textAlign="center" textColor="white">
+          <StyledHeader textAlign="center" textColor="white">
             {tran('learnEnglishForBusyPeople')}
-          </Header>
+          </StyledHeader>
           <div className="mt-5">
             <Button animated secondary >
               <Button.Content visible>{tran('explore')}</Button.Content>
