@@ -98,7 +98,6 @@ export default class GeneralCourse extends React.Component<
   render() {
     return (
       <Container>
-        <ResponsiveNav bgColor={colors.black} chosenIndex={2}/>
         <br/>
         <br/>
         <Wrapper>

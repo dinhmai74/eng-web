@@ -1,29 +1,89 @@
 import 'App.css'
 import 'bootstrap'
-import { tran } from 'localization/i18n'
 import React from 'react'
-import { Nav, Navbar, NavDropdown, NavItem } from 'react-bootstrap'
-import { Text } from 'rebass'
+import { Link} from 'react-scroll'
+import { withRouter, RouteComponentProps } from 'react-router-dom'
+import { Nav} from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
+import { images } from 'themes'
 import { strings } from 'tools'
 import './button.scss'
 import './style.scss'
+import styled from 'styled-components'
+import { IRoute } from 'tools/routes'
 
-interface IProps {
-  chosenIndex: number
-  bgColor: string
+const Background = styled.div`
+  position: absolute;
+  z-index: -999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+`
+
+interface IProps extends RouteComponentProps {
+  /*** @property {propTypes.array} routes - display route */
+  routes: IRoute[],
+  /*** @property {propTypes.string} home icon - icon home display */
+  homeIcon?: string,
+  /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
+  hiddenRoute?: string[],
+  /*** @property {propTypes.boolean} render One page - nav for one page or not */
+  renderOnePage?: boolean,
 }
 
 interface IState {
-  isToggled: boolean
+  isToggled: boolean,
+  isTop: boolean,
+  bg: string,
+  path: string
 }
 
 class ResponsiveNav extends React.Component<IProps, IState> {
   static defaultProps = {
-    chosenIndex: 0,
-    bgColor: 'transparent'
+    routes: [],
+    homeIcon: images.logo,
+    hiddenRoute: [],
+    renderOnePage: false
   }
+
   state = {
-    isToggled: false
+    isToggled: false,
+    isTop: true,
+    bg: 'black',
+    path: '/'
+  }
+  unlisten: any
+
+  componentDidMount() {
+    document.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 100
+      if (isTop !== this.state.isTop) {
+        this.setState({isTop})
+      }
+    })
+
+    this.setBg()
+  }
+
+  componentWillMount(): void {
+    this.unlisten = this.props.history.listen((location, action) => {
+      this.setState({
+        path: location.pathname
+      })
+    })
+  }
+
+  componentWillUnmount() {
+    this.unlisten()
+  }
+
+  setBg = () => {
+    const {pathname} = this.props.location
+    this.setState({
+      path: pathname
+    })
   }
 
   handleToggleButtonPress = (event: React.MouseEvent<HTMLElement>) => {
@@ -32,11 +92,92 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     }))
   }
 
-  render() {
-    const { isToggled} = this.state
-    const { chosenIndex , bgColor} = this.props
+  renderRouteContent = (r) => {
     return (
-      <nav className="navigation navbar navbar-expand-lg" style={{backgroundColor: bgColor}}>
+      <span className="menu__title">
+        <span className="menu__first-word" data-hover={r.first}>
+          {r.first}
+        </span>
+        <span className="menu__second-word" data-hover={r.second}>
+          {r.second}
+        </span>
+      </span>
+    )
+  }
+
+  renderNormalNav = (routes) => {
+    return routes.map((r) => {
+      const routeContent = this.renderRouteContent(r)
+      return (
+        <li className={`menu__item`}>
+          <Nav.Link
+            key={r.path}
+            as={NavLink}
+            activeClassName="menu__item--main"
+            exact
+            to={r.path}
+            className="menu__link"
+          >
+            {routeContent}
+          </Nav.Link>
+        </li>
+      )
+    })
+  }
+
+  renderOnePageNav = (routes) => {
+    return routes.map((r) => {
+      const routeContent = this.renderRouteContent(r)
+      return (
+        <li className={`menu__item`}>
+          <Link
+            key={r.path}
+            activeClass="menu__item--main"
+            exact
+            to={r.path}
+            className="menu__link"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={300}
+          >
+            {routeContent}
+          </Link>
+        </li>
+      )
+    })
+  }
+
+  renderListRouteItems = () => {
+    const {routes, renderOnePage} = this.props
+    if (renderOnePage) {
+      return this.renderOnePageNav(routes)
+    }
+    return this.renderNormalNav(routes)
+  }
+
+  render() {
+    const {isToggled, isTop, bg, path} = this.state
+    const {routes, homeIcon, hiddenRoute} = this.props
+    if (hiddenRoute && hiddenRoute.includes(path)) {
+      return null
+    }
+
+    const listItems = this.renderListRouteItems()
+
+    return (
+      <nav className="navigation navbar navbar-expand-lg fixed-top ">
+        {(!isTop || path !== '/' || isToggled) && <Background/>}
+        <Nav.Link
+          key={strings.routeHome}
+          as={NavLink}
+          style={{marginLeft: 50}}
+          exact
+          to={strings.routeHome} className="navbar-brand"
+        >
+          <img src={homeIcon} width="30" height="30" alt=""/>
+        </Nav.Link>
+
         <button
           className={`navbar-toggler e-button ${isToggled && 'open'}`}
           onClick={this.handleToggleButtonPress}
@@ -48,75 +189,15 @@ class ResponsiveNav extends React.Component<IProps, IState> {
           aria-label="Toggle navigation"
         >
           <div className="e-burger">
-            <span />
-            <span />
-            <span />
-            <span />
+            <span/>
+            <span/>
+            <span/>
+            <span/>
           </div>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav menu">
-            <li className={`menu__item ${0 === chosenIndex && 'menu__item--main'} nav-item`}>
-              <a href={strings.routeHome} className="menu__link">
-                <span className="menu__title">
-                  <span className="menu__first-word" data-hover="Home">
-                    Home
-                  </span>
-                  <span className="menu__second-word" data-hover="Page">
-                    Page
-                  </span>
-                </span>
-              </a>
-            </li>
-
-            <li className={`menu__item ${1 === chosenIndex && 'menu__item--main'} nav-item`}>
-              <a href={strings.routeWhyChoseUs} className="menu__link">
-                <span className="menu__title">
-                  <span className="menu__first-word" data-hover={tran('about')}>
-                    {tran('about')}
-                  </span>
-                  <span
-                    className="menu__second-word"
-                    data-hover={tran('us')}
-                  >
-                    {tran('us')}
-                  </span>
-                </span>
-              </a>
-            </li>
-
-            {/* find course */}
-            <li className={`menu__item ${2 === chosenIndex && 'menu__item--main'} nav-item`}>
-              <a href={strings.routeGeneralCourse} className="menu__link">
-                <span className="menu__title">
-                  <span className="menu__first-word" data-hover={tran('general')}>
-                    {tran('general')}
-                  </span>
-                  <span
-                    className="menu__second-word"
-                    data-hover={tran('course')}
-                  >
-                    {tran('course')}
-                  </span>
-                </span>
-              </a>
-            </li>
-
-            <li className={`menu__item ${3 === chosenIndex && 'menu__item--main'} nav-item`}>
-              <a href={strings.routeTest} className="menu__link">
-                <span className="menu__title">
-                  <span className="menu__first-word" data-hover={tran('free')}>
-                    {tran('free')}
-                  </span>
-                  <span
-                    className="menu__second-word"
-                    data-hover={tran('tests')}
-                  >
-                    {tran('tests')}
-                  </span>
-                </span>
-              </a>
-            </li>
+            {listItems}
           </ul>
         </div>
       </nav>
@@ -124,4 +205,4 @@ class ResponsiveNav extends React.Component<IProps, IState> {
   }
 }
 
-export default ResponsiveNav
+export default withRouter(ResponsiveNav)

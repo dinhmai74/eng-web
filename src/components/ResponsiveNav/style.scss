@@ -27,7 +27,6 @@ a {
 .navigation {
   font-size: 22px;
   background: "transparent";
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -47,6 +46,9 @@ a {
   display: inline-block;
   white-space: nowrap;
   margin: 10px;
+  :hover{
+    cursor: pointer;
+  }
 
   // @media screen and (max-width: $small) {
   //   @include hide-menu-items(2);

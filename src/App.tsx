@@ -3,40 +3,53 @@ import '@front10/landing-page-book/dist/themes/default/index.scss'
 
 import 'App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Footer, InformationForm } from 'components'
+import { Footer, InformationForm, ResponsiveNav } from 'components'
 import 'font-awesome/css/font-awesome.min.css'
 import React, { Component } from 'react'
-import { Route } from 'react-router-dom'
-import { strings } from 'tools'
 import {
-  FindCourseScreen,
-  HomeScreen,
-  WhyChoseUs,
-  TestScreen,
-  GeneralCourse
-} from './containers'
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom'
+import { strings, RouterHandler } from 'tools'
 import './semantic/dist/semantic.min.css'
+import { routes } from 'tools/routes'
+import { CSSTransition } from 'react-transition-group'
+
+const ScrollToTop = () => {
+  window.scrollTo(0, 0)
+  return null
+}
 
 class App extends Component {
   render() {
     return (
-      <Route>
-          <Route exact path={strings.routeHome} component={HomeScreen} />
-          <Route
-            exact
-            path={strings.routeWhyChoseUs}
-            component={WhyChoseUs}
-          />
-          <Route exact path={strings.routeTest} component={TestScreen} />
-          <Route
-            exact
-            path={strings.routeGeneralCourse}
-            component={GeneralCourse}
-          />
+      <Router>
+        <>
+          <Route component={ScrollToTop}/>
+          <ResponsiveNav routes={routes} hiddenRoute={[strings.routeWhyChoseUs]}/>
+          <div>
+            {routes.map(({path, Component: Comp}) => (
+              <Route key={path} exact path={path}>
+                {({match}) => (
+                  <CSSTransition
+                    in={match != null}
+                    timeout={300}
+                    classNames="page"
+                    unmountOnExit
+                  >
+                    <div className="page">
+                      <Comp/>
+                    </div>
+                  </CSSTransition>
+                )}
+              </Route>
+            ))}
 
+          </div>
           <InformationForm/>
-          <Footer />
-      </Route>
+          <Footer/>
+        </>
+      </Router>
     )
   }
 }

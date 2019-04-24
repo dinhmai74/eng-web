@@ -117,6 +117,7 @@
   "titleDescriptionCircle2": "Conquer the dream success “Speak English confidently”",
   "forwardLink": " Looking for more information",
   "about": "Chose",
+  "chose": "Chose",
   "us": "Us",
   "infoFullName": "Your name*",
   "infoContact": "Your email*",
@@ -139,5 +140,14 @@
   "titleBenefit": "Benefit",
   "subBenefit": "At Duckie English we always strive to improve our service and create new tools to help students speak English more confidently and reach their goals more quickly. Duckie English students have a number of highly valuable privileges:\n",
   "titlePayment": "Payment",
-  "titleCertificate": "Certificate"
+  "titleCertificate": "Certificate",
+  "reason": "Reason",
+  "unique": "Unique",
+  "method": "Method",
+  "your": "Your",
+  "benefit": "Benefit",
+  "ours": "Ours",
+  "certificate": "Certificate",
+  "payment": "Payment",
+  "methods": "Methods"
 }
