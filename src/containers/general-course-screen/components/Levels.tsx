@@ -49,16 +49,15 @@ class Levels extends Component<any, any> {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'center',
-            // backgroundColor: 'red',
             flexWrap: 'wrap'
           }}
         >
-          <Chart name={'SURVIVAL'} color="#fbc3a2" number={10} />
-          <Chart name={'WAYSTAGE'} color="#f58b7d" />
-          <Chart name={'UPPER WAYSTAGE'} color="#ef2c3a" />
-          <Chart name={'THRESHOLD'} color="#66c9dc" />
-          <Chart name={'MILESTONE'} color="#009dba" />
-          <Chart name={'MASTERY'} color="#153359" />
+          <Chart name={'SURVIVAL'} />
+          <Chart name={'WAYSTAGE'} />
+          <Chart name={'UPPER WAYSTAGE'} />
+          <Chart name={'THRESHOLD'} />
+          <Chart name={'MILESTONE'} />
+          <Chart name={'MASTERY'} />
         </div>
       </Courses>
     )

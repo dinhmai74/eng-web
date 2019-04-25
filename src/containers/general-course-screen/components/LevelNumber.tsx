@@ -20,7 +20,7 @@ const NumberLevel = styled.div`
 const TextChart = styled.span`
   position: absolute;
   margin-top: -20px;
-  margin-left: 1.5px;
+  margin-left: 3px;
   color: black;
 `
 
