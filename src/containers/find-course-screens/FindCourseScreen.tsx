@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   padding-top: 40px;
 `
 const LogoImage = styled.img`
-    width: 25%;
+  width: 25%;
 `
 const Content = styled.p`
   font-size: 20px;
@@ -31,9 +31,9 @@ class FindCourseScreen extends Component<IProps, IState> {
       <div
         style={{
           backgroundImage: `url(${images.bgFindCourse})`,
-          height: '600px',
+          height: '100%',
           backgroundSize: 'cover',
-          flex: '1'
+          paddingBottom: '40px'
         }}
       >
         <Wrapper>
