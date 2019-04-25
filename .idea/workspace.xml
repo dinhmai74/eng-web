@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d13e700d-ba00-47fc-9324-1d60db022ffc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stories/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stories/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreen.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/general-step/GeneralStep.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/general-step/GeneralStep.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/themes/metrics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/themes/metrics.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+            <state relative-caret-position="504">
+              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -38,11 +31,29 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/general-step/GeneralStep.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/atoms.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/Stepper/Stepper.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="70" column="33" lean-forward="true" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+            <state relative-caret-position="1245">
+              <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -53,11 +64,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="533">
               <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
               <folding>
                 <element signature="e#86#152#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/themes/metrics.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -75,7 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/ReasonCard/styles.css" />
         <option value="$PROJECT_DIR$/src/containers/why-chose-us/unique-method/index.tsx" />
         <option value="$PROJECT_DIR$/src/containers/why-chose-us/benefit/index.tsx" />
         <option value="$PROJECT_DIR$/src/containers/why-chose-us/wall-street-english/index.tsx" />
@@ -108,7 +127,6 @@
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/package.json" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/general-step/package.json" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/career-step/package.json" />
-        <option value="$PROJECT_DIR$/src/themes/metrics.ts" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/MultiStep.tsx" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/MultiStep.css" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/MultiStep.js" />
@@ -118,14 +136,16 @@
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/Steper/package.json" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/career-step/CareerStep.tsx" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/FeelingStep.tsx" />
-        <option value="$PROJECT_DIR$/src/containers/find-course-screens/general-step/GeneralStep.tsx" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/Steper/Stepper.tsx" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/Steper/Stepper.css" />
         <option value="$PROJECT_DIR$/src/components/stories/step.story.js" />
         <option value="$PROJECT_DIR$/src/components/stories/index.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/Stepper/Stepper.tsx" />
+        <option value="$PROJECT_DIR$/src/themes/metrics.ts" />
+        <option value="$PROJECT_DIR$/src/containers/find-course-screens/atoms.tsx" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/find-course-screens/general-step/GeneralStep.tsx" />
       </list>
     </option>
   </component>
@@ -435,12 +455,12 @@
       <workItem from="1556092749523" duration="4309000" />
       <workItem from="1556161183889" duration="4398000" />
       <workItem from="1556166212326" duration="2566000" />
-      <workItem from="1556175495066" duration="2410000" />
+      <workItem from="1556175495066" duration="4222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66764000" />
+    <option name="totallyTimeSpent" value="68576000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -525,13 +545,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/themes/images.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -699,13 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/themes/metrics.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-multistep/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3566" />
@@ -775,13 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/general-step/GeneralStep.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -886,9 +885,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/themes/metrics.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="533">
           <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
           <folding>
             <element signature="e#86#152#0" expanded="true" />
@@ -898,21 +904,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/Stepper/Stepper.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="70" column="33" lean-forward="true" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+        <state relative-caret-position="1245">
+          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/atoms.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+        <state relative-caret-position="504">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/general-step/GeneralStep.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
     </entry>
