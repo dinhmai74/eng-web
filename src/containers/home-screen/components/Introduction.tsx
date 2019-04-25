@@ -22,7 +22,9 @@ const StyledHeader = styled(Header)`
  font-size: 3em;
 `
 
-interface IProps {}
+interface IProps {
+  style?: any
+}
 interface IState {}
 
 class Introduction extends Component<IProps, IState> {
@@ -35,6 +37,7 @@ class Introduction extends Component<IProps, IState> {
         opacity={0.7}
         overlayColor={'black'}
         image={images.bgInstruction1}
+        style={this.props.style}
         particles={false}
         minHeight="100vh"
         headerMargin={'5'}
@@ -44,7 +47,7 @@ class Introduction extends Component<IProps, IState> {
           <StyledHeader textAlign="center" textColor="white">
             {tran('learnEnglishForBusyPeople')}
           </StyledHeader>
-          <div className="mt-5">
+          <div className="mt-5" style={{zIndex: -9}}>
             <Button animated secondary >
               <Button.Content visible>{tran('explore')}</Button.Content>
               <Button.Content hidden>

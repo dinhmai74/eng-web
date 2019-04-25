@@ -51,7 +51,6 @@ class FindCourseScreen extends Component<IProps, IState> {
   render() {
     return (
       <Container>
-        <NavMargin />
         <Stepper initialSteps={Object.keys(steps)}>
           {({ stepKey, goNext, goToKey }) => {
             return this.renderComponent(stepKey, goNext, goToKey)
