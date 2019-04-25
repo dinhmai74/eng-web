@@ -6,17 +6,14 @@ import GeneralStep from 'containers/find-course-screens/general-step'
 import Steps, { Step } from 'rc-steps'
 import 'rc-steps/assets/index.css'
 import 'rc-steps/assets/iconfont.css'
-import { Button } from 'semantic-ui-react'
 import Stepper, { ISteps } from './Stepper'
-import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
-import styled from 'styled-components'
 
-interface IProps {
-}
+import { Container } from './atoms'
 
-interface IState {
-}
+interface IProps {}
+
+interface IState {}
 
 const steps: ISteps = {
   general: GeneralStep,
@@ -24,7 +21,7 @@ const steps: ISteps = {
   feeling: FeelingStep
 }
 
-const StepField = ({stepKey, ...rest}) => {
+const StepField = ({ stepKey, ...rest }) => {
   const StepComponent = steps[stepKey]
 
   return <StepComponent stepKey={stepKey} {...rest} />
@@ -34,41 +31,33 @@ class FindCourseScreen extends Component<IProps, IState> {
   static defaultProps: {}
   state = {}
 
-  renderComponent = (stepKey,
-                     goNext,
-                     goToKey
-  ) => {
+  renderComponent = (stepKey, goNext, goToKey) => {
     const keys = Object.keys(steps)
     const index = _.indexOf(keys, stepKey)
 
     return (
-      <React.Fragment>
-        <StepField
-          stepKey={stepKey}
-          goNext={goNext}
-        />
+      <React.Fragment >
+        <StepField stepKey={stepKey} goNext={goNext} style={{marginBottom: 30, minHeight: '75vh'}} />
 
         <Steps labelPlacement="vertical" current={index}>
-          {
-            _.map(steps, (val, key) => <Step key={key} onClick={() => goToKey(key)}/>)
-          }
+          {_.map(steps, (val, key) => (
+            <Step key={key} onClick={() => goToKey(key)} />
+          ))}
         </Steps>
-      </React.Fragment>
+      </React.Fragment >
     )
   }
 
   render() {
     return (
-      <div>
-        <NavMargin/>
+      <Container>
+        <NavMargin />
         <Stepper initialSteps={Object.keys(steps)}>
-          {
-            ({stepKey, goNext, goToKey}) => {
-              return this.renderComponent(stepKey, goNext, goToKey)
-            }
-          }
+          {({ stepKey, goNext, goToKey }) => {
+            return this.renderComponent(stepKey, goNext, goToKey)
+          }}
         </Stepper>
-      </div>
+      </Container>
     )
   }
 }
