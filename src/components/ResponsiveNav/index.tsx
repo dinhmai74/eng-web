@@ -1,6 +1,7 @@
 import 'App.css'
 import 'bootstrap'
 import React from 'react'
+import Headroom from 'react-headroom'
 import { Link} from 'react-scroll'
 import { withRouter, RouteComponentProps } from 'react-router-dom'
 import { Nav} from 'react-bootstrap'
@@ -166,7 +167,8 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     const listItems = this.renderListRouteItems()
 
     return (
-      <nav className="navigation navbar navbar-expand-lg fixed-top ">
+      <Headroom style={{ background: 'transparent', zIndex: 9999 }}>
+      <nav className="navigation navbar navbar-expand-lg">
         {(!isTop || path !== '/' || isToggled) && <Background/>}
         <Nav.Link
           key={strings.routeHome}
@@ -201,6 +203,7 @@ class ResponsiveNav extends React.Component<IProps, IState> {
           </ul>
         </div>
       </nav>
+      </Headroom>
     )
   }
 }
