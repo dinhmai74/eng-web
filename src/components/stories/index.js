@@ -28,7 +28,7 @@ import "./payment.story";
 import "./benefit.story";
 import "./certificate.story";
 import "./CustomFlipNumber.story"
-
+import "./GeneralCourse.story"
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
 ));
