@@ -1,3 +1,3 @@
 export const metrics = {
-  navSize: '50px'
+  navSize: '15vh'
 }
