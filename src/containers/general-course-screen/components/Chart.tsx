@@ -9,153 +9,175 @@ interface IState {}
 
 const Container = styled.div`
   display: flex;
-  justify-content: center;
+  padding-top: 130px;
 `
 const TableChart = styled.div`
-  border: 0;
-  margin-left: 100px;
-  margin-right: 100px;
   border-collapse: separate;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 `
+
 const Th = styled.th`
   padding-left: 40px;
   padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
+
 const TBody = styled.tbody`
   text-align: center;
 `
 const Td = styled.td`
   border: 1px solid #ddd;
-  width: 200px;
+  width: 150px;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
-class Chart extends Component<IProps, IState> {
-  static defaultProps: {}
+const Col = styled.div``
+class Chart extends Component<any, any> {
+  // static defaultProps: {}
   state = {}
-
+  constructor(props: any) {
+    super(props)
+  }
   render() {
-    return (
-      <Container>
-        <div>
+    const { style, color, name, ...rest } = this.props
+    if (name === 'SURVIVAL') {
+      return (
+        <Container style={style}>
           <TableChart>
             <thead>
               <tr>
                 <Th>
-                  <div>
-                    <LevelNumber number={1} />
-                    <LevelNumber number={2} />
-                  </div>
-                </Th>
-                <Th>
-                  <div>
-                    <LevelNumber
-                      number={3}
-                      style={{ backgroundColor: colors.salmon }}
-                    />
-                    <LevelNumber
-                      number={4}
-                      style={{ backgroundColor: colors.salmon }}
-                    />
-                    <LevelNumber
-                      number={5}
-                      style={{ backgroundColor: colors.salmon }}
-                    />
-                  </div>
-                </Th>
-                <Th>
-                  <div>
-                    <LevelNumber
-                      number={6}
-                      style={{ backgroundColor: colors.lightRed }}
-                    />
-                    <LevelNumber
-                      number={7}
-                      style={{ backgroundColor: colors.lightRed }}
-                    />
-                    <LevelNumber
-                      number={8}
-                      style={{ backgroundColor: colors.lightRed }}
-                    />
-                    <LevelNumber
-                      number={9}
-                      style={{ backgroundColor: colors.lightRed }}
-                    />
-                  </div>
-                </Th>
-                <Th>
-                  <div>
-                    <LevelNumber
-                      number={10}
-                      style={{ backgroundColor: colors.lightCyan }}
-                    />
-                    <LevelNumber
-                      number={11}
-                      style={{ backgroundColor: colors.lightCyan }}
-                    />
-                    <LevelNumber
-                      number={12}
-                      style={{ backgroundColor: colors.lightCyan }}
-                    />
-                    <LevelNumber
-                      number={13}
-                      style={{ backgroundColor: colors.lightCyan }}
-                    />
-                  </div>
-                </Th>
-                <Th>
-                  <div>
-                    <LevelNumber
-                      number={14}
-                      style={{ backgroundColor: colors.darkCyan }}
-                    />
-                    <LevelNumber
-                      number={15}
-                      style={{ backgroundColor: colors.darkCyan }}
-                    />
-                    <LevelNumber
-                      number={16}
-                      style={{ backgroundColor: colors.darkCyan }}
-                    />
-                    <LevelNumber
-                      number={17}
-                      style={{ backgroundColor: colors.darkCyan }}
-                    />
-                  </div>
-                </Th>
-                <Th>
-                  <div>
-                    <LevelNumber
-                      number={18}
-                      style={{ backgroundColor: colors.darkBLue }}
-                    />
-                    <LevelNumber
-                      number={19}
-                      style={{ backgroundColor: colors.darkBLue }}
-                    />
-                    <LevelNumber
-                      number={20}
-                      style={{ backgroundColor: colors.darkBLue }}
-                    />
-                  </div>
+                  <Col>
+                    <LevelNumber number={1} color={colors.transparentOrange} />
+                    <LevelNumber number={2} color={colors.transparentOrange} />
+                  </Col>
                 </Th>
               </tr>
             </thead>
             <TBody>
-              <Td>SURVIVAL</Td>
-              <Td>WAYSTAGE</Td>
-              <Td>UPPER WAYSTAGE </Td>
-              <Td>THRESHOLD</Td>
-              <Td>MILESTONE</Td>
-              <Td>MASTERY</Td>
+              <Td>{this.props.name}</Td>
             </TBody>
           </TableChart>
-        </div>
+        </Container>
+      )
+    } else if (name === 'WAYSTAGE') {
+      return (
+        <Container style={style}>
+          <TableChart>
+            <thead>
+              <tr>
+                <Th>
+                  <Col>
+                    <LevelNumber number={3} color={colors.salmon} />
+                    <LevelNumber number={4} color={colors.salmon} />
+                    <LevelNumber number={5} color={colors.salmon} />
+                  </Col>
+                </Th>
+              </tr>
+            </thead>
+            <TBody>
+              <Td>{this.props.name}</Td>
+            </TBody>
+          </TableChart>
+        </Container>
+      )
+    } else if (name === 'UPPER WAYSTAGE') {
+      return (
+        <Container style={style}>
+          <TableChart>
+            <thead>
+              <tr>
+                <Th>
+                  <Col>
+                    <LevelNumber number={6} color={colors.lightRed} />
+                    <LevelNumber number={7} color={colors.lightRed} />
+                    <LevelNumber number={8} color={colors.lightRed} />
+                    <LevelNumber number={9} color={colors.lightRed} />
+                  </Col>
+                </Th>
+              </tr>
+            </thead>
+            <TBody>
+              <Td>{this.props.name}</Td>
+            </TBody>
+          </TableChart>
+        </Container>
+      )
+    } else if (name === 'THRESHOLD') {
+      return (
+        <Container style={style}>
+          <TableChart>
+            <thead>
+              <tr>
+                <Th>
+                  <Col>
+                    <LevelNumber number={10} color={colors.lightCyan} />
+                    <LevelNumber number={11} color={colors.lightCyan} />
+                    <LevelNumber number={12} color={colors.lightCyan} />
+                    <LevelNumber number={13} color={colors.lightCyan} />
+                  </Col>
+                </Th>
+              </tr>
+            </thead>
+            <TBody>
+              <Td>{this.props.name}</Td>
+            </TBody>
+          </TableChart>
+        </Container>
+      )
+    } else if (name === 'MILESTONE') {
+      return (
+        <Container style={style}>
+          <TableChart>
+            <thead>
+              <tr>
+                <Th>
+                  <Col>
+                    <LevelNumber number={14} color={colors.darkCyan} />
+                    <LevelNumber number={15} color={colors.darkCyan} />
+                    <LevelNumber number={16} color={colors.darkCyan} />
+                    <LevelNumber number={17} color={colors.darkCyan} />
+                  </Col>
+                </Th>
+              </tr>
+            </thead>
+            <TBody>
+              <Td>{this.props.name}</Td>
+            </TBody>
+          </TableChart>
+        </Container>
+      )
+    }
+    return (
+      <Container style={style}>
+        <TableChart>
+          <thead>
+            <tr>
+              <Th>
+                <Col>
+                  <LevelNumber number={18} color={colors.darkBLue} />
+                  <LevelNumber number={19} color={colors.darkBLue} />
+                  <LevelNumber number={20} color={colors.darkBLue} />
+                </Col>
+              </Th>
+            </tr>
+          </thead>
+          <TBody>
+            <Td>{this.props.name}</Td>
+          </TBody>
+        </TableChart>
       </Container>
     )
   }
 }
 
-Chart.defaultProps = {}
+// Chart.defaultProps = {}
 
 export default Chart
