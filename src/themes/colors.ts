@@ -19,5 +19,6 @@ export const colors = {
   bgSecondary: '#f8f9fa',
   bgMain: '#ffffff',
   bgHero: '#383d45',
-  black: 'black'
+  black: 'black',
+  gainsBoro: '#DCDCDC'
 }

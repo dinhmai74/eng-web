@@ -150,5 +150,10 @@
   "certificate": "Certificate",
   "payment": "Payment",
   "methods": "Methods",
-  "contentFinderCourse": "FIND THE BEST FITTING COURSE AND PRIVATE TO YOU"
+  "contentFinderCourse": "FIND THE BEST FITTING COURSE AND PRIVATE TO YOU",
+  "question" : "1.How old are you? ",
+  "answerOne": "I'm fine, thanks!",
+  "answerTwo": "Twenty-five.",
+  "answerThree": "Yes, I am.",
+  "lastAnswer": "He is quite young."
 }
