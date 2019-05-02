@@ -1,11 +1,7 @@
 import { tran } from 'localization/i18n'
 import * as React from 'react'
 import styled from 'styled-components'
-import { colors, images } from 'themes/index'
-
-export interface IGeneralCourseProps {}
-
-export interface IGeneralCourseState {}
+import CustomCheckbox from './CustomCheckbox'
 
 const Container = styled.div`
   display: flex;
@@ -24,16 +20,11 @@ const Answer = styled.div`
   display: flex;
   margin-bottom: 10px;
 `
-const Dot = styled.div`
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-right: 5px;
-  border-style: solid;
-  border-color: ${colors.gainsBoro};
-`
+
+export interface IGeneralCourseProps {
+  questionTitle: string
+}
+export interface IGeneralCourseState {}
 
 export default class Question extends React.Component<
   IGeneralCourseProps,
@@ -45,25 +36,19 @@ export default class Question extends React.Component<
     this.state = {}
   }
   render() {
+    const { questionTitle } = this.props
     return (
       <Container>
-        <Title>{tran('question')}</Title>
+        <Title>{questionTitle}</Title>
         <Wrapper>
           <Answer>
-            <Dot />
-            <h3> {tran('answerOne')}</h3>
-          </Answer>
-          <Answer>
-            <Dot />
-            <h3> {tran('answerTow')}</h3>
-          </Answer>
-          <Answer>
-            <Dot />
-            <h3> {tran('answerThree')}</h3>
-          </Answer>
-          <Answer>
-            <Dot />
-            <h3> {tran('lastAnswer')}</h3>
+            <CustomCheckbox
+              questionTitle= {'1.How old are you?'}
+              firstQuestion={'dasdas'}
+              secondQuestion={'ddasdasdas'}
+              thirdQuestion={'dasddasdasas'}
+              lastQuestion={'dasdadasdass'}
+            />
           </Answer>
         </Wrapper>
       </Container>
