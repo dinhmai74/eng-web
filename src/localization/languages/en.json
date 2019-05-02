@@ -136,7 +136,7 @@
   "titleReasonChoseUs": "Reason chose us",
   "subReasonChoseUs": " There are lots of English teaching centers, but we are the only one designed for busy adults just like you.",
   "titleUniqueMethod": "Unique Method",
- "subUniqueMethod": "Our method has a number of outstanding features:",
+  "subUniqueMethod": "Our method has a number of outstanding features:",
   "titleBenefit": "Benefit",
   "subBenefit": "At Duckie English we always strive to improve our service and create new tools to help students speak English more confidently and reach their goals more quickly. Duckie English students have a number of highly valuable privileges:\n",
   "titlePayment": "Payment",
@@ -150,5 +150,7 @@
   "certificate": "Certificate",
   "payment": "Payment",
   "methods": "Methods",
-  "contentFinderCourse": "FIND THE BEST FITTING COURSE AND PRIVATE TO YOU"
+  "contentFinderCourse": "FIND THE BEST FITTING COURSE AND PRIVATE TO YOU",
+
+  "start": "Start"
 }
