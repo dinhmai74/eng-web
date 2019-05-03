@@ -1,0 +1,37 @@
+{
+  "questionone":  {
+    "titlequestion": "1. How old are you?",
+    "firstquestion": "I’m fine, thanks!",
+    "secondquestion": "Twenty-five.",
+    "thirdquestion": " Yes, I am.",
+    "lastquestion": "He is quite young."
+  },
+  "questiontwo":  {
+    "titlequestion": "2. We’re going to the beach next week.",
+    "firstquestion": "When will you have free time?",
+    "secondquestion": "Sounds great!.",
+    "thirdquestion": "How was it?.",
+    "lastquestion": " You will be late."
+  },
+  "questionthree":  {
+    "titlequestion": "3. What time do you usually go to bed?",
+    "firstquestion": "Very late..",
+    "secondquestion": "In my room.",
+    "thirdquestion": "What do you recommend?",
+    "lastquestion": "I can’t sleep in darkness."
+  },
+  "questionfour":  {
+    "titlequestion": "4. I’m going to study abroad in July.",
+    "firstquestion": "Me neither.",
+    "secondquestion": "Did you get a scholarship?",
+    "thirdquestion": " I’d love to.",
+    "lastquestion": "Wow, it’s so beautiful."
+  },
+  "questionfive":  {
+    "titlequestion": "5. Could you help me with this exercise?",
+    "firstquestion": "Talk to you later!",
+    "secondquestion": "I’m sorry, I’m busy now.",
+    "thirdquestion": " Yes, you can.",
+    "lastquestion": " I don’t know."
+  }
+}
