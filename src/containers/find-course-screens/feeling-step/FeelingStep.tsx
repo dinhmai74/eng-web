@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
+import { steps } from './questions/steps.js'
+import MultiStep from 'react-multistep'
 
-interface IFeelingStepProps {
-}
+interface IFeelingStepProps {}
 
-interface IFeelingStepState {
-}
+interface IFeelingStepState {}
 
 class FeelingStep extends Component<IFeelingStepProps, IFeelingStepState> {
   static defaultProps = {}
@@ -14,6 +14,7 @@ class FeelingStep extends Component<IFeelingStepProps, IFeelingStepState> {
     return (
       <div>
         <p>FeelingStep screen</p>
+        <MultiStep steps={steps} />
       </div>
     )
   }
