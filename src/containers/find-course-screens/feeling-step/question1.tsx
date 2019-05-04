@@ -4,15 +4,10 @@ import React, { Component } from 'react'
 import { Button } from 'semantic-ui-react'
 import styled from 'styled-components'
 import { colors, images } from 'themes/index'
+import Question from 'containers/find-course-screens/feeling-step/QuestionComponent/index'
+import { Flex } from 'rebass'
+import Header from './QuestionComponent/Header'
 
-const Wrapper = styled.div`
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 40px;
-`
 const LogoImage = styled.img`
   width: 25%;
 `
@@ -24,11 +19,17 @@ const Content = styled.p`
 `
 
 const Container = styled('div')`
-  background-image: url(${images.bgFindCourse});
   height: 86vh;
   background-size: cover;
-  display: flex;
+  /* display: flex; */
   align-items: center;
+`
+
+const ContainerQuestion = styled.div`
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 `
 
 interface IProps {
@@ -41,24 +42,21 @@ interface IProps {
 
 interface IState {}
 
-class FindCourseScreen extends Component<IProps, IState> {
+class Question1Screen extends Component<IProps, IState> {
   static defaultProps: {}
   state = {}
 
   render() {
-    const { style } = this.props
+    const { style, numberQuestion, title } = this.props
     return (
       <Container style={style}>
-        <Wrapper>
-          <LogoImage src={images.logoFindCourse} />
-          <Content> {tran('contentFinderCourse')}</Content>
-          <Button onClick={this.props.goNext}>{tran('start')}</Button>
-        </Wrapper>
+        <Header title="Question 1" content="When speak English,  I feel" />
+        <ContainerQuestion>
+          <Question goNext={this.props.goNext} />
+        </ContainerQuestion>
       </Container>
     )
   }
 }
 
-FindCourseScreen.defaultProps = {}
-
-export default FindCourseScreen
+export default Question1Screen

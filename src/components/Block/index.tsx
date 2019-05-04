@@ -3,9 +3,9 @@ import * as React from 'react'
 import './styles.css'
 
 export interface IProps {
-  image: string
-  title: string
-  content: string
+  image?: string
+  title?: string
+  content?: string
 }
 
 export interface IState {}
