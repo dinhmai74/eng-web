@@ -49,5 +49,11 @@ export const images = {
   general: '/asset/images/general-course/general.jpg',
   preparation: '/asset/images/general-course/preparation.jpg',
   bgFindCourse: '/asset/images/general-course/bg.jpg',
-  logoFindCourse: '/asset/images/general-course/logo.png'
+  logoFindCourse: '/asset/images/general-course/logo.png',
+
+  // find course
+  study: '/asset/images/find-course/study.png',
+  business: '/asset/images/find-course/business.png',
+  career: '/asset/images/find-course/career.png',
+  travel: '/asset/images/find-course/travel.png'
 }

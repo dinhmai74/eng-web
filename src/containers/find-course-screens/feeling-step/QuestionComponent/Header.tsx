@@ -40,7 +40,7 @@ export default class Header extends React.Component<IProps, IState> {
     return (
       <Container>
         <NumberQuestion>{this.props.title}</NumberQuestion>
-        <h3>{this.props.content}</h3>
+        <h2>{this.props.content}</h2>
       </Container>
     )
   }

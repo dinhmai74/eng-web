@@ -31,7 +31,7 @@ export default class Question extends React.Component<IProps, IState> {
     super(props)
 
     this.state = {
-      isBlock1Selected: true,
+      isBlock1Selected: false,
       isBlock2Selected: false,
       isBlock3Selected: false,
       isBlock4Selected: false,

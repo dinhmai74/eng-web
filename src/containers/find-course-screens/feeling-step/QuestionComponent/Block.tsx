@@ -6,6 +6,10 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 40px;
+  font-size: 30px;
+  &:hover {
+    background-color: #555;
+  }
 `
 
 export interface IProps {
@@ -31,11 +35,7 @@ export default class Block extends React.Component<IProps, IState> {
 
   render() {
     const { content } = this.props
-    const color = this.props.changeBackground ? 'gray' : 'transparent'
-    return (
-      <Container style={{ backgroundColor: color }} onClick={this.clicked}>
-        {content}
-      </Container>
-    )
+    // const color = this.props.changeBackground ? 'gray' : 'transparent'
+    return <Container onClick={this.clicked}>{content}</Container>
   }
 }

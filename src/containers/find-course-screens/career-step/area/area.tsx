@@ -8,6 +8,13 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-right: 20px;
+  margin-left: 20px;
+`
+
+const P = styled.p`
+  font-size: 25px;
+  padding-top: 20px;
 `
 
 export interface IProps {
@@ -29,7 +36,7 @@ export default class Area extends React.Component<IProps, IState> {
     return (
       <Container>
         <img src={this.props.image} />
-        <p>{this.props.title}</p>
+        <P>{this.props.title}</P>
         <Button onClick={this.props.onclick}>Choose</Button>
       </Container>
     )

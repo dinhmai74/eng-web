@@ -8,25 +8,11 @@ import Question from 'containers/find-course-screens/feeling-step/QuestionCompon
 import { Flex } from 'rebass'
 import Header from './QuestionComponent/Header'
 
-const LogoImage = styled.img`
-  width: 25%;
-`
-const Content = styled.p`
-  font-size: 20px;
-  text-align: center;
-  margin-top: 10px;
-  color: ${colors.lightRed};
-`
-
 const Container = styled('div')`
-  height: 86vh;
-  background-size: cover;
-  /* display: flex; */
-  align-items: center;
+  height: 70vh;
 `
 
 const ContainerQuestion = styled.div`
-  justify-content: center;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -49,8 +35,18 @@ class Question1Screen extends Component<IProps, IState> {
   render() {
     const { style, numberQuestion, title } = this.props
     return (
-      <Container style={style}>
-        <Header title="Question 1" content="When speak English,  I feel" />
+      <Container
+        data-aos="flip-down"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        style={style}
+      >
+        <Header title={tran('question1')} content={tran('titleQ1')} />
         <ContainerQuestion>
           <Question goNext={this.props.goNext} />
         </ContainerQuestion>

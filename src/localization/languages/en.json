@@ -152,5 +152,33 @@
   "methods": "Methods",
   "contentFinderCourse": "FIND THE BEST FITTING COURSE AND PRIVATE TO YOU",
 
+  "purpose": "What is your purpose of learning English?",
+  "choose": "Choose an area of interest",
+  "studyAbroad": "Study abroad",
+  "travel": "Travel",
+  "business": "Business",
+  "career": "Career",
+
+  "question1": "Question 1",
+  "titleQ1": "When speaking English, I feel",
+  "question2": "Question 2",
+  "titleQ2": "When I heard others say, I",
+  "question3": "Question 3",
+  "titleQ3": "For me, writing English is ...",
+  "question4": "Question 4",
+  "titleQ4": "How long have you been learning English?",
+  "question5": "Question 5",
+  "titleQ5": "How long do you want to see progress?",
+  "question6": "Question 5",
+  "titleQ6": "How long do you want to see progress?",
+  "question7": "Question 7",
+  "titleQ7": "How much time can you spend studying?",
+  "question8": "Question 8",
+  "titleQ8": "What is the most important thing for you when learning English?",
+  "question9": "Question 9",
+  "titleQ9": "Which skill is most important to you?",
+  "question10": "Question 10",
+  "titleQ10": "Which part of English is most important to you?",
+
   "start": "Start"
 }

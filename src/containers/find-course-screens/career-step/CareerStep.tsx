@@ -6,7 +6,7 @@ import Area from './area/area'
 import { images } from 'themes'
 
 const Container = styled('div')`
-  height: 85vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,6 +15,17 @@ const Container = styled('div')`
 const AreaContainer = styled('div')`
   display: flex;
   flex-wrap: wrap;
+`
+
+const H1 = styled.h1`
+  color: #003264;
+  font-size: 40px;
+  padding-top: 40px;
+`
+const P = styled.p`
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 30px;
 `
 
 interface ICareerStepProps {
@@ -33,28 +44,37 @@ class CareerStep extends Component<ICareerStepProps, ICareerStepState> {
 
   render() {
     return (
-      <Container>
-        <h2>Mục đích học tiếng Anh của bạn?</h2>
-        <p>Chọn một lĩnh vực bạn quan tâm</p>
+      <Container
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
+        <H1>{tran('purpose')}</H1>
+        <P>{tran('choose')}</P>
         <AreaContainer>
           <Area
-            image={images.reason1}
-            title="Study Abroad"
+            image={images.study}
+            title={tran('studyAbroad')}
             onclick={this.props.goNext}
           />
           <Area
-            image={images.reason1}
-            title="Study Abroad"
+            image={images.travel}
+            title={tran('travel')}
             onclick={this.props.goNext}
           />
           <Area
-            image={images.reason1}
-            title="Study Abroad"
+            image={images.business}
+            title={tran('business')}
             onclick={this.props.goNext}
           />
           <Area
-            image={images.reason1}
-            title="Study Abroad"
+            image={images.career}
+            title={tran('career')}
             onclick={this.props.goNext}
           />
         </AreaContainer>
