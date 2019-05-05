@@ -4,6 +4,7 @@ import '@front10/landing-page-book/dist/themes/default/index.scss'
 import 'App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Footer, InformationForm, ResponsiveNav } from 'components'
+import { withTranslation } from 'react-i18next'
 import 'font-awesome/css/font-awesome.min.css'
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
@@ -23,38 +24,36 @@ const ScrollToTop = () => {
 
 const baseUrl = process.env.PUBLIC_URL
 
-class App extends Component {
-  render() {
-    return (
+const App = (props) => {
+  return (
+    <div>
+      <Route component={ScrollToTop}/>
+      <ResponsiveNav
+        routes={routes}
+        hiddenRoute={[strings.routeWhyChoseUs]}
+      />
       <div>
-        <Route component={ScrollToTop}/>
-        <ResponsiveNav
-          routes={routes}
-          hiddenRoute={[strings.routeWhyChoseUs]}
-        />
-        <div>
-          {routes.map(({path, Component: Comp}) => (
-            <Route key={path} exact path={baseUrl + path}>
-              {({match}) => (
-                <CSSTransition
-                  in={match != null}
-                  timeout={300}
-                  classNames="page"
-                  unmountOnExit
-                >
-                  <div className="page">
-                    <Comp/>
-                  </div>
-                </CSSTransition>
-              )}
-            </Route>
-          ))}
-        </div>
-        <InformationForm/>
-        <Footer/>
+        {routes.map(({path, Component: Comp}) => (
+          <Route key={path} exact path={baseUrl + path}>
+            {({match}) => (
+              <CSSTransition
+                in={match != null}
+                timeout={300}
+                classNames="page"
+                unmountOnExit
+              >
+                <div className="page">
+                  <Comp/>
+                </div>
+              </CSSTransition>
+            )}
+          </Route>
+        ))}
       </div>
-    )
-  }
+      <InformationForm/>
+      <Footer/>
+    </div>
+  )
 }
 
-export default App
+export default withTranslation()(App)

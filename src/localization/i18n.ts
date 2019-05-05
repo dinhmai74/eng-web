@@ -4,7 +4,10 @@ import { initReactI18next, useTranslation } from 'react-i18next'
 // the translations
 // (tip move them in a JSON file and import them)
 
-export const tran = (text: string): string => i18n.t(text)
+export const tran = (text: string): string => {
+  const currentLang = i18n.language
+  return i18n.t(text, {lng: currentLang})
+}
 
 const resources = {
   en: {
