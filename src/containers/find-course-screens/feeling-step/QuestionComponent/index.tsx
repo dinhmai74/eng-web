@@ -29,7 +29,7 @@ export interface IState {
 
 export default class Question extends React.Component<IProps, IState> {
   static defaultProps: {
-    onChange: (value) => {}
+    onChange: (value) => {};
   }
 
   constructor(props: IProps) {
@@ -111,8 +111,7 @@ export default class Question extends React.Component<IProps, IState> {
     })
   }
 
-  onBlock = (value) => {
-  }
+  onBlock = (value) => {}
 
   onChange = (value: any) => {
     if (this.props.onChange) {
@@ -121,41 +120,83 @@ export default class Question extends React.Component<IProps, IState> {
   }
 
   render() {
+    const answers: any = this.props.answers
+
+    let valueA: any = null
+    let pointA: any = null
+    let valueB: any = null
+    let pointB: any = null
+    let valueC: any = null
+    let pointC: any = null
+    let valueD: any = null
+    let pointD: any = null
+    let valueE: any = null
+    let pointE: any = null
+    let valueF: any = null
+    let pointF: any = null
+
+    if (answers !== undefined) {
+      if (answers.A !== undefined) {
+        valueA = answers.A.value
+        pointA = answers.A.point
+      }
+      if (answers.B !== undefined) {
+        valueB = answers.B.value
+        pointB = answers.B.point
+      }
+      if (answers.C !== undefined) {
+        valueC = answers.C.value
+        pointC = answers.C.point
+      }
+      if (answers.D !== undefined) {
+        valueD = answers.D.value
+        pointD = answers.D.point
+      }
+      if (answers.E !== undefined) {
+        valueE = answers.E.value
+        pointE = answers.E.point
+      }
+      if (answers.F !== undefined) {
+        valueF = answers.F.value
+        pointF = answers.F.point
+      }
+    }
+
     return (
       <GridContainer>
         <Block
-          content="Rat Ngai"
-          goNext={() => this.onChange('rat_ngai')}
+          content={valueA}
+          goNext={() => this.onChange(pointA)}
           onClickBlock={this.onBlock1Click}
           changeBackground={this.state.isBlock1Selected}
         />
         <Block
-          content="Khong dien ta duoc y minh"
-          goNext={() => this.onChange('rat_ngai')}
+          content={valueB}
+          goNext={() => this.onChange(pointB)}
           onClickBlock={this.onBlock2Click}
           changeBackground={this.state.isBlock2Selected}
         />
         <Block
-          content="Bi gioi han tu vung"
-          goNext={() => this.onChange('rat_ngai')}
+          content={valueC}
+          goNext={() => this.onChange(pointC)}
           onClickBlock={this.onBlock3Click}
           changeBackground={this.state.isBlock3Selected}
         />
         <Block
-          content="Kha tu tin"
-          goNext={() => this.onChange('rat_ngai')}
+          content={valueD}
+          goNext={() => this.onChange(pointD)}
           onClickBlock={this.onBlock4Click}
           changeBackground={this.state.isBlock4Selected}
         />
         <Block
-          content="Tu tin noi chuyen du co mac loi"
-          goNext={() => this.onChange('rat_ngai')}
+          content={valueE}
+          goNext={() => this.onChange(pointE)}
           onClickBlock={this.onBlock5Click}
           changeBackground={this.state.isBlock5Selected}
         />
         <Block
-          content="Gan nhu troi chay"
-          goNext={() => this.onChange('rat_ngai')}
+          content={valueF}
+          goNext={() => this.onChange(pointF)}
           onClickBlock={this.onBlock6Click}
           changeBackground={this.state.isBlock6Selected}
         />

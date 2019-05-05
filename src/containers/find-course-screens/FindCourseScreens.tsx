@@ -1,6 +1,13 @@
 import { NavMargin } from 'components'
 import _ from 'lodash'
-import { Formik, FormikActions, FormikProps, Form, Field, FieldProps } from 'formik'
+import {
+  Formik,
+  FormikActions,
+  FormikProps,
+  Form,
+  Field,
+  FieldProps
+} from 'formik'
 import CareerStep from 'containers/find-course-screens/career-step'
 import Question1Step from 'containers/find-course-screens/feeling-step/question1'
 import Question2Step from 'containers/find-course-screens/feeling-step/question2'
@@ -19,11 +26,9 @@ interface IMyFormValues {
   firstName: string
 }
 
-interface IProps {
-}
+interface IProps {}
 
-interface IState {
-}
+interface IState {}
 
 const steps: ISteps = {
   general: GeneralStep,
@@ -33,7 +38,7 @@ const steps: ISteps = {
   question3: Question3Step
 }
 
-const StepField = ({stepKey, ...rest}) => {
+const StepField = ({ stepKey, ...rest }) => {
   const StepComponent = steps[stepKey]
 
   return <StepComponent stepKey={stepKey} {...rest} />
@@ -48,7 +53,7 @@ class FindCourseScreen extends Component<IProps, IState> {
     resetStepper: () => void,
     goNext: () => void
   ) => async (values: IMyFormValues, actions: FormikActions<IMyFormValues>) => {
-    const {setSubmitting, resetForm} = actions
+    const { setSubmitting, resetForm } = actions
 
     if (isLastStep) {
       // const id = navigation.getParam('id')
@@ -68,7 +73,12 @@ class FindCourseScreen extends Component<IProps, IState> {
     setSubmitting(false)
   }
 
-  renderComponent = (stepKey: string, setFieldValue, handleSubmit: () => void, goToKey: (key: string) => void) => {
+  renderComponent = (
+    stepKey: string,
+    setFieldValue,
+    handleSubmit: () => void,
+    goToKey: (key: string) => void
+  ) => {
     const keys = Object.keys(steps)
     const index = _.indexOf(keys, stepKey)
 
@@ -80,12 +90,12 @@ class FindCourseScreen extends Component<IProps, IState> {
             setFieldValue(key, value)
             handleSubmit()
           }}
-          style={{marginBottom: 30, minHeight: '75vh'}}
+          style={{ marginBottom: 30, minHeight: '75vh' }}
         />
 
         <Steps labelPlacement="vertical" current={index}>
           {_.map(steps, (val, key) => (
-            <Step key={key} onClick={() => goToKey(key)}/>
+            <Step key={key} onClick={() => goToKey(key)} />
           ))}
         </Steps>
       </React.Fragment>
@@ -96,17 +106,25 @@ class FindCourseScreen extends Component<IProps, IState> {
     return (
       <Container>
         <Stepper initialSteps={Object.keys(steps)}>
-          {({stepKey, goNext, goToKey, isLastStep, resetStepper}) => {
+          {({ stepKey, goNext, goToKey, isLastStep, resetStepper }) => {
             return (
               <Formik
-                initialValues={{firstName: ''}}
+                initialValues={{ firstName: '' }}
                 validationSchema={validationSchema[stepKey]}
                 validateOnChange={false}
                 onSubmit={this.handleSubmit(isLastStep, resetStepper, goNext)}
                 render={(formikBag: FormikProps<IMyFormValues>) => {
-                  const {isSubmitting, errors, handleSubmit, setFieldValue} = formikBag
-                  return (
-                    this.renderComponent(stepKey, setFieldValue, handleSubmit, goToKey)
+                  const {
+                    isSubmitting,
+                    errors,
+                    handleSubmit,
+                    setFieldValue
+                  } = formikBag
+                  return this.renderComponent(
+                    stepKey,
+                    setFieldValue,
+                    handleSubmit,
+                    goToKey
                   )
                 }}
               />
