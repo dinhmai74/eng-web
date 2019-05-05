@@ -23,17 +23,22 @@ interface IProps {
 
   [rest: string]: any
 
-  goNext: () => void
+  onChange: (key: string, value: any) => void
 }
 
-interface IState {}
+interface IState {
+}
 
-class Question3Screen extends Component<IProps, IState> {
+class Question1Screen extends Component<IProps, IState> {
   static defaultProps: {}
   state = {}
 
+  onChange = (value: string) => {
+    this.props.onChange('question_3', value)
+  }
+
   render() {
-    const { style, numberQuestion, title } = this.props
+    const {style, numberQuestion, title, ...rest} = this.props
     return (
       <Container
         data-aos="flip-down"
@@ -46,13 +51,13 @@ class Question3Screen extends Component<IProps, IState> {
         data-aos-anchor-placement="top-center"
         style={style}
       >
-        <Header title={tran('question3')} content={tran('titleQ3')} />
+        <Header title={tran('question1')} content={tran('titleQ1')}/>
         <ContainerQuestion>
-          <Question goNext={this.props.goNext} />
+          <Question onChange={this.onChange} />
         </ContainerQuestion>
       </Container>
     )
   }
 }
 
-export default Question3Screen
+export default Question1Screen

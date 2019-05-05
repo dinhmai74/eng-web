@@ -33,32 +33,38 @@ const Container = styled('div')`
 
 interface IProps {
   style?: any
+  onClick?: () => void
+  onChange: (key: string, value: any) => void
 
   [rest: string]: any
-
-  goNext: () => void
 }
 
-interface IState {}
+interface IState {
+}
 
 class FindCourseScreen extends Component<IProps, IState> {
-  static defaultProps: {}
+  static defaultProps: {
+    onClick: () => {},
+    onChange: (key, value) => {}
+  }
   state = {}
 
+  onChange = () => {
+    this.props.onChange('pill_name', 'butang ina mo')
+  }
+
   render() {
-    const { style } = this.props
+    const {style} = this.props
     return (
       <Container style={style}>
         <Wrapper>
-          <LogoImage src={images.logoFindCourse} />
+          <LogoImage src={images.logoFindCourse}/>
           <Content> {tran('contentFinderCourse')}</Content>
-          <Button onClick={this.props.goNext}>{tran('start')}</Button>
+          <Button onClick={this.onChange} type={'submit'}>{tran('start')}</Button>
         </Wrapper>
       </Container>
     )
   }
 }
-
-FindCourseScreen.defaultProps = {}
 
 export default FindCourseScreen

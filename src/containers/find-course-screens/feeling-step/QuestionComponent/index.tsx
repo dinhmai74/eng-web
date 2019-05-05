@@ -14,7 +14,8 @@ const GridContainer = styled.div`
 `
 
 export interface IProps {
-  goNext: () => any
+  onChange: (value: any) => void
+  [rest: string]: any
 }
 
 export interface IState {
@@ -27,6 +28,10 @@ export interface IState {
 }
 
 export default class Question extends React.Component<IProps, IState> {
+  static defaultProps: {
+    onChange: (value) => {}
+  }
+
   constructor(props: IProps) {
     super(props)
 
@@ -106,42 +111,51 @@ export default class Question extends React.Component<IProps, IState> {
     })
   }
 
+  onBlock = (value) => {
+  }
+
+  onChange = (value: any) => {
+    if (this.props.onChange) {
+      this.props.onChange(value)
+    }
+  }
+
   render() {
     return (
       <GridContainer>
         <Block
           content="Rat Ngai"
-          goNext={this.props.goNext}
+          goNext={() => this.onChange('rat_ngai')}
           onClickBlock={this.onBlock1Click}
           changeBackground={this.state.isBlock1Selected}
         />
         <Block
           content="Khong dien ta duoc y minh"
-          goNext={this.props.goNext}
+          goNext={() => this.onChange('rat_ngai')}
           onClickBlock={this.onBlock2Click}
           changeBackground={this.state.isBlock2Selected}
         />
         <Block
           content="Bi gioi han tu vung"
-          goNext={this.props.goNext}
+          goNext={() => this.onChange('rat_ngai')}
           onClickBlock={this.onBlock3Click}
           changeBackground={this.state.isBlock3Selected}
         />
         <Block
           content="Kha tu tin"
-          goNext={this.props.goNext}
+          goNext={() => this.onChange('rat_ngai')}
           onClickBlock={this.onBlock4Click}
           changeBackground={this.state.isBlock4Selected}
         />
         <Block
           content="Tu tin noi chuyen du co mac loi"
-          goNext={this.props.goNext}
+          goNext={() => this.onChange('rat_ngai')}
           onClickBlock={this.onBlock5Click}
           changeBackground={this.state.isBlock5Selected}
         />
         <Block
           content="Gan nhu troi chay"
-          goNext={this.props.goNext}
+          goNext={() => this.onChange('rat_ngai')}
           onClickBlock={this.onBlock6Click}
           changeBackground={this.state.isBlock6Selected}
         />

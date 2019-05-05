@@ -16,7 +16,7 @@ export interface IProps {
   content?: string
   onClickBlock: () => void
   changeBackground: boolean
-  goNext: () => any
+  goNext: () => void
 }
 
 export interface IState {

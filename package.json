@@ -12,6 +12,7 @@
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.3.1",
     "file-loader": "^3.0.1",
+    "formik": "^1.5.4",
     "i18next": "^15.0.9",
     "node-sass": "^4.11.0",
     "rc-steps": "^3.3.1",
@@ -36,7 +37,8 @@
     "redux-saga": "^1.0.2",
     "semantic-ui-css": "^2.2.4",
     "semantic-ui-react": "^0.86.0",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "yup": "^0.27.0"
   },
   "scripts": {
     "build-semantic": "cd src/semantic && gulp build-css build-assets",

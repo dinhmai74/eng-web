@@ -4,12 +4,15 @@
     <list default="true" id="d13e700d-ba00-47fc-9324-1d60db022ffc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ResponsiveNav/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResponsiveNav/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/home-screen/HomeScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/home-screen/HomeScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/home-screen/components/Introduction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/home-screen/components/Introduction.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/Stepper/Stepper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/Stepper/Stepper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/career-step/CareerStep.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/career-step/CareerStep.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/QuestionComponent/Block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/QuestionComponent/Block.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/QuestionComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/QuestionComponent/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question1.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question2.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question3.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/general-step/GeneralStep.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/general-step/GeneralStep.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,12 +26,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="368">
+              <caret line="103" column="39" selection-start-line="103" selection-start-column="39" selection-end-line="103" selection-end-column="39" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -37,46 +40,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx">
+        <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/validation-schema.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="170" column="26" selection-start-line="170" selection-start-column="26" selection-end-line="170" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/containers/home-screen/HomeScreen.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="392">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/home-screen/components/Introduction.tsx">
+        <entry file="file://$PROJECT_DIR$/node_modules/formik/dist/types.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="786">
-              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#86#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ResponsiveNav/style.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="908">
+              <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -94,14 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/containers/why-chose-us/unique-method/index.tsx" />
-        <option value="$PROJECT_DIR$/src/containers/why-chose-us/benefit/index.tsx" />
-        <option value="$PROJECT_DIR$/src/containers/why-chose-us/wall-street-english/index.tsx" />
-        <option value="$PROJECT_DIR$/src/containers/why-chose-us/payment/index.tsx" />
-        <option value="$PROJECT_DIR$/src/themes/images.ts" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/tools/strings.ts" />
-        <option value="$PROJECT_DIR$/src/containers/general-course-screen/GeneralCourse.tsx" />
         <option value="$PROJECT_DIR$/src/containers/test-screens/TestScreen.tsx" />
         <option value="$PROJECT_DIR$/src/index.tsx" />
         <option value="$PROJECT_DIR$/src/containers/home-screen/components/ArchivedOverview/components/CustomFlipNumber/CustomFlipNumber.tsx" />
@@ -128,23 +96,31 @@
         <option value="$PROJECT_DIR$/.editorconfig" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/Steper/MultiStep.tsx" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/Steper/package.json" />
-        <option value="$PROJECT_DIR$/src/containers/find-course-screens/career-step/CareerStep.tsx" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/FeelingStep.tsx" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/Steper/Stepper.tsx" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/Steper/Stepper.css" />
         <option value="$PROJECT_DIR$/src/components/stories/step.story.js" />
         <option value="$PROJECT_DIR$/src/components/stories/index.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/containers/find-course-screens/Stepper/Stepper.tsx" />
         <option value="$PROJECT_DIR$/src/themes/metrics.ts" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/atoms.tsx" />
-        <option value="$PROJECT_DIR$/src/containers/find-course-screens/general-step/GeneralStep.tsx" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx" />
-        <option value="$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx" />
         <option value="$PROJECT_DIR$/src/components/ResponsiveNav/style.scss" />
         <option value="$PROJECT_DIR$/src/containers/home-screen/components/Introduction.tsx" />
         <option value="$PROJECT_DIR$/src/containers/home-screen/HomeScreen.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/find-course-screens/validate-schema.js" />
+        <option value="$PROJECT_DIR$/src/containers/find-course-screens/validate-schema.ts" />
+        <option value="$PROJECT_DIR$/src/containers/find-course-screens/Stepper/Stepper.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/find-course-screens/general-step/GeneralStep.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/find-course-screens/career-step/CareerStep.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/QuestionComponent/Block.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question3.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question2.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question1.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/QuestionComponent/index.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/find-course-screens/validation-schema.ts" />
+        <option value="$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx" />
       </list>
     </option>
   </component>
@@ -265,6 +241,15 @@
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="find-course-screens" type="462c0819:PsiDirectoryNode" />
               <item name="feeling-step" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eng-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eng-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="find-course-screens" type="462c0819:PsiDirectoryNode" />
+              <item name="feeling-step" type="462c0819:PsiDirectoryNode" />
+              <item name="QuestionComponent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eng-web" type="b2602c69:ProjectViewProjectNode" />
@@ -454,12 +439,14 @@
       <workItem from="1556092749523" duration="4309000" />
       <workItem from="1556161183889" duration="4398000" />
       <workItem from="1556166212326" duration="2566000" />
-      <workItem from="1556175495066" duration="5645000" />
+      <workItem from="1556175495066" duration="6420000" />
+      <workItem from="1556274982653" duration="6000" />
+      <workItem from="1557050138112" duration="5665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69999000" />
+    <option name="totallyTimeSpent" value="76445000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -474,7 +461,7 @@
     <frame x="-144" y="-1080" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20642443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20537125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -494,7 +481,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32934132" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -544,74 +531,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/home-screen/components/ArchivedOverview/components/CustomFlipNumber/CustomFlipNumber.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/course-progress/CourseProgressScreen.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/react-router-dom/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/ChoseUsRoutes.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tools/RouterHandler.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tools/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tools/strings.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/localization/languages/en.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -663,13 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-multistep/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3566" />
@@ -718,13 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/career-step/CareerStep.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -860,16 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/Stepper/Stepper.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/asset/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4521">
@@ -893,37 +788,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/general-step/GeneralStep.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="139" column="9" lean-forward="true" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="170" column="26" selection-start-line="170" selection-start-column="26" selection-end-line="170" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -946,10 +814,125 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/home-screen/HomeScreen.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        <state relative-caret-position="140">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="161" column="51" lean-forward="true" selection-start-line="161" selection-start-column="51" selection-end-line="161" selection-end-column="51" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/Stepper/Stepper.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="95" column="27" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/career-step/CareerStep.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/QuestionComponent/Header.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-430">
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/QuestionComponent/Block.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question3.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question2.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="732">
+          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/general-step/GeneralStep.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question1.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/QuestionComponent/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="123" column="12" lean-forward="true" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/formik/dist/types.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="908">
+          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/validation-schema.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="103" column="39" selection-start-line="103" selection-start-column="39" selection-end-line="103" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

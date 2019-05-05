@@ -28,19 +28,28 @@ const P = styled.p`
   padding-bottom: 30px;
 `
 
+export type TCareerValue = 'StudyAbroad' | 'Travel' | 'Business' | 'Career'
+
 interface ICareerStepProps {
   style?: any
+
+  onChange: (key: string, value: any) => {}
 
   [rest: string]: any
 
   goNext: () => void
 }
 
-interface ICareerStepState {}
+interface ICareerStepState {
+}
 
 class CareerStep extends Component<ICareerStepProps, ICareerStepState> {
   static defaultProps = {}
   state = {}
+
+  onChange = (value: TCareerValue) => {
+    this.props.onChange('career', value)
+  }
 
   render() {
     return (
@@ -60,22 +69,22 @@ class CareerStep extends Component<ICareerStepProps, ICareerStepState> {
           <Area
             image={images.study}
             title={tran('studyAbroad')}
-            onclick={this.props.goNext}
+            onclick={() => this.onChange('StudyAbroad')}
           />
           <Area
             image={images.travel}
             title={tran('travel')}
-            onclick={this.props.goNext}
+            onclick={() => this.onChange('Travel')}
           />
           <Area
             image={images.business}
             title={tran('business')}
-            onclick={this.props.goNext}
+            onclick={() => this.onChange('Business')}
           />
           <Area
             image={images.career}
             title={tran('career')}
-            onclick={this.props.goNext}
+            onclick={() => this.onChange('Career')}
           />
         </AreaContainer>
       </Container>
