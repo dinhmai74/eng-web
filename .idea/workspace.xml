@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d13e700d-ba00-47fc-9324-1d60db022ffc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/Stepper/Stepper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/Stepper/Stepper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/career-step/CareerStep.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/career-step/CareerStep.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/QuestionComponent/Block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/QuestionComponent/Block.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/QuestionComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/QuestionComponent/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question1.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question2.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/question3.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/find-course-screens/general-step/GeneralStep.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/find-course-screens/general-step/GeneralStep.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,32 +17,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="103" column="39" selection-start-line="103" selection-start-column="39" selection-end-line="103" selection-end-column="39" />
+            <state relative-caret-position="311">
+              <caret line="173" column="54" selection-start-line="173" selection-start-column="54" selection-end-line="173" selection-end-column="54" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#53#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/validation-schema.ts">
+        <entry file="file://$PROJECT_DIR$/src/App.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/formik/dist/types.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="908">
-              <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+            <state relative-caret-position="362">
+              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+              <folding>
+                <element signature="e#86#152#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,11 +73,9 @@
         <option value="$PROJECT_DIR$/src/containers/why-chose-us/ChoseUsRoutes.tsx" />
         <option value="$PROJECT_DIR$/src/tools/transitionHelper.tsx" />
         <option value="$PROJECT_DIR$/src/tools/index.ts" />
-        <option value="$PROJECT_DIR$/src/App.tsx" />
         <option value="$PROJECT_DIR$/src/localization/languages/en.json" />
         <option value="$PROJECT_DIR$/src/components/NavMargin.tsx" />
         <option value="$PROJECT_DIR$/src/components/index.ts" />
-        <option value="$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx" />
         <option value="$PROJECT_DIR$/src/containers/why-chose-us/reason-chose-us-screen/index.tsx" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreen.tsx" />
         <option value="$PROJECT_DIR$/src/containers/index.ts" />
@@ -105,7 +99,6 @@
         <option value="$PROJECT_DIR$/src/themes/metrics.ts" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/atoms.tsx" />
         <option value="$PROJECT_DIR$/src/App.css" />
-        <option value="$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx" />
         <option value="$PROJECT_DIR$/src/components/ResponsiveNav/style.scss" />
         <option value="$PROJECT_DIR$/src/containers/home-screen/components/Introduction.tsx" />
         <option value="$PROJECT_DIR$/src/containers/home-screen/HomeScreen.tsx" />
@@ -121,6 +114,9 @@
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/feeling-step/QuestionComponent/index.tsx" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/validation-schema.ts" />
         <option value="$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx" />
+        <option value="$PROJECT_DIR$/src/App.tsx" />
+        <option value="$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx" />
       </list>
     </option>
   </component>
@@ -441,12 +437,12 @@
       <workItem from="1556166212326" duration="2566000" />
       <workItem from="1556175495066" duration="6420000" />
       <workItem from="1556274982653" duration="6000" />
-      <workItem from="1557050138112" duration="5665000" />
+      <workItem from="1557050138112" duration="6483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76445000" />
+    <option name="totallyTimeSpent" value="77263000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -461,7 +457,7 @@
     <frame x="-144" y="-1080" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20537125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20537125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -476,12 +472,12 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
-      <window_info anchor="bottom" id="TypeScript" order="7" weight="0.32891566" />
+      <window_info anchor="bottom" id="TypeScript" order="7" weight="0.3283433" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32771084" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32934132" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="12" visible="true" weight="0.32934132" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -569,16 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="2878" column="12" selection-start-line="2878" selection-start-column="12" selection-end-line="2878" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -748,16 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-          <folding>
-            <element signature="e#86#152#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/atoms.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -816,16 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="161" column="51" lean-forward="true" selection-start-line="161" selection-start-column="51" selection-end-line="161" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -913,10 +879,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/formik/dist/types.d.ts">
+    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="908">
-          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+        <state relative-caret-position="417">
+          <caret line="88" column="12" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -927,12 +896,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/find-course-screens/FindCourseScreens.tsx">
+    <entry file="file://$PROJECT_DIR$/node_modules/formik/dist/types.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="103" column="39" selection-start-line="103" selection-start-column="39" selection-end-line="103" selection-end-column="39" />
+        <state relative-caret-position="908">
+          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#86#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="173" column="54" selection-start-line="173" selection-start-column="54" selection-end-line="173" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/why-chose-us/WhyChoseUsScreen.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
           </folding>
         </state>
       </provider>

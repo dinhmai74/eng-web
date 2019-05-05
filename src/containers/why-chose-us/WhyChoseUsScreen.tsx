@@ -23,8 +23,7 @@ class WhyChoseUsScreen extends Component<IProps, IState> {
   render() {
     return (
       <div>
-        <ResponsiveNav renderOnePage routes={choseUsRoutes}/>
-        <NavMargin/>
+        <ResponsiveNav renderOnePage routes={choseUsRoutes} disableHeadroom/>
         <div
           id={'sectionReasonChoseUs'}
         >
