@@ -1,5 +1,6 @@
 import 'App.css'
 import 'bootstrap'
+import { tran } from 'localization/i18n'
 import React from 'react'
 import Headroom from 'react-headroom'
 import i18n from 'i18next'
@@ -123,10 +124,10 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     return (
       <span className="menu__title">
         <span className="menu__first-word" data-hover={r.first}>
-          {r.first}
+          {tran(r.first)}
         </span>
         <span className="menu__second-word" data-hover={r.second}>
-          {r.second}
+          {tran(r.second)}
         </span>
       </span>
     )

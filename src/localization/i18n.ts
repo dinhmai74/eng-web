@@ -23,7 +23,7 @@ i18n
   .init({
     resources,
     // tslint:disable-next-line: object-literal-sort-keys
-    lng: 'vi',
+    lng: 'en',
 
     keySeparator: false, // we do not use keys in form messages.welcome
 
