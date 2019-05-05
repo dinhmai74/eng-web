@@ -2,16 +2,27 @@ import 'App.css'
 import 'bootstrap'
 import React from 'react'
 import Headroom from 'react-headroom'
+import i18n from 'i18next'
 import { Link } from 'react-scroll'
 import { withRouter, RouteComponentProps } from 'react-router-dom'
 import { Nav } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
-import { images } from 'themes'
+import { Flag, Button } from 'semantic-ui-react'
+import { colors, images } from 'themes'
 import { strings } from 'tools'
 import './button.scss'
 import './style.scss'
 import styled from 'styled-components'
 import { IRoute } from 'tools/routes'
+
+const StyledFlag = styled(Flag)`
+`
+
+const StyledButton = styled(Button)`
+  background: transparent;
+  border: 1px solid ${colors.main};
+  margin: 0 20px 0 auto;
+`
 
 const Background = styled.div`
   position: absolute;
@@ -34,6 +45,7 @@ interface IProps extends RouteComponentProps {
   renderOnePage?: boolean,
   /*** @property {propTypes.boolean} disable headroom- */
   disableHeadroom?: boolean,
+
   [rest: string]: any
 }
 
@@ -94,6 +106,17 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     this.setState((state: IState) => ({
       isToggled: !state.isToggled
     }))
+  }
+
+  handleChangeLang = () => {
+    const currentLang = i18n.language
+    const newLang = currentLang === 'en' ? 'vi' : 'en'
+    i18n.changeLanguage(newLang, (err, t) => {
+      if (err) {
+        alert('something went wrong loading' + err)
+      }
+      i18n.reloadResources() // -> returns a Promise
+    })
   }
 
   renderRouteContent = (r) => {
@@ -171,6 +194,9 @@ class ResponsiveNav extends React.Component<IProps, IState> {
 
     const fixTopNav = disableHeadroom ? 'sticky-top' : null
 
+    const currentLang = i18n.language
+    const iconName = currentLang === 'en' ? 'gb' : 'vn'
+
     return (
       <Headroom className={fixTopNav} style={{background: 'transparent', zIndex: 9999}} disable={disableHeadroom}>
         <nav className={`navigation navbar navbar-expand-lg`}>
@@ -207,6 +233,9 @@ class ResponsiveNav extends React.Component<IProps, IState> {
               {listItems}
             </ul>
           </div>
+          <StyledButton color="yellow" basic onClick={this.handleChangeLang}>
+            <StyledFlag name={iconName}/>
+          </StyledButton>
         </nav>
       </Headroom>
     )
