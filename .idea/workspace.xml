@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d13e700d-ba00-47fc-9324-1d60db022ffc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/localization/i18n.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/localization/i18n.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/routes.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="122" column="30" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
+            <state relative-caret-position="340">
+              <caret line="127" column="70" selection-start-line="127" selection-start-column="70" selection-end-line="127" selection-end-column="70" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -438,12 +436,12 @@
       <workItem from="1556166212326" duration="2566000" />
       <workItem from="1556175495066" duration="6420000" />
       <workItem from="1556274982653" duration="6000" />
-      <workItem from="1557050138112" duration="18433000" />
+      <workItem from="1557050138112" duration="19633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89213000" />
+    <option name="totallyTimeSpent" value="90413000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -930,8 +928,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ResponsiveNav/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="122" column="30" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
+        <state relative-caret-position="340">
+          <caret line="127" column="70" selection-start-line="127" selection-start-column="70" selection-end-line="127" selection-end-column="70" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
