@@ -2,9 +2,9 @@ import 'App.css'
 import 'bootstrap'
 import React from 'react'
 import Headroom from 'react-headroom'
-import { Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 import { withRouter, RouteComponentProps } from 'react-router-dom'
-import { Nav} from 'react-bootstrap'
+import { Nav } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import { images } from 'themes'
 import { strings } from 'tools'
@@ -32,6 +32,8 @@ interface IProps extends RouteComponentProps {
   hiddenRoute?: string[],
   /*** @property {propTypes.boolean} render One page - nav for one page or not */
   renderOnePage?: boolean,
+  /*** @property {propTypes.boolean} disable headroom- */
+  disableHeadroom?: boolean
 }
 
 interface IState {
@@ -159,50 +161,52 @@ class ResponsiveNav extends React.Component<IProps, IState> {
 
   render() {
     const {isToggled, isTop, bg, path} = this.state
-    const {routes, homeIcon, hiddenRoute} = this.props
+    const {routes, homeIcon, hiddenRoute, disableHeadroom} = this.props
     if (hiddenRoute && hiddenRoute.includes(path)) {
       return null
     }
 
     const listItems = this.renderListRouteItems()
 
-    return (
-      <Headroom style={{ background: 'transparent', zIndex: 9999 }}>
-      <nav className="navigation navbar navbar-expand-lg">
-        {(!isTop || path !== '/' || isToggled) && <Background/>}
-        <Nav.Link
-          key={strings.routeHome}
-          as={NavLink}
-          style={{marginLeft: 50}}
-          exact
-          to={strings.routeHome} className="navbar-brand"
-        >
-          <img src={homeIcon} width="30" height="30" alt=""/>
-        </Nav.Link>
+    const fixTopNav = disableHeadroom ? 'sticky-top' : null
 
-        <button
-          className={`navbar-toggler e-button ${isToggled && 'open'}`}
-          onClick={this.handleToggleButtonPress}
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <div className="e-burger">
-            <span/>
-            <span/>
-            <span/>
-            <span/>
+    return (
+      <Headroom className={fixTopNav} style={{background: 'transparent', zIndex: 9999}} disable={disableHeadroom}>
+        <nav className={`navigation navbar navbar-expand-lg`}>
+          {(!isTop || path !== '/' || isToggled) && <Background/>}
+          <Nav.Link
+            key={strings.routeHome}
+            as={NavLink}
+            style={{marginLeft: 50}}
+            exact
+            to={strings.routeHome} className="navbar-brand"
+          >
+            <img src={homeIcon} width="30" height="30" alt=""/>
+          </Nav.Link>
+
+          <button
+            className={`navbar-toggler e-button ${isToggled && 'open'}`}
+            onClick={this.handleToggleButtonPress}
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div className="e-burger">
+              <span/>
+              <span/>
+              <span/>
+              <span/>
+            </div>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav menu">
+              {listItems}
+            </ul>
           </div>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav menu">
-            {listItems}
-          </ul>
-        </div>
-      </nav>
+        </nav>
       </Headroom>
     )
   }
