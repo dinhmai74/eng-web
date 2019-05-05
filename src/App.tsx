@@ -21,38 +21,38 @@ const ScrollToTop = () => {
   return null
 }
 
+const baseUrl = process.env.PUBLIC_URL
+
 class App extends Component {
   render() {
     return (
-      <Router>
-        <>
-          <Route component={ScrollToTop} />
-          <ResponsiveNav
-            routes={routes}
-            hiddenRoute={[strings.routeWhyChoseUs]}
-          />
-          <div>
-            {routes.map(({ path, Component: Comp }) => (
-              <Route key={path} exact path={path}>
-                {({ match }) => (
-                  <CSSTransition
-                    in={match != null}
-                    timeout={300}
-                    classNames="page"
-                    unmountOnExit
-                  >
-                    <div className="page">
-                      <Comp />
-                    </div>
-                  </CSSTransition>
-                )}
-              </Route>
-            ))}
-          </div>
-          <InformationForm />
-          <Footer />
-        </>
-      </Router>
+      <div>
+        <Route component={ScrollToTop}/>
+        <ResponsiveNav
+          routes={routes}
+          hiddenRoute={[strings.routeWhyChoseUs]}
+        />
+        <div>
+          {routes.map(({path, Component: Comp}) => (
+            <Route key={path} exact path={baseUrl + path}>
+              {({match}) => (
+                <CSSTransition
+                  in={match != null}
+                  timeout={300}
+                  classNames="page"
+                  unmountOnExit
+                >
+                  <div className="page">
+                    <Comp/>
+                  </div>
+                </CSSTransition>
+              )}
+            </Route>
+          ))}
+        </div>
+        <InformationForm/>
+        <Footer/>
+      </div>
     )
   }
 }
