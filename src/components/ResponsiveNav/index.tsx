@@ -1,6 +1,5 @@
 import 'App.css'
 import 'bootstrap'
-import { tran } from 'localization/i18n'
 import React from 'react'
 import Headroom from 'react-headroom'
 import i18n from 'i18next'
@@ -15,6 +14,7 @@ import './button.scss'
 import './style.scss'
 import styled from 'styled-components'
 import { IRoute } from 'tools/routes'
+import { tran } from 'localization/i18n'
 
 const StyledFlag = styled(Flag)`
 `
@@ -22,7 +22,6 @@ const StyledFlag = styled(Flag)`
 const StyledButton = styled(Button)`
   background: transparent;
   border: 1px solid ${colors.main};
-  margin: 0 20px 0 auto;
 `
 
 const Background = styled.div`
@@ -123,10 +122,10 @@ class ResponsiveNav extends React.Component<IProps, IState> {
   renderRouteContent = (r) => {
     return (
       <span className="menu__title">
-        <span className="menu__first-word" data-hover={r.first}>
+        <span className="menu__first-word" data-hover={tran(r.first)}>
           {tran(r.first)}
         </span>
-        <span className="menu__second-word" data-hover={r.second}>
+        <span className="menu__second-word" data-hover={tran(r.second)}>
           {tran(r.second)}
         </span>
       </span>
@@ -199,7 +198,7 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     const iconName = currentLang === 'en' ? 'gb' : 'vn'
 
     return (
-      <Headroom className={fixTopNav} style={{background: 'transparent', zIndex: 9999}} disable={disableHeadroom}>
+      <Headroom style={{background: 'transparent', zIndex: 9999}}>
         <nav className={`navigation navbar navbar-expand-lg`}>
           {(!isTop || path !== '/' || isToggled) && <Background/>}
           <Nav.Link
@@ -229,14 +228,16 @@ class ResponsiveNav extends React.Component<IProps, IState> {
               <span/>
             </div>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className={`collapse navbar-collapse ${isToggled && 'show'}`} >
             <ul className="navbar-nav menu">
               {listItems}
             </ul>
+            <ul className="navbar-nav menu">
+              <StyledButton color="yellow" basic onClick={this.handleChangeLang}>
+                <StyledFlag name={iconName}/>
+              </StyledButton>
+            </ul>
           </div>
-          <StyledButton color="yellow" basic onClick={this.handleChangeLang}>
-            <StyledFlag name={iconName}/>
-          </StyledButton>
         </nav>
       </Headroom>
     )
