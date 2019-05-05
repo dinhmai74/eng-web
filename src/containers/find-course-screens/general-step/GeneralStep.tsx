@@ -25,7 +25,7 @@ const Content = styled.p`
 
 const Container = styled('div')`
   background-image: url(${images.bgFindCourse});
-  height: 75vh;
+  height: 70vh;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -39,19 +39,18 @@ interface IProps {
   goNext: () => void
 }
 
-interface IState {
-}
+interface IState {}
 
 class FindCourseScreen extends Component<IProps, IState> {
   static defaultProps: {}
   state = {}
 
   render() {
-    const {style} = this.props
+    const { style } = this.props
     return (
       <Container style={style}>
         <Wrapper>
-          <LogoImage src={images.logoFindCourse}/>
+          <LogoImage src={images.logoFindCourse} />
           <Content> {tran('contentFinderCourse')}</Content>
           <Button onClick={this.props.goNext}>{tran('start')}</Button>
         </Wrapper>
