@@ -37,7 +37,7 @@ export const routes: IRoute[] = [
     path: strings.routeTest,
     first: 'free',
     second: 'tests',
-    Component: TestScreen
+    Component: TestQuestion
   },
   {
     path: strings.routeGeneralCourse,

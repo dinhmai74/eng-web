@@ -29,17 +29,18 @@ export interface IGeneralCourseState {
   value: string
   // correctAnswer: string
 }
+
 class CustomCheckbox extends React.Component<any, IGeneralCourseState> {
   state = {
     value: 'female'
   }
 
   handleChange = (event) => {
-    this.setState({ value: event.target.value })
-    if ( event.target.value === this.props.correctAnswer) {
-        this.props.dispatch({ type: 'INCREASE_POINT' })
+    this.setState({value: event.target.value})
+    if (event.target.value === this.props.correctAnswer) {
+      this.props.dispatch({type: 'INCREASE_POINT'})
     }
-    return 
+    return
   }
 
   render() {
@@ -52,7 +53,6 @@ class CustomCheckbox extends React.Component<any, IGeneralCourseState> {
       lastQuestion,
       correctAnswer
     } = this.props
-    console.log('this.props.point', this.props.point)
     return (
       <div>
         <FormControl>
@@ -66,22 +66,22 @@ class CustomCheckbox extends React.Component<any, IGeneralCourseState> {
           >
             <FormControlLabel
               value={firstQuestion}
-              control={<Radio />}
+              control={<Radio/>}
               label={firstQuestion}
             />
             <FormControlLabel
               value={secondQuestion}
-              control={<Radio />}
+              control={<Radio/>}
               label={secondQuestion}
             />
             <FormControlLabel
               value={thirdQuestion}
-              control={<Radio />}
+              control={<Radio/>}
               label={thirdQuestion}
             />
             <FormControlLabel
               value={lastQuestion}
-              control={<Radio />}
+              control={<Radio/>}
               label={lastQuestion}
             />
           </RadioGroup>

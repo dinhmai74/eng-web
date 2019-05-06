@@ -15,7 +15,6 @@ import {
 import { IRoute } from 'tools/routes'
 import TestResult from '../test-result-screen/TestResult'
 
-
 const Container = styled.div`
   display: flex;
   flex: 1;
@@ -48,7 +47,9 @@ export interface IGeneralCourseProps extends RouteComponentProps {
   /*** @property {propTypes.boolean} disable headroom- */
   disableHeadroom?: boolean
 }
-export interface IGeneralCourseState {}
+
+export interface IGeneralCourseState {
+}
 
 class TestQuestion extends React.Component<IGeneralCourseProps, any> {
   constructor(props: IGeneralCourseProps) {
@@ -56,13 +57,15 @@ class TestQuestion extends React.Component<IGeneralCourseProps, any> {
 
     this.state = {}
   }
+
   onButtonClick() {
-    const { history } = this.props
+    const {history} = this.props
     history.push({
       pathname: '/test-result',
       // search: 'name=jhon&amp;age=24'
     })
   }
+
   render() {
     return (
       <Container>
@@ -110,7 +113,7 @@ class TestQuestion extends React.Component<IGeneralCourseProps, any> {
             />
           </Answer>
 
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div style={{display: 'flex', justifyContent: 'center'}}>
             <Button color="red" onClick={this.onButtonClick.bind(this)}>
               Submit
             </Button>

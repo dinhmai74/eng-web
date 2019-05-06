@@ -23,7 +23,7 @@ export const colors = {
   gainsBoro: '#DCDCDC',
   lightGray: '#c5c5c5',
   darkViolet: '	#9400D3',
-  lawnGreen: '#7CFC00' ,
-  goldenRod: '#DAA520', 
+  lawnGreen: '#7CFC00',
+  goldenRod: '#DAA520',
 
 }

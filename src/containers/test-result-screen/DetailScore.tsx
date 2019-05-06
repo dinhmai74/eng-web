@@ -13,8 +13,7 @@ const DetailScore = styled.div`
 
 class DetailScores extends React.Component<any, any> {
   render() {
-    const { point } = this.props
-    console.log('pointttttt:', point)
+    const {point} = this.props
     if (point >= 0 && point <= 6) {
       return (
         <Container>

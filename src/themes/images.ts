@@ -51,7 +51,6 @@ export const images = {
   bgFindCourse: '/asset/images/general-course/bg.jpg',
   logoFindCourse: '/asset/images/general-course/logo.png',
 
-
   // test reuslt
   bgTestResult: '/asset/images/test-result/bg.jpg',
   chartScore: '/asset/images/test-result/pynamid.png',

@@ -22,12 +22,10 @@ import 'aos/dist/aos.css' // You can also use <link> for styles
 
 AOS.init()
 
-
 const ScrollToTop = () => {
   window.scrollTo(0, 0)
   return null
 }
-
 
 const baseUrl = process.env.PUBLIC_URL
 
@@ -56,7 +54,7 @@ const App = (props) => {
             )}
           </Route>
         ))}
-        <Route path="/test-result" component={TestResult} />
+        <Route path="/test-result" component={TestResult}/>
       </div>
       <InformationForm/>
       <Footer/>

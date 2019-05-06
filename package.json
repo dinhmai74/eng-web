@@ -52,6 +52,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "tslint --project tsconfig.json --config tslint.json",
+    "precommit": "npm run validate",
     "compile": "tsc",
     "eject": "react-scripts eject",
     "validate": "npm-run-all --parallel lint compile",
