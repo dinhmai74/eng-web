@@ -94,8 +94,8 @@ class Stepper extends Component<IStepperProps, IStepperState> {
       goNext: this.goNext,
       goBack: this.goBack,
       goToKey: this.goToKey,
-      isLastStep: this.isLastStep,
-      isFirstStep: this.isFirstStep,
+      isLastStep: this.isLastStep(),
+      isFirstStep: this.isFirstStep(),
       resetStepper: this.reset
     })
   }

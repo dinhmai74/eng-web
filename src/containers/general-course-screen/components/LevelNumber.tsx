@@ -2,7 +2,9 @@ import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { colors } from 'themes/index'
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init()
 interface IProps {}
 
 interface IState {}
@@ -33,7 +35,14 @@ class LevelNumber extends Component<any, any> {
   render() {
     const { style, color, ...rest } = this.props
     return (
-      <NumberLevel style={style} color={color}>
+      <NumberLevel
+        style={style}
+        color={color}
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-duration="1500"
+        data-aos-anchor-placement="bottom-center"
+      >
         <TextChart>{this.props.number}</TextChart>
       </NumberLevel>
     )

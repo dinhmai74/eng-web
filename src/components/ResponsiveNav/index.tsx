@@ -2,16 +2,27 @@ import 'App.css'
 import 'bootstrap'
 import React from 'react'
 import Headroom from 'react-headroom'
-import { Link} from 'react-scroll'
+import i18n from 'i18next'
+import { Link } from 'react-scroll'
 import { withRouter, RouteComponentProps } from 'react-router-dom'
-import { Nav} from 'react-bootstrap'
+import { Nav } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
-import { images } from 'themes'
+import { Flag, Button } from 'semantic-ui-react'
+import { colors, images } from 'themes'
 import { strings } from 'tools'
 import './button.scss'
 import './style.scss'
 import styled from 'styled-components'
 import { IRoute } from 'tools/routes'
+import { tran } from 'localization/i18n'
+
+const StyledFlag = styled(Flag)`
+`
+
+const StyledButton = styled(Button)`
+  background: transparent;
+  border: 1px solid ${colors.main};
+`
 
 const Background = styled.div`
   position: absolute;
@@ -32,6 +43,10 @@ interface IProps extends RouteComponentProps {
   hiddenRoute?: string[],
   /*** @property {propTypes.boolean} render One page - nav for one page or not */
   renderOnePage?: boolean,
+  /*** @property {propTypes.boolean} disable headroom- */
+  disableHeadroom?: boolean,
+
+  [rest: string]: any
 }
 
 interface IState {
@@ -93,14 +108,25 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     }))
   }
 
+  handleChangeLang = () => {
+    const currentLang = i18n.language
+    const newLang = currentLang === 'en' ? 'vi' : 'en'
+    i18n.changeLanguage(newLang, (err, t) => {
+      if (err) {
+        alert('something went wrong loading' + err)
+      }
+      i18n.reloadResources() // -> returns a Promise
+    })
+  }
+
   renderRouteContent = (r) => {
     return (
       <span className="menu__title">
-        <span className="menu__first-word" data-hover={r.first}>
-          {r.first}
+        <span className="menu__first-word" data-hover={tran(r.first)}>
+          {tran(r.first)}
         </span>
-        <span className="menu__second-word" data-hover={r.second}>
-          {r.second}
+        <span className="menu__second-word" data-hover={tran(r.second)}>
+          {tran(r.second)}
         </span>
       </span>
     )
@@ -159,50 +185,60 @@ class ResponsiveNav extends React.Component<IProps, IState> {
 
   render() {
     const {isToggled, isTop, bg, path} = this.state
-    const {routes, homeIcon, hiddenRoute} = this.props
+    const {routes, homeIcon, hiddenRoute, disableHeadroom} = this.props
     if (hiddenRoute && hiddenRoute.includes(path)) {
       return null
     }
 
     const listItems = this.renderListRouteItems()
 
-    return (
-      <Headroom style={{ background: 'transparent', zIndex: 9999 }}>
-      <nav className="navigation navbar navbar-expand-lg">
-        {(!isTop || path !== '/' || isToggled) && <Background/>}
-        <Nav.Link
-          key={strings.routeHome}
-          as={NavLink}
-          style={{marginLeft: 50}}
-          exact
-          to={strings.routeHome} className="navbar-brand"
-        >
-          <img src={homeIcon} width="30" height="30" alt=""/>
-        </Nav.Link>
+    const fixTopNav = disableHeadroom ? 'sticky-top' : null
 
-        <button
-          className={`navbar-toggler e-button ${isToggled && 'open'}`}
-          onClick={this.handleToggleButtonPress}
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <div className="e-burger">
-            <span/>
-            <span/>
-            <span/>
-            <span/>
+    const currentLang = i18n.language
+    const iconName = currentLang === 'en' ? 'gb' : 'vn'
+
+    return (
+      <Headroom className={fixTopNav} style={{background: 'transparent', zIndex: 9999}} disable={disableHeadroom}>
+        <nav className={`navigation navbar navbar-expand-lg`}>
+          {(!isTop || path !== '/' || isToggled) && <Background/>}
+          <Nav.Link
+            key={strings.routeHome}
+            as={NavLink}
+            style={{marginLeft: 50}}
+            exact
+            to={strings.routeHome} className="navbar-brand"
+          >
+            <img src={homeIcon} width="100" height="100" alt="logo" />
+          </Nav.Link>
+
+          <button
+            className={`navbar-toggler e-button ${isToggled && 'open'}`}
+            onClick={this.handleToggleButtonPress}
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div className="e-burger">
+              <span/>
+              <span/>
+              <span/>
+              <span/>
+            </div>
+          </button>
+          <div className={`collapse navbar-collapse ${isToggled && 'show'}`} >
+            <ul className="navbar-nav menu">
+              {listItems}
+            </ul>
+            <ul className="navbar-nav menu">
+              <StyledButton color="yellow" basic onClick={this.handleChangeLang}>
+                <StyledFlag name={iconName}/>
+              </StyledButton>
+            </ul>
           </div>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav menu">
-            {listItems}
-          </ul>
-        </div>
-      </nav>
+        </nav>
       </Headroom>
     )
   }

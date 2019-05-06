@@ -25,7 +25,7 @@ const Content = styled.p`
 
 const Container = styled('div')`
   background-image: url(${images.bgFindCourse});
-  height: 75vh;
+  height: 70vh;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -33,18 +33,25 @@ const Container = styled('div')`
 
 interface IProps {
   style?: any
+  onClick?: () => void
+  onChange: (key: string, value: any) => void
 
   [rest: string]: any
-
-  goNext: () => void
 }
 
 interface IState {
 }
 
 class FindCourseScreen extends Component<IProps, IState> {
-  static defaultProps: {}
+  static defaultProps: {
+    onClick: () => {},
+    onChange: (key, value) => {}
+  }
   state = {}
+
+  onChange = () => {
+    this.props.onChange('pill_name', 'butang ina mo')
+  }
 
   render() {
     const {style} = this.props
@@ -53,13 +60,11 @@ class FindCourseScreen extends Component<IProps, IState> {
         <Wrapper>
           <LogoImage src={images.logoFindCourse}/>
           <Content> {tran('contentFinderCourse')}</Content>
-          <Button onClick={this.props.goNext}>{tran('start')}</Button>
+          <Button onClick={this.onChange} type={'submit'}>{tran('start')}</Button>
         </Wrapper>
       </Container>
     )
   }
 }
-
-FindCourseScreen.defaultProps = {}
 
 export default FindCourseScreen

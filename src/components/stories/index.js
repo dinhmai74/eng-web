@@ -8,29 +8,30 @@ import {
   select,
   boolean,
   object,
-  array,
-} from "@storybook/addon-knobs"
-import { Welcome } from "@storybook/react/demo"
-import { Button, } from "semantic-ui-react"
+  array
+} from "@storybook/addon-knobs";
+import { Welcome } from "@storybook/react/demo";
+import { Button } from "semantic-ui-react";
 import "semantic/dist/semantic.min.css";
 import "App.css";
-import { storiesOf } from "@storybook/react"
+import { storiesOf } from "@storybook/react";
 
+import "semantic/dist/semantic.min.css";
+import "App.css";
 
-import 'semantic/dist/semantic.min.css'
-import 'App.css'
-
-import './step.story'
-import './footer.story'
-import './InformationForm.story'
-import './menu.story'
+import "./step.story";
+import "./footer.story";
+import "./InformationForm.story";
+import "./menu.story";
 import "./payment.story";
 import "./benefit.story";
 import "./certificate.story";
+
 import "./CustomFlipNumber.story"
 import "./GeneralCourse.story"
 import "./question.story"
 import "./test-result.story"
+
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
 ));
