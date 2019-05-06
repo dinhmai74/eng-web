@@ -198,7 +198,7 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     const iconName = currentLang === 'en' ? 'gb' : 'vn'
 
     return (
-      <Headroom style={{background: 'transparent', zIndex: 9999}}>
+      <Headroom className={fixTopNav} style={{background: 'transparent', zIndex: 9999}} disable={disableHeadroom}>
         <nav className={`navigation navbar navbar-expand-lg`}>
           {(!isTop || path !== '/' || isToggled) && <Background/>}
           <Nav.Link
@@ -208,7 +208,7 @@ class ResponsiveNav extends React.Component<IProps, IState> {
             exact
             to={strings.routeHome} className="navbar-brand"
           >
-            <img src={homeIcon} width="30" height="30" alt=""/>
+            <img src={homeIcon} width="100" height="100" alt="logo" />
           </Nav.Link>
 
           <button
