@@ -53,7 +53,7 @@ const App = (props) => {
           </Route>
         ))}
         <Route path="/test-result" component={TestResult} />
-        <Route path="/result" component={TestResult} />
+        <Route path="/result" component={Result} />
       </div>
       <InformationForm />
       <Footer />
