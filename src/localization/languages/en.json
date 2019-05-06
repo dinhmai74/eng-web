@@ -182,6 +182,10 @@
   "titleQ10": "Which part of English is most important to you?",
 
   "start": "Start",
-  "lang": "eng"
+  "lang": "eng",
+
+  "withDuckieEnglish": "With Duckie English",
+  "courseProgress": "Courses",
+  "h_courseSub": "The Wall Street English learning program has 20 different levels which are suitable for busy adults, from beginner to advanced level."
 
 }
