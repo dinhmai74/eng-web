@@ -35,7 +35,7 @@
   "contentRefR8": "What students say about us",
 
   "titleMethod1": "Multimedia lessons",
-  "contentMethod1": "You will learn vocabulary and pronunciation by watching real-life situations. Your speaking skills will be developed naturally by listening and repeating vocabulary in the lessons.",
+  "contentMethod1": "You will learn vocabulary and pronunciation by watching real-life situations. Your speaking skills will be deveeoped naturally by listening and repeating vocabulary in the lessons.",
 
   "titleMethod2": "English in action",
   "contentMethod2": "After each multimedia lesson, you will review it with a tutor or native English-speaking teacher.",
@@ -186,6 +186,7 @@
 
   "withDuckieEnglish": "With Duckie English",
   "courseProgress": "Courses",
-  "h_courseSub": "The Wall Street English learning program has 20 different levels which are suitable for busy adults, from beginner to advanced level."
+  "h_courseSub": "The Wall Street English learning program has 20 different levels which are suitable for busy adults, from beginner to advanced level.",
 
+  "generalCourse": "General course"
 }

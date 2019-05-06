@@ -84,8 +84,9 @@ class CustomInput extends Component<
     isEligible: true
   }
 
-  validate = () => {
+  validate = (): boolean => {
     // tslint:disable-next-line:no-shadowed-variable
+    let validateResult = true
     _.forEach(this.props.errorConditions, (value, key) => {
       const r = this.state.value.match(value.regex)
       if (r) {
@@ -93,13 +94,18 @@ class CustomInput extends Component<
           warningText: value.message,
           isEligible: true
         })
+        validateResult = true
         return
       }
+
       this.setState({
         warningText: value.message,
         isEligible: false
       })
+      validateResult = false
     })
+
+    return validateResult
   }
 
   onChange = (e: any): void => {
@@ -124,9 +130,9 @@ class CustomInput extends Component<
     }
 
     if (type === 'textarea') {
-      return(
+      return (
         <StyledTextArea {...rest} borderColor={borderColor} width={width} error={localError}
-                                  onChange={this.onChange}/>
+                        onChange={this.onChange}/>
       )
     }
 

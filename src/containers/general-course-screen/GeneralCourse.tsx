@@ -10,7 +10,6 @@ import Preparation from './components/Preparation'
 const Wrapper = styled.div`
   /* margin-right: auto;
   margin-left: auto; */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /* padding: 40px; */
   flex: 1;
 `
