@@ -19,14 +19,32 @@ import 'rc-steps/assets/index.css'
 import 'rc-steps/assets/iconfont.css'
 import Stepper, { ISteps } from './Stepper'
 import React, { Component } from 'react'
+import { withRouter, RouteComponentProps } from 'react-router-dom'
+import { IRoute } from 'tools/routes'
 
 import { Container } from './atoms'
 
-interface IMyFormValues {
+export interface IFindCourseFormValues {
+  career: string
   firstName: string
+  pill_name: string
+  question_1: number
+  question_2: number
+  question_3: number
 }
 
-interface IProps {}
+interface IProps extends RouteComponentProps {
+  /*** @property {propTypes.array} routes - display route */
+  routes: IRoute[]
+  /*** @property {propTypes.string} home icon - icon home display */
+  homeIcon?: string
+  /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
+  hiddenRoute?: string[]
+  /*** @property {propTypes.boolean} render One page - nav for one page or not */
+  renderOnePage?: boolean
+  /*** @property {propTypes.boolean} disable headroom- */
+  disableHeadroom?: boolean
+}
 
 interface IState {}
 
@@ -52,21 +70,26 @@ class FindCourseScreen extends Component<IProps, IState> {
     isLastStep: boolean,
     resetStepper: () => void,
     goNext: () => void
-  ) => async (values: IMyFormValues, actions: FormikActions<IMyFormValues>) => {
+  ) => async (
+    values: IFindCourseFormValues,
+    actions: FormikActions<IFindCourseFormValues>
+  ) => {
     const { setSubmitting, resetForm } = actions
 
     if (isLastStep) {
       // const id = navigation.getParam('id')
-
       // format data before upload data
       // const data = await addOrUpdateAlert(id, values)
-
       // navigation.navigate('Details', {details: data})
+      const { history } = this.props
+      history.push({
+        pathname: '/result',
+        state: { value: values }
+      })
       // TODO: do anal and result here
       // TODO: after that navigate to next result screen
-
-      resetForm()
-      resetStepper()
+      // resetForm()
+      // resetStepper()
     } else {
       goNext()
     }
@@ -109,11 +132,18 @@ class FindCourseScreen extends Component<IProps, IState> {
           {({ stepKey, goNext, goToKey, isLastStep, resetStepper }) => {
             return (
               <Formik
-                initialValues={{ firstName: '' }}
+                initialValues={{
+                  career: '',
+                  firstName: '',
+                  pill_name: '',
+                  question_1: 0,
+                  question_2: 0,
+                  question_3: 0
+                }}
                 validationSchema={validationSchema[stepKey]}
                 validateOnChange={false}
                 onSubmit={this.handleSubmit(isLastStep, resetStepper, goNext)}
-                render={(formikBag: FormikProps<IMyFormValues>) => {
+                render={(formikBag: FormikProps<IFindCourseFormValues>) => {
                   const {
                     isSubmitting,
                     errors,
@@ -136,4 +166,4 @@ class FindCourseScreen extends Component<IProps, IState> {
   }
 }
 
-export default FindCourseScreen
+export default withRouter(FindCourseScreen)

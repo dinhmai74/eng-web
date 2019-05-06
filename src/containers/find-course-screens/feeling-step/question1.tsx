@@ -7,6 +7,7 @@ import { colors, images } from 'themes/index'
 import Question from 'containers/find-course-screens/feeling-step/QuestionComponent/index'
 import { Flex } from 'rebass'
 import Header from './QuestionComponent/Header'
+import { withRouter } from 'react-router-dom'
 
 import firebase from '../../../firebase'
 

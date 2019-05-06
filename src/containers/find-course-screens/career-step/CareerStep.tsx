@@ -28,7 +28,7 @@ const P = styled.p`
   padding-bottom: 30px;
 `
 
-export type TCareerValue = 'StudyAbroad' | 'Travel' | 'Business' | 'Career'
+export type TCareerValue = 'study' | 'travel' | 'business' | 'career'
 
 interface ICareerStepProps {
   style?: any
@@ -40,8 +40,7 @@ interface ICareerStepProps {
   goNext: () => void
 }
 
-interface ICareerStepState {
-}
+interface ICareerStepState {}
 
 class CareerStep extends Component<ICareerStepProps, ICareerStepState> {
   static defaultProps = {}
@@ -69,22 +68,22 @@ class CareerStep extends Component<ICareerStepProps, ICareerStepState> {
           <Area
             image={images.study}
             title={tran('studyAbroad')}
-            onclick={() => this.onChange('StudyAbroad')}
+            onclick={() => this.onChange('study')}
           />
           <Area
             image={images.travel}
             title={tran('travel')}
-            onclick={() => this.onChange('Travel')}
+            onclick={() => this.onChange('travel')}
           />
           <Area
             image={images.business}
             title={tran('business')}
-            onclick={() => this.onChange('Business')}
+            onclick={() => this.onChange('business')}
           />
           <Area
             image={images.career}
             title={tran('career')}
-            onclick={() => this.onChange('Career')}
+            onclick={() => this.onChange('career')}
           />
         </AreaContainer>
       </Container>

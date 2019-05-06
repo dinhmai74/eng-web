@@ -13,6 +13,7 @@ import { routes } from 'tools/routes'
 import { CSSTransition } from 'react-transition-group'
 import AOS from 'aos'
 import 'aos/dist/aos.css' // You can also use <link> for styles
+import Result from 'containers/find-course-screens/result/result'
 
 AOS.init()
 
@@ -48,6 +49,7 @@ class App extends Component {
                 )}
               </Route>
             ))}
+            <Route path="/result" component={Result} />
           </div>
           <InformationForm />
           <Footer />
