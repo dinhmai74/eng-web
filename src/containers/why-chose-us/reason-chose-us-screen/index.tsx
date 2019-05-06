@@ -1,8 +1,8 @@
 import ReasonCard from 'components/ReasonCard/index'
 import { tran } from 'localization/i18n'
 import React, { PureComponent } from 'react'
-import Container from 'react-bootstrap/Container'
 import { Header } from 'semantic-ui-react'
+import { Section, Container } from '@front10/landing-page-book/dist/components'
 
 import { colors, images } from 'themes'
 import './styles.css'
@@ -16,7 +16,7 @@ class ReasonChoseUsScreen extends PureComponent<IProps, State> {
 
   render() {
     return (
-      <Container style={{padding: 20}}>
+      <Container style={{ padding: 20 }}>
         <ReasonCard
           isFirstItem
           reason={tran('reason1')}

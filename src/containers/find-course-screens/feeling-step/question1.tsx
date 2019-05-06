@@ -7,6 +7,9 @@ import { colors, images } from 'themes/index'
 import Question from 'containers/find-course-screens/feeling-step/QuestionComponent/index'
 import { Flex } from 'rebass'
 import Header from './QuestionComponent/Header'
+import { withRouter } from 'react-router-dom'
+
+import firebase from '../../../firebase'
 
 const Container = styled('div')`
   height: 70vh;
@@ -27,18 +30,32 @@ interface IProps {
 }
 
 interface IState {
+  question: object
 }
 
 class Question1Screen extends Component<IProps, IState> {
   static defaultProps: {}
-  state = {}
+  state = {
+    question: {}
+  }
 
   handleOnchange = (value: string): void => {
     this.props.onChange('question_1', value)
   }
 
+  componentDidMount() {
+    const questionRef = firebase.database().ref('questions/question_1')
+    questionRef.on('value', (snapshot) => {
+      this.setState({
+        question: snapshot!.val()
+      })
+    })
+  }
+
   render() {
-    const {style, numberQuestion, title, ...rest} = this.props
+    const { style, numberQuestion, title, ...rest } = this.props
+    const question: any = this.state.question
+
     return (
       <Container
         data-aos="flip-down"
@@ -51,9 +68,9 @@ class Question1Screen extends Component<IProps, IState> {
         data-aos-anchor-placement="top-center"
         style={style}
       >
-        <Header title={tran('question1')} content={tran('titleQ1')}/>
+        <Header title={tran('question1')} content={question.title} />
         <ContainerQuestion>
-          <Question onChange={this.handleOnchange} />
+          <Question onChange={this.handleOnchange} answers={question.answers} />
         </ContainerQuestion>
       </Container>
     )

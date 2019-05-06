@@ -14,6 +14,7 @@ import { routes } from 'tools/routes'
 import { CSSTransition } from 'react-transition-group'
 
 import TestResult from './containers/test-result-screen/TestResult'
+import Result from 'containers/find-course-screens/result/result'
 // import GeneralScreen from './containers/general-course-screen/GeneralCourse'
 import CustomCheckbox from './components/Question/CustomCheckbox'
 
@@ -32,15 +33,12 @@ const baseUrl = process.env.PUBLIC_URL
 const App = (props) => {
   return (
     <div>
-      <Route component={ScrollToTop}/>
-      <ResponsiveNav
-        routes={routes}
-        hiddenRoute={[strings.routeWhyChoseUs]}
-      />
+      <Route component={ScrollToTop} />
+      <ResponsiveNav routes={routes} hiddenRoute={[strings.routeWhyChoseUs]} />
       <div>
-        {routes.map(({path, Component: Comp}) => (
+        {routes.map(({ path, Component: Comp }) => (
           <Route key={path} exact path={baseUrl + path}>
-            {({match}) => (
+            {({ match }) => (
               <CSSTransition
                 in={match != null}
                 timeout={300}
@@ -48,19 +46,19 @@ const App = (props) => {
                 unmountOnExit
               >
                 <div className="page">
-                  <Comp/>
+                  <Comp />
                 </div>
               </CSSTransition>
             )}
           </Route>
         ))}
-        <Route path="/test-result" component={TestResult}/>
+        <Route path="/test-result" component={TestResult} />
+        <Route path="/result" component={Result} />
       </div>
-      <InformationForm/>
-      <Footer/>
+      <InformationForm />
+      <Footer />
     </div>
   )
-
 }
 
 export default withTranslation()(App)
