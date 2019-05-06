@@ -26,6 +26,7 @@ const StyledHeader = styled(Header)`
 
 interface IProps extends RouteComponentProps {
   style?: any
+  [rest: string]: any
 }
 
 interface IState {

@@ -8,7 +8,8 @@ const StyledButton = styled('button')`
 `
 
 interface ILinkButtonProps {
-  to: string
+  to: string,
+  [rest: string]: any
 }
 
 export default class LinkButton extends React.Component<ILinkButtonProps> {
