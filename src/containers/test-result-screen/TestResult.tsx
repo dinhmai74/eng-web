@@ -18,11 +18,17 @@ import {
   Card
 } from '@front10/landing-page-book/dist/components'
 const StyleSection = styled(Section)`
-  background-image: url(${images.bgTestResult});
-  background-size: cover;
+  /* background-image: url(${images.bgTestResult});
+  background-size: cover; */
+`
+const StylePoint = styled.div`
+  padding-left: 18px;
+`
+const StyleLevel = styled.div`
+  padding-left: 18px;
 `
 const Wrapper = styled.div`
-  color: white;
+  /* color: ${colors.darkCyan}; */
 `
 
 // export interface IGeneralCourseProps {}
@@ -36,16 +42,18 @@ class TestResult extends React.Component<any, IGeneralCourseState> {
   // }
   render() {
     // console.log('this.props.point', this.props.point)
-    const {point} = this.props
+    const { point } = this.props
     return (
       <StyleSection title="Kết quả bài kiểm tra của bạn: ">
         <Container>
           <Row>
             <Column className="col-12 col-md-6">
               <Wrapper>
-                <div>Point: {point}/25</div>
-                <div>Levels: </div>
-                <DetailScore />
+                <StylePoint>Point: {point}/25</StylePoint>
+                <StyleLevel>Levels: </StyleLevel>
+                <div>
+                  <DetailScore />
+                </div>
               </Wrapper>
             </Column>
             <Column className="col-12 col-md-6">

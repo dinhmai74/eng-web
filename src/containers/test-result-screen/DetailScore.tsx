@@ -9,45 +9,81 @@ import { connect } from 'react-redux'
 
 const DetailScore = styled.div`
   background-color: ${(p) => p.color};
+  font-size: 16px;
+  padding-top: 20px;
+  flex-flow: row-wrap;
+`
+const Title = styled.div`
+  font-size: 30px;
+  text-align: center;
 `
 
 class DetailScores extends React.Component<any, any> {
   render() {
-    const {point} = this.props
+    const { point } = this.props
     if (point >= 0 && point <= 6) {
       return (
         <Container>
-          <DetailScore color={colors.darkViolet}>A1</DetailScore>
+          <DetailScore color={colors.darkViolet}>
+            <Title color={colors.darkViolet}>A1</Title>
+            An ability to deal with simple, straightforward information and
+            begin to express oneself in familiar contexts.
+          </DetailScore>
         </Container>
       )
     } else if (point >= 7 && point <= 11) {
       return (
         <Container>
-          <DetailScore color={colors.darkCyan}>A2</DetailScore>
+          <DetailScore color={colors.darkCyan}>
+            {' '}
+            <Title>A2</Title>
+            An ability to deal with simple, straightforward information and
+            begin to express oneself in familiar contexts.
+          </DetailScore>
         </Container>
       )
     } else if (point >= 12 && point <= 16) {
       return (
         <Container>
-          <DetailScore color={colors.lawnGreen}>B1</DetailScore>
+          <DetailScore color={colors.lawnGreen}>
+            {' '}
+            <Title>B1</Title>
+            An ability to deal with simple, straightforward information and
+            begin to express oneself in familiar contexts.
+          </DetailScore>
         </Container>
       )
     } else if (point >= 17 && point <= 20) {
       return (
         <Container>
-          <DetailScore color={colors.yellow}>B2</DetailScore>
+          <DetailScore color={colors.yellow}>
+            {' '}
+            <Title>B2</Title>
+            An ability to deal with simple, straightforward information and
+            begin to express oneself in familiar contexts.
+          </DetailScore>
         </Container>
       )
     } else if (point >= 21 && point <= 23) {
       return (
         <Container>
-          <DetailScore color={colors.goldenRod}>C1</DetailScore>
+          <DetailScore color={colors.goldenRod}>
+            {' '}
+            <Title>C1</Title>
+            An ability to deal with simple, straightforward information and
+            begin to express oneself in familiar contexts.
+          </DetailScore>
         </Container>
       )
     }
     return (
       <Container>
-        <DetailScore color={colors.lightRed}>C2</DetailScore>
+        <DetailScore color={colors.lightRed}>
+          {' '}
+          <Title>C2</Title>
+          An ability to deal with simple, straightforward information and begin
+          to express oneself in familiar contexts
+        </DetailScore>
       </Container>
     )
   }
