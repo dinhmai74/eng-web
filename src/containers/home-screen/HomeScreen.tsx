@@ -1,6 +1,7 @@
 import { InformationForm } from 'components'
 import { ResponsiveNav } from 'components'
 import ArchivedOverview from 'containers/home-screen/components/ArchivedOverview'
+import TeamMember from 'containers/home-screen/components/TeamMember'
 import WallStreetEnglish from 'containers/why-chose-us/wall-street-english'
 import React, { Component } from 'react'
 import styled from 'styled-components'
@@ -27,6 +28,7 @@ class HomeScreen extends Component {
         <WallStreetEnglish/>
         <CourseGeneral/>
         <ArchivedOverview/>
+        <TeamMember/>
       </div>
     )
   }
