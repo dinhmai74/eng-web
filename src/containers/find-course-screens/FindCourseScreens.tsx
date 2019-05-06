@@ -77,19 +77,13 @@ class FindCourseScreen extends Component<IProps, IState> {
     const { setSubmitting, resetForm } = actions
 
     if (isLastStep) {
-      // const id = navigation.getParam('id')
-      // format data before upload data
-      // const data = await addOrUpdateAlert(id, values)
-      // navigation.navigate('Details', {details: data})
       const { history } = this.props
-      history.push({
-        pathname: '/result',
-        state: { value: values }
-      })
-      // TODO: do anal and result here
-      // TODO: after that navigate to next result screen
-      // resetForm()
-      // resetStepper()
+      if (history) {
+        history.push({
+          pathname: '/result',
+          state: { value: values }
+        })
+      }
     } else {
       goNext()
     }

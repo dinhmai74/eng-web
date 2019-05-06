@@ -48,8 +48,7 @@ export interface IGeneralCourseProps extends RouteComponentProps {
   disableHeadroom?: boolean
 }
 
-export interface IGeneralCourseState {
-}
+export interface IGeneralCourseState {}
 
 class TestQuestion extends React.Component<IGeneralCourseProps, any> {
   constructor(props: IGeneralCourseProps) {
@@ -59,11 +58,13 @@ class TestQuestion extends React.Component<IGeneralCourseProps, any> {
   }
 
   onButtonClick() {
-    const {history} = this.props
-    history.push({
-      pathname: '/test-result',
-      // search: 'name=jhon&amp;age=24'
-    })
+    const { history } = this.props
+    if (history) {
+      history.push({
+        pathname: '/test-result'
+        // search: 'name=jhon&amp;age=24'
+      })
+    }
   }
 
   render() {
@@ -191,7 +192,7 @@ class TestQuestion extends React.Component<IGeneralCourseProps, any> {
               lastQuestion={data.question15.lastquestion}
               correctAnswer={data.question15.firstquestion}
             />
-              <CustomCheckbox
+            <CustomCheckbox
               titleQuestion={data.question16.titlequestion}
               firstQuestion={data.question16.firstquestion}
               secondQuestion={data.question16.secondquestion}
@@ -199,7 +200,7 @@ class TestQuestion extends React.Component<IGeneralCourseProps, any> {
               lastQuestion={data.question16.lastquestion}
               correctAnswer={data.question16.firstquestion}
             />
-              <CustomCheckbox
+            <CustomCheckbox
               titleQuestion={data.question17.titlequestion}
               firstQuestion={data.question17.firstquestion}
               secondQuestion={data.question17.secondquestion}
@@ -207,7 +208,7 @@ class TestQuestion extends React.Component<IGeneralCourseProps, any> {
               lastQuestion={data.question17.lastquestion}
               correctAnswer={data.question17.firstquestion}
             />
-              <CustomCheckbox
+            <CustomCheckbox
               titleQuestion={data.question18.titlequestion}
               firstQuestion={data.question18.firstquestion}
               secondQuestion={data.question18.secondquestion}
@@ -215,7 +216,7 @@ class TestQuestion extends React.Component<IGeneralCourseProps, any> {
               lastQuestion={data.question18.lastquestion}
               correctAnswer={data.question18.firstquestion}
             />
-              <CustomCheckbox
+            <CustomCheckbox
               titleQuestion={data.question19.titlequestion}
               firstQuestion={data.question19.firstquestion}
               secondQuestion={data.question19.secondquestion}
@@ -223,7 +224,7 @@ class TestQuestion extends React.Component<IGeneralCourseProps, any> {
               lastQuestion={data.question19.lastquestion}
               correctAnswer={data.question19.firstquestion}
             />
-              <CustomCheckbox
+            <CustomCheckbox
               titleQuestion={data.question20.titlequestion}
               firstQuestion={data.question20.firstquestion}
               secondQuestion={data.question20.secondquestion}
@@ -231,7 +232,7 @@ class TestQuestion extends React.Component<IGeneralCourseProps, any> {
               lastQuestion={data.question20.lastquestion}
               correctAnswer={data.question20.firstquestion}
             />
-              <CustomCheckbox
+            <CustomCheckbox
               titleQuestion={data.question21.titlequestion}
               firstQuestion={data.question21.firstquestion}
               secondQuestion={data.question21.secondquestion}
@@ -239,7 +240,7 @@ class TestQuestion extends React.Component<IGeneralCourseProps, any> {
               lastQuestion={data.question21.lastquestion}
               correctAnswer={data.question21.firstquestion}
             />
-              <CustomCheckbox
+            <CustomCheckbox
               titleQuestion={data.question22.titlequestion}
               firstQuestion={data.question22.firstquestion}
               secondQuestion={data.question22.secondquestion}
@@ -247,7 +248,7 @@ class TestQuestion extends React.Component<IGeneralCourseProps, any> {
               lastQuestion={data.question22.lastquestion}
               correctAnswer={data.question22.firstquestion}
             />
-              <CustomCheckbox
+            <CustomCheckbox
               titleQuestion={data.question23.titlequestion}
               firstQuestion={data.question23.firstquestion}
               secondQuestion={data.question23.secondquestion}
@@ -255,7 +256,7 @@ class TestQuestion extends React.Component<IGeneralCourseProps, any> {
               lastQuestion={data.question23.lastquestion}
               correctAnswer={data.question23.firstquestion}
             />
-              <CustomCheckbox
+            <CustomCheckbox
               titleQuestion={data.question24.titlequestion}
               firstQuestion={data.question24.firstquestion}
               secondQuestion={data.question24.secondquestion}
@@ -263,7 +264,7 @@ class TestQuestion extends React.Component<IGeneralCourseProps, any> {
               lastQuestion={data.question24.lastquestion}
               correctAnswer={data.question24.firstquestion}
             />
-              <CustomCheckbox
+            <CustomCheckbox
               titleQuestion={data.question25.titlequestion}
               firstQuestion={data.question25.firstquestion}
               secondQuestion={data.question25.secondquestion}
@@ -273,7 +274,7 @@ class TestQuestion extends React.Component<IGeneralCourseProps, any> {
             />
           </Answer>
 
-          <div style={{display: 'flex', justifyContent: 'center'}}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
             <Button color="red" onClick={this.onButtonClick.bind(this)}>
               Submit
             </Button>
