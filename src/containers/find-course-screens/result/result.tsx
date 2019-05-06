@@ -67,7 +67,16 @@ export default class Result extends React.Component<IProps, IState> {
   constructor(props: IProps) {
     super(props)
 
-    this.state = {}
+    this.state = {
+      value: {
+        career: '',
+        firstName: '',
+        pill_name: '',
+        question_1: 0,
+        question_2: 0,
+        question_3: 0
+      }
+    }
   }
 
   renderImage = () => {
