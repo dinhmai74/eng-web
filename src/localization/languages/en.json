@@ -152,6 +152,7 @@
   "methods": "Methods",
   "contentFinderCourse": "FIND THE BEST FITTING COURSE AND PRIVATE TO YOU",
 
+
   "purpose": "What is your purpose of learning English?",
   "choose": "Choose an area of interest",
   "studyAbroad": "Study abroad",
@@ -186,4 +187,5 @@
   "withDuckieEnglish": "With Duckie English",
   "courseProgress": "Courses",
   "h_courseSub": "The Wall Street English learning program has 20 different levels which are suitable for busy adults, from beginner to advanced level."
+
 }

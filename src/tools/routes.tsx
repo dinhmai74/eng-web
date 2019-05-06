@@ -2,7 +2,7 @@ import {
   FindCourseScreen,
   HomeScreen,
   WhyChoseUs,
-  TestScreen,
+  TestQuestion,
   GeneralCourse
 } from 'containers'
 import { strings } from './strings'
@@ -37,7 +37,7 @@ export const routes: IRoute[] = [
     path: strings.routeTest,
     first: 'free',
     second: 'tests',
-    Component: TestScreen
+    Component: TestQuestion
   },
   {
     path: strings.routeGeneralCourse,
