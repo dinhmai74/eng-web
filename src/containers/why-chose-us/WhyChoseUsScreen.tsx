@@ -5,16 +5,14 @@ import Certificate from 'containers/why-chose-us/certificate'
 import { choseUsRoutes } from 'containers/why-chose-us/ChoseUsRoutes'
 import Payment from 'containers/why-chose-us/payment'
 import ReasonChoseUsScreen from 'containers/why-chose-us/reason-chose-us-screen'
-import { Section } from '@front10/landing-page-book/dist/components'
+import { Section, Container } from '@front10/landing-page-book/dist/components'
 import UniqueMethod from 'containers/why-chose-us/unique-method'
 import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
 
-interface IProps {
-}
+interface IProps {}
 
-interface IState {
-}
+interface IState {}
 
 class WhyChoseUsScreen extends Component<IProps, IState> {
   static defaultProps = {}
@@ -23,51 +21,41 @@ class WhyChoseUsScreen extends Component<IProps, IState> {
   render() {
     return (
       <div>
-        <ResponsiveNav renderOnePage routes={choseUsRoutes} disableHeadroom/>
-        <div
-          id={'sectionReasonChoseUs'}
-        >
+        <ResponsiveNav renderOnePage routes={choseUsRoutes} disableHeadroom />
+        <div id={'sectionReasonChoseUs'}>
           <Section
             title={tran('titleReasonChoseUs')}
             subTitle={tran('subReasonChoseUs')}
           >
-            <ReasonChoseUsScreen/>
+            <ReasonChoseUsScreen />
           </Section>
         </div>
 
-        <div
-          id={'sectionUniqueMethod'}
-        >
+        <div id={'sectionUniqueMethod'}>
           <Section
             bgColor={'light'}
             title={tran('titleUniqueMethod')}
             subTitle={tran('subUniqueMethod')}
           >
-            <UniqueMethod/>
+            <UniqueMethod />
           </Section>
         </div>
 
-        <div
-          id={'sectionBenefit'}
-        >
+        <div id={'sectionBenefit'}>
           <Section title={tran('titleBenefit')}>
-            <Benefit/>
+            <Benefit />
           </Section>
         </div>
 
-        <div
-          id={'sectionCertificate'}
-        >
+        <div id={'sectionCertificate'}>
           <Section bgColor={'light'} title={tran('titleCertificate')}>
-            <Certificate/>
+            <Certificate />
           </Section>
         </div>
 
-        <div
-          id={'sectionPayment'}
-        >
+        <div id={'sectionPayment'}>
           <Section title={tran('titlePayment')}>
-            <Payment/>
+            <Payment />
           </Section>
         </div>
       </div>
