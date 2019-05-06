@@ -24,7 +24,7 @@ export default class WallStreetEnglish extends React.PureComponent<IProps,
   any> {
   render() {
     return (
-      <Section title={tran('withDuckieEnglish')} bgColor="light">
+      <Section bgColor="light">
         <Container>
           <Flex p={5}>
             <Box width={3 / 3}>
