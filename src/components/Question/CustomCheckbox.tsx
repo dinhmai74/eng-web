@@ -56,7 +56,7 @@ class CustomCheckbox extends React.Component<any, IGeneralCourseState> {
     return (
       <div>
         <FormControl>
-          <FormLabel>{titleQuestion}</FormLabel>
+          <FormLabel style={{paddingTop: '30px'}}>{titleQuestion}</FormLabel>
           <RadioGroup
             aria-label="Gender"
             name="gender1"
