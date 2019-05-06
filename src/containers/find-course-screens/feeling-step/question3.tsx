@@ -66,7 +66,7 @@ class Question1Screen extends Component<IProps, IState> {
         data-aos-anchor-placement="top-center"
         style={style}
       >
-        <Header title={tran('question1')} content={question.title} />
+        <Header title={tran('question2')} content={question.title} />
         <ContainerQuestion>
           <Question onChange={this.onChange} answers={question.answers} />
         </ContainerQuestion>
