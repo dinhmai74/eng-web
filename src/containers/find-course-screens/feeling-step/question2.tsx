@@ -43,7 +43,7 @@ class Question1Screen extends Component<IProps, IState> {
   }
 
   componentDidMount() {
-    const questionRef = firebase.database().ref('questions/question_1')
+    const questionRef = firebase.database().ref('questions/question_2')
     questionRef.on('value', (snapshot) => {
       this.setState({
         question: snapshot!.val()
@@ -66,7 +66,7 @@ class Question1Screen extends Component<IProps, IState> {
         data-aos-anchor-placement="top-center"
         style={style}
       >
-        <Header title={tran('question1')} content={tran('titleQ1')} />
+        <Header title={tran('question1')} content={question.title} />
         <ContainerQuestion>
           <Question onChange={this.onChange} answers={question.answers} />
         </ContainerQuestion>
