@@ -45,7 +45,8 @@ export interface IGeneralCourseProps extends RouteComponentProps {
   /*** @property {propTypes.boolean} render One page - nav for one page or not */
   renderOnePage?: boolean
   /*** @property {propTypes.boolean} disable headroom- */
-  disableHeadroom?: boolean
+  disableHeadroom?: boolean,
+  history: any
 }
 
 export interface IGeneralCourseState {}
