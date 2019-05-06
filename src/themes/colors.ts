@@ -19,5 +19,11 @@ export const colors = {
   bgSecondary: '#f8f9fa',
   bgMain: '#ffffff',
   bgHero: '#383d45',
-  black: 'black'
+  black: 'black',
+  gainsBoro: '#DCDCDC',
+  lightGray: '#c5c5c5',
+  darkViolet: '	#9400D3',
+  lawnGreen: '#7CFC00',
+  goldenRod: '#DAA520',
+
 }

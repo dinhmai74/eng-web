@@ -7,7 +7,9 @@ import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
 import { Button, Icon } from 'semantic-ui-react'
 import styled from 'styled-components'
+import { withRouter, RouteComponentProps } from 'react-router-dom'
 import { images } from 'themes'
+import { strings } from 'tools'
 
 const Container = styled.div`
   margin: auto ;
@@ -22,14 +24,20 @@ const StyledHeader = styled(Header)`
  font-size: 3em;
 `
 
-interface IProps {
+interface IProps extends RouteComponentProps {
   style?: any
 }
-interface IState {}
+
+interface IState {
+}
 
 class Introduction extends Component<IProps, IState> {
   static defaultProps: {}
   state = {}
+
+  handleExplore = () => {
+    this.props.history.push(strings.routeWhyChoseUs)
+  }
 
   render() {
     return (
@@ -48,11 +56,11 @@ class Introduction extends Component<IProps, IState> {
             {tran('learnEnglishForBusyPeople')}
           </StyledHeader>
           <div className="mt-5" style={{zIndex: -9}}>
-            <Button animated secondary >
+            <Button animated secondary onClick={this.handleExplore}>
               <Button.Content visible>{tran('explore')}</Button.Content>
               <Button.Content hidden>
                 <StyledText>{tran('explore')}</StyledText>
-                <Icon name="arrow right" />
+                <Icon name="arrow right"/>
               </Button.Content>
             </Button>
           </div>
@@ -64,4 +72,4 @@ class Introduction extends Component<IProps, IState> {
 
 Introduction.defaultProps = {}
 
-export default Introduction
+export default withRouter(Introduction)
