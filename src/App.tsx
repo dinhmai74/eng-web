@@ -12,6 +12,11 @@ import { strings, RouterHandler } from 'tools'
 import './semantic/dist/semantic.min.css'
 import { routes } from 'tools/routes'
 import { CSSTransition } from 'react-transition-group'
+
+import TestResult from './containers/test-result-screen/TestResult'
+// import GeneralScreen from './containers/general-course-screen/GeneralCourse'
+import CustomCheckbox from './components/Question/CustomCheckbox'
+
 import AOS from 'aos'
 import 'aos/dist/aos.css' // You can also use <link> for styles
 
@@ -49,11 +54,13 @@ const App = (props) => {
             )}
           </Route>
         ))}
+        <Route path="/test-result" component={TestResult}/>
       </div>
       <InformationForm/>
       <Footer/>
     </div>
   )
+
 }
 
 export default withTranslation()(App)
