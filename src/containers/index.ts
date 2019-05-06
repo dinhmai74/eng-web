@@ -4,4 +4,12 @@ import TestScreen from './test-screens/TestScreen'
 import WhyChoseUs from './why-chose-us'
 import GeneralCourse from './general-course-screen'
 
-export { HomeScreen, WhyChoseUs, TestScreen, FindCourseScreen, GeneralCourse }
+import TestQuestion from './test-screen/TestQuestion'
+
+export {
+  HomeScreen,
+  WhyChoseUs,
+  TestQuestion,
+  FindCourseScreen,
+  GeneralCourse
+}

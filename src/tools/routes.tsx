@@ -2,48 +2,47 @@ import {
   FindCourseScreen,
   HomeScreen,
   WhyChoseUs,
-  TestScreen,
+  TestQuestion,
   GeneralCourse
 } from 'containers'
-import { tran } from 'localization/i18n'
 import { strings } from './strings'
 
 export interface IRoute {
- path: string,
- first: string,
- second: string,
- Component?: any
+  path: string,
+  first: string,
+  second: string,
+  Component?: any
 }
 
 export const routes: IRoute[] = [
   {
     path: strings.routeHome,
-    first: tran('home'),
-    second: tran('page'),
+    first: 'home',
+    second: 'page',
     Component: HomeScreen
   },
   {
     path: strings.routeWhyChoseUs,
-    first: tran('chose'),
-    second: tran('us'),
+    first: 'chose',
+    second: 'us',
     Component: WhyChoseUs
   },
   {
     path: strings.routeFindCourse,
-    first: tran('find'),
-    second: tran('course'),
+    first: 'find',
+    second: 'course',
     Component: FindCourseScreen
   },
   {
     path: strings.routeTest,
-    first: tran('free'),
-    second: tran('tests'),
-    Component: TestScreen
+    first: 'free',
+    second: 'tests',
+    Component: TestQuestion
   },
   {
     path: strings.routeGeneralCourse,
-    first: tran('general'),
-    second: tran('course'),
+    first: 'general',
+    second: 'course',
     Component: GeneralCourse
   }
 ]

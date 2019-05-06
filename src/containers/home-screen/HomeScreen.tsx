@@ -5,6 +5,7 @@ import WallStreetEnglish from 'containers/why-chose-us/wall-street-english'
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Introduction from './components/Introduction'
+import CourseGeneral from './components/CourseGeneral'
 
 const IntroStyle = {
   position: 'absolute',
@@ -14,7 +15,7 @@ const IntroStyle = {
 }
 
 const Tracker = styled('div')`
-  min-height: 100vh;
+  min-height: 70vh;
 `
 
 class HomeScreen extends Component {
@@ -24,6 +25,7 @@ class HomeScreen extends Component {
         <Introduction style={IntroStyle}/>
         <Tracker/>
         <WallStreetEnglish/>
+        <CourseGeneral/>
         <ArchivedOverview/>
       </div>
     )
