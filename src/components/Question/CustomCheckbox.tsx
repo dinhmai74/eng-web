@@ -1,127 +1,104 @@
-import React, { Component } from 'react'
-import { Form, Checkbox } from 'semantic-ui-react'
+import React from 'react'
+import { withStyles } from '@material-ui/core/styles'
+import Radio from '@material-ui/core/Radio'
+import RadioGroup from '@material-ui/core/RadioGroup'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
+import FormControl from '@material-ui/core/FormControl'
+import FormLabel from '@material-ui/core/FormLabel'
 import styled from 'styled-components'
-import { element } from 'prop-types'
-import { AnyCnameRecord } from 'dns'
+import { connect } from 'react-redux'
+// import PropTypes from 'prop-types'
 
-const Title = styled.div`
+const styles = (theme) => ({
+  root: {
+    display: 'flex'
+  },
+  formControl: {
+    margin: theme.spacing.unit * 3
+  },
+  group: {
+    margin: `${theme.spacing.unit}px 0`
+  }
+})
+
+const TitleQuestion = styled(FormLabel)`
   font-weight: bold;
-  font-size: 20px;
 `
-export interface IGeneralCourseProps {
-  onChange: (e: string) => void
-  questionTitle: string
-  firstQuestion: string
-  secondQuestion: string
-  thirdQuestion: string
-  lastQuestion: string
-  correctAnswer: string
-}
 
 export interface IGeneralCourseState {
   value: string
-  point: number
-  sumPoint: number
   // correctAnswer: string
 }
-
-export default class CustomCheckbox extends React.Component<
-  IGeneralCourseProps,
-  IGeneralCourseState
-> {
+class CustomCheckbox extends React.Component<any, IGeneralCourseState> {
   state = {
-    value: '',
-    point: 0,
-    sumPoint: 0
-  }
-  handleChange = (e, { value }) => {
-    this.setState({
-      value
-    })
-    if (value === this.props.correctAnswer) {
-      this.setState({
-        point: this.state.point + 1
-      })
-      return
-    }
+    value: 'female'
   }
 
-  // onChange = (e: any): void => {
-  //   this.setState(
-  //     {
-  //       value: e.target.value
-  //     },
-  //     () => {
-  //       // this.handleChange(e, {value})
-  //     }
-  //   )
-  //   if (this.props.onChange) {
-  //     this.props.onChange(e.target.value)
-  //   }
-  // }
+  handleChange = (event) => {
+    this.setState({ value: event.target.value })
+    if ( event.target.value === this.props.correctAnswer) {
+        this.props.dispatch({ type: 'INCREASE_POINT' })
+    }
+    return 
+  }
 
   render() {
     const {
-      questionTitle,
+      classes,
+      titleQuestion,
       firstQuestion,
       secondQuestion,
       thirdQuestion,
       lastQuestion,
       correctAnswer
     } = this.props
-    const { value, point } = this.state
-    console.log('pointttttt: ', point)
+    console.log('this.props.point', this.props.point)
     return (
-      <Form>
-        <Form.Field>
-          {/* Selected value: <b>{value}</b> */}
-          <Title>{questionTitle}</Title>
-        </Form.Field>
-        <Form.Field>
-          <Checkbox
-            radio
-            label={firstQuestion}
-            name="checkboxRadioGroup"
-            value={firstQuestion}
-            checked={value === firstQuestion}
+      <div>
+        <FormControl>
+          <FormLabel>{titleQuestion}</FormLabel>
+          <RadioGroup
+            aria-label="Gender"
+            name="gender1"
+            // className={classes.group}
+            value={this.state.value}
             onChange={this.handleChange}
-            style={{ paddingLeft: '20px' }}
-          />
-        </Form.Field>
-        <Form.Field>
-          <Checkbox
-            radio
-            label={secondQuestion}
-            name="checkboxRadioGroup"
-            value={secondQuestion}
-            checked={value === secondQuestion}
-            onChange={this.handleChange}
-            style={{ paddingLeft: '20px' }}
-          />
-        </Form.Field>
-        <Form.Field>
-          <Checkbox
-            radio
-            label={thirdQuestion}
-            name="checkboxRadioGroup"
-            value={thirdQuestion}
-            checked={value === thirdQuestion}
-            onChange={this.handleChange}
-            style={{ paddingLeft: '20px' }}
-          />
-        </Form.Field>
-        <Form.Field>
-          <Checkbox
-            radio
-            label={lastQuestion}
-            name="checkboxRadioGroup"
-            value={lastQuestion}
-            checked={value === lastQuestion}
-            onChange={this.handleChange}
-            style={{ paddingLeft: '20px' }}
-          />
-        </Form.Field>
-      </Form>
+          >
+            <FormControlLabel
+              value={firstQuestion}
+              control={<Radio />}
+              label={firstQuestion}
+            />
+            <FormControlLabel
+              value={secondQuestion}
+              control={<Radio />}
+              label={secondQuestion}
+            />
+            <FormControlLabel
+              value={thirdQuestion}
+              control={<Radio />}
+              label={thirdQuestion}
+            />
+            <FormControlLabel
+              value={lastQuestion}
+              control={<Radio />}
+              label={lastQuestion}
+            />
+          </RadioGroup>
+        </FormControl>
+      </div>
     )
   }
 }
+
+// CustomCheckbox.propTypes = {
+//   classes: PropTypes.object.isRequired
+// }
+
+const mapStateToProps = (state) => {
+  return {
+    point: state.point
+  }
+}
+
+export default connect(mapStateToProps)(CustomCheckbox)

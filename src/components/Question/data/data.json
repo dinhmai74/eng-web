@@ -1,37 +1,72 @@
 {
-  "questionone":  {
+  "questionone": {
     "titlequestion": "1. How old are you?",
     "firstquestion": "I’m fine, thanks!",
     "secondquestion": "Twenty-five.",
     "thirdquestion": " Yes, I am.",
     "lastquestion": "He is quite young."
   },
-  "questiontwo":  {
+  "questiontwo": {
     "titlequestion": "2. We’re going to the beach next week.",
     "firstquestion": "When will you have free time?",
     "secondquestion": "Sounds great!.",
     "thirdquestion": "How was it?.",
     "lastquestion": " You will be late."
   },
-  "questionthree":  {
+  "questionthree": {
     "titlequestion": "3. What time do you usually go to bed?",
     "firstquestion": "Very late..",
     "secondquestion": "In my room.",
     "thirdquestion": "What do you recommend?",
     "lastquestion": "I can’t sleep in darkness."
   },
-  "questionfour":  {
+  "questionfour": {
     "titlequestion": "4. I’m going to study abroad in July.",
     "firstquestion": "Me neither.",
     "secondquestion": "Did you get a scholarship?",
     "thirdquestion": " I’d love to.",
     "lastquestion": "Wow, it’s so beautiful."
   },
-  "questionfive":  {
+  "questionfive": {
     "titlequestion": "5. Could you help me with this exercise?",
     "firstquestion": "Talk to you later!",
     "secondquestion": "I’m sorry, I’m busy now.",
     "thirdquestion": " Yes, you can.",
     "lastquestion": " I don’t know."
+  },
+  "questionsix": {
+    "titlequestion": "6. Dogs often ___ when they find strangers.",
+    "firstquestion": "bark",
+    "secondquestion": "roar",
+    "thirdquestion": " tweet",
+    "lastquestion": "yell"
+  },
+  "questionsevent": {
+    "titlequestion": "7. She ____ cook meals when she was twelve.",
+    "firstquestion": "could",
+    "secondquestion": "ought",
+    "thirdquestion": " would",
+    "lastquestion": "might"
+  },
+  "questioneight": {
+    "titlequestion": "8. He is going to ___ a presentation tomorrow morning.",
+    "firstquestion": "display",
+    "secondquestion": "report",
+    "thirdquestion": " express",
+    "lastquestion": "give"
+  },
+  "questionnine": {
+    "titlequestion": "9. There are five ____ and six continents on Earth.",
+    "firstquestion": "seas",
+    "secondquestion": "waters",
+    "thirdquestion": " oceans",
+    "lastquestion": "lakes"
+  },
+  "questionten": {
+    "titlequestion": "10. I'd like to buy ____ of soap please.",
+    "firstquestion": " a slice",
+    "secondquestion": "a block",
+    "thirdquestion": " a bar",
+    "lastquestion": "a slab"
   }
 }

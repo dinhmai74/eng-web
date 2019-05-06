@@ -30,6 +30,7 @@ import "./certificate.story";
 import "./CustomFlipNumber.story"
 import "./GeneralCourse.story"
 import "./question.story"
+import "./test-result.story"
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
 ));

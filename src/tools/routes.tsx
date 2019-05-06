@@ -2,7 +2,7 @@ import {
   FindCourseScreen,
   HomeScreen,
   WhyChoseUs,
-  TestScreen,
+  TestQuestion,
   GeneralCourse
 } from 'containers'
 import { tran } from 'localization/i18n'
@@ -38,7 +38,7 @@ export const routes: IRoute[] = [
     path: strings.routeTest,
     first: tran('free'),
     second: tran('tests'),
-    Component: TestScreen
+    Component: TestQuestion
   },
   {
     path: strings.routeGeneralCourse,
