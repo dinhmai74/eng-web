@@ -190,5 +190,29 @@
 
   "generalCourse": "General course",
   "normalTest": "Normal test",
-  "ourTeacher": "Our teacher"
+  "ourTeacher": "Our teacher",
+
+ 
+  "registerCourse" : "REGISTER AT THE COURSE",
+  "nameWeb": "DUCKIE ENGLISH",
+  "detailNewCourse": "The New Learning Program is developed based on student feedback globally and improved to improve efficiency, support, flexibility, content dynamics and exclusively for each student: ",
+  "descriptionImage1": "English standards",
+  "global1": "global",
+  "descriptionImage2": "Characters and lessons",
+  "global2": "interactive",
+  "descriptionImage3": "Learning interface",
+  "global3": "new online",
+  "descriptionImage4": "Application support",
+  "global4": "phone",
+  "descriptionCourse1" : "Scores assess the most popular",
+   "br1": "English proficiency",
+  "descriptionCourse2": "Interesting, attractive with",
+  "br2":"Hollywood actors",
+  "descriptionCourse3": "Easy access to tools",
+  "br3": "and English learning materials",
+  "descriptionCourse4": "Manage English learning",
+  "br4": "process better"
+
+
+
 }

@@ -59,6 +59,16 @@ export const images = {
   study: '/asset/images/find-course/study.png',
   business: '/asset/images/find-course/business.png',
   career: '/asset/images/find-course/career.png',
-  travel: '/asset/images/find-course/travel.png'
+  travel: '/asset/images/find-course/travel.png',
 
+  // new student experience
+  bgStudentExperience: '/asset/images/student-experience/bg.png',
+  icons1: './asset/images/student-experience/icon-1.png',
+  icons2: './asset/images/student-experience/icon-2.png',
+  icons3: './asset/images/student-experience/icon-3.png',
+  icons4: './asset/images/student-experience/icon-4.png',
+  userAvatar1: './asset/images/student-experience/avatar-1.png',
+  userAvatar2: './asset/images/student-experience/avatar-2.png',
+  speech: './asset/images/student-experience/speech.png',
+  bgVideo: './asset/images/student-experience/bg-video.jpg'
 }
