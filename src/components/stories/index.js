@@ -32,6 +32,7 @@ import "./GeneralCourse.story";
 import "./question.story";
 import "./test-result.story";
 import "./student-experience.story";
+import "./free-tests.story"
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
 ));

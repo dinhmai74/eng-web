@@ -70,5 +70,12 @@ export const images = {
   userAvatar1: './asset/images/student-experience/avatar-1.png',
   userAvatar2: './asset/images/student-experience/avatar-2.png',
   speech: './asset/images/student-experience/speech.png',
-  bgVideo: './asset/images/student-experience/bg-video.jpg'
+  bgVideo: './asset/images/student-experience/bg-video.jpg',
+
+  // free test screen
+  successinMeeting: './asset/images/free-tests/bg1.png',
+  likeAPro: './asset/images/free-tests/bg2.jpg',
+  toeic: './asset/images/free-tests/toeic.png',
+  cambridge: './asset/images/free-tests/cambride.png',
+  ielts: './asset/images/free-tests/ielts.png'
 }
