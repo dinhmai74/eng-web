@@ -16,6 +16,8 @@ import {
   Paragraph,
   Card
 } from '@front10/landing-page-book/dist/components'
+// import { IProps } from 'containers/find-course-screens/feeling-step/QuestionComponent/Header';
+
 export interface IGeneralCourseState {}
 const OptionalPratice = styled.div`
   justify-content: center;
@@ -42,16 +44,22 @@ export default class Practice extends React.Component<
             title={tran('titleToeic')}
             detail={tran('detailToeic')}
             subDetail={tran('detailToeic')}
+            url="/level-test"
           />
+
           <OptionalTest
             images={images.cambridge}
             title={tran('titleCambridge')}
             detail={tran('detailCambridge')}
+            subDetail={''}
+            url=""
           />
           <OptionalTest
             images={images.ielts}
             title={tran('titleIelts')}
             detail={tran('detailIelts')}
+            subDetail={''}
+            url=""
           />
         </OptionalPratice>
       </Section>

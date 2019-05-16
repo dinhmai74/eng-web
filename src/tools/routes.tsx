@@ -3,7 +3,8 @@ import {
   HomeScreen,
   WhyChoseUs,
   TestQuestion,
-  GeneralCourse
+  GeneralCourse,
+  FreeTest
 } from 'containers'
 import { strings } from './strings'
 
@@ -34,10 +35,10 @@ export const routes: IRoute[] = [
     Component: FindCourseScreen
   },
   {
-    path: strings.routeTest,
+    path: strings.routeFreeTest,
     first: 'free',
     second: 'tests',
-    Component: TestQuestion
+    Component: FreeTest
   },
   {
     path: strings.routeGeneralCourse,

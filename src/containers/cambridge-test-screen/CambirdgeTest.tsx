@@ -14,6 +14,14 @@ import {
   Card
 } from '@front10/landing-page-book/dist/components'
 import { Button, Icon } from 'semantic-ui-react'
+import {
+  BrowserRouter as Router,
+  Route,
+  NavLink,
+  withRouter,
+  RouteComponentProps
+} from 'react-router-dom'
+import { IRoute } from 'tools/routes'
 
 const Containers = styled(Container)``
 const BackgroundImage = styled('div')`
@@ -44,10 +52,32 @@ const Detail = styled.div`
 `
 
 export interface IGeneralCourseState {}
+export interface IGeneralCourseProps extends RouteComponentProps {
+  /*** @property {propTypes.array} routes - display route */
+  routes?: IRoute[]
+  /*** @property {propTypes.string} home icon - icon home display */
+  homeIcon?: string
+  /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
+  hiddenRoute?: string[]
+  /*** @property {propTypes.boolean} render One page - nav for one page or not */
+  renderOnePage?: boolean
+  /*** @property {propTypes.boolean} disable headroom- */
+  disableHeadroom?: boolean
+  history: any
+}
 export default class CambridgeTest extends React.Component<
-  any,
+  IGeneralCourseProps,
   IGeneralCourseState
 > {
+  onChanges = () => {
+    const { history } = this.props
+    if (history) {
+      history.push({
+        pathname: '/cambridge-test'
+        // search: 'name=jhon&amp;age=24'
+      })
+    }
+  }
   render() {
     return (
       <Containers>
@@ -69,7 +99,9 @@ export default class CambridgeTest extends React.Component<
                 <br />
                 {tran('evaluating')}
               </p>
-              <Button color="youtube">Start Immediately</Button>
+              <Button color="youtube" onClick={this.onChanges}>
+                Start Immediately
+              </Button>
             </Content>
           </BackgroundImage>
         </Wrapper>

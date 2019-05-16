@@ -5,11 +5,13 @@ import WhyChoseUs from './why-chose-us'
 import GeneralCourse from './general-course-screen'
 
 import TestQuestion from './test-screen/TestQuestion'
+import FreeTest from './free-tests-screen/FreeTest'
 
 export {
   HomeScreen,
   WhyChoseUs,
   TestQuestion,
   FindCourseScreen,
-  GeneralCourse
+  GeneralCourse,
+  FreeTest
 }

@@ -35,7 +35,7 @@ const LearningEnglishColumn: IContent[] = [
 const TestColumn: IContent[] = [
   {
     text: tran('normalTest'),
-    href: strings.routeTest
+    href: strings.routeFreeTest
   },
 ]
 
