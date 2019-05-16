@@ -230,5 +230,16 @@
   "titleIelts": "PRACTICE FOR IELTS",
   "detailToeic": "Where are you ready for the TOEIC exam? Discover with this short test",
   "detailCambridge": "Measure your English level with the CEFR reference framework developed by the University of Cambridge Language Testing Institute",
-  "detailIelts": "Practice English skills for IELTS with the following practice test"
+  "detailIelts": "Practice English skills for IELTS with the following practice test",
+
+  "qualification": "Assessment of qualifications",
+  "englishStandard": "European standard English",
+  "detailStandard": "Want to know what level of your English is in European standards? Immediately take the Cambridge University-designed test and get an accurate assessment of your current language level according to the CEFR metric *",
+  "guide": "GUIDE",
+  "totalQuestion": "The test has a total of 25 sentences",
+  "binding": "You cannot go back to change the answer",
+  "evaluating": "Results will be assessed based on CEFR standards"
+
+
+
 }

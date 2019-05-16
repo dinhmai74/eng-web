@@ -77,5 +77,9 @@ export const images = {
   likeAPro: './asset/images/free-tests/bg2.jpg',
   toeic: './asset/images/free-tests/toeic.png',
   cambridge: './asset/images/free-tests/cambride.png',
-  ielts: './asset/images/free-tests/ielts.png'
+  ielts: './asset/images/free-tests/ielts.png',
+
+  // introduction cambridge test screen
+  bgCambridge: './asset/images/cambridge-test/Cambridge-test.png',
+
 }
