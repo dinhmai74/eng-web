@@ -152,7 +152,6 @@
   "methods": "Methods",
   "contentFinderCourse": "FIND THE BEST FITTING COURSE AND PRIVATE TO YOU",
 
-
   "purpose": "What is your purpose of learning English?",
   "choose": "Choose an area of interest",
   "studyAbroad": "Study abroad",
@@ -192,8 +191,7 @@
   "normalTest": "Normal test",
   "ourTeacher": "Our teacher",
 
- 
-  "registerCourse" : "REGISTER AT THE COURSE",
+  "registerCourse": "REGISTER AT THE COURSE",
   "nameWeb": "DUCKIE ENGLISH",
   "detailNewCourse": "The New Learning Program is developed based on student feedback globally and improved to improve efficiency, support, flexibility, content dynamics and exclusively for each student: ",
   "descriptionImage1": "English standards",
@@ -204,33 +202,33 @@
   "global3": "new online",
   "descriptionImage4": "Application support",
   "global4": "phone",
-  "descriptionCourse1" : "Scores assess the most popular",
-   "br1": "English proficiency",
+  "descriptionCourse1": "Scores assess the most popular",
+  "br1": "English proficiency",
   "descriptionCourse2": "Interesting, attractive with",
-  "br2":"Hollywood actors",
+  "br2": "Hollywood actors",
   "descriptionCourse3": "Easy access to tools",
   "br3": "and English learning materials",
   "descriptionCourse4": "Manage English learning",
   "br4": "process better",
+  "contentFeedback1": "Interesting conversations between characters help me learn English is so much more.",
+  "nameFemale": "Nhung Phan",
+  "ageFemale": "27 years old, Office staff",
+  "contentFeedback2": "I really like modern features from the new Study Program. Thanks to it, I checked my progress and progressed faster.",
+  "nameMale": "Minh Nguyễn",
+  "ageMale": "45 years old, Business owner",
 
   "titleIntroduction": "Discover free English tests",
   "subTitleIntroduction": "Help you better prepare for important English certification exams with shortened versions based on actual structure.",
-  "titleTab1": "CURRENT ENGLISH LEVELS HELP YOU SUCCESS IN THE MEETING", 
+  "titleTab1": "CURRENT ENGLISH LEVELS HELP YOU SUCCESS IN THE MEETING",
   "describeTitleTab1": "Good English will help you show your ability, impress colleagues and superiors in meetings or meetings with partners, especially in an international environment. So are you confident with participating or leading the meeting in English? Try the following test now to assess your survival percentage!",
   "titleTab2": "Speak Like A Pro",
   "describeTitleTab2": "Confidently speak English comfortably like a true native speaker. With WSE, pass the following test!",
   "titlePractice": "Practice for International English Certifications",
-  "subTitlePractice": "Practice English skills with diverse and interesting short quiz questions", 
+  "subTitlePractice": "Practice English skills with diverse and interesting short quiz questions",
   "titleToeic": "PRACTICE FOR THE TOEIC*",
-  "titleCambridge":"CAMBRIDGE TEST",
+  "titleCambridge": "CAMBRIDGE TEST",
   "titleIelts": "PRACTICE FOR IELTS",
-  "detailToeic": "Where are you ready for the TOEIC exam? Discover with this short test", 
+  "detailToeic": "Where are you ready for the TOEIC exam? Discover with this short test",
   "detailCambridge": "Measure your English level with the CEFR reference framework developed by the University of Cambridge Language Testing Institute",
   "detailIelts": "Practice English skills for IELTS with the following practice test"
-  
-
-
-
-
-
 }
