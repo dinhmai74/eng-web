@@ -15,7 +15,9 @@ import {
 import Title from './Title'
 import Tabs from './Tabs'
 import Practice from './Practice'
-const Introduction = styled.div``
+const Introduction = styled.div`
+  padding-bottom: 20px;
+`
 const Wrapper = styled.div``
 
 export interface IGeneralCourseState {}

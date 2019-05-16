@@ -17,18 +17,22 @@ const Wrapper = styled.div`
   flex-flow: column wrap;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 284px;
+
 `
 const Title = styled.div`
   display: flex;
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
   justify-content: center;
-  /* padding-top: 5px; */
   background: #f4f7f1;
   padding-top: 20px;
   padding-right: 10px;
   padding-bottom: 5px;
   padding-left: 10px;
-  min-height: 80px;
+  width: 280px;
+  text-align: left;
+`
+const StyledImage = styled.img`
+  margin-right: 10px;
 `
 const Introduction = styled.div`
   display: flex;
@@ -48,7 +52,7 @@ export default class FreeTests extends React.Component<
       <Containers>
         <Wrapper>
           <Title>
-            <img src={this.props.images} />
+            <StyledImage src={this.props.images} />
             <div>{this.props.title}</div>
           </Title>
           <Introduction>
