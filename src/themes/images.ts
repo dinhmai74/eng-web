@@ -82,4 +82,8 @@ export const images = {
   // introduction cambridge test screen
   bgCambridge: './asset/images/cambridge-test/Cambridge-test.png',
 
+  // preparation IELTS screen
+  bgPreparation: './asset/images/preparation-IELTS/preparation-ielts.png',
+  beginner: './asset/images/preparation-IELTS/beginer.PNG',
+  advance: './asset/images/preparation-IELTS/advance.PNG'
 }

@@ -238,7 +238,9 @@
   "guide": "GUIDE",
   "totalQuestion": "The test has a total of 25 sentences",
   "binding": "You cannot go back to change the answer",
-  "evaluating": "Results will be assessed based on CEFR standards"
+  "evaluating": "Results will be assessed based on CEFR standards",
+
+  "titlePreparationIelts": "PREPARATION FOR IELTS"
 
 
 
