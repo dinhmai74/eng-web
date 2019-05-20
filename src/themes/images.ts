@@ -85,5 +85,8 @@ export const images = {
   // preparation IELTS screen
   bgPreparation: './asset/images/preparation-IELTS/preparation-ielts.png',
   beginner: './asset/images/preparation-IELTS/beginer.PNG',
-  advance: './asset/images/preparation-IELTS/advance.PNG'
+  advance: './asset/images/preparation-IELTS/advance.PNG',
+
+  // introduction ielts test screen
+  bgIeltsTest: './asset/images/ielts-test/IELTS-test.png'
 }

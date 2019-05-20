@@ -240,8 +240,17 @@
   "binding": "You cannot go back to change the answer",
   "evaluating": "Results will be assessed based on CEFR standards",
 
-  "titlePreparationIelts": "PREPARATION FOR IELTS"
+  "titlePreparationIelts": "PREPARATION FOR IELTS",
 
+  "ieltsTest": "IELTS Test",
+  "forBeginner": "for beginners",
+  "detailIntroTest1": "Never think an IELTS test is only for people who are good at English. ",
+  "detailIntroTest2": "If you are a beginner, you can still familiarize yourself with ",
+  "detailIntroTest3": "the exam structure and the types of questions in IELTS with the test below.",
+  "structrure": "The test consists of 4 parts: Listening-Speaking-Reading-Writing",
+  "optional": "You can choose to test 4 skills in turn or focus on only one skill",
+  "chooseSkill": " Choose the skill you want to check below",
 
+  "startImmediately" : "Start Immediately"
 
 }
