@@ -240,7 +240,9 @@
 
   "qualification": "Assessment of qualifications",
   "englishStandard": "European standard English",
-  "detailStandard": "Want to know what level of your English is in European standards? Immediately take the Cambridge University-designed test and get an accurate assessment of your current language level according to the CEFR metric *",
+  "detailStandard1": "Want to know what level of your English is in European standards? ",
+  "detailStandard2": "Immediately take the Cambridge University-designed test",
+  "detailStandard3":"and get an accurate assessment of your current language level according to the CEFR metric *",
   "guide": "GUIDE",
   "totalQuestion": "The test has a total of 25 sentences",
   "binding": "You cannot go back to change the answer",

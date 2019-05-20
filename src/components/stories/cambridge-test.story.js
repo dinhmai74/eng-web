@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
-import IntroductionIeltsTest from "../../containers/introduction-ielts-test-screen/IntroductionIeltsTest";
+import CambridgeTest from "../../containers/cambridge-test-screen/CambridgeTest";
 
-storiesOf("IntroductionIeltsTest", module).add("default", () => <IntroductionIeltsTest />);
+storiesOf("CambridgeTest", module).add("default", () => <CambridgeTest />);

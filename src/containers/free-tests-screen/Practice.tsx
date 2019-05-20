@@ -44,7 +44,7 @@ export default class Practice extends React.Component<
             title={tran('titleToeic')}
             detail={tran('detailToeic')}
             subDetail={tran('detailToeic')}
-            url="/level-test"
+            url=""
           />
 
           <OptionalTest
@@ -52,7 +52,7 @@ export default class Practice extends React.Component<
             title={tran('titleCambridge')}
             detail={tran('detailCambridge')}
             subDetail={''}
-            url=""
+            url="/level-test"
           />
           <OptionalTest
             images={images.ielts}

@@ -22,7 +22,7 @@ import {
   RouteComponentProps
 } from 'react-router-dom'
 import { IRoute } from 'tools/routes'
-
+import Content from './Content'
 const Containers = styled(Container)``
 const BackgroundImage = styled('div')`
   background-image: url(${images.bgCambridge});
@@ -34,21 +34,6 @@ const BackgroundImage = styled('div')`
 `
 const Wrapper = styled.div`
   padding-top: 30px;
-`
-const Content = styled.div`
-  padding-top: 40px;
-  padding-bottom: 70px;
-  padding-left: 60px;
-  width: 50%;
-  color: white;
-`
-const Title = styled.h1`
-  font-size: 39px !important;
-  font-weight: bold;
-`
-const Detail = styled.div`
-  font-size: 13px !important;
-  line-height: 20px;
 `
 
 export interface IGeneralCourseState {}
@@ -69,40 +54,12 @@ export default class CambridgeTest extends React.Component<
   IGeneralCourseProps,
   IGeneralCourseState
 > {
-  onChanges = () => {
-    const { history } = this.props
-    if (history) {
-      history.push({
-        pathname: '/cambridge-test'
-        // search: 'name=jhon&amp;age=24'
-      })
-    }
-  }
   render() {
     return (
       <Containers>
         <Wrapper>
           <BackgroundImage>
-            <Content>
-              <Title>
-                {tran('qualification')}
-                <br />
-                {tran('englishStandard')}
-              </Title>
-              <Detail>{tran('detailStandard')}</Detail>
-              <p> {tran('guide')}</p>
-
-              <p>
-                {tran('totalQuestion')}
-                <br />
-                {tran('binding')}
-                <br />
-                {tran('evaluating')}
-              </p>
-              <Button color="youtube" onClick={this.onChanges}>
-                {tran('startImmediately')}
-              </Button>
-            </Content>
+            <Content />
           </BackgroundImage>
         </Wrapper>
       </Containers>
