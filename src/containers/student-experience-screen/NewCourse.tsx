@@ -40,9 +40,9 @@ export default class StudentExperience extends React.Component<
     return (
       <Section
         bgColor="light"
-        title="ADVANTAGES OF EXCELLENCE IN"
+        title={tran('titleNewCourse')}
         titleStyle={{ color: colors.gray, fontSize: '18px' }}
-        subTitle="New Study Program"
+        subTitle={tran('subTitleNewCourse')}
         subTitleStyle={{ fontSize: '35px' }}
       >
         <Container>

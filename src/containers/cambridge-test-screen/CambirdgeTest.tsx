@@ -100,7 +100,7 @@ export default class CambridgeTest extends React.Component<
                 {tran('evaluating')}
               </p>
               <Button color="youtube" onClick={this.onChanges}>
-                Start Immediately
+                {tran('startImmediately')}
               </Button>
             </Content>
           </BackgroundImage>

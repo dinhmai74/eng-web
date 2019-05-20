@@ -35,9 +35,9 @@ export default class FeedBack extends React.Component<
     return (
       <Section
         bgColor="white"
-        title=" What do students say about"
+        title={tran('titleFeedBack')}
         titleStyle={{ color: colors.lightRed, fontSize: '35px' }}
-        subTitle="the New School Program?"
+        subTitle={tran('subTitleFeedBack')}
         subTitleStyle={{ fontSize: '35px' }}
       >
         <Wrapper>

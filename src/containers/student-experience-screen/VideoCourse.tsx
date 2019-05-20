@@ -11,7 +11,6 @@ import {
   Row,
   Column,
   Section,
-  Container,
   Paragraph,
   Card,
   Video
@@ -21,7 +20,7 @@ import FeedBack from './FeedBack'
 import VideoCourse from './VideoCourse'
 // export interface IGeneralCourseProps {}
 
-const Containers = styled.div`
+const Container = styled(Section)`
   background-image: url(${images.bgVideo});
   height: 40vh;
   background-size: cover;
@@ -47,13 +46,13 @@ export default class VideoCourses extends React.Component<
 > {
   render() {
     return (
-      <Containers>
+      <Container>
         <Wrapper>
-          <Title>DO YOU WANT TO KNOW NEW LEARNING PROGRAM</Title>
-          <Question>How realistic will it be?</Question>
+          <Title>{tran('titleVideoCourse')}</Title>
+          <Question>{tran('titleQuestionVideoCourse')}</Question>
         </Wrapper>
         <Video source="https://www.youtube.com/watch?time_continue=69&v=mS36oAYp9Aw" />
-      </Containers>
+      </Container>
     )
   }
 }
