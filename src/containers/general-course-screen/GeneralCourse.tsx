@@ -12,6 +12,7 @@ const Wrapper = styled.div`
   margin-left: auto; */
   /* padding: 40px; */
   flex: 1;
+  /* background-color: red; */
 `
 export interface IGeneralCourseProps {}
 

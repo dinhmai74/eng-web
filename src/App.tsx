@@ -20,6 +20,8 @@ import CustomCheckbox from './components/Question/CustomCheckbox'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css' // You can also use <link> for styles
+import CambridgeTest from 'containers/cambridge-test-screen/CambridgeTest'
+import { TestQuestion } from 'containers'
 
 AOS.init()
 
@@ -54,6 +56,8 @@ const App = (props) => {
         ))}
         <Route path="/test-result" component={TestResult} />
         <Route path="/result" component={Result} />
+        <Route path="/level-test" component={CambridgeTest} />
+        <Route path="/cambridge-test" component={TestQuestion} />
       </div>
       <InformationForm />
       <Footer />

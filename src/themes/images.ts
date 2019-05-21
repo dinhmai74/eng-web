@@ -59,6 +59,34 @@ export const images = {
   study: '/asset/images/find-course/study.png',
   business: '/asset/images/find-course/business.png',
   career: '/asset/images/find-course/career.png',
-  travel: '/asset/images/find-course/travel.png'
+  travel: '/asset/images/find-course/travel.png',
 
+  // new student experience
+  bgStudentExperience: '/asset/images/student-experience/bg.png',
+  icons1: './asset/images/student-experience/icon-1.png',
+  icons2: './asset/images/student-experience/icon-2.png',
+  icons3: './asset/images/student-experience/icon-3.png',
+  icons4: './asset/images/student-experience/icon-4.png',
+  userAvatar1: './asset/images/student-experience/avatar-1.png',
+  userAvatar2: './asset/images/student-experience/avatar-2.png',
+  speech: './asset/images/student-experience/speech.png',
+  bgVideo: './asset/images/student-experience/bg-video.jpg',
+
+  // free test screen
+  successinMeeting: './asset/images/free-tests/bg1.png',
+  likeAPro: './asset/images/free-tests/bg2.jpg',
+  toeic: './asset/images/free-tests/toeic.png',
+  cambridge: './asset/images/free-tests/cambride.png',
+  ielts: './asset/images/free-tests/ielts.png',
+
+  // introduction cambridge test screen
+  bgCambridge: './asset/images/cambridge-test/Cambridge-test.png',
+
+  // preparation IELTS screen
+  bgPreparation: './asset/images/preparation-IELTS/preparation-ielts.png',
+  beginner: './asset/images/preparation-IELTS/beginer.PNG',
+  advance: './asset/images/preparation-IELTS/advance.PNG',
+
+  // introduction ielts test screen
+  bgIeltsTest: './asset/images/ielts-test/IELTS-test.png'
 }
