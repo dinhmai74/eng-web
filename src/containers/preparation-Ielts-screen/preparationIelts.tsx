@@ -10,7 +10,7 @@ const Container = styled.div`
 `
 
 export interface IGeneralCourseState {}
-export default class StudentExperience extends React.Component<
+export default class PreparationIelts extends React.Component<
   any,
   IGeneralCourseState
 > {
@@ -23,7 +23,7 @@ export default class StudentExperience extends React.Component<
             features={[
               {
                 image: images.beginner,
-                link: 'https://front10.com'
+                link: '/intro-test-ielts'
               },
               {
                 image: images.advance,

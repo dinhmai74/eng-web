@@ -88,5 +88,9 @@ export const images = {
   advance: './asset/images/preparation-IELTS/advance.PNG',
 
   // introduction ielts test screen
-  bgIeltsTest: './asset/images/ielts-test/IELTS-test.png'
+  bgIeltsTest: './asset/images/ielts-test/IELTS-test.png',
+
+  // reading ielts beginner screen
+
+  bgReadingIeltsBeginner: './asset/images/reading-ielts-beginners/preparation-reading.png'
 }

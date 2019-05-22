@@ -22,6 +22,9 @@ import AOS from 'aos'
 import 'aos/dist/aos.css' // You can also use <link> for styles
 import CambridgeTest from 'containers/cambridge-test-screen/CambridgeTest'
 import { TestQuestion } from 'containers'
+import PreparationIelts from 'containers/preparation-Ielts-screen/PreparationIelts'
+import IntroductionIeltsTest from 'containers/introduction-ielts-test-screen/IntroductionIeltsTest'
+import ReadingIeltsBeginners from 'containers/reading-ielts-beginners/ReadingIeltsBeginners'
 
 AOS.init()
 
@@ -58,6 +61,12 @@ const App = (props) => {
         <Route path="/result" component={Result} />
         <Route path="/level-test" component={CambridgeTest} />
         <Route path="/cambridge-test" component={TestQuestion} />
+        <Route path="/ielts-test" component={PreparationIelts} />
+        <Route path="/intro-test-ielts" component={IntroductionIeltsTest} />
+        <Route
+          path="/reading-ielts-beginner"
+          component={ReadingIeltsBeginners}
+        />
       </div>
       <InformationForm />
       <Footer />
