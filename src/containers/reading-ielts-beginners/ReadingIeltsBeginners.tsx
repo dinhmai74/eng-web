@@ -14,6 +14,7 @@ import {
   Social
 } from '@front10/landing-page-book/dist/components'
 
+import Paragraph from './Paragraph'
 import TotalStep from './TotalStep'
 
 export interface IGeneralCourseState {}
@@ -48,26 +49,7 @@ export default class ReadingIeltsBeginners extends React.Component<
         <StyleImaged>
           <Image src={images.bgReadingIeltsBeginner} />
         </StyleImaged>
-        <Containers>
-          <Title>HOW THEY GROW - JUDY NAYER</Title>
-          <Title>
-            How does a butterfly grow? It starts out as a tiny egg. It becomes a
-            caterpillar. It eats lots of leaves. It grows and grows. Then it
-            goes inside a cocoon. At last, it comes out. It’s a butterfly!
-          </Title>
-          <Title>
-            How does a frog grow? It starts out as a tiny egg in the water. The
-            egg grows into a tadpole. It keeps changing. It eats tiny plants. It
-            grows and grows. At last, it hops out of the pond. It’s a frog!
-          </Title>
-          <Title>
-            How does a flower grow? It starts out as a seed. Sun and rain help
-            the seed grow. Roots grow into the ground. The plant grows and
-            grows. At last, a bud opens. It’s a flower!
-          </Title>
-          <Title>Now you know how they grow!</Title>
-        </Containers>
-
+        <Paragraph />
         <TotalStep />
       </Section>
     )
