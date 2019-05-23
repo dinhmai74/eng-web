@@ -1,30 +1,18 @@
-import { tran } from 'localization/i18n'
 import * as React from 'react'
-import styled from 'styled-components'
-import { colors, images } from 'themes/index'
-import {
-  Section,
-  Container,
-  Image,
-  Wizard,
-  Video,
-  Gif,
-  FormGroup,
-  Input,
-  Social
-} from '@front10/landing-page-book/dist/components'
+
+import { Wizard } from '@front10/landing-page-book/dist/components'
 import QuestionOne from './Question/QuestionOne'
 import QuestionTwo from './Question/QuestionTwo'
 import QuestionThree from './Question/QuestionThree'
 import QuestionFour from './Question/QuestionFour'
 import QuestionFive from './Question/QuestionFive'
+import TitleQuestionOne from './title-question/TitleQuestionOne'
+import TitleQuestionTwo from './title-question/TitleQuestionTwo'
+import TitleQuestionThree from './title-question/TitleQuestionThree'
+import TitleQuestionFour from './title-question/TitleQuestionFour'
+import TitleQuestionFive from './title-question/TitleQuestionFive'
 
-export interface IGeneralCourseState {}
-
-export default class TotalStep extends React.Component<
-  any,
-  IGeneralCourseState
-> {
+export default class TotalStep extends React.Component<any, any> {
   render() {
     return (
       <Wizard
@@ -32,23 +20,23 @@ export default class TotalStep extends React.Component<
         backButtonText="Prev"
         steps={[
           {
-            name: '1. What does the butterfly egg become?',
+            name: <TitleQuestionOne />,
             component: <QuestionOne />
           },
           {
-            name: '2. What does a butterfly come out from?',
+            name: <TitleQuestionTwo />,
             component: <QuestionTwo />
           },
           {
-            name: '3. What does the tadpole eat?',
+            name: <TitleQuestionThree />,
             component: <QuestionThree />
           },
           {
-            name: '4. Where does the tadpole live?',
+            name: <TitleQuestionFour />,
             component: <QuestionFour />
           },
           {
-            name: '5. What helps the seed grow?',
+            name: <TitleQuestionFive />,
             component: <QuestionFive />
           }
         ]}
