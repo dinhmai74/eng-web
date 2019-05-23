@@ -37,30 +37,29 @@ const Introduction = styled.p`
 `
 
 export interface IGeneralCourseState {}
-export interface IGeneralCourseProps extends RouteComponentProps {
-  /*** @property {propTypes.array} routes - display route */
-  routes?: IRoute[]
-  /*** @property {propTypes.string} home icon - icon home display */
-  homeIcon?: string
-  /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
-  hiddenRoute?: string[]
-  /*** @property {propTypes.boolean} render One page - nav for one page or not */
-  renderOnePage?: boolean
-  /*** @property {propTypes.boolean} disable headroom- */
-  disableHeadroom?: boolean
-  history: any
-}
+// export interface IGeneralCourseProps extends RouteComponentProps {
+//   /*** @property {propTypes.array} routes - display route */
+//   routes?: IRoute[]
+//   /*** @property {propTypes.string} home icon - icon home display */
+//   homeIcon?: string
+//   /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
+//   hiddenRoute?: string[]
+//   /*** @property {propTypes.boolean} render One page - nav for one page or not */
+//   renderOnePage?: boolean
+//   /*** @property {propTypes.boolean} disable headroom- */
+//   disableHeadroom?: boolean
+//   history: any
+// }
 export default class Content extends React.Component<any, IGeneralCourseState> {
-  onChanges = () => {
-    const { history } = this.props
-    if (history) {
-      history.push({
-        pathname: '/cambridge-test'
-        // search: 'name=jhon&amp;age=24'
-      })
-    }
-  }
-
+  // onChanges = () => {
+  //   const { history } = this.props
+  //   if (history) {
+  //     history.push({
+  //       pathname: '/cambridge-test'
+  //       // search: 'name=jhon&amp;age=24'
+  //     })
+  //   }
+  // }
   render() {
     return (
       <Wrapper>
@@ -89,6 +88,7 @@ export default class Content extends React.Component<any, IGeneralCourseState> {
         </Introduction>
         <OptionalTest />
         <br />
+        <Button color="youtube">{tran('startImmediately')}</Button>
       </Wrapper>
     )
   }

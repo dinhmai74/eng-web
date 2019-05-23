@@ -36,9 +36,9 @@ class CustomCheckbox extends React.Component<any, IGeneralCourseState> {
   }
 
   handleChange = (event) => {
-    this.setState({ value: event.target.value })
+    this.setState({value: event.target.value})
     if (event.target.value === this.props.correctAnswer) {
-      this.props.dispatch({ type: 'INCREASE_POINT' })
+      this.props.dispatch({type: 'INCREASE_POINT'})
     }
     return
   }
@@ -51,13 +51,12 @@ class CustomCheckbox extends React.Component<any, IGeneralCourseState> {
       secondQuestion,
       thirdQuestion,
       lastQuestion,
-      correctAnswer,
-      style
+      correctAnswer
     } = this.props
     return (
-      <div style={style}>
+      <div>
         <FormControl>
-          <FormLabel style={{ paddingTop: '30px' }}>{titleQuestion}</FormLabel>
+          <FormLabel style={{paddingTop: '30px'}}>{titleQuestion}</FormLabel>
           <RadioGroup
             aria-label="Gender"
             name="gender1"
@@ -67,22 +66,22 @@ class CustomCheckbox extends React.Component<any, IGeneralCourseState> {
           >
             <FormControlLabel
               value={firstQuestion}
-              control={<Radio />}
+              control={<Radio/>}
               label={firstQuestion}
             />
             <FormControlLabel
               value={secondQuestion}
-              control={<Radio />}
+              control={<Radio/>}
               label={secondQuestion}
             />
             <FormControlLabel
               value={thirdQuestion}
-              control={<Radio />}
+              control={<Radio/>}
               label={thirdQuestion}
             />
             <FormControlLabel
               value={lastQuestion}
-              control={<Radio />}
+              control={<Radio/>}
               label={lastQuestion}
             />
           </RadioGroup>
