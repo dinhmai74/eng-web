@@ -2,8 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 import { Container } from '@front10/landing-page-book/dist/components'
-
-export interface IGeneralCourseState {}
+import firebase from '../../firebase'
 
 const Containers = styled(Container)`
   border: 2px solid #FAC7C4
@@ -18,31 +17,33 @@ const Title = styled.p`
   font-size: 17px !important;
   margin-bottom: 20px;
 `
+interface IState {
+  title: object
+}
 
-export default class Paragraph extends React.Component<
-  any,
-  any
-> {
+export default class Paragraph extends React.Component<any, IState> {
+  static defaultProps: {}
+  state = {
+    title: {}
+  }
+
+  componentDidMount() {
+    const titleRef = firebase.database().ref('ielts_beginner/reading')
+    titleRef.on('value', (snapshot) => {
+      this.setState({
+        title: snapshot!.val()
+      })
+    })
+  }
   render() {
+    const title: any = this.state.title
     return (
       <Containers>
-        <Title>HOW THEY GROW - JUDY NAYER</Title>
-        <Title>
-          How does a butterfly grow? It starts out as a tiny egg. It becomes a
-          caterpillar. It eats lots of leaves. It grows and grows. Then it goes
-          inside a cocoon. At last, it comes out. It’s a butterfly!
-        </Title>
-        <Title>
-          How does a frog grow? It starts out as a tiny egg in the water. The
-          egg grows into a tadpole. It keeps changing. It eats tiny plants. It
-          grows and grows. At last, it hops out of the pond. It’s a frog!
-        </Title>
-        <Title>
-          How does a flower grow? It starts out as a seed. Sun and rain help the
-          seed grow. Roots grow into the ground. The plant grows and grows. At
-          last, a bud opens. It’s a flower!
-        </Title>
-        <Title>Now you know how they grow!</Title>
+        <Title>{title.title}</Title>
+        <Title>{title.paragraph1}</Title>
+        <Title>{title.paragraph2}</Title>
+        <Title>{title.paragraph3}</Title>
+        <Title> {title.paragraph4}</Title>
       </Containers>
     )
   }
