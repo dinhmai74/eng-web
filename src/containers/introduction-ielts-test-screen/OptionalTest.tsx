@@ -3,14 +3,56 @@ import Radio from '@material-ui/core/Radio'
 import RadioGroup from '@material-ui/core/RadioGroup'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 import FormControl from '@material-ui/core/FormControl'
+import { Button, Icon } from 'semantic-ui-react'
+import { tran } from 'localization/i18n'
 
-class OptionalTest extends React.Component {
+import { Section, Container } from '@front10/landing-page-book/dist/components'
+import {
+  BrowserRouter as Router,
+  Route,
+  NavLink,
+  withRouter,
+  RouteComponentProps
+} from 'react-router-dom'
+import { IRoute } from 'tools/routes'
+
+export interface IGeneralCourseProps extends RouteComponentProps {
+  /*** @property {propTypes.array} routes - display route */
+  routes?: IRoute[]
+  /*** @property {propTypes.string} home icon - icon home display */
+  homeIcon?: string
+  /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
+  hiddenRoute?: string[]
+  /*** @property {propTypes.boolean} render One page - nav for one page or not */
+  renderOnePage?: boolean
+  /*** @property {propTypes.boolean} disable headroom- */
+  disableHeadroom?: boolean
+  history: any
+}
+export interface IGeneralCourseState {
+  value: string
+}
+
+class OptionalTest extends React.Component<
+  IGeneralCourseProps,
+  IGeneralCourseState
+> {
   state = {
     value: ''
   }
-
   handleChange = (event) => {
-    this.setState({ value: event.target.value })
+    this.setState({
+      value: event.target.value
+    })
+    if (this.state.value === 'reading') {
+      const { history } = this.props
+      if (history) {
+        history.push({
+          pathname: '/reading-ielts-beginner'
+          // search: 'name=jhon&amp;age=24'
+        })
+      }
+    }
   }
 
   render() {
@@ -48,9 +90,12 @@ class OptionalTest extends React.Component {
             labelPlacement="end"
           />
         </RadioGroup>
+        <Button color="youtube" onClick={this.handleChange}>
+          {tran('startImmediately')}
+        </Button>
       </FormControl>
     )
   }
 }
 
-export default OptionalTest
+export default withRouter(OptionalTest)

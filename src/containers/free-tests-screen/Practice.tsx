@@ -59,7 +59,7 @@ export default class Practice extends React.Component<
             title={tran('titleIelts')}
             detail={tran('detailIelts')}
             subDetail={''}
-            url=""
+            url="/ielts-test"
           />
         </OptionalPratice>
       </Section>
