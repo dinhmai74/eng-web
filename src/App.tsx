@@ -22,9 +22,9 @@ import AOS from 'aos'
 import 'aos/dist/aos.css' // You can also use <link> for styles
 import CambridgeTest from 'containers/cambridge-test-screen/CambridgeTest'
 import { TestQuestion } from 'containers'
-import PreparationIelts from 'containers/preparation-Ielts-screen/PreparationIelts'
 import IntroductionIeltsTest from 'containers/introduction-ielts-test-screen/IntroductionIeltsTest'
 import ReadingIeltsBeginners from 'containers/reading-ielts-beginners/ReadingIeltsBeginners'
+import PreparationIelts from 'containers/preparation-Ielts-screen/preparationIelts'
 
 AOS.init()
 
