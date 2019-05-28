@@ -16,7 +16,7 @@ const IntroStyle = {
 }
 
 const Tracker = styled('div')`
-  min-height: 70vh;
+  min-height: 100vh;
 `
 
 class HomeScreen extends Component {
