@@ -1,30 +1,30 @@
 // import '@front10/landing-page-book/dist/themeos/default/index.legacy_browsers.css'
+import React from 'react'
 import '@front10/landing-page-book/dist/themes/default/index.scss'
-
 import 'App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Footer, InformationForm, ResponsiveNav } from 'components'
 import { withTranslation } from 'react-i18next'
 import 'font-awesome/css/font-awesome.min.css'
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { strings, RouterHandler } from 'tools'
+import { Route } from 'react-router-dom'
 import './semantic/dist/semantic.min.css'
 import { routes } from 'tools/routes'
 import { CSSTransition } from 'react-transition-group'
 
-import TestResult from './containers/test-result-screen/TestResult'
-import Result from 'containers/find-course-screens/result/result'
 // import GeneralScreen from './containers/general-course-screen/GeneralCourse'
-import CustomCheckbox from './components/Question/CustomCheckbox'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css' // You can also use <link> for styles
-import CambridgeTest from 'containers/cambridge-test-screen/CambridgeTest'
-import { TestQuestion } from 'containers'
-import IntroductionIeltsTest from 'containers/introduction-ielts-test-screen/IntroductionIeltsTest'
-import ReadingIeltsBeginners from 'containers/reading-ielts-beginners/ReadingIeltsBeginners'
-import PreparationIelts from 'containers/preparation-Ielts-screen/preparationIelts'
+import {
+  TestResult,
+  TestQuestion,
+  IntroductionIeltsTest,
+  PreparationIelts,
+  ReadingIeltsBeginners,
+  Result,
+  CambridgeTest
+} from 'containers'
+import { strings } from 'tools'
 
 AOS.init()
 
