@@ -5,13 +5,7 @@ import { colors, images } from 'themes/index'
 import {
   Section,
   Container,
-  Image,
-  Wizard,
-  Video,
-  Gif,
-  FormGroup,
-  Input,
-  Social
+  Image
 } from '@front10/landing-page-book/dist/components'
 
 import Paragraph from './Paragraph'

@@ -14,21 +14,37 @@ import {
   Social
 } from '@front10/landing-page-book/dist/components'
 import CustomCheckbox from 'components/Question/CustomCheckbox'
+import firebase from '../../../firebase'
 
-export interface IGeneralCourseState {}
+export interface IGeneralCourseState {
+  question: object
+}
 
 export default class QuestionFour extends React.Component<any, any> {
+  state = {
+    question: {}
+  }
+
+  componentDidMount() {
+    const questionRef = firebase
+      .database()
+      .ref('ielts_beginner/reading/questions/question_4/answers')
+    questionRef.on('value', (snapshot) => {
+      this.setState({
+        question: snapshot!.val()
+      })
+    })
+  }
   render() {
+    const question: any = this.state.question
     return (
       <Container>
         <CustomCheckbox
-          // titleQuestion={'1. What does the butterfly egg become?'}
-          firstQuestion={'On the tree'}
-          secondQuestion={'In the water'}
-          thirdQuestion={'On ice'}
-          lastQuestion={'In the house'}
-          correctAnswer={'On the tree'}
-          // style={{marginLeft: '40px'}}
+          firstQuestion={question.a}
+          secondQuestion={question.b}
+          thirdQuestion={question.c}
+          lastQuestion={question.d}
+          correctAnswer={question.a}
         />
       </Container>
     )
