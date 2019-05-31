@@ -1,35 +1,22 @@
-import { tran } from 'localization/i18n'
 import * as React from 'react'
 import styled from 'styled-components'
-import { colors, images } from 'themes/index'
 
-import firebase from '../../../firebase'
+import FirebaseWorker from 'DataFirebase'
 
 const Text = styled.div``
 
-export interface IGeneralCourseState {
-  titleQuestionOne: object
-}
-
-export default class TitleQuestionOne extends React.Component<
-  any,
-  IGeneralCourseState
-> {
+export default class TitleQuestionOne extends React.Component<any, any> {
   state = {
-    titleQuestionOne: {}
+    titleQuestion: {}
   }
-  componentDidMount() {
-    const questionRefOne = firebase
-      .database()
-      .ref('ielts_beginner/reading/questions/question_1/')
-    questionRefOne.on('value', (snapshot) => {
-      this.setState({
-        titleQuestionOne: snapshot!.val()
-      })
+  async componentDidMount() {
+    const titleQuestion = await FirebaseWorker.getTitleQuestions('question_1')
+    this.setState({
+      titleQuestion
     })
   }
   render() {
-    const titleQuestionOne: any = this.state.titleQuestionOne
+    const titleQuestionOne: any = this.state.titleQuestion
     return <Text>{titleQuestionOne.titlequestion}</Text>
   }
 }
