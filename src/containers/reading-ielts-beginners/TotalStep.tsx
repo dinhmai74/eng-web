@@ -1,46 +1,20 @@
 import * as React from 'react'
+import _ from 'lodash'
 
 import { Wizard } from '@front10/landing-page-book/dist/components'
-import QuestionOne from './Question/QuestionOne'
-import QuestionTwo from './Question/QuestionTwo'
-import QuestionThree from './Question/QuestionThree'
-import QuestionFour from './Question/QuestionFour'
-import QuestionFive from './Question/QuestionFive'
-import TitleQuestionOne from './title-question/TitleQuestionOne'
-import TitleQuestionTwo from './title-question/TitleQuestionTwo'
-import TitleQuestionThree from './title-question/TitleQuestionThree'
-import TitleQuestionFour from './title-question/TitleQuestionFour'
-import TitleQuestionFive from './title-question/TitleQuestionFive'
+import TitleQuestion from './title-question/TitleQuestion'
+import Question from './Question/Question'
+import steps from './stepsData.json'
+
+const resultStep = _.map(steps, (e) => ({
+  name: <TitleQuestion questionNumber={e.number} type={e.type} />,
+  component: <Question questionNumber={e.number} type={e.type} />
+}))
 
 export default class TotalStep extends React.Component<any, any> {
   render() {
     return (
-      <Wizard
-        contentAlign="left"
-        backButtonText="Prev"
-        steps={[
-          {
-            name: <TitleQuestionOne />,
-            component: <QuestionOne />
-          },
-          {
-            name: <TitleQuestionTwo />,
-            component: <QuestionTwo />
-          },
-          {
-            name: <TitleQuestionThree />,
-            component: <QuestionThree />
-          },
-          {
-            name: <TitleQuestionFour />,
-            component: <QuestionFour />
-          },
-          {
-            name: <TitleQuestionFive />,
-            component: <QuestionFive />
-          }
-        ]}
-      />
+      <Wizard contentAlign="left" backButtonText="Prev" steps={resultStep} />
     )
   }
 }
