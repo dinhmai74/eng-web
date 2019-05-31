@@ -25,6 +25,7 @@ import {
   CambridgeTest
 } from 'containers'
 import { strings } from 'tools'
+import WritingIeltsBeginners from 'containers/writing-ielts-beginners/WritingIeltsBeginners'
 
 AOS.init()
 
@@ -66,6 +67,10 @@ const App = (props) => {
         <Route
           path="/reading-ielts-beginner"
           component={ReadingIeltsBeginners}
+        />
+        <Route
+          path="/writing-ielts-beginner"
+          component={WritingIeltsBeginners}
         />
       </div>
       <InformationForm />

@@ -27,9 +27,10 @@ export default class TitleQuestion extends React.Component<
   }
 
   fetchData = async (props) => {
-    const { questionNumber } = props
+    const { questionNumber, type } = props
     const titleQuestion = await FirebaseWorker.getTitleQuestions(
-      `question_${questionNumber}`
+      `question_${questionNumber}`,
+      type
     )
     this.setState({
       titleQuestion

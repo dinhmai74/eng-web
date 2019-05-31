@@ -1,8 +1,11 @@
 import * as React from 'react'
 import { Container } from '@front10/landing-page-book/dist/components'
-import CustomCheckbox from 'components/Question/CustomCheckbox'
 import { FirebaseWorker } from 'DataFirebase'
-import { IQuestion, TQuestion } from './type'
+import {
+  IQuestion,
+  TQuestion
+} from 'containers/reading-ielts-beginners/Question/type'
+import CustomCheckbox from 'components/Question/CustomCheckbox'
 
 export interface IQuestionState {
   question: IQuestion
@@ -18,7 +21,7 @@ export default class Question extends React.Component<
   IQuestionState
 > {
   static defaultProps = {
-    questionNumber: 2,
+    questionNumber: 1,
     type: 'reading'
   }
   state = {
@@ -67,4 +70,3 @@ export default class Question extends React.Component<
     )
   }
 }
-
