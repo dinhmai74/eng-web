@@ -52,6 +52,14 @@ class OptionalTest extends React.Component<
           // search: 'name=jhon&amp;age=24'
         })
       }
+    } else if (this.state.value === 'writing') {
+      const { history } = this.props
+      if (history) {
+        history.push({
+          pathname: '/writing-ielts-beginner'
+          // search: 'name=jhon&amp;age=24'
+        })
+      }
     }
   }
 
@@ -84,9 +92,9 @@ class OptionalTest extends React.Component<
             labelPlacement="end"
           />
           <FormControlLabel
-            value="writting"
+            value="writing"
             control={<Radio color="default" />}
-            label="Writting"
+            label="Writing"
             labelPlacement="end"
           />
         </RadioGroup>

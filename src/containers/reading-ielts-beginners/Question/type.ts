@@ -4,3 +4,5 @@ export interface IQuestion {
   c: string
   d: string
 }
+
+export type TQuestion = 'reading' | 'writting'

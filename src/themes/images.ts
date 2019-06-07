@@ -92,5 +92,8 @@ export const images = {
 
   // reading ielts beginner screen
 
-  bgReadingIeltsBeginner: './asset/images/reading-ielts-beginners/preparation-reading.png'
+  bgReadingIeltsBeginner: './asset/images/reading-ielts-beginners/preparation-reading.png',
+
+  // writing ielts beginner screen
+  bgWritingIeltsBeginner: './asset/images/writing-ielts-beginners/preparation-writing.png'
 }
