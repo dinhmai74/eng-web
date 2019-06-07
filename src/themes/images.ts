@@ -102,5 +102,6 @@ export const images = {
   // icon test result
   iconListening: './asset/images/test-result/listening.png',
   iconSpeaking: './asset/images/test-result/speaking.png',
-  iconWriting: './asset/images/test-result/writing.png'
+  iconWriting: './asset/images/test-result/writing.png',
+  iconReading: './asset/images/test-result/reading.png'
 }
