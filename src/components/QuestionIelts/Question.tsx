@@ -6,6 +6,7 @@ import {
   TQuestion
 } from 'containers/reading-ielts-beginners/Question/type'
 import CustomCheckbox from 'components/Question/CustomCheckbox'
+import TestResult from 'components/TestResult/TestResult'
 
 export interface IQuestionState {
   question: IQuestion
@@ -14,6 +15,9 @@ export interface IQuestionState {
 interface IQuestionProps {
   questionNumber: number
   type: TQuestion
+  images1: string
+  images2: string
+  images3: string
 }
 
 export default class Question extends React.Component<
@@ -22,7 +26,10 @@ export default class Question extends React.Component<
 > {
   static defaultProps = {
     questionNumber: 1,
-    type: 'reading'
+    type: 'reading',
+    images1: '',
+    images2: '',
+    images3: ''
   }
   state = {
     question: {
@@ -54,6 +61,12 @@ export default class Question extends React.Component<
 
   render() {
     const question: IQuestion = this.state.question
+    const { questionNumber, type, images1, images2, images3 } = this.props
+    if (questionNumber === 6 && String(type) === 'result') {
+      return (
+        <TestResult images1={images1} images2={images2} images3={images3} />
+      )
+    }
     if (!question) {
       return
     }

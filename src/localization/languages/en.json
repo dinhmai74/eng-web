@@ -259,6 +259,10 @@
   "optional": "You can choose to test 4 skills in turn or focus on only one skill",
   "chooseSkill": " Choose the skill you want to check below",
 
-  "startImmediately" : "Start Immediately"
+  "startImmediately" : "Start Immediately",
+
+  "scored": "You Scored",
+  "anotherSKill": "Do you want to test another skill?"
+
 
 }

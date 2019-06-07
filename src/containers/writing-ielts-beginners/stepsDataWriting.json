@@ -18,5 +18,9 @@
   {
     "number": 5,
     "type": "writing"
+  },
+  {
+    "number": 6,
+    "type": "result"
   }
 ]

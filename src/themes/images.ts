@@ -92,8 +92,16 @@ export const images = {
 
   // reading ielts beginner screen
 
-  bgReadingIeltsBeginner: './asset/images/reading-ielts-beginners/preparation-reading.png',
+  bgReadingIeltsBeginner:
+    './asset/images/reading-ielts-beginners/preparation-reading.png',
 
   // writing ielts beginner screen
-  bgWritingIeltsBeginner: './asset/images/writing-ielts-beginners/preparation-writing.png'
+  bgWritingIeltsBeginner:
+    './asset/images/writing-ielts-beginners/preparation-writing.png',
+
+  // icon test result
+  iconListening: './asset/images/test-result/listening.png',
+  iconSpeaking: './asset/images/test-result/speaking.png',
+  iconWriting: './asset/images/test-result/writing.png',
+  iconReading: './asset/images/test-result/reading.png'
 }
