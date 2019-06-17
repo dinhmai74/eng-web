@@ -60,6 +60,14 @@ class OptionalTest extends React.Component<
           // search: 'name=jhon&amp;age=24'
         })
       }
+    } else if (this.state.value === 'speaking') {
+      const { history } = this.props
+      if (history) {
+        history.push({
+          pathname: '/speaking-ielts-beginner'
+          // search: 'name=jhon&amp;age=24'
+        })
+      }
     }
   }
 
