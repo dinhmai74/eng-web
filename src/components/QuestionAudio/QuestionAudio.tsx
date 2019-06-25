@@ -52,7 +52,7 @@ export default class QuestionAudio extends React.Component<
     const { questionNumber, type } = props
     const question = await FirebaseWorker.getQuestions(
       `question_${questionNumber}`,
-      type
+      type,
     )
     this.setState({
       question

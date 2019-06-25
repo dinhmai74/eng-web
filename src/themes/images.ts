@@ -110,5 +110,10 @@ export const images = {
 
   // icon speaking
 
-  iconSound: './asset/images/speaking-ielts-beginners/sound.png'
+  iconSound: './asset/images/speaking-ielts-beginners/sound.png',
+
+  // listening ielts beginners screen
+  bgListeningIeltsBeginner:
+    './asset/images/listening-ielts-beginners/preparation-listening.png',
+  redIconSound: './asset/images/listening-ielts-beginners/soundon.png'
 }
