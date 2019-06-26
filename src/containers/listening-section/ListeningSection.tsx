@@ -76,7 +76,7 @@ class ListeningSection extends React.Component<
     const { history } = this.props
     if (history) {
       history.push({
-        pathname: '/listening-section-test'
+        pathname: '/listening-test-advanced'
         // search: 'name=jhon&amp;age=24'
       })
     }
