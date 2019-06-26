@@ -36,26 +36,39 @@ const Containers = styled(Container)`
   text-align: left;
   font-size: 18px;
 `
-const Detail = styled.div`
-  text-align: left;
-  /* background-color: red; */
-  padding-left: 24%;
-  padding-top: 10px;
+const Title = styled.div`
+  font-size: 30px !important;
+  color: ${colors.lightCyan};
+  padding-bottom: 20px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 `
-const Ielts = styled.span`
+const LisSection = styled.span`
+  font-size: 22px !important;
+  color: ${colors.darkBLue};
+`
+const SubSection = styled.span`
+  font-size: 22px !important;
   color: ${colors.lightRed};
-  padding-right: 3px;
 `
 const Paragraph = styled.div`
   padding-bottom: 20px;
 `
-const Ready = styled.div`
-  color: ${colors.lightRed};
+const Minutes = styled.span`
   font-size: 22px !important;
-  padding-bottom: 20px;
+  color: ${colors.lightRed};
+`
+const StyledButton = styled.div`
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  justify-content: center;
 `
 export interface IGeneralCourseState {}
-class Content extends React.Component<
+
+class ListeningSection extends React.Component<
   IGeneralCourseProps,
   IGeneralCourseState
 > {
@@ -71,32 +84,29 @@ class Content extends React.Component<
   render() {
     return (
       <Containers>
+        <Title>INTRODUCTION</Title>
         <Paragraph>
-          {tran('practice')} <Ielts>IELTS</Ielts>
-          {tran('sampleTest')}
+          {tran('goingTo')} <LisSection>LISTENING SECTION.</LisSection>
         </Paragraph>
-        <div>
-          {tran('designedTo')}
-          <Detail>
-            <div>
-              <Image src={images.iconLi} />
-              {tran('discover')}
-            </div>
-            <div>
-              <Image src={images.iconLi} />
-              {tran('conditions')}
-            </div>
-            <div />
-          </Detail>
-        </div>
-        <div>
-          <Ready>{tran('areyouReady')}</Ready>
+        <Paragraph>
+          {tran('sectionInclues')} <SubSection>2 sub-sections</SubSection>
+          {tran('total')}
+          {tran('youHave')} <Minutes>8 minutes</Minutes>
+          {tran('finish')}
+          {tran('listen')}
+        </Paragraph>
+        <Paragraph>
+          <Paragraph>{tran('section')}</Paragraph>
+          <Paragraph>{tran('choice')}</Paragraph>
+          <Paragraph>{tran('summary')}</Paragraph>
+        </Paragraph>
+        <StyledButton>
           <Button color="linkedin" onClick={this.handleChange}>
             {tran('startNow')}
           </Button>
-        </div>
+        </StyledButton>
       </Containers>
     )
   }
 }
-export default withRouter(Content)
+export default withRouter(ListeningSection)

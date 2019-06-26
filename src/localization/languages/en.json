@@ -270,5 +270,16 @@
   "discover": "Discover if your Listening and Reading skills are well prepared",
   "conditions": "Test yourself under time conditions",
   "areyouReady": "ARE YOU READY?",
-  "startNow": "START NOW"
+  "startNow": "START NOW",
+
+  "goingTo": "You are going to do the",
+  "sectionInclues": "This section includes",
+  "total": "with a total of",
+  "youHave": "You have",
+  "finish": " to finish the listening activity.",
+  "listen": "Listen carefully because the recording will be played only once.",
+  "section": "This section will consist of:",
+  "choice": "+ Multiple choice questions",
+  "summary": "+ Summary/table completion",
+  "next": "Next"
 }
