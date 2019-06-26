@@ -7,7 +7,6 @@ import TitleQuestion from 'containers/reading-ielts-beginners/title-question/Tit
 import stepsDataListening from './stepsDataListening.json'
 import Question from 'components/QuestionIelts/Question.tsx'
 import { controls } from 'react-media-player'
-import QuestionAudio from 'components/QuestionAudio/QuestionAudio.tsx'
 import DescribeQuestion from 'components/DescribeQuestion/DescribeQuestion'
 import QuestionPlayAudio from 'components/QuestionPlayAudio/QuestionPlayAudio'
 import styled from 'styled-components'
@@ -26,7 +25,7 @@ const Container = styled.div`
 const resultStep = _.map(stepsDataListening, (e) => ({
   name: (
     <Container>
-      <TitleQuestion questionNumber={e.number} type={e.type} />
+      <TitleQuestion questionNumber={e.number} type={e.type} level={e.level} />
       <QuestionPlayAudio questionNumber={e.number} type={e.type} />
     </Container>
   ),

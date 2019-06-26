@@ -7,6 +7,7 @@ import {
 } from 'containers/reading-ielts-beginners/Question/type'
 import TestResult from 'components/TestResult/TestResult'
 import CheckboxAudio from 'components/CheckboxAudio/CheckboxAudio'
+import { TLevel } from 'components/LevelIelts/Level'
 
 export interface IQuestionState {
   question: IQuestion
@@ -15,6 +16,7 @@ export interface IQuestionState {
 interface IQuestionProps {
   questionNumber: number
   type: TQuestion
+  level: TLevel
   images1: string
   images2: string
   images3: string
@@ -27,6 +29,7 @@ export default class QuestionAudio extends React.Component<
   static defaultProps = {
     questionNumber: 1,
     type: 'reading',
+    level: 'ielts_advanced',
     images1: '',
     images2: '',
     images3: ''
@@ -49,8 +52,9 @@ export default class QuestionAudio extends React.Component<
   }
 
   fetchData = async (props) => {
-    const { questionNumber, type } = props
+    const { questionNumber, type, level } = props
     const question = await FirebaseWorker.getQuestions(
+      level,
       `question_${questionNumber}`,
       type,
     )

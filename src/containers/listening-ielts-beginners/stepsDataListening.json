@@ -1,27 +1,32 @@
 [
-    {
-      "number": 1,
-      "type": "listening"
-    },
-    {
-      "number": 2,
-      "type": "listening"
-    },
-    {
-      "number": 3,
-      "type": "listening"
-    },
-    {
-      "number": 4,
-      "type": "listening"
-    },
-    {
-      "number": 5,
-      "type": "listening"
-    },
-    {
-      "number": 6,
-      "type": "result"
-    }
-  ]
-  
+  {
+    "level": "ielts_beginner",
+    "number": 1,
+    "type": "listening"
+  },
+  {
+    "level": "ielts_beginner",
+    "number": 2,
+    "type": "listening"
+  },
+  {
+    "level": "ielts_beginner",
+    "number": 3,
+    "type": "listening"
+  },
+  {
+    "level": "ielts_beginner",
+    "number": 4,
+    "type": "listening"
+  },
+  {
+    "level": "ielts_beginner",
+    "number": 5,
+    "type": "listening"
+  },
+  {
+    "level": "ielts_beginner",
+    "number": 6,
+    "type": "result"
+  }
+]

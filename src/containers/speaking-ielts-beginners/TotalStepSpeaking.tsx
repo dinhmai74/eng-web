@@ -16,7 +16,7 @@ export interface IState {
 }
 
 const resultStep = _.map(stepsDataSpeaking, (e) => ({
-  name: <TitleQuestion questionNumber={e.number} type={e.type}/>,
+  name: <TitleQuestion questionNumber={e.number} type={e.type} />,
   component: (
     <QuestionAudio
       questionNumber={e.number}
@@ -24,6 +24,7 @@ const resultStep = _.map(stepsDataSpeaking, (e) => ({
       images1={images.iconWriting}
       images2={images.iconListening}
       images3={images.iconReading}
+      level={e.level}
     />
   )
 }))

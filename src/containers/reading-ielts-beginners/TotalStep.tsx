@@ -8,7 +8,9 @@ import Question from 'components/QuestionIelts/Question'
 import { images } from 'themes'
 
 const resultStep = _.map(steps, (e) => ({
-  name: <TitleQuestion questionNumber={e.number} type={e.type} />,
+  name: (
+    <TitleQuestion questionNumber={e.number} type={e.type} level={e.level} />
+  ),
   component: (
     <Question
       questionNumber={e.number}
@@ -16,6 +18,7 @@ const resultStep = _.map(steps, (e) => ({
       images1={images.iconWriting}
       images2={images.iconListening}
       images3={images.iconSpeaking}
+      level={e.level}
     />
   )
 }))
@@ -23,7 +26,12 @@ const resultStep = _.map(steps, (e) => ({
 export default class TotalStep extends React.Component<any, any> {
   render() {
     return (
-      <Wizard contentAlign="left" backButtonText="Prev" steps={resultStep} prevBtnOnLastStep= {false} />
+      <Wizard
+        contentAlign="left"
+        backButtonText="Prev"
+        steps={resultStep}
+        prevBtnOnLastStep={false}
+      />
     )
   }
 }

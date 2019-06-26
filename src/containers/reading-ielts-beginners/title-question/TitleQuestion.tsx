@@ -3,18 +3,21 @@ import styled from 'styled-components'
 
 import FirebaseWorker from 'DataFirebase'
 import { TQuestion } from '../Question/type'
+import { TLevel } from 'components/LevelIelts/Level'
 
-const Text = styled.div``
+const Text = styled.div`
+  font-size: 22px!important;
+  font-weight: bold;
+  padding-left: 30px;
+`
 
 interface ITitleQuestionProps {
   questionNumber: number
   type: TQuestion
+  level: TLevel
 }
 
-export default class TitleQuestion extends React.Component<
-  ITitleQuestionProps,
-  any
-> {
+export default class TitleQuestion extends React.Component<any, any> {
   state = {
     titleQuestion: null
   }
@@ -27,8 +30,9 @@ export default class TitleQuestion extends React.Component<
   }
 
   fetchData = async (props) => {
-    const { questionNumber, type } = props
+    const { questionNumber, type, level } = props
     const titleQuestion = await FirebaseWorker.getTitleQuestions(
+      level,
       `question_${questionNumber}`,
       type
     )
