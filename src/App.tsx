@@ -28,6 +28,7 @@ import { strings } from 'tools'
 import WritingIeltsBeginners from 'containers/writing-ielts-beginners/WritingIeltsBeginners'
 import SpeakingIelts from 'containers/speaking-ielts-beginners/SpeakingIelts'
 import ListeningIelts from 'containers/listening-ielts-beginners/ListeningIetls'
+import Intro from 'containers/introduction-ielts-advanced/Intro'
 
 AOS.init()
 
@@ -76,6 +77,7 @@ const App = (props) => {
         />
         <Route path="/speaking-ielts-beginner" component={SpeakingIelts} />
         <Route path="/listening-ielts-beginner" component={ListeningIelts} />
+        <Route path="/intro-ielts-advanced" component={Intro} />
       </div>
       <InformationForm />
       <Footer />

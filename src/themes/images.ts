@@ -115,5 +115,10 @@ export const images = {
   // listening ielts beginners screen
   bgListeningIeltsBeginner:
     './asset/images/listening-ielts-beginners/preparation-listening.png',
-  redIconSound: './asset/images/listening-ielts-beginners/soundon.png'
+  redIconSound: './asset/images/listening-ielts-beginners/soundon.png',
+
+  // introduction ielts advanced
+  newLogo: './asset/images/introduction-ielts-advanced/new-logo.png',
+  ieltsLevel: './asset/images/introduction-ielts-advanced/ielts-level.png',
+  iconLi: './asset/images/introduction-ielts-advanced/iconli.png'
 }
