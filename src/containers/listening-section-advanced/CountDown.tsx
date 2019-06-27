@@ -43,18 +43,19 @@ const renderer = ({ minutes, seconds, completed }) => {
   }
 }
 const Border = styled.div`
-  border-top: 5px solid #ed433c;
+  border-top: 3px solid ${colors.lightRed};
   margin-top: 30px;
 `
-class CoutDown extends Component<IProps, IState> {
+class CoutDown extends Component<any, IState> {
   static defaultProps: {}
   state = {}
 
   render() {
+    const titles = this.props
     return (
       <Section
         bgColor={colors.lightBlue}
-        title={'PART1. Questions 1-9'}
+        title={'PART2. QUESTION 10-20'}
         titleStyle={{ color: colors.darkBLue, fontSize: '30px' }}
       >
         <Rectangle>

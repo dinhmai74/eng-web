@@ -2,26 +2,26 @@ import React, { Component } from 'react'
 import { colors } from 'themes'
 import styled from 'styled-components'
 import { Container } from '@front10/landing-page-book/dist/components'
-import PartOne from './Part1/PartOne'
-import CountDown from './CountDown'
-import PartTwo from './Part2/PartTwo'
+import AudioListening from 'components/AudioListening/AudioListening'
+import FinalStep from './FinalStep'
+import CountDown from '../CountDown'
+import StageOne from './StageOne'
 interface IProps {}
 
 interface IState {}
 
-class Listening extends Component<IProps, IState> {
+class PartOne extends Component<IProps, IState> {
   static defaultProps: {}
   state = {}
 
   render() {
     return (
       <Container>
-        <CountDown />
-        <PartOne />
-        {/* <PartTwo /> */}
+        <StageOne />
+        <FinalStep />
       </Container>
     )
   }
 }
 
-export default Listening
+export default PartOne

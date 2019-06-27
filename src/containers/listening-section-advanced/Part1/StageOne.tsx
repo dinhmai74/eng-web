@@ -4,12 +4,8 @@ import { images, colors } from 'themes'
 
 import { Wizard, Section } from '@front10/landing-page-book/dist/components'
 import TitleQuestion from 'containers/reading-ielts-beginners/title-question/TitleQuestion'
-import stepsDataListening from './stepsDataListening.json'
+import stepsDataListening from '../stepsDataListening.json'
 import Question from 'components/QuestionIelts/Question.tsx'
-import { controls } from 'react-media-player'
-import QuestionAudio from 'components/QuestionAudio/QuestionAudio.tsx'
-import DescribeQuestion from 'components/DescribeQuestion/DescribeQuestion'
-import QuestionPlayAudio from 'components/QuestionPlayAudio/QuestionPlayAudio'
 import styled from 'styled-components'
 import AudioListening from 'components/AudioListening/AudioListening'
 
@@ -24,7 +20,7 @@ const Container = styled.div`
   align-items: center;
 `
 const Border = styled.div`
-  border-top: 5px solid #ed433c;
+  border-top: 5px solid ${colors.lightRed};
   margin-top: 30px;
 `
 
@@ -50,7 +46,7 @@ const resultStep = _.map(stepsDataListening, (e) => ({
   )
 }))
 
-export default class TotalStepListening extends React.Component<any, IState> {
+export default class StageOne extends React.Component<any, IState> {
   render() {
     return (
       <Section

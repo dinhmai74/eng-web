@@ -23,11 +23,7 @@ class Text extends Component<any, any> {
           <StyledText>{this.props.content1} </StyledText>
           <TextField
             id="standard-name"
-            // label="Name"
-            // className={classes.textField}
-            // value={values.name}
-            // onChange={handleChange('name')}
-            style={{color: 'red'}}
+            style={{ color: 'red' }}
             margin="normal"
           />
 

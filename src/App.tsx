@@ -32,6 +32,7 @@ import ListeningIelts from 'containers/listening-ielts-beginners/ListeningIetls'
 import Intro from 'containers/introduction-ielts-advanced/Intro'
 import ListeningSection from 'containers/listening-section/ListeningSection'
 import Listening from 'containers/listening-section-advanced/Listening'
+import PartTwo from 'containers/listening-section-advanced/Part2/PartTwo'
 
 AOS.init()
 
@@ -83,6 +84,7 @@ const App = (props) => {
         <Route path="/intro-ielts-advanced" component={Intro} />
         <Route path="/listening-section-test" component={ListeningSection} />
         <Route path="/listening-test-advanced" component={Listening} />
+        <Route path="/listening-test-advanced-part2" component={PartTwo} />
       </div>
       <InformationForm />
       <Footer />
