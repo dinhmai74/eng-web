@@ -38,49 +38,18 @@ class CheckboxAudio extends React.Component<any, IQuestionState> {
     return
   }
   render() {
-    const { firstQuestion, secondQuestion } = this.props
+    const { question } = this.props
     return (
-      <Containers>
-        <FormControl>
-          <RadioGroup
-            aria-label="Gender"
-            name="gender1"
-            value={this.state.value}
-            onChange={this.handleChange}
-          >
-            <FormControlLabel
-              value={firstQuestion}
-              control={<Radio />}
-              label={''}
-            />
-            <Media>
-              <div className="media">
-                <div className="media-player">
-                  <Player src={firstQuestion} />
-                </div>
-                <div className="media-controls">
-                  <ButtonPlay images={images.iconSound} />
-                </div>
-              </div>
-            </Media>
-            <FormControlLabel
-              value={secondQuestion}
-              control={<Radio />}
-              label={''}
-            />
-            <Media>
-              <div className="media">
-                <div className="media-player">
-                  <Player src={secondQuestion} />
-                </div>
-                <div className="media-controls">
-                  <ButtonPlay images={images.iconSound} />
-                </div>
-              </div>
-            </Media>
-          </RadioGroup>
-        </FormControl>
-      </Containers>
+      <Media>
+        <div className="media">
+          <div className="media-player">
+            <Player src={question} />
+          </div>
+          <div className="media-controls">
+            <ButtonPlay images={images.redIconSound} />
+          </div>
+        </div>
+      </Media>
     )
   }
 }

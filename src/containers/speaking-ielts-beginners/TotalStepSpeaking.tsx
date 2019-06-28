@@ -15,21 +15,18 @@ export interface IState {
   pause: boolean
 }
 
-const Url = _.map(stepsDataSpeaking, (e) => ({
+const resultStep = _.map(stepsDataSpeaking, (e) => ({
+  name: <TitleQuestion questionNumber={e.number} type={e.type} />,
   component: (
-    <Question
+    <QuestionAudio
       questionNumber={e.number}
       type={e.type}
       images1={images.iconWriting}
       images2={images.iconListening}
-      images3={images.iconSpeaking}
+      images3={images.iconReading}
+      level={e.level}
     />
   )
-}))
-
-const resultStep = _.map(stepsDataSpeaking, (e) => ({
-  name: <TitleQuestion questionNumber={e.number} type={e.type} />,
-  component: <QuestionAudio questionNumber={e.number} type={e.type} />
 }))
 
 export default class TotalStep extends React.Component<any, IState> {

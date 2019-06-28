@@ -2,23 +2,27 @@
   {
     "level": "ielts_beginner",
     "number": 1,
-    "type": "speaking"
+    "type": "listening"
   },
   {
     "level": "ielts_beginner",
     "number": 2,
-    "type": "speaking"
+    "type": "listening"
   },
-  { "level": "ielts_beginner", "number": 3, "type": "speaking" },
+  {
+    "level": "ielts_beginner",
+    "number": 3,
+    "type": "listening"
+  },
   {
     "level": "ielts_beginner",
     "number": 4,
-    "type": "speaking"
+    "type": "listening"
   },
   {
     "level": "ielts_beginner",
     "number": 5,
-    "type": "speaking"
+    "type": "listening"
   },
   {
     "level": "ielts_beginner",
