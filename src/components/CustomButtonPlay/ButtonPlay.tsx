@@ -8,7 +8,11 @@ import styled from 'styled-components'
 import { Media, Player, controls } from 'react-media-player'
 const { PlayPause, MuteUnmute } = controls
 import { withMediaProps } from 'react-media-player'
-import { images } from 'themes'
+
+const StyleImage = styled(Image) `
+  width: 50%;
+  height: auto;
+`
 
 export interface IQuestionState {}
 
@@ -31,12 +35,12 @@ class ButtonPlay extends React.Component<any, any> {
   }
 
   render() {
-    const { className, style, media } = this.props
+    const { className, style, media, images } = this.props
     return (
       <Containers style={style}>
         <StyledButton onClick={this.handlePlayPause}>
           {media.isPlaying ? '' : ''}
-          <Image src={images.iconSound} />
+          <StyleImage src={images} />
         </StyledButton>
       </Containers>
     )
