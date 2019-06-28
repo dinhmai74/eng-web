@@ -72,24 +72,29 @@ class FinalStep extends Component<IGeneralCourseProps, IState> {
           <Text
             content1={'1. There is no need to '}
             content2={' lots of people.  '}
+            correctAnswer={'join'}
           />
           <Text
             content1={'2.. Pay attention to the    '}
             content2={' of the final report   '}
+            correctAnswer={'content'}
           />
           <Text
             content1={'3. Prepare  '}
             content2={
-              '  one for the teacher, another for the sb.1dents themselves.   '
+              '  one for the teacher, another for the students themselves.   '
             }
+            correctAnswer={'carefully'}
           />
           <Text
             content1={' 4. The deadline of the final paper is '}
             content2={' '}
+            correctAnswer={'tomorrow'}
           />
           <Text
             content1={'5.The students can  '}
             content2={'their topics before the beginning of Aoril.   '}
+            correctAnswer={'complete'}
           />
         </Border>
         <StyledButton>

@@ -120,5 +120,9 @@ export const images = {
   // introduction ielts advanced
   newLogo: './asset/images/introduction-ielts-advanced/new-logo.png',
   ieltsLevel: './asset/images/introduction-ielts-advanced/ielts-level.png',
-  iconLi: './asset/images/introduction-ielts-advanced/iconli.png'
+  iconLi: './asset/images/introduction-ielts-advanced/iconli.png',
+
+  // result ielts advanced
+
+  bgResult: './asset/images/result-ielts-advanced/result.png'
 }

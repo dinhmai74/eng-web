@@ -33,7 +33,7 @@ class StatementQuestion extends Component<any, IState> {
       <Container>
         <Wrapper>
           <StyledText>{this.props.statement}</StyledText>
-          <Checkboxes />
+          <Checkboxes correctAnswer = {this.props.correctAnswer}/>
         </Wrapper>
 
         <Border />

@@ -51,7 +51,6 @@ class CoutDown extends Component<any, IState> {
   state = {}
 
   render() {
-    const titles = this.props
     return (
       <Section
         bgColor={colors.lightBlue}
@@ -59,7 +58,7 @@ class CoutDown extends Component<any, IState> {
         titleStyle={{ color: colors.darkBLue, fontSize: '30px' }}
       >
         <Rectangle>
-          <Countdown date={Date.now() + 500000} renderer={renderer} />
+          <Countdown date={Date.now() + 480000} renderer={renderer} />
         </Rectangle>
         <Border />
       </Section>

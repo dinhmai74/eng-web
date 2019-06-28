@@ -33,11 +33,11 @@ const Containers = styled(Container)`
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  text-align: left;
+  /* text-align: left; */
   font-size: 18px;
 `
 const Detail = styled.div`
-  text-align: left;
+  /* text-align: left; */
   /* background-color: red; */
   padding-left: 24%;
   padding-top: 10px;
@@ -52,8 +52,16 @@ const Paragraph = styled.div`
 const Ready = styled.div`
   color: ${colors.lightRed};
   font-size: 22px !important;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 `
+const Wrapper = styled.div`
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+`
+const WrapperText = styled.div``
 export interface IGeneralCourseState {}
 class Content extends React.Component<
   IGeneralCourseProps,
@@ -75,8 +83,8 @@ class Content extends React.Component<
           {tran('practice')} <Ielts>IELTS</Ielts>
           {tran('sampleTest')}
         </Paragraph>
-        <div>
-          {tran('designedTo')}
+        <WrapperText>
+          <div>{tran('designedTo')}</div>
           <Detail>
             <div>
               <Image src={images.iconLi} />
@@ -88,13 +96,13 @@ class Content extends React.Component<
             </div>
             <div />
           </Detail>
-        </div>
-        <div>
+        </WrapperText>
+        <Wrapper>
           <Ready>{tran('areyouReady')}</Ready>
           <Button color="linkedin" onClick={this.handleChange}>
             {tran('startNow')}
           </Button>
-        </div>
+        </Wrapper>
       </Containers>
     )
   }

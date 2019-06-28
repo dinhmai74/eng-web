@@ -54,7 +54,7 @@ class FinalStep extends Component<IGeneralCourseProps, IState> {
     const { history } = this.props
     if (history) {
       history.push({
-        pathname: '/listening-test-advanced-part2'
+        pathname: '/result-ielts-advance'
       })
     }
   }
@@ -71,17 +71,23 @@ class FinalStep extends Component<IGeneralCourseProps, IState> {
           statement={
             'A. Product Life Cycle cannot predict the length of each stage.'
           }
+          correctAnswer={true}
         />
         <StatementQuestion
           statement={
             'B. Product Life Cycle Model can help forecast sales with accuracy.'
           }
+          correctAnswer={true}
         />
-        <StatementQuestion statement={'C. The Model can be self-fulfilling.'} />
+        <StatementQuestion
+          statement={'C. The Model can be self-fulfilling.'}
+          correctAnswer={true}
+        />
         <StatementQuestion
           statement={
             'D. Growth can continue for a long time by improving a product aggressively on an ongoing basis.'
           }
+          correctAnswer={true}
         />
         <StatementQuestion
           statement={

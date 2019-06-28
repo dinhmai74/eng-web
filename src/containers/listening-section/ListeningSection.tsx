@@ -65,6 +65,7 @@ const StyledButton = styled.div`
   align-items: center;
   padding-top: 100px;
   justify-content: center;
+  padding-bottom: 50px;
 `
 export interface IGeneralCourseState {}
 
