@@ -1,36 +1,28 @@
-import * as React from 'react'
+import React from 'react'
+import { Route } from 'react-router-dom'
 import styled from 'styled-components'
-import { colors } from 'themes'
 
-const Text = styled('li')`
-  color: ${colors.gray}
-  margin: 10px 0;
-
-  a{
-  color: ${colors.gray}
-    :hover{
-     color: ${colors.gray}
-    }
-  }
+const StyledButton = styled('button')`
+  background: transparent;
+  border: none;
 `
-interface IProps {
-  text: string,
-  href?: string
+
+interface ILinkButtonProps {
+  to: string,
+  [rest: string]: any
 }
 
-class TextLink extends React.PureComponent<IProps> {
-  static defaultProps = {
-    href: '#'
-  }
-
+export default class LinkButton extends React.Component<ILinkButtonProps> {
   render() {
-    const { text, href } = this.props
     return (
-      <Text>
-        <a href={href}>{text}</a>
-      </Text>
+      <Route render={({history}) => (
+        <StyledButton {...this.props}
+                onClick={() => {
+                  history.push(this.props.to)
+                }}>
+          {this.props.children}
+        </StyledButton>
+      )}/>
     )
   }
 }
-
-export  default TextLink

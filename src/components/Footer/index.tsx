@@ -9,6 +9,7 @@ import {
 import { Flex } from 'rebass'
 import styled from 'styled-components'
 import { colors } from 'themes'
+import { strings } from 'tools'
 
 const Wrapper = styled(HeroFooter)`
 display: flex;
@@ -22,17 +23,20 @@ flex-direction: row;
 
 const LearningEnglishColumn: IContent[] = [
   {
-    text: tran('general'),
-    href: '#'
+    text: tran('titleReasonChoseUs'),
+    href: strings.routeWhyChoseUs
   },
   {
-    text: tran('general'),
-    href: '#'
+    text: tran('generalCourse'),
+    href: strings.routeGeneralCourse
   },
+]
+
+const TestColumn: IContent[] = [
   {
-    text: tran('general'),
-    href: '#'
-  }
+    text: tran('normalTest'),
+    href: strings.routeFreeTest
+  },
 ]
 
 interface IProps {}
@@ -46,7 +50,7 @@ class Footer extends Component<IProps, IState> {
     return (
       <Wrapper bgColor={colors.bgSecondary}>
           <Column title={tran('fTitleLearnEnglish')} contents={LearningEnglishColumn} />
-          <Column title={tran('fTitleFreeTest')} contents={LearningEnglishColumn} />
+          <Column title={tran('fTitleFreeTest')} contents={TestColumn} />
           <Column title={tran('fContentLearningMethod')} contents={LearningEnglishColumn} />
       </Wrapper>
     )

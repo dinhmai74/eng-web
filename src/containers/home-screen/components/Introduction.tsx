@@ -7,22 +7,38 @@ import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
 import { Button, Icon } from 'semantic-ui-react'
 import styled from 'styled-components'
+import { withRouter, RouteComponentProps } from 'react-router-dom'
 import { images } from 'themes'
+import { strings } from 'tools'
 
 const Container = styled.div`
-  margin: auto;
+  margin: auto ;
+  max-width: 930px;
 `
 
 const StyledText = styled('span')`
   margin-right: 5px;
 `
 
-interface IProps {}
-interface IState {}
+const StyledHeader = styled(Header)`
+ font-size: 3em;
+`
+
+interface IProps extends RouteComponentProps {
+  style?: any
+  [rest: string]: any
+}
+
+interface IState {
+}
 
 class Introduction extends Component<IProps, IState> {
   static defaultProps: {}
   state = {}
+
+  handleExplore = () => {
+    this.props.history.push(strings.routeWhyChoseUs)
+  }
 
   render() {
     return (
@@ -30,25 +46,22 @@ class Introduction extends Component<IProps, IState> {
         opacity={0.7}
         overlayColor={'black'}
         image={images.bgInstruction1}
+        style={this.props.style}
         particles={false}
         minHeight="100vh"
+        headerMargin={'5'}
+        headerPadding={'5'}
       >
         <Container>
-          <Image
-            src={images.bgInstruction}
-            rounded
-            width="160"
-            alt="Front10 logo"
-          />
-          <Header textAlign="center" textColor="white">
+          <StyledHeader textAlign="center" textColor="white">
             {tran('learnEnglishForBusyPeople')}
-          </Header>
-          <div className="mt-5">
-            <Button animated secondary >
+          </StyledHeader>
+          <div className="mt-5" style={{zIndex: -9}}>
+            <Button animated secondary onClick={this.handleExplore}>
               <Button.Content visible>{tran('explore')}</Button.Content>
               <Button.Content hidden>
                 <StyledText>{tran('explore')}</StyledText>
-                <Icon name="arrow right" />
+                <Icon name="arrow right"/>
               </Button.Content>
             </Button>
           </div>
@@ -60,4 +73,4 @@ class Introduction extends Component<IProps, IState> {
 
 Introduction.defaultProps = {}
 
-export default Introduction
+export default withRouter(Introduction)

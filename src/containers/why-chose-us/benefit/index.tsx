@@ -4,11 +4,12 @@ import { Box, Flex } from 'rebass'
 import { Icon } from 'semantic-ui-react'
 import styled from 'styled-components'
 import { colors, images } from 'themes/index'
+import { Section, Container } from '@front10/landing-page-book/dist/components'
 
 const Title = styled.div`
   margin-bottom: 40px;
   font-size: 25px;
-  margin-top: 40;
+  margin-top: 40px;
   text-align: center;
 `
 
@@ -29,11 +30,12 @@ export default class Benefit extends React.Component<IProps, IState> {
 
   render() {
     return (
-      <div style={{ marginLeft: 400, marginRight: 400 }}>
+      <Container>
         <Title>{tran('titleBenefitPage')}</Title>
 
-        <Flex bg="#FAFAFA">
+        <Flex bg="#FAFAFA" p={5}>
           <Box
+            p={5}
             width={2 / 3}
             marginLeft={4}
             marginRight={5}
@@ -54,7 +56,7 @@ export default class Benefit extends React.Component<IProps, IState> {
           </Box>
         </Flex>
 
-        <Flex marginTop={5} marginBottom={5}>
+        <Flex p={5} marginTop={5} marginBottom={5}>
           <Box width={1 / 3} marginLeft={5}>
             <img src={images.learnWin} />
           </Box>
@@ -76,6 +78,7 @@ export default class Benefit extends React.Component<IProps, IState> {
             marginRight={5}
             marginTop={4}
             marginBottom={4}
+            p={5}
           >
             <H2>{tran('titleBenefit3')}</H2>
             <p style={{ textAlign: 'justify', fontSize: 20 }}>
@@ -89,7 +92,7 @@ export default class Benefit extends React.Component<IProps, IState> {
             <img src={images.course} />
           </Box>
         </Flex>
-      </div>
+      </Container>
     )
   }
 }

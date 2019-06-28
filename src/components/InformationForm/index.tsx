@@ -2,11 +2,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import CustomInput, { IFormCondition } from 'components/InformationForm/CustomInput'
 import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
-import { Flex, Box } from 'rebass'
+import { Box, Flex } from 'rebass'
 import { Button } from 'semantic-ui-react'
 import styled from 'styled-components'
 
-import { colors, images } from 'themes'
+import { images } from 'themes'
 import { emailRex, notEmptyRex } from 'tools'
 import Title from './Title'
 
@@ -99,9 +99,13 @@ class InformationForm extends Component<IProps, IState> {
     this.setState({
       showError: true
     }, () => {
-      this.forceFieldValidate()
-      if (this.props.handleSubmit) {
-        this.props.handleSubmit(this.state)
+      if (this.forceFieldValidate()) {
+        if (this.props.handleSubmit) {
+          alert('Thank for your helping, we\'ll contact you soon')
+          this.props.handleSubmit(this.state)
+        }
+      } else {
+        alert('Your information is missing')
       }
     })
   }
@@ -116,10 +120,11 @@ class InformationForm extends Component<IProps, IState> {
    * Private methods
    */
   forceFieldValidate = () => {
-    this.refEmailField.validate()
-    this.refNameField.validate()
-    this.refPhoneNumberField.validate()
-    this.refIdeaField.validate()
+    const validEmail = this.refEmailField.validate()
+    const validName = this.refNameField.validate()
+    const validIdea = this.refIdeaField.validate()
+
+    return validEmail && validName && validIdea
   }
 
   render() {
@@ -127,7 +132,7 @@ class InformationForm extends Component<IProps, IState> {
     return (
       <FormContainer {...this.props}>
         <Title/>
-        <Content >
+        <Content>
           <Box width={1 / 2}
           >
             <CustomInput
@@ -152,7 +157,7 @@ class InformationForm extends Component<IProps, IState> {
             />
           </Box>
 
-          <Box width={1 / 2} height={1} >
+          <Box width={1 / 2} height={1}>
             <CustomInput
               ref={(c) => this.refIdeaField = c}
               style={{marginTop: 30}}

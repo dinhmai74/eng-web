@@ -17,7 +17,7 @@ export const images = {
   icon6: '/asset/images/why-choose-wse/UniqueMethod/icon-6.png',
   footer: '/asset/images/why-choose-wse/UniqueMethod/footer.png',
 
-  // wall street english
+  // Duckie english
   img1: '/asset/images/why-choose-wse/WallStreetEnglish/img-1.png',
   img2: '/asset/images/why-choose-wse/WallStreetEnglish/img-2.jpg',
   img3: '/asset/images/why-choose-wse/WallStreetEnglish/img-3.jpg',
@@ -42,11 +42,87 @@ export const images = {
   // home screen
   bgInstruction: '/asset/images/home/aga-putra-125108-unsplash.jpg',
   bgInstruction1: '/asset/images/home/caleb-woods-219350-unsplash.jpg',
+  logo: '/asset/images/logo.png',
   bgMap: '/asset/images/home/map-image.png',
 
   // general course
   general: '/asset/images/general-course/general.jpg',
   preparation: '/asset/images/general-course/preparation.jpg',
   bgFindCourse: '/asset/images/general-course/bg.jpg',
-  logoFindCourse: '/asset/images/general-course/logo.png'
+  logoFindCourse: '/asset/images/general-course/logo.png',
+
+  // test reuslt
+  bgTestResult: '/asset/images/test-result/bg.jpg',
+  chartScore: '/asset/images/test-result/pynamid.png',
+
+  // find course
+  study: '/asset/images/find-course/study.png',
+  business: '/asset/images/find-course/business.png',
+  career: '/asset/images/find-course/career.png',
+  travel: '/asset/images/find-course/travel.png',
+
+  // new student experience
+  bgStudentExperience: '/asset/images/student-experience/bg.png',
+  icons1: './asset/images/student-experience/icon-1.png',
+  icons2: './asset/images/student-experience/icon-2.png',
+  icons3: './asset/images/student-experience/icon-3.png',
+  icons4: './asset/images/student-experience/icon-4.png',
+  userAvatar1: './asset/images/student-experience/avatar-1.png',
+  userAvatar2: './asset/images/student-experience/avatar-2.png',
+  speech: './asset/images/student-experience/speech.png',
+  bgVideo: './asset/images/student-experience/bg-video.jpg',
+
+  // free test screen
+  successinMeeting: './asset/images/free-tests/bg1.png',
+  likeAPro: './asset/images/free-tests/bg2.jpg',
+  toeic: './asset/images/free-tests/toeic.png',
+  cambridge: './asset/images/free-tests/cambride.png',
+  ielts: './asset/images/free-tests/ielts.png',
+
+  // introduction cambridge test screen
+  bgCambridge: './asset/images/cambridge-test/Cambridge-test.png',
+
+  // preparation IELTS screen
+  bgPreparation: './asset/images/preparation-IELTS/preparation-ielts.png',
+  beginner: './asset/images/preparation-IELTS/beginer.PNG',
+  advance: './asset/images/preparation-IELTS/advance.PNG',
+
+  // introduction ielts test screen
+  bgIeltsTest: './asset/images/ielts-test/IELTS-test.png',
+
+  // reading ielts beginner screen
+
+  bgReadingIeltsBeginner:
+    './asset/images/reading-ielts-beginners/preparation-reading.png',
+
+  // writing ielts beginner screen
+  bgWritingIeltsBeginner:
+    './asset/images/writing-ielts-beginners/preparation-writing.png',
+  // speaking ielts beginner screen
+  bgSpeakingIeltsBeginner:
+    './asset/images/speaking-ielts-beginners/preparation-speaking.png',
+
+  // icon test result
+  iconListening: './asset/images/test-result/listening.png',
+  iconSpeaking: './asset/images/test-result/speaking.png',
+  iconWriting: './asset/images/test-result/writing.png',
+  iconReading: './asset/images/test-result/reading.png',
+
+  // icon speaking
+
+  iconSound: './asset/images/speaking-ielts-beginners/sound.png',
+
+  // listening ielts beginners screen
+  bgListeningIeltsBeginner:
+    './asset/images/listening-ielts-beginners/preparation-listening.png',
+  redIconSound: './asset/images/listening-ielts-beginners/soundon.png',
+
+  // introduction ielts advanced
+  newLogo: './asset/images/introduction-ielts-advanced/new-logo.png',
+  ieltsLevel: './asset/images/introduction-ielts-advanced/ielts-level.png',
+  iconLi: './asset/images/introduction-ielts-advanced/iconli.png',
+
+  // result ielts advanced
+
+  bgResult: './asset/images/result-ielts-advanced/result.png'
 }

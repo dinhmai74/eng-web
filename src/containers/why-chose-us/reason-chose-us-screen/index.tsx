@@ -1,8 +1,8 @@
 import ReasonCard from 'components/ReasonCard/index'
 import { tran } from 'localization/i18n'
 import React, { PureComponent } from 'react'
-import Container from 'react-bootstrap/Container'
 import { Header } from 'semantic-ui-react'
+import { Section, Container } from '@front10/landing-page-book/dist/components'
 
 import { colors, images } from 'themes'
 import './styles.css'
@@ -16,14 +16,7 @@ class ReasonChoseUsScreen extends PureComponent<IProps, State> {
 
   render() {
     return (
-      <Container>
-        <h1 className="container-header">
-          Choose Wall Street English right now
-        </h1>
-        <p className="container-header__content">
-          There are lots of English teaching centers, but Wall Street English is
-          the only one designed for busy adults just like you.
-        </p>
+      <Container style={{ padding: 20 }}>
         <ReasonCard
           isFirstItem
           reason={tran('reason1')}
