@@ -7,7 +7,6 @@ import {
 } from 'containers/reading-ielts-beginners/Question/type'
 import CustomCheckbox from 'components/Question/CustomCheckbox'
 import TestResult from 'components/TestResult/TestResult'
-import { TLevel } from 'components/LevelIelts/Level'
 
 export interface IQuestionState {
   question: IQuestion
@@ -16,7 +15,6 @@ export interface IQuestionState {
 interface IQuestionProps {
   questionNumber: number
   type: TQuestion
-  level: TLevel
   images1: string
   images2: string
   images3: string
@@ -29,7 +27,6 @@ export default class Question extends React.Component<
   static defaultProps = {
     questionNumber: 1,
     type: 'reading',
-    level: 'ielts_beginner',
     images1: '',
     images2: '',
     images3: ''
@@ -52,9 +49,8 @@ export default class Question extends React.Component<
   }
 
   fetchData = async (props) => {
-    const { questionNumber, type, level } = props
+    const { questionNumber, type } = props
     const question = await FirebaseWorker.getQuestions(
-      level,
       `question_${questionNumber}`,
       type
     )
@@ -71,7 +67,6 @@ export default class Question extends React.Component<
         <TestResult images1={images1} images2={images2} images3={images3} />
       )
     }
-
     if (!question) {
       return
     }

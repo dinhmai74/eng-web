@@ -5,4 +5,4 @@ export interface IQuestion {
   d: string
 }
 
-export type TQuestion = 'reading' | 'writting' | 'speaking'| 'listening'
+export type TQuestion = 'reading' | 'writting' | 'speaking'
