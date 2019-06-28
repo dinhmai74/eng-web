@@ -9,7 +9,6 @@ import FormControl from '@material-ui/core/FormControl'
 import ButtonPlay from 'components/CustomButtonPlay/ButtonPlay'
 const { PlayPause, MuteUnmute } = controls
 import { connect } from 'react-redux'
-import { images } from 'themes'
 
 export interface IQuestionState {
   value: string
@@ -59,7 +58,7 @@ class CheckboxAudio extends React.Component<any, IQuestionState> {
                   <Player src={firstQuestion} />
                 </div>
                 <div className="media-controls">
-                  <ButtonPlay images={images.iconSound} />
+                  <ButtonPlay />
                 </div>
               </div>
             </Media>
@@ -74,7 +73,7 @@ class CheckboxAudio extends React.Component<any, IQuestionState> {
                   <Player src={secondQuestion} />
                 </div>
                 <div className="media-controls">
-                  <ButtonPlay images={images.iconSound} />
+                  <ButtonPlay />
                 </div>
               </div>
             </Media>

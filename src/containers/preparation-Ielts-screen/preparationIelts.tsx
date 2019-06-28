@@ -27,7 +27,7 @@ export default class PreparationIelts extends React.Component<
               },
               {
                 image: images.advance,
-                link: '/intro-ielts-advanced'
+                link: 'https://front10.com'
               }
             ]}
           />

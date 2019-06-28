@@ -7,6 +7,19 @@ import FormControl from '@material-ui/core/FormControl'
 import FormLabel from '@material-ui/core/FormLabel'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
+// import PropTypes from 'prop-types'
+
+const styles = (theme) => ({
+  root: {
+    display: 'flex'
+  },
+  formControl: {
+    margin: theme.spacing.unit * 3
+  },
+  group: {
+    margin: `${theme.spacing.unit}px 0`
+  }
+})
 
 const TitleQuestion = styled(FormLabel)`
   font-weight: bold;
@@ -14,6 +27,7 @@ const TitleQuestion = styled(FormLabel)`
 
 export interface IGeneralCourseState {
   value: string
+  // correctAnswer: string
 }
 
 class CustomCheckbox extends React.Component<any, IGeneralCourseState> {
@@ -31,6 +45,7 @@ class CustomCheckbox extends React.Component<any, IGeneralCourseState> {
 
   render() {
     const {
+      classes,
       titleQuestion,
       firstQuestion,
       secondQuestion,
@@ -76,6 +91,10 @@ class CustomCheckbox extends React.Component<any, IGeneralCourseState> {
     )
   }
 }
+
+// CustomCheckbox.propTypes = {
+//   classes: PropTypes.object.isRequired
+// }
 
 const mapStateToProps = (state) => {
   return {

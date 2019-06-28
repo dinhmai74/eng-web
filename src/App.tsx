@@ -10,7 +10,6 @@ import { Route } from 'react-router-dom'
 import './semantic/dist/semantic.min.css'
 import { routes } from 'tools/routes'
 import { CSSTransition } from 'react-transition-group'
-import Countdown from 'react-countdown-now'
 
 // import GeneralScreen from './containers/general-course-screen/GeneralCourse'
 
@@ -28,12 +27,6 @@ import {
 import { strings } from 'tools'
 import WritingIeltsBeginners from 'containers/writing-ielts-beginners/WritingIeltsBeginners'
 import SpeakingIelts from 'containers/speaking-ielts-beginners/SpeakingIelts'
-import ListeningIelts from 'containers/listening-ielts-beginners/ListeningIetls'
-import Intro from 'containers/introduction-ielts-advanced/Intro'
-import ListeningSection from 'containers/listening-section/ListeningSection'
-import Listening from 'containers/listening-section-advanced/Listening'
-import PartTwo from 'containers/listening-section-advanced/Part2/PartTwo'
-import ResultIelts from 'containers/result-ielts-advanced/ResultIelts'
 
 AOS.init()
 
@@ -81,12 +74,6 @@ const App = (props) => {
           component={WritingIeltsBeginners}
         />
         <Route path="/speaking-ielts-beginner" component={SpeakingIelts} />
-        <Route path="/listening-ielts-beginner" component={ListeningIelts} />
-        <Route path="/intro-ielts-advanced" component={Intro} />
-        <Route path="/listening-section-test" component={ListeningSection} />
-        <Route path="/listening-test-advanced" component={Listening} />
-        <Route path="/listening-test-advanced-part2" component={PartTwo} />
-        <Route path="/result-ielts-advance" component={ResultIelts} />
       </div>
       <InformationForm />
       <Footer />

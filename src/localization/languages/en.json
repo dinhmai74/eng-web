@@ -242,7 +242,7 @@
   "englishStandard": "European standard English",
   "detailStandard1": "Want to know what level of your English is in European standards? ",
   "detailStandard2": "Immediately take the Cambridge University-designed test",
-  "detailStandard3": "and get an accurate assessment of your current language level according to the CEFR metric *",
+  "detailStandard3":"and get an accurate assessment of your current language level according to the CEFR metric *",
   "guide": "GUIDE",
   "totalQuestion": "The test has a total of 25 sentences",
   "binding": "You cannot go back to change the answer",
@@ -259,27 +259,10 @@
   "optional": "You can choose to test 4 skills in turn or focus on only one skill",
   "chooseSkill": " Choose the skill you want to check below",
 
-  "startImmediately": "Start Immediately",
+  "startImmediately" : "Start Immediately",
 
   "scored": "You Scored",
-  "anotherSKill": "Do you want to test another skill?",
+  "anotherSKill": "Do you want to test another skill?"
 
-  "practice": "Do you practice enough to have a perfect",
-  "sampleTest": "exam? To really get ready for this important exam, you absolutely should take sample tests as much as possible!",
-  "designedTo": "Now, challenge yourself with this shortened practice test, which is designed to:",
-  "discover": "Discover if your Listening and Reading skills are well prepared",
-  "conditions": "Test yourself under time conditions",
-  "areyouReady": "ARE YOU READY?",
-  "startNow": "START NOW",
 
-  "goingTo": "You are going to do the",
-  "sectionInclues": "This section includes",
-  "total": "with a total of",
-  "youHave": "You have",
-  "finish": " to finish the listening activity.",
-  "listen": "Listen carefully because the recording will be played only once.",
-  "section": "This section will consist of:",
-  "choice": "+ Multiple choice questions",
-  "summary": "+ Summary/table completion",
-  "next": "Next"
 }
