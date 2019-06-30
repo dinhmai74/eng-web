@@ -14,8 +14,12 @@ const resultStep = _.map(stepsDataWriting, (e) => ({
       questionNumber={e.number}
       type={e.type}
       images1={images.iconReading}
+      url1="/reading-ielts-beginner"
       images2={images.iconListening}
+      url2="/listening-ielts-beginner"
       images3={images.iconSpeaking}
+      url3="/speaking-ielts-beginner"
+
     />
   )
 }))

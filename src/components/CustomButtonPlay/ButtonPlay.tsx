@@ -10,8 +10,8 @@ const { PlayPause, MuteUnmute } = controls
 import { withMediaProps } from 'react-media-player'
 
 const StyleImage = styled(Image) `
-  width: 50%;
-  height: auto;
+  /* width: 50%;
+  height: auto; */
 `
 
 export interface IQuestionState {}

@@ -1,17 +1,25 @@
 import * as React from 'react'
 
-function reducer(state = initialState, action) {
+function reducers(state: IState = blankState(), action) {
   switch (action.type) {
     case 'INCREASE_POINT':
       return {
         point: state.point + 1
       }
+    case 'RESET_POINT':
+      return {
+        point: state.point = 0
+      }
   }
   return state
 }
 
-const initialState = {
-  point: 0
+export interface IState {
+  point: number
 }
 
-export default reducer
+export const blankState = () => ({
+  point: 0
+})
+
+export default reducers

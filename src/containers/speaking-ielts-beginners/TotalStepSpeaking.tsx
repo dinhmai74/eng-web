@@ -22,8 +22,11 @@ const resultStep = _.map(stepsDataSpeaking, (e) => ({
       questionNumber={e.number}
       type={e.type}
       images1={images.iconWriting}
+      url1="/writing-ielts-beginner"
       images2={images.iconListening}
+      url2="/listening-ielts-beginner"
       images3={images.iconReading}
+      url3="/reading-ielts-beginner"
       level={e.level}
     />
   )
