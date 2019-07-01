@@ -6234,6 +6234,11 @@ email-validator@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/email-validator/-/email-validator-2.0.4.tgz#b8dfaa5d0dae28f1b03c95881d904d4e40bfe7ed"
 
+emailjs-com@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/emailjs-com/-/emailjs-com-2.3.2.tgz#5da57ff3c6a99b47193f5a1aeaebcb04d0188011"
+  integrity sha512-dI6vjLGHDNTOOY0vNx6HZm95ey1aKCtkdOPLC2UYkCgV8QSJCuMY/JlxjXD3BXOvu4X4qn+XCN3DTUz1OiewAg==
+
 emoji-regex@^6.5.1:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-6.5.1.tgz#9baea929b155565c11ea41c6626eaa65cef992c2"
@@ -14448,6 +14453,13 @@ react-lifecycles-compat@^3.0.0, react-lifecycles-compat@^3.0.2, react-lifecycles
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
+react-media-player@^0.7.7:
+  version "0.7.7"
+  resolved "https://registry.yarnpkg.com/react-media-player/-/react-media-player-0.7.7.tgz#d1869b0f2dbef9a7e39a7016b72b0ad32c330dcf"
+  integrity sha512-kGM2lIqQE98T4O//1YMKRQHtsLmEODyBRWWOXCg+hbnEi5tDwUgxxW+XBj0nGedTGVyyCI2Yt63U87UPi1ojHw==
+  dependencies:
+    prop-types "^15.5.10"
+
 react-modal@^3.8.1:
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.8.1.tgz#7300f94a6f92a2e17994de0be6ccb61734464c9e"
@@ -14689,6 +14701,25 @@ react-slick@^0.23.2:
     lodash.debounce "^4.0.8"
     prettier "^1.14.3"
     resize-observer-polyfill "^1.5.0"
+
+react-sound@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-sound/-/react-sound-1.2.0.tgz#1bb7e1ec8494ecc57b03dbdecd1496b10f6541f2"
+  integrity sha512-pc2l8f7Oy3VePRRVesBwSSJ0mrCeD/lE5GVCT1RPdEQ7lgbZTDyWI8HokXHmS1v79aiLnd3WTRhfsBAY0NTb8g==
+  dependencies:
+    prop-types "^15.5.7"
+    soundmanager2 "^2.97.20170602"
+
+react-soundplayer@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-soundplayer/-/react-soundplayer-1.0.4.tgz#333b0edc41694a3f883117898d962af061bb8d3f"
+  integrity sha512-Rnp3qdG3ztG2eEHBQ4Muqhh7EpilyUi/+CiVPsp6kl0ErS0RnnYaB70JFk240BOdnwDWrAel6sABPq4ehYb0NQ==
+  dependencies:
+    classnames "^2.2.5"
+    hoist-non-react-statics "^2.3.1"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+    soundcloud-audio "^1.2.2"
 
 react-stepzilla@^4.7.2:
   version "4.8.0"
@@ -16168,6 +16199,16 @@ sort-keys@^1.0.0:
   resolved "https://registry.yarnpkg.com/sort-keys/-/sort-keys-1.1.2.tgz#441b6d4d346798f1b4e49e8920adfba0e543f9ad"
   dependencies:
     is-plain-obj "^1.0.0"
+
+soundcloud-audio@^1.2.2:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/soundcloud-audio/-/soundcloud-audio-1.4.0.tgz#2d9ceeaa8a3c63d814e18c4c2602fe3be9a99655"
+  integrity sha512-2kHyTfu+KNOLZuRKynaeTmj846deC1WbiDTu7rkd1/93lk9FxtgbGkNQSIy5H4gxZD9EEeTdXhkE7uiMwEXuEQ==
+
+soundmanager2@^2.97.20170602:
+  version "2.97.20170602"
+  resolved "https://registry.yarnpkg.com/soundmanager2/-/soundmanager2-2.97.20170602.tgz#fe3bc731bfc4d54c1364e71980263e6816981879"
+  integrity sha512-2ee7ES9SJ++WkD7PGHMeT4QUuJr7uC3wacD6RoCDlKjdSp9lpEOaKm3lKWKld119DLILjS2l9U6xpXJN6U0KPQ==
 
 source-list-map@^0.1.7, source-list-map@~0.1.7:
   version "0.1.8"

@@ -20,6 +20,7 @@ const Tracker = styled('div')`
 `
 
 class HomeScreen extends Component {
+
   render() {
     return (
       <div>

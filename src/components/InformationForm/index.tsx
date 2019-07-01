@@ -9,6 +9,7 @@ import styled from 'styled-components'
 import { images } from 'themes'
 import { emailRex, notEmptyRex } from 'tools'
 import Title from './Title'
+import { EmailHelper, IFeedbackData } from 'tools/email-helper'
 
 const StyledButton = styled(Button)`
   position: relative;
@@ -101,7 +102,14 @@ class InformationForm extends Component<IProps, IState> {
     }, () => {
       if (this.forceFieldValidate()) {
         if (this.props.handleSubmit) {
-          alert('Thank for your helping, we\'ll contact you soon')
+          alert('Thanks for your helping, we\'ll contact you soon')
+          const feedbackData: IFeedbackData = {
+            customerName: this.state.nameField,
+            customerEmail: this.state.emailField,
+            customerMessage: this.state.ideaField,
+            customerPhone: this.state.phoneNumberField + ''
+          }
+          EmailHelper.sendFeedBack(feedbackData)
           this.props.handleSubmit(this.state)
         }
       } else {
