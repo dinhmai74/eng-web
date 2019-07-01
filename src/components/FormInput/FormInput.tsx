@@ -7,11 +7,11 @@ import { tran } from 'localization/i18n'
 const styles = (theme) => ({
   textField: {
     marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit
+    marginRight: theme.spacing.unit,
   },
   button: {
-    margin: theme.spacing.unit
-  }
+    margin: theme.spacing.unit,
+  },
 })
 
 class OutlinedTextFields extends React.Component<any, any> {
@@ -19,17 +19,17 @@ class OutlinedTextFields extends React.Component<any, any> {
     name: 'Cat in the Hat',
     age: '',
     multiline: 'Controlled',
-    currency: 'EUR'
+    currency: 'EUR',
   }
 
   handleChange = (name) => (event) => {
     this.setState({
-      [name]: event.target.value
+      [name]: event.target.value,
     })
   }
 
   handleSubmit = () => {
-    this.props.onSubmit({...this.state})
+    if (this.props.onSubmit) { this.props.onSubmit({ ...this.state }) }
   }
 
   render() {
