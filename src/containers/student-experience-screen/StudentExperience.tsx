@@ -35,7 +35,6 @@ const Title = styled.div`
 const StyleForm = styled.div`
   display: flex;
   justify-content: center;
-  background-color: ${colors.lightRed};
 `
 const Containers = styled.div`
   height: 70vh;
@@ -48,7 +47,7 @@ export default class StudentExperience extends React.Component<
 > {
   render() {
     return (
-      <Containers>
+      <div>
         <StyledImage src={images.bgStudentExperience} />
         <Title>
           {tran('registerCourse')}
@@ -61,7 +60,7 @@ export default class StudentExperience extends React.Component<
         <NewCourse />
         <FeedBack />
         <VideoCourse />
-      </Containers>
+      </div>
     )
   }
 }

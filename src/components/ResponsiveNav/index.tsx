@@ -16,8 +16,7 @@ import styled from 'styled-components'
 import { IRoute } from 'tools/routes'
 import { tran } from 'localization/i18n'
 
-const StyledFlag = styled(Flag)`
-`
+const StyledFlag = styled(Flag)``
 
 const StyledButton = styled(Button)`
   background: transparent;
@@ -36,23 +35,23 @@ const Background = styled.div`
 
 interface IProps extends RouteComponentProps {
   /*** @property {propTypes.array} routes - display route */
-  routes: IRoute[],
+  routes: IRoute[]
   /*** @property {propTypes.string} home icon - icon home display */
-  homeIcon?: string,
+  homeIcon?: string
   /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
-  hiddenRoute?: string[],
+  hiddenRoute?: string[]
   /*** @property {propTypes.boolean} render One page - nav for one page or not */
-  renderOnePage?: boolean,
+  renderOnePage?: boolean
   /*** @property {propTypes.boolean} disable headroom- */
-  disableHeadroom?: boolean,
+  disableHeadroom?: boolean
 
   [rest: string]: any
 }
 
 interface IState {
-  isToggled: boolean,
-  isTop: boolean,
-  bg: string,
+  isToggled: boolean
+  isTop: boolean
+  bg: string
   path: string
 }
 
@@ -61,14 +60,14 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     routes: [],
     homeIcon: images.logo,
     hiddenRoute: [],
-    renderOnePage: false
+    renderOnePage: false,
   }
 
   state = {
     isToggled: false,
     isTop: true,
     bg: 'black',
-    path: '/'
+    path: '/',
   }
   unlisten: any
 
@@ -76,7 +75,7 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     document.addEventListener('scroll', () => {
       const isTop = window.scrollY < 100
       if (isTop !== this.state.isTop) {
-        this.setState({isTop})
+        this.setState({ isTop })
       }
     })
 
@@ -86,7 +85,7 @@ class ResponsiveNav extends React.Component<IProps, IState> {
   componentWillMount(): void {
     this.unlisten = this.props.history.listen((location, action) => {
       this.setState({
-        path: location.pathname
+        path: location.pathname,
       })
     })
   }
@@ -96,15 +95,15 @@ class ResponsiveNav extends React.Component<IProps, IState> {
   }
 
   setBg = () => {
-    const {pathname} = this.props.location
+    const { pathname } = this.props.location
     this.setState({
-      path: pathname
+      path: pathname,
     })
   }
 
   handleToggleButtonPress = (event: React.MouseEvent<HTMLElement>) => {
     this.setState((state: IState) => ({
-      isToggled: !state.isToggled
+      isToggled: !state.isToggled,
     }))
   }
 
@@ -119,7 +118,7 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     })
   }
 
-  renderRouteContent = (r) => {
+  renderRouteContent = (r: IRoute) => {
     return (
       <span className="menu__title">
         <span className="menu__first-word" data-hover={tran(r.first)}>
@@ -132,19 +131,45 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     )
   }
 
-  renderNormalNav = (routes) => {
-    return routes.map((r) => {
+  renderDropdown = (r: IRoute, show?: boolean) => {
+    return (
+      <div
+        className={`dropdown-menu ${show ? 'show' : ''}`}
+        aria-labelledby="navbarDropdownMenuLink"
+      >
+        <a className="dropdown-item" href="#">
+          Action
+        </a>
+        <a className="dropdown-item" href="#">
+          Another action
+        </a>
+        <a className="dropdown-item" href="#">
+          Something else here
+        </a>
+      </div>
+    )
+  }
+
+  renderNormalNav = (routes: IRoute[]) => {
+    return routes.map((r: IRoute) => {
       const routeContent = this.renderRouteContent(r)
       return (
-        <li className={`menu__item`}>
+        <li
+          className={`menu__item ${r.children ? 'dropdown' : ''}`}
+        >
           <Nav.Link
             key={r.path}
             as={NavLink}
-            activeClassName="menu__item--main"
+            activeClassName={`menu__item--main ${
+              r.children ? 'dropdown-toggle' : ''
+            }`}
             exact
             to={r.path}
             className="menu__link"
           >
+            {r.children
+              ? r.children.map((e) => this.renderDropdown(e))
+              : null}
             {routeContent}
           </Nav.Link>
         </li>
@@ -152,14 +177,16 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     })
   }
 
-  renderOnePageNav = (routes) => {
-    return routes.map((r) => {
+  renderOnePageNav = (routes: IRoute[]) => {
+    return routes.map((r: IRoute) => {
       const routeContent = this.renderRouteContent(r)
       return (
-        <li className={`menu__item`}>
+        <li className={`menu__item ${r.children ? 'dropdown' : ''}`}>
           <Link
             key={r.path}
-            activeClass="menu__item--main"
+            activeClassName={`menu__item--main ${
+              r.children ? 'dropdown-toggle' : ''
+            }`}
             exact
             to={r.path}
             className="menu__link"
@@ -176,7 +203,7 @@ class ResponsiveNav extends React.Component<IProps, IState> {
   }
 
   renderListRouteItems = () => {
-    const {routes, renderOnePage} = this.props
+    const { routes, renderOnePage } = this.props
     if (renderOnePage) {
       return this.renderOnePageNav(routes)
     }
@@ -184,8 +211,8 @@ class ResponsiveNav extends React.Component<IProps, IState> {
   }
 
   render() {
-    const {isToggled, isTop, bg, path} = this.state
-    const {routes, homeIcon, hiddenRoute, disableHeadroom} = this.props
+    const { isToggled, isTop, bg, path } = this.state
+    const { routes, homeIcon, hiddenRoute, disableHeadroom } = this.props
     if (hiddenRoute && hiddenRoute.includes(path)) {
       return null
     }
@@ -198,15 +225,20 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     const iconName = currentLang === 'en' ? 'gb' : 'vn'
 
     return (
-      <Headroom className={fixTopNav} style={{background: 'transparent', zIndex: 9999}} disable={disableHeadroom}>
+      <Headroom
+        className={fixTopNav}
+        style={{ background: 'transparent', zIndex: 9999 }}
+        disable={disableHeadroom}
+      >
         <nav className={`navigation navbar navbar-expand-lg`}>
-          {(!isTop || path !== '/' || isToggled) && <Background/>}
+          {(!isTop || path !== '/' || isToggled) && <Background />}
           <Nav.Link
             key={strings.routeHome}
             as={NavLink}
-            style={{marginLeft: 50}}
+            style={{ marginLeft: 50 }}
             exact
-            to={strings.routeHome} className="navbar-brand"
+            to={strings.routeHome}
+            className="navbar-brand"
           >
             <img src={homeIcon} width="100" height="100" alt="logo" />
           </Nav.Link>
@@ -222,19 +254,21 @@ class ResponsiveNav extends React.Component<IProps, IState> {
             aria-label="Toggle navigation"
           >
             <div className="e-burger">
-              <span/>
-              <span/>
-              <span/>
-              <span/>
+              <span />
+              <span />
+              <span />
+              <span />
             </div>
           </button>
-          <div className={`collapse navbar-collapse ${isToggled && 'show'}`} >
+          <div className={`collapse navbar-collapse ${isToggled && 'show'}`}>
+            <ul className="navbar-nav menu">{listItems}</ul>
             <ul className="navbar-nav menu">
-              {listItems}
-            </ul>
-            <ul className="navbar-nav menu">
-              <StyledButton color="yellow" basic onClick={this.handleChangeLang}>
-                <StyledFlag name={iconName}/>
+              <StyledButton
+                color="yellow"
+                basic
+                onClick={this.handleChangeLang}
+              >
+                <StyledFlag name={iconName} />
               </StyledButton>
             </ul>
           </div>

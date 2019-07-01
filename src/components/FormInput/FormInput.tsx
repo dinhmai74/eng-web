@@ -2,6 +2,7 @@ import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
+import { tran } from 'localization/i18n'
 
 const styles = (theme) => ({
   textField: {
@@ -25,6 +26,10 @@ class OutlinedTextFields extends React.Component<any, any> {
     this.setState({
       [name]: event.target.value
     })
+  }
+
+  handleSubmit = () => {
+    this.props.onSubmit({...this.state})
   }
 
   render() {
@@ -76,8 +81,9 @@ class OutlinedTextFields extends React.Component<any, any> {
             color="primary"
             className={classes.button}
             style={{ marginTop: '18px', width: '225px', height: '50px' }}
+            onClick={this.handleSubmit}
           >
-            Secondary
+            {tran('submit')}
           </Button>
         </div>
       </form>
