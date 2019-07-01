@@ -38,7 +38,6 @@ const StyleForm = styled.div`
   background-color: ${colors.lightRed};
 `
 const Containers = styled.div`
-  height: 70vh;
 `
 const Wrapper = styled.div``
 export interface IGeneralCourseState {}
