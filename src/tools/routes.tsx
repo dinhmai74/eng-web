@@ -7,12 +7,15 @@ import {
   FreeTest
 } from 'containers'
 import { strings } from './strings'
+import StudentExperience from 'containers/student-experience-screen/StudentExperience'
 
 export interface IRoute {
   path: string,
   first: string,
   second: string,
-  Component?: any
+  Component?: any,
+  children?: IRoute[],
+  show?: boolean
 }
 
 export const routes: IRoute[] = [
@@ -44,6 +47,12 @@ export const routes: IRoute[] = [
     path: strings.routeGeneralCourse,
     first: 'general',
     second: 'course',
-    Component: GeneralCourse
-  }
+    Component: GeneralCourse,
+  },
+  {
+    path: strings.routeRegister,
+    first: 'register',
+    second: '',
+    Component: StudentExperience
+  },
 ]

@@ -262,7 +262,8 @@
   "startImmediately" : "Start Immediately",
 
   "scored": "You Scored",
-  "anotherSKill": "Do you want to test another skill?"
+  "anotherSKill": "Do you want to test another skill?",
 
-
+  "overview": "Overview",
+  "register":"Register"
 }
