@@ -165,5 +165,8 @@
   "generalCourse": "Khoá học",
   "normalTest": "Normal test",
   "overview": "Giới thiệu chung",
-  "register":"Đăng kí"
+  "register":"Đăng kí",
+  "registerSuccess": "Thank for your register, we will contact you soon",
+  "thankFeedBack": "Thank for your feed back",
+  "feedBackFail": "Sorry,we cannot send your back. Please try again!"
 }

@@ -288,5 +288,8 @@
   "address": "Địa chỉ: 51 Ngô Quyền, P.Hiệp Phú, Quận 9, TPHCM. Điện thoại: 0769 423 567",
 
   "overview": "Overview",
-  "register":"Register"
+  "register":"Register",
+  "registerSuccess": "Thank for your register, we will contact you soon",
+  "thankFeedBack": "Thank for your feed back",
+  "feedBackFail": "Sorry,we cannot send your back. Please try again!"
 }

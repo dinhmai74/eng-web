@@ -1,5 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import CustomInput, { IFormCondition } from 'components/InformationForm/CustomInput'
+import CustomInput, {
+  IFormCondition,
+} from 'components/InformationForm/CustomInput'
 import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
 import { Box, Flex } from 'rebass'
@@ -16,8 +18,8 @@ const StyledButton = styled(Button)`
 `
 
 const CenterView = styled(Flex)`
-margin-top: 50px;
- justify-content: center;
+  margin-top: 50px;
+  justify-content: center;
 `
 
 const FormContainer = styled('div')`
@@ -49,22 +51,27 @@ interface IState {
   emailField: string
   phoneNumberField: number | null
   ideaField: string
-  error: IErrorField,
+  error: IErrorField
   showError: boolean,
+  isSubmitting: boolean,
 
   [rest: string]: any
 }
 
-type TStateField = 'nameField' | 'emailField' | 'phoneNumberField' | 'ideaField'
+type TStateField =
+  | 'nameField'
+  | 'emailField'
+  | 'phoneNumberField'
+  | 'ideaField'
 
 const NotEmptyCondition = {
   regex: notEmptyRex,
-  message: 'Your field is empty'
+  message: 'Your field is empty',
 }
 
 const EmailCondition: IFormCondition = {
   regex: emailRex,
-  message: 'Invalid email format'
+  message: 'Invalid email format',
 }
 
 class InformationForm extends Component<IProps, IState> {
@@ -82,12 +89,13 @@ class InformationForm extends Component<IProps, IState> {
         emailField: [EmailCondition, NotEmptyCondition],
         ideaField: [NotEmptyCondition],
         nameField: [NotEmptyCondition],
-        phoneNumberField: [NotEmptyCondition]
+        phoneNumberField: [NotEmptyCondition],
       },
       ideaField: '',
       nameField: '',
       phoneNumberField: null,
-      showError: false
+      showError: false,
+      isSubmitting: false
     }
   }
 
@@ -97,30 +105,46 @@ class InformationForm extends Component<IProps, IState> {
    */
 
   handleSubmit = (event: any) => {
-    this.setState({
-      showError: true
-    }, () => {
-      if (this.forceFieldValidate()) {
-        if (this.props.handleSubmit) {
-          alert('Thanks for your helping, we\'ll contact you soon')
-          const feedbackData: IFeedbackData = {
-            customerName: this.state.nameField,
-            customerEmail: this.state.emailField,
-            customerMessage: this.state.ideaField,
-            customerPhone: this.state.phoneNumberField + ''
+    this.setState(
+      {
+        showError: true,
+      },
+      async () => {
+        if (this.forceFieldValidate()) {
+          if (this.props.handleSubmit) {
+            const feedbackData: IFeedbackData = {
+              customerName: this.state.nameField,
+              customerEmail: this.state.emailField,
+              customerMessage: this.state.ideaField,
+              customerPhone: this.state.phoneNumberField + '',
+            }
+            this.setState({
+              isSubmitting: true
+            })
+            const result = await EmailHelper.sendFeedBack(feedbackData)
+            let message = ''
+            if (result.status === 200) {
+              message = tran('thankFeedBack')
+            } else {
+              message = tran('feedBackFail')
+            }
+
+            alert(message)
+            this.setState({
+              isSubmitting: false
+            })
+            this.props.handleSubmit(this.state)
           }
-          EmailHelper.sendFeedBack(feedbackData)
-          this.props.handleSubmit(this.state)
+        } else {
+          alert('Your information is missing')
         }
-      } else {
-        alert('Your information is missing')
-      }
-    })
+      },
+    )
   }
 
   handleOnChange = (type: TStateField, value: string) => {
     this.setState({
-      [type]: value
+      [type]: value,
     })
   }
 
@@ -136,29 +160,28 @@ class InformationForm extends Component<IProps, IState> {
   }
 
   render() {
-    const {error, showError} = this.state
+    const { error, showError } = this.state
     return (
       <FormContainer {...this.props}>
-        <Title/>
+        <Title />
         <Content>
-          <Box width={1 / 2}
-          >
+          <Box width={1 / 2}>
             <CustomInput
-              ref={(c) => this.refNameField = c}
+              ref={(c) => (this.refNameField = c)}
               isShowError={showError}
               errorConditions={error.nameField}
               placeholder={tran('infoFullName')}
               onChange={(e: any) => this.handleOnChange('nameField', e)}
             />
             <CustomInput
-              ref={(c) => this.refEmailField = c}
+              ref={(c) => (this.refEmailField = c)}
               isShowError={showError}
               errorConditions={error.emailField}
               placeholder={tran('infoContact')}
               onChange={(e: any) => this.handleOnChange('emailField', e)}
             />
             <CustomInput
-              ref={(c) => this.refPhoneNumberField = c}
+              ref={(c) => (this.refPhoneNumberField = c)}
               isShowError={showError}
               placeholder={tran('infoPhoneNumber')}
               onChange={(e: any) => this.handleOnChange('phoneNumberField', e)}
@@ -167,8 +190,8 @@ class InformationForm extends Component<IProps, IState> {
 
           <Box width={1 / 2} height={1}>
             <CustomInput
-              ref={(c) => this.refIdeaField = c}
-              style={{marginTop: 30}}
+              ref={(c) => (this.refIdeaField = c)}
+              style={{ marginTop: 30 }}
               type={'textarea'}
               isShowError={showError}
               errorConditions={error.ideaField}
@@ -179,7 +202,7 @@ class InformationForm extends Component<IProps, IState> {
         </Content>
 
         <CenterView>
-          <StyledButton secondary onClick={this.handleSubmit}>
+          <StyledButton secondary onClick={this.handleSubmit} loading={this.state.isSubmitting}>
             {tran('submit')}
           </StyledButton>
         </CenterView>
@@ -189,8 +212,7 @@ class InformationForm extends Component<IProps, IState> {
 }
 
 InformationForm.defaultProps = {
-  handleSubmit: (state: IState) => {
-  }
+  handleSubmit: (state: IState) => {},
 }
 
 const informationForm = InformationForm
