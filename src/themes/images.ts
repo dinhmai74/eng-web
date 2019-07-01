@@ -124,5 +124,11 @@ export const images = {
 
   // result ielts advanced
 
-  bgResult: './asset/images/result-ielts-advanced/result.png'
+  bgResult: './asset/images/result-ielts-advanced/result.png',
+  firstIcon: './asset/images/why-study-ielts/icon-1.png',
+  secondIcon: './asset/images/why-study-ielts/icon-2.png',
+  thirdIcon: './asset/images/why-study-ielts/icon-3.png',
+  fourthIcon: './asset/images/why-study-ielts/icon-4.png',
+  fifIcon: './asset/images/why-study-ielts/icon-5.png',
+  ieltsBanner: './asset/images/why-study-ielts/ielts-preparation-banner-2.png'
 }
