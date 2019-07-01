@@ -89,7 +89,7 @@ export default class QuestionAudio extends React.Component<
           images2={images2}
           images3={images3}
           url1={url1}
-          url={url2}
+          url2={url2}
           url3={url3}
         />
       )

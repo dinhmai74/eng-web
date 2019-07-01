@@ -52,7 +52,6 @@ export default class Question extends React.Component<
       d: ''
     }
   }
-
   async componentDidMount() {
     this.fetchData(this.props)
   }
@@ -62,9 +61,8 @@ export default class Question extends React.Component<
   }
 
   fetchData = async (props) => {
-    const { questionNumber, type, level } = props
+    const { questionNumber, type } = props
     const question = await FirebaseWorker.getQuestions(
-      level,
       `question_${questionNumber}`,
       type
     )

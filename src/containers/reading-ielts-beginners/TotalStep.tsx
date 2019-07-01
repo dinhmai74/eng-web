@@ -12,9 +12,6 @@ import {
   Wizard
 } from '@front10/landing-page-book/dist/components'
 
-// interface IState {
-//   images1:
-// }
 const resultStep = _.map(steps, (e) => ({
   name: (
     <TitleQuestion questionNumber={e.number} type={e.type} level={e.level} />
