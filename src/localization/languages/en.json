@@ -281,5 +281,21 @@
   "section": "This section will consist of:",
   "choice": "+ Multiple choice questions",
   "summary": "+ Summary/table completion",
-  "next": "Next"
+  "next": "Next",
+
+  "copyright": "© Copyright 2016 Duckie English Vietnam. All rights reserved.",
+  "company": "Công ty TNHH Duckie English | Giấy ĐKKD số 411043002395 do UBNDTPHCM cấp ngày 25/11/2013",
+  "address": "Địa chỉ: 51 Ngô Quyền, P.Hiệp Phú, Quận 9, TPHCM. Điện thoại: 0769 423 567",
+
+  "overview": "Overview",
+  "register": "Register",
+  "registerSuccess": "Thank for your register, we will contact you soon",
+  "thankFeedBack": "Thank for your feed back",
+  "feedBackFail": "Sorry,we cannot send your back. Please try again!",
+  "whyStudyIelts": "Why should you study IELTS with Duckie English?",
+  "firstReason": "100% English communication environment as a miniature English will activate the entire language use skills .",
+  "secondReason": "Active learning time and flexible programs allow you to re-study missed modules.",
+  "thirdReason": "The class only has a maximum of 10 students to optimize the opportunities for interaction.",
+  "fourthReason": "Commit yourself to achieve the desired results or you can re-learn completely for free",
+  "fifReason": "You are more confident when entering the real exam with 120 IELTS exam simulation exercises from My English Lab (MEL) system."
 }

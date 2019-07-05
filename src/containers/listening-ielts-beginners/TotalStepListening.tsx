@@ -37,8 +37,11 @@ const resultStep = _.map(stepsDataListening, (e) => ({
         questionNumber={e.number}
         type={e.type}
         images1={images.iconWriting}
-        images2={images.iconListening}
+        url1="/writing-ielts-beginner"
+        images2={images.iconSpeaking}
+        url2="/speaking-ielts-beginner"
         images3={images.iconReading}
+        url3="/reading-ielts-beginner"
       />
     </div>
   )

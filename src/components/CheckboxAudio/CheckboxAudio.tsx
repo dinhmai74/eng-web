@@ -25,6 +25,8 @@ const Dot = styled(Media)`
 `
 const Wrapper = styled.div`
   display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 20px;
 `
 class CheckboxAudio extends React.Component<any, IQuestionState> {
   state = {
@@ -47,37 +49,42 @@ class CheckboxAudio extends React.Component<any, IQuestionState> {
             name="gender1"
             value={this.state.value}
             onChange={this.handleChange}
+            style={{ display: 'flex', flexFlow: 'column wrap' }}
           >
-            <FormControlLabel
-              value={firstQuestion}
-              control={<Radio />}
-              label={''}
-            />
-            <Media>
-              <div className="media">
-                <div className="media-player">
-                  <Player src={firstQuestion} />
+            <Wrapper>
+              <FormControlLabel
+                value={firstQuestion}
+                control={<Radio />}
+                label={''}
+              />
+              <Media>
+                <div className="media">
+                  <div className="media-player">
+                    <Player src={firstQuestion} />
+                  </div>
+                  <div className="media-controls">
+                    <ButtonPlay images={images.iconSound} />
+                  </div>
                 </div>
-                <div className="media-controls">
-                  <ButtonPlay images={images.iconSound} />
+              </Media>
+            </Wrapper>
+            <Wrapper>
+              <FormControlLabel
+                value={secondQuestion}
+                control={<Radio />}
+                label={''}
+              />
+              <Media>
+                <div className="media">
+                  <div className="media-player">
+                    <Player src={secondQuestion} />
+                  </div>
+                  <div className="media-controls">
+                    <ButtonPlay images={images.iconSound} />
+                  </div>
                 </div>
-              </div>
-            </Media>
-            <FormControlLabel
-              value={secondQuestion}
-              control={<Radio />}
-              label={''}
-            />
-            <Media>
-              <div className="media">
-                <div className="media-player">
-                  <Player src={secondQuestion} />
-                </div>
-                <div className="media-controls">
-                  <ButtonPlay images={images.iconSound} />
-                </div>
-              </div>
-            </Media>
+              </Media>
+            </Wrapper>
           </RadioGroup>
         </FormControl>
       </Containers>

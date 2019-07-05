@@ -41,6 +41,7 @@ export default class QuestionPlayAudio extends React.Component<
   render() {
     const titleQuestionAudio: any = this.state.titleQuestionAudio
     const style = this.props
+
     if (!titleQuestionAudio) {
       return <div />
     }

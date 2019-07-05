@@ -10,7 +10,7 @@ class TeamMember extends Component {
         <Team members={[
           {
             // tslint:disable-next-line:max-line-length
-            image: 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.0-9/51036534_840820212927188_8240394829008207872_o.jpg?_nc_cat=100&_nc_oc=AQm6l78xgESZp8ORZnpW1m9wTuYaPgojkFm0Z6EuPQakWcSoR9ny-DydMGK0hEB-SFU&_nc_ht=scontent.fsgn4-1.fna&oh=be83eb60f3c226d5c0c38a9d9b496da8&oe=5D69835F',
+            image: 'https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.0-1/62509126_922572224751986_4974984661907275776_n.jpg?_nc_cat=105&_nc_oc=AQm3ZIKUgrivCXDmlrQKtjxtQD5Tjoo5KE_orIKjhco91aZWyYfYzPMe-0i-QfrujTc&_nc_ht=scontent.fsgn4-1.fna&oh=1b803662e8bc8d08ed83f6698ae92bd3&oe=5DBFD084',
             name: 'Linh bếu',
             job: 'Phát âm tiếng anh cực xịn',
             profile: [

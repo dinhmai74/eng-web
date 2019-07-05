@@ -49,6 +49,18 @@ export const FirebaseWorker = {
     const snapshot = await questionRef.once('value')
 
     return snapshot.val()
+  },
+  writeUserRegister: async (name, email, phone, age, living) => {
+    firebase
+      .database()
+      .ref('users/')
+      .set({
+        name,
+        email,
+        phone,
+        age,
+        living
+      })
   }
 }
 

@@ -4,5 +4,6 @@ export const strings = {
   routeWhyChoseUs: '/chose-us',
   // routeTest: '/free-test',
   routeGeneralCourse: '/general-course',
-  routeFreeTest: '/free-test'
+  routeFreeTest: '/free-test',
+  routeRegister: '/register'
 }

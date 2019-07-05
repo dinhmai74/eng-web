@@ -6,6 +6,7 @@ import { colors, images } from 'themes/index'
 import Levels from './components/Levels'
 import Overview from './components/Overview'
 import Preparation from './components/Preparation'
+import ReasonStudy from './components/ReasonStudy'
 
 const Wrapper = styled.div`
   /* margin-right: auto;
@@ -34,6 +35,7 @@ export default class GeneralCourse extends React.Component<
           <Overview />
           <Levels />
           <Preparation />
+          <ReasonStudy />
         </Wrapper>
       </Container>
     )

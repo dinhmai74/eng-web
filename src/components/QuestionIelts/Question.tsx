@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Container } from '@front10/landing-page-book/dist/components'
 import { FirebaseWorker } from 'DataFirebase'
 import {
   IQuestion,
@@ -8,6 +7,11 @@ import {
 import CustomCheckbox from 'components/Question/CustomCheckbox'
 import TestResult from 'components/TestResult/TestResult'
 import { TLevel } from 'components/LevelIelts/Level'
+import {
+  Container,
+  Image,
+  Button
+} from '@front10/landing-page-book/dist/components'
 
 export interface IQuestionState {
   question: IQuestion
@@ -20,6 +24,9 @@ interface IQuestionProps {
   images1: string
   images2: string
   images3: string
+  url1: string
+  url2: string
+  url3: string
 }
 
 export default class Question extends React.Component<
@@ -32,7 +39,10 @@ export default class Question extends React.Component<
     level: 'ielts_beginner',
     images1: '',
     images2: '',
-    images3: ''
+    images3: '',
+    url1: '',
+    url2: '',
+    url3: ''
   }
   state = {
     question: {
@@ -42,7 +52,6 @@ export default class Question extends React.Component<
       d: ''
     }
   }
-
   async componentDidMount() {
     this.fetchData(this.props)
   }
@@ -52,9 +61,8 @@ export default class Question extends React.Component<
   }
 
   fetchData = async (props) => {
-    const { questionNumber, type, level } = props
+    const { questionNumber, type } = props
     const question = await FirebaseWorker.getQuestions(
-      level,
       `question_${questionNumber}`,
       type
     )
@@ -65,10 +73,26 @@ export default class Question extends React.Component<
 
   render() {
     const question: IQuestion = this.state.question
-    const { questionNumber, type, images1, images2, images3 } = this.props
+    const {
+      questionNumber,
+      type,
+      images1,
+      images2,
+      images3,
+      url1,
+      url2,
+      url3
+    } = this.props
     if (questionNumber === 6 && String(type) === 'result') {
       return (
-        <TestResult images1={images1} images2={images2} images3={images3} />
+        <TestResult
+          images1={images1}
+          images2={images2}
+          images3={images3}
+          url1={url1}
+          url2={url2}
+          url3={url3}
+        />
       )
     }
 

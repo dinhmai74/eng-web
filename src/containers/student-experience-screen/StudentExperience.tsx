@@ -3,7 +3,9 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { colors, images } from 'themes/index'
 // import { Container } from 'react-bootstrap'
-import FormInput from '../../components/FormInput/FormInput'
+import FormInput, {
+  IRegisterInputState,
+} from '../../components/FormInput/FormInput'
 import {
   Header,
   Hero,
@@ -13,11 +15,12 @@ import {
   Section,
   Container,
   Paragraph,
-  Card
+  Card,
 } from '@front10/landing-page-book/dist/components'
 import NewCourse from './NewCourse'
 import FeedBack from './FeedBack'
 import VideoCourse from './VideoCourse'
+import { EmailHelper } from 'tools'
 // export interface IGeneralCourseProps {}
 const StyledImage = styled.img`
   width: 100%;
@@ -35,17 +38,20 @@ const Title = styled.div`
 const StyleForm = styled.div`
   display: flex;
   justify-content: center;
-  background-color: ${colors.lightRed};
 `
-const Containers = styled.div`
-  height: 70vh;
-`
+const Containers = styled.div``
 const Wrapper = styled.div``
 export interface IGeneralCourseState {}
 export default class StudentExperience extends React.Component<
   any,
   IGeneralCourseState
 > {
+  onSubmit = (state: IRegisterInputState) => {
+    const { age, email, name, phone, place } = state
+    EmailHelper.register({ age, email, name, phone, place })
+    alert(tran('registerSuccess'))
+  }
+
   render() {
     return (
       <Containers>
@@ -56,7 +62,7 @@ export default class StudentExperience extends React.Component<
           {tran('nameWeb')}
         </Title>
         <StyleForm>
-          <FormInput />
+          <FormInput onSubmit={this.onSubmit} />
         </StyleForm>
         <NewCourse />
         <FeedBack />

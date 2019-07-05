@@ -20,6 +20,9 @@ interface IQuestionProps {
   images1: string
   images2: string
   images3: string
+  url1: string
+  url2: string
+  url3: string
 }
 
 export default class QuestionAudio extends React.Component<
@@ -32,7 +35,10 @@ export default class QuestionAudio extends React.Component<
     level: 'ielts_advanced',
     images1: '',
     images2: '',
-    images3: ''
+    images3: '',
+    url1: '',
+    url2: '',
+    url3: ''
   }
   state = {
     question: {
@@ -56,7 +62,7 @@ export default class QuestionAudio extends React.Component<
     const question = await FirebaseWorker.getQuestions(
       level,
       `question_${questionNumber}`,
-      type,
+      type
     )
     this.setState({
       question
@@ -66,10 +72,26 @@ export default class QuestionAudio extends React.Component<
   render() {
     const question: IQuestion = this.state.question
 
-    const { questionNumber, type, images1, images2, images3 } = this.props
+    const {
+      questionNumber,
+      type,
+      images1,
+      images2,
+      images3,
+      url1,
+      url2,
+      url3
+    } = this.props
     if (questionNumber === 6 && String(type) === 'result') {
       return (
-        <TestResult images1={images1} images2={images2} images3={images3} />
+        <TestResult
+          images1={images1}
+          images2={images2}
+          images3={images3}
+          url1={url1}
+          url2={url2}
+          url3={url3}
+        />
       )
     }
     if (!question) {
