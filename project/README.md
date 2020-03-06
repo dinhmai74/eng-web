@@ -1,6 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 # Eng-web
 
+# Prerequisite
+### Install env
+1. Install nodejs: https://nodejs.org/en/
+3. Install gulp: npm install -g gulp
+2. Install static server serv ( use your terminal) : `npm install -g serve`
+
 # Available Scripts
 
 ## Dev project
@@ -16,9 +22,7 @@ Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ## Run local build
-### Install env
-1. Install nodejs: https://nodejs.org/en/
-2. Install static server serv ( use your terminal) : `npm install -g serve`
+
   
 ### Build and run
     - Run the command in terminal:]
