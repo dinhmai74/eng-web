@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
 import _ from 'lodash'
+import React, { Component } from 'react'
 
 export interface ISteps {
   [name: string]: any

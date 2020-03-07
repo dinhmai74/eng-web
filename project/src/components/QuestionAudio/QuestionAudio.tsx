@@ -1,13 +1,13 @@
-import * as React from 'react'
 import { Container } from '@front10/landing-page-book/dist/components'
-import { FirebaseWorker } from 'DataFirebase'
+import CheckboxAudio from 'components/CheckboxAudio/CheckboxAudio'
+import { TLevel } from 'components/LevelIelts/Level'
+import TestResult from 'components/TestResult/TestResult'
 import {
   IQuestion,
   TQuestion
 } from 'containers/reading-ielts-beginners/Question/type'
-import TestResult from 'components/TestResult/TestResult'
-import CheckboxAudio from 'components/CheckboxAudio/CheckboxAudio'
-import { TLevel } from 'components/LevelIelts/Level'
+import { FirebaseWorker } from 'DataFirebase'
+import * as React from 'react'
 
 export interface IQuestionState {
   question: IQuestion

@@ -1,7 +1,7 @@
+import { Container, Section } from '@front10/landing-page-book/dist/components'
 import Block from 'components/Block/index'
 import * as React from 'react'
 import { images } from 'themes/index'
-import { Section, Container } from '@front10/landing-page-book/dist/components'
 
 import { tran } from 'localization/i18n'
 import './styles.css'

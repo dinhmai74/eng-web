@@ -1,10 +1,10 @@
+import { Container, Section } from '@front10/landing-page-book/dist/components'
 import { tran } from 'localization/i18n'
 import * as React from 'react'
 import { Box, Flex } from 'rebass'
 import { Icon } from 'semantic-ui-react'
 import styled from 'styled-components'
 import { colors, images } from 'themes/index'
-import { Section, Container } from '@front10/landing-page-book/dist/components'
 
 const Title = styled.div`
   margin-bottom: 40px;

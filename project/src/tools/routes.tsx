@@ -1,13 +1,13 @@
 import {
   FindCourseScreen,
-  HomeScreen,
-  WhyChoseUs,
-  TestQuestion,
+  FreeTest,
   GeneralCourse,
-  FreeTest
+  HomeScreen,
+  TestQuestion,
+  WhyChoseUs
 } from 'containers'
-import { strings } from './strings'
 import StudentExperience from 'containers/student-experience-screen/StudentExperience'
+import { strings } from './strings'
 
 export interface IRoute {
   path: string,

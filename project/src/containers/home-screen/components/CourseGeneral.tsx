@@ -1,14 +1,14 @@
-import { Button, Icon } from 'semantic-ui-react'
-import styled from 'styled-components'
-import Chart from 'containers/general-course-screen/components/Chart'
-import React, { PureComponent } from 'react'
 import {
-  Section,
   Container,
   Paragraph,
-  Row
+  Row,
+  Section
 } from '@front10/landing-page-book/dist/components'
+import Chart from 'containers/general-course-screen/components/Chart'
 import { tran } from 'localization/i18n'
+import React, { PureComponent } from 'react'
+import { Button, Icon } from 'semantic-ui-react'
+import styled from 'styled-components'
 
 const ListChart = styled.div`
   display: flex;

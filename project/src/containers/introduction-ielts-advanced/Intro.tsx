@@ -2,8 +2,8 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { images, } from 'themes'
 
-import Content from './Content'
 import { Container, Image } from '@front10/landing-page-book/dist/components'
+import Content from './Content'
 
 const StyleImaged = styled.div`
   /* background-image: url(${images.newLogo}); */

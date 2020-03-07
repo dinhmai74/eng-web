@@ -1,18 +1,18 @@
-import React from 'react'
+import FormControl from '@material-ui/core/FormControl'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
 import Radio from '@material-ui/core/Radio'
 import RadioGroup from '@material-ui/core/RadioGroup'
-import FormControlLabel from '@material-ui/core/FormControlLabel'
-import FormControl from '@material-ui/core/FormControl'
-import { Button, Icon } from 'semantic-ui-react'
 import { tran } from 'localization/i18n'
+import React from 'react'
+import { Button, Icon } from 'semantic-ui-react'
 
-import { Section, Container } from '@front10/landing-page-book/dist/components'
+import { Container, Section } from '@front10/landing-page-book/dist/components'
 import {
   BrowserRouter as Router,
-  Route,
   NavLink,
-  withRouter,
-  RouteComponentProps
+  Route,
+  RouteComponentProps,
+  withRouter
 } from 'react-router-dom'
 import { IRoute } from 'tools/routes'
 

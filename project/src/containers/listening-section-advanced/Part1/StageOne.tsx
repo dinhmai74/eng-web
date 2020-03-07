@@ -1,13 +1,13 @@
-import * as React from 'react'
 import _ from 'lodash'
-import { images, colors } from 'themes'
+import * as React from 'react'
+import { colors, images } from 'themes'
 
-import { Wizard, Section } from '@front10/landing-page-book/dist/components'
-import TitleQuestion from 'containers/reading-ielts-beginners/title-question/TitleQuestion'
-import stepsDataListening from '../stepsDataListening.json'
-import Question from 'components/QuestionIelts/Question.tsx'
-import styled from 'styled-components'
+import { Section, Wizard } from '@front10/landing-page-book/dist/components'
 import AudioListening from 'components/AudioListening/AudioListening'
+import Question from 'components/QuestionIelts/Question.tsx'
+import TitleQuestion from 'containers/reading-ielts-beginners/title-question/TitleQuestion'
+import styled from 'styled-components'
+import stepsDataListening from '../stepsDataListening.json'
 
 export interface IState {
   play: boolean

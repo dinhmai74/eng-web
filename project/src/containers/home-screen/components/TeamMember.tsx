@@ -1,7 +1,7 @@
 // @ts-nocheck
+import { Container, Section, Team } from '@front10/landing-page-book/dist/components'
 import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
-import { Section, Container, Team } from '@front10/landing-page-book/dist/components'
 
 class TeamMember extends Component {
   render() {

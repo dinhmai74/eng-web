@@ -1,5 +1,5 @@
-import * as emailjs from 'emailjs-com'
 import { IRegisterInputState } from 'components/FormInput/FormInput'
+import * as emailjs from 'emailjs-com'
 
 const USER_ID = 'user_yrsSjY5GDwl3jHmicFeQ0'
 

@@ -1,26 +1,26 @@
 import { NavMargin } from 'components'
-import _ from 'lodash'
-import {
-  Formik,
-  FormikActions,
-  FormikProps,
-  Form,
-  Field,
-  FieldProps
-} from 'formik'
 import CareerStep from 'containers/find-course-screens/career-step'
 import Question1Step from 'containers/find-course-screens/feeling-step/question1'
 import Question2Step from 'containers/find-course-screens/feeling-step/question2'
 import Question3Step from 'containers/find-course-screens/feeling-step/question3'
 import GeneralStep from 'containers/find-course-screens/general-step'
-import validationSchema from './validation-schema'
+import {
+  Field,
+  FieldProps,
+  Form,
+  Formik,
+  FormikActions,
+  FormikProps
+} from 'formik'
+import _ from 'lodash'
 import Steps, { Step } from 'rc-steps'
-import 'rc-steps/assets/index.css'
 import 'rc-steps/assets/iconfont.css'
-import Stepper, { ISteps } from './Stepper'
+import 'rc-steps/assets/index.css'
 import React, { Component } from 'react'
-import { withRouter, RouteComponentProps } from 'react-router-dom'
+import { RouteComponentProps, withRouter } from 'react-router-dom'
 import { IRoute } from 'tools/routes'
+import Stepper, { ISteps } from './Stepper'
+import validationSchema from './validation-schema'
 
 import { Container } from './atoms'
 

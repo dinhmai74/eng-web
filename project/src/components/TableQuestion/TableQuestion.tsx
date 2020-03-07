@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import { Table, Input } from 'semantic-ui-react'
-import styled from 'styled-components'
 import { TextField } from '@material-ui/core'
-import { connect } from 'react-redux'
 import InputAnswer from 'components/Input/InputAnswer'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { Input, Table } from 'semantic-ui-react'
+import styled from 'styled-components'
 const StyledCell = styled(Table.Cell)`
   display: flex;
   flex-flow: column wrap;

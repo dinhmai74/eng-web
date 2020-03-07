@@ -1,26 +1,26 @@
+import {
+  Card,
+  Column,
+  Container,
+  Header,
+  Hero,
+  Image,
+  Paragraph,
+  Row,
+  Section,
+} from '@front10/landing-page-book/dist/components'
 import { tran } from 'localization/i18n'
 import * as React from 'react'
 import styled from 'styled-components'
 import { colors, images } from 'themes/index'
+import { EmailHelper } from 'tools'
 // import { Container } from 'react-bootstrap'
 import FormInput, {
   IRegisterInputState,
 } from '../../components/FormInput/FormInput'
-import {
-  Header,
-  Hero,
-  Image,
-  Row,
-  Column,
-  Section,
-  Container,
-  Paragraph,
-  Card,
-} from '@front10/landing-page-book/dist/components'
-import NewCourse from './NewCourse'
 import FeedBack from './FeedBack'
+import NewCourse from './NewCourse'
 import VideoCourse from './VideoCourse'
-import { EmailHelper } from 'tools'
 // export interface IGeneralCourseProps {}
 const StyledImage = styled.img`
   width: 100%;

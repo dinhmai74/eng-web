@@ -1,9 +1,9 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
+import { TLevel } from 'components/LevelIelts/Level'
 import FirebaseWorker from 'DataFirebase'
 import { TQuestion } from '../Question/type'
-import { TLevel } from 'components/LevelIelts/Level'
 
 const Text = styled.div`
   font-size: 22px!important;

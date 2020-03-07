@@ -1,9 +1,9 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { colors } from 'themes/index'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 AOS.init()
 interface IProps {}
 

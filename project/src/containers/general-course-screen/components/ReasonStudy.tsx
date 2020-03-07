@@ -1,18 +1,18 @@
+import {
+  Card,
+  Column,
+  Container,
+  Header,
+  Hero,
+  Image,
+  Paragraph,
+  Row,
+  Section
+} from '@front10/landing-page-book/dist/components'
 import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { colors, images } from 'themes/index'
-import {
-  Header,
-  Hero,
-  Image,
-  Row,
-  Column,
-  Section,
-  Container,
-  Paragraph,
-  Card
-} from '@front10/landing-page-book/dist/components'
 import Reason from './Reason'
 interface IProps {}
 const Containers = styled(Container)`

@@ -1,13 +1,13 @@
-import * as React from 'react'
 import _ from 'lodash'
+import * as React from 'react'
 import { images } from 'themes'
 
 import { Wizard } from '@front10/landing-page-book/dist/components'
-import TitleQuestion from 'containers/reading-ielts-beginners/title-question/TitleQuestion'
-import stepsDataSpeaking from './stepsDataSpeaking.json'
-import Question from 'components/QuestionIelts/Question.tsx'
-import { controls } from 'react-media-player'
 import QuestionAudio from 'components/QuestionAudio/QuestionAudio.tsx'
+import Question from 'components/QuestionIelts/Question.tsx'
+import TitleQuestion from 'containers/reading-ielts-beginners/title-question/TitleQuestion'
+import { controls } from 'react-media-player'
+import stepsDataSpeaking from './stepsDataSpeaking.json'
 const { PlayPause, MuteUnmute } = controls
 
 export interface IState {

@@ -10,8 +10,8 @@ import styled from 'styled-components'
 
 import { images } from 'themes'
 import { emailRex, notEmptyRex } from 'tools'
-import Title from './Title'
 import { EmailHelper, IFeedbackData } from 'tools/email-helper'
+import Title from './Title'
 
 const StyledButton = styled(Button)`
   position: relative;

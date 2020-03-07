@@ -1,70 +1,70 @@
-import { tran } from 'localization/i18n'
-import * as React from 'react'
-import styled from 'styled-components'
-import CustomCheckbox from '../../components/Question/CustomCheckbox'
-import data from '../../components/Question/data/data.json'
-import { colors } from 'themes'
-import { Button } from 'semantic-ui-react'
+import { tran } from "localization/i18n";
+import * as React from "react";
 import {
   BrowserRouter as Router,
-  Route,
   NavLink,
-  withRouter,
-  RouteComponentProps
-} from 'react-router-dom'
-import { IRoute } from 'tools/routes'
-import TestResult from '../test-result-screen/TestResult'
+  Route,
+  RouteComponentProps,
+  withRouter
+} from "react-router-dom";
+import { Button } from "semantic-ui-react";
+import styled from "styled-components";
+import { colors } from "themes";
+import { IRoute } from "tools/routes";
+import CustomCheckbox from "../../components/Question/CustomCheckbox";
+import data from "../../components/Question/data/data.json";
+import TestResult from "../test-result-screen/TestResult";
 
 const Container = styled.div`
   display: flex;
   flex: 1;
   flex-flow: column wrap;
   padding: 40px;
-`
+`;
 const Wrapper = styled.div`
   padding-left: 50px;
   border-style: solid;
   border-color: ${colors.lightGray};
   border-width: 10px;
-`
+`;
 const Answer = styled.div`
   display: flex;
   margin-bottom: 10px;
   flex: 1;
   flex-flow: column wrap;
-`
+`;
 
 export interface IGeneralCourseProps extends RouteComponentProps {
-  questionTitle: string
+  questionTitle: string;
   /*** @property {propTypes.array} routes - display route */
-  routes: IRoute[]
+  routes: IRoute[];
   /*** @property {propTypes.string} home icon - icon home display */
-  homeIcon?: string
+  homeIcon?: string;
   /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
-  hiddenRoute?: string[]
+  hiddenRoute?: string[];
   /*** @property {propTypes.boolean} render One page - nav for one page or not */
-  renderOnePage?: boolean
+  renderOnePage?: boolean;
   /*** @property {propTypes.boolean} disable headroom- */
-  disableHeadroom?: boolean,
-  history: any
+  disableHeadroom?: boolean;
+  history: any;
 }
 
 export interface IGeneralCourseState {}
 
 class TestQuestion extends React.Component<IGeneralCourseProps, any> {
   constructor(props: IGeneralCourseProps) {
-    super(props)
+    super(props);
 
-    this.state = {}
+    this.state = {};
   }
 
   onButtonClick() {
-    const { history } = this.props
+    const { history } = this.props;
     if (history) {
       history.push({
-        pathname: '/test-result'
+        pathname: "/test-result"
         // search: 'name=jhon&amp;age=24'
-      })
+      });
     }
   }
 
@@ -275,15 +275,15 @@ class TestQuestion extends React.Component<IGeneralCourseProps, any> {
             />
           </Answer>
 
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <Button color="red" onClick={this.onButtonClick.bind(this)}>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Button color="red" onClick={() => this.onButtonClick()}>
               Submit
             </Button>
           </div>
         </Wrapper>
       </Container>
-    )
+    );
   }
 }
 
-export default withRouter(TestQuestion)
+export default withRouter(TestQuestion);

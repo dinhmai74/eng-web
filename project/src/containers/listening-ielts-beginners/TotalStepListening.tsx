@@ -1,15 +1,15 @@
-import * as React from 'react'
 import _ from 'lodash'
+import * as React from 'react'
 import { images } from 'themes'
 
 import { Wizard } from '@front10/landing-page-book/dist/components'
-import TitleQuestion from 'containers/reading-ielts-beginners/title-question/TitleQuestion'
-import stepsDataListening from './stepsDataListening.json'
-import Question from 'components/QuestionIelts/Question.tsx'
-import { controls } from 'react-media-player'
 import DescribeQuestion from 'components/DescribeQuestion/DescribeQuestion'
+import Question from 'components/QuestionIelts/Question.tsx'
 import QuestionPlayAudio from 'components/QuestionPlayAudio/QuestionPlayAudio'
+import TitleQuestion from 'containers/reading-ielts-beginners/title-question/TitleQuestion'
+import { controls } from 'react-media-player'
 import styled from 'styled-components'
+import stepsDataListening from './stepsDataListening.json'
 
 export interface IState {
   play: boolean

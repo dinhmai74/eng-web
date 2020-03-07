@@ -1,8 +1,8 @@
+import { Features, Section } from '@front10/landing-page-book/dist/components'
 import { tran } from 'localization/i18n'
 import * as React from 'react'
 import styled from 'styled-components'
 import { colors, images } from 'themes/index'
-import { Section, Features } from '@front10/landing-page-book/dist/components'
 const Container = styled.div`
   display: flex;
   justify-content: center;

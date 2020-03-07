@@ -1,14 +1,14 @@
+import { createBrowserHistory } from 'history'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { createBrowserHistory } from 'history'
 import { BrowserRouter } from 'react-router-dom'
 
+import { Provider } from 'react-redux'
 import App from './App'
 import './index.css'
 import './localization/i18n'
-import * as serviceWorker from './serviceWorker'
-import { Provider } from 'react-redux'
 import store from './redux/store'
+import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(<Provider store={store}><BrowserRouter><App/></BrowserRouter>
 </Provider>, document.getElementById('root'))

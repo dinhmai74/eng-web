@@ -1,11 +1,11 @@
 import { NavMargin } from 'components'
+import Question from 'containers/find-course-screens/feeling-step/QuestionComponent/index'
 import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
+import { Flex } from 'rebass'
 import { Button } from 'semantic-ui-react'
 import styled from 'styled-components'
 import { colors, images } from 'themes/index'
-import Question from 'containers/find-course-screens/feeling-step/QuestionComponent/index'
-import { Flex } from 'rebass'
 import Header from './QuestionComponent/Header'
 
 import firebase from '../../../firebase'

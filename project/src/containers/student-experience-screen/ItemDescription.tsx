@@ -1,8 +1,8 @@
+import { tran } from 'localization/i18n'
 import React from 'react'
 import { Item } from 'semantic-ui-react'
-import { colors, images } from 'themes/index'
 import styled from 'styled-components'
-import { tran } from 'localization/i18n'
+import { colors, images } from 'themes/index'
 
 const StyledName = styled.p`
   font-weight: bold;

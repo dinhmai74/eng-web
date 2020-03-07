@@ -1,22 +1,22 @@
-import { tran } from 'localization/i18n'
-import * as React from 'react'
-import styled from 'styled-components'
-import { colors, images } from 'themes/index'
 import {
-  Section,
+  Button,
   Container,
   Image,
-  Button
+  Section
 } from '@front10/landing-page-book/dist/components'
+import { tran } from 'localization/i18n'
+import * as React from 'react'
 import { connect } from 'react-redux'
-import compose from 'recompose/compose'
 import {
   BrowserRouter as Router,
-  Route,
   NavLink,
-  withRouter,
-  RouteComponentProps
+  Route,
+  RouteComponentProps,
+  withRouter
 } from 'react-router-dom'
+import compose from 'recompose/compose'
+import styled from 'styled-components'
+import { colors, images } from 'themes/index'
 import { IRoute } from 'tools/routes'
 
 export interface IGeneralCourseState {}

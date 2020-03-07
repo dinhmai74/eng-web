@@ -1,22 +1,22 @@
+import {
+  Card,
+  Column,
+  Header,
+  Hero,
+  Image,
+  Paragraph,
+  Row,
+  Section,
+  Video
+} from '@front10/landing-page-book/dist/components'
 import { tran } from 'localization/i18n'
 import * as React from 'react'
 import styled from 'styled-components'
 import { colors, images } from 'themes/index'
 // import { Container } from 'react-bootstrap'
 import FormInput from '../../components/FormInput/FormInput'
-import {
-  Header,
-  Hero,
-  Image,
-  Row,
-  Column,
-  Section,
-  Paragraph,
-  Card,
-  Video
-} from '@front10/landing-page-book/dist/components'
-import NewCourse from './NewCourse'
 import FeedBack from './FeedBack'
+import NewCourse from './NewCourse'
 import VideoCourse from './VideoCourse'
 // export interface IGeneralCourseProps {}
 

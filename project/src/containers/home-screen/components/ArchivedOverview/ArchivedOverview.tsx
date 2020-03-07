@@ -1,18 +1,18 @@
 import {
+  Column,
+  Container,
   Header,
   Hero,
   Image,
   Row,
-  Column,
-  Container,
   Section
 } from '@front10/landing-page-book/dist/components'
 import 'animate.css'
-import { tran } from 'localization/i18n'
-import { Flex, Box, Text } from 'rebass'
 // tslint:disable-next-line:max-line-length
 import CustomFlipNumber from 'containers/home-screen/components/ArchivedOverview/components/CustomFlipNumber/CustomFlipNumber'
+import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
+import { Box, Flex, Text } from 'rebass'
 import styled from 'styled-components'
 import { colors, images } from 'themes'
 

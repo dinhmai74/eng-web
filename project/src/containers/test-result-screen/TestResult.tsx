@@ -1,21 +1,21 @@
 import { tran } from 'localization/i18n'
 import * as React from 'react'
+import { connect } from 'react-redux'
 import styled from 'styled-components'
 import { colors, images } from 'themes/index'
-import DetailScore from './DetailScore'
 import CustomCheckbox from '../../components/Question/CustomCheckbox'
-import { connect } from 'react-redux'
+import DetailScore from './DetailScore'
 
 import {
+  Card,
+  Column,
+  Container,
   Header,
   Hero,
   Image,
-  Row,
-  Column,
-  Container,
-  Section,
   Paragraph,
-  Card
+  Row,
+  Section
 } from '@front10/landing-page-book/dist/components'
 const StyleSection = styled(Section)`
   /* background-image: url(${images.bgTestResult});

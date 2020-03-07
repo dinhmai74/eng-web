@@ -1,26 +1,26 @@
-import { tran } from 'localization/i18n'
-import * as React from 'react'
-import styled from 'styled-components'
-import { images } from 'themes'
 import {
+  Card,
+  Column,
+  Container,
   Header,
   Hero,
   Image,
-  Row,
-  Column,
-  Section,
-  Container,
   Paragraph,
-  Card
+  Row,
+  Section
 } from '@front10/landing-page-book/dist/components'
-import { Button, Icon } from 'semantic-ui-react'
+import { tran } from 'localization/i18n'
+import * as React from 'react'
 import {
   BrowserRouter as Router,
-  Route,
   NavLink,
-  withRouter,
-  RouteComponentProps
+  Route,
+  RouteComponentProps,
+  withRouter
 } from 'react-router-dom'
+import { Button, Icon } from 'semantic-ui-react'
+import styled from 'styled-components'
+import { images } from 'themes'
 import { IRoute } from 'tools/routes'
 
 const Wrapper = styled(Section)`

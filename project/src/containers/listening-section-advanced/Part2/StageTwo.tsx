@@ -1,19 +1,19 @@
-import * as React from 'react'
 import _ from 'lodash'
-import { images, colors } from 'themes'
+import * as React from 'react'
+import { colors, images } from 'themes'
 
 import {
-  Wizard,
+  Container,
   Section,
-  Container
+  Wizard
 } from '@front10/landing-page-book/dist/components'
-import TitleQuestion from 'containers/reading-ielts-beginners/title-question/TitleQuestion'
-import stepsDataListening from '../stepsDataListening.json'
-import Question from 'components/QuestionIelts/Question.tsx'
-import styled from 'styled-components'
 import AudioListening from 'components/AudioListening/AudioListening'
-import { Table } from 'react-bootstrap'
+import Question from 'components/QuestionIelts/Question.tsx'
 import TableQuestion from 'components/TableQuestion/TableQuestion'
+import TitleQuestion from 'containers/reading-ielts-beginners/title-question/TitleQuestion'
+import { Table } from 'react-bootstrap'
+import styled from 'styled-components'
+import stepsDataListening from '../stepsDataListening.json'
 // import { Container } from '@material-ui/core'
 const Border = styled.div`
   border-top: 3px solid ${colors.lightRed};

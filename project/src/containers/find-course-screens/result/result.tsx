@@ -1,11 +1,11 @@
+import { Container } from '@front10/landing-page-book/dist/components'
 import CerBlock from 'components/CerBlock'
 import { tran } from 'localization/i18n'
-import { Container } from '@front10/landing-page-book/dist/components'
-import { IFindCourseFormValues } from '../FindCourseScreens'
 import * as React from 'react'
 import { Box, Flex } from 'rebass'
 import styled from 'styled-components'
 import { colors, images } from 'themes/index'
+import { IFindCourseFormValues } from '../FindCourseScreens'
 
 const H2 = styled.h2`
   text-align: center;

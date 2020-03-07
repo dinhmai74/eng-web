@@ -1,16 +1,16 @@
-import * as React from 'react'
 import _ from 'lodash'
+import * as React from 'react'
 
-import TitleQuestion from './title-question/TitleQuestion'
-import steps from './stepsData.json'
-import Question from 'components/QuestionIelts/Question'
-import { images } from 'themes'
 import {
+  Button,
   Container,
   Image,
-  Button,
   Wizard
 } from '@front10/landing-page-book/dist/components'
+import Question from 'components/QuestionIelts/Question'
+import { images } from 'themes'
+import steps from './stepsData.json'
+import TitleQuestion from './title-question/TitleQuestion'
 
 const resultStep = _.map(steps, (e) => ({
   name: (

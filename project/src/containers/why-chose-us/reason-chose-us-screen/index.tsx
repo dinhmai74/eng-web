@@ -1,8 +1,8 @@
+import { Container, Section } from '@front10/landing-page-book/dist/components'
 import ReasonCard from 'components/ReasonCard/index'
 import { tran } from 'localization/i18n'
 import React, { PureComponent } from 'react'
 import { Header } from 'semantic-ui-react'
-import { Section, Container } from '@front10/landing-page-book/dist/components'
 
 import { colors, images } from 'themes'
 import './styles.css'

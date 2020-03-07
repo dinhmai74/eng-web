@@ -1,9 +1,9 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import FirebaseWorker from 'DataFirebase'
-import { TQuestion } from 'containers/reading-ielts-beginners/Question/type'
 import PlayAudio from 'components/PlayAudio/PlayAudio'
+import { TQuestion } from 'containers/reading-ielts-beginners/Question/type'
+import FirebaseWorker from 'DataFirebase'
 
 const Text = styled.div``
 

@@ -1,17 +1,17 @@
-import * as React from 'react'
-import { FirebaseWorker } from 'DataFirebase'
+import {
+  Button,
+  Container,
+  Image
+} from '@front10/landing-page-book/dist/components'
+import { TLevel } from 'components/LevelIelts/Level'
+import CustomCheckbox from 'components/Question/CustomCheckbox'
+import TestResult from 'components/TestResult/TestResult'
 import {
   IQuestion,
   TQuestion
 } from 'containers/reading-ielts-beginners/Question/type'
-import CustomCheckbox from 'components/Question/CustomCheckbox'
-import TestResult from 'components/TestResult/TestResult'
-import { TLevel } from 'components/LevelIelts/Level'
-import {
-  Container,
-  Image,
-  Button
-} from '@front10/landing-page-book/dist/components'
+import { FirebaseWorker } from 'DataFirebase'
+import * as React from 'react'
 
 export interface IQuestionState {
   question: IQuestion

@@ -1,23 +1,23 @@
-import React, { Component } from 'react'
-import { colors } from 'themes'
-import styled from 'styled-components'
 import { Container } from '@front10/landing-page-book/dist/components'
-import AudioListening from 'components/AudioListening/AudioListening'
 import { Section } from '@front10/landing-page-book/dist/components'
 import TextField from '@material-ui/core/TextField'
-import { Input } from 'semantic-ui-react'
-import { Button, Icon } from 'semantic-ui-react'
+import AudioListening from 'components/AudioListening/AudioListening'
+import StatementQuestion from 'components/StatementQuestion/StatementQuestion'
 import { tran } from 'localization/i18n'
+import React, { Component } from 'react'
 import {
   BrowserRouter as Router,
-  Route,
   NavLink,
-  withRouter,
-  RouteComponentProps
+  Route,
+  RouteComponentProps,
+  withRouter
 } from 'react-router-dom'
+import { Button, Icon } from 'semantic-ui-react'
+import { Input } from 'semantic-ui-react'
+import styled from 'styled-components'
+import { colors } from 'themes'
 import { IRoute } from 'tools/routes'
 import Text from '../Part1/Text'
-import StatementQuestion from 'components/StatementQuestion/StatementQuestion'
 export interface IGeneralCourseProps extends RouteComponentProps {
   /*** @property {propTypes.array} routes - display route */
   routes?: IRoute[]

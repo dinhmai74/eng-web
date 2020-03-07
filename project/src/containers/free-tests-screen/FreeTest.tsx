@@ -1,20 +1,20 @@
-import { tran } from 'localization/i18n'
-import * as React from 'react'
-import styled from 'styled-components'
 import {
+  Card,
+  Column,
+  Container,
   Header,
   Hero,
   Image,
-  Row,
-  Column,
-  Section,
-  Container,
   Paragraph,
-  Card
+  Row,
+  Section
 } from '@front10/landing-page-book/dist/components'
-import Title from './Title'
-import Tabs from './Tabs'
+import { tran } from 'localization/i18n'
+import * as React from 'react'
+import styled from 'styled-components'
 import Practice from './Practice'
+import Tabs from './Tabs'
+import Title from './Title'
 const Introduction = styled.div`
   padding-bottom: 20px;
 `

@@ -1,7 +1,7 @@
-import { withRouter, RouteComponentProps } from 'react-router'
 import TextLink from 'components/Footer/TextLink'
 import * as _ from 'lodash'
 import React, { Component } from 'react'
+import { RouteComponentProps, withRouter } from 'react-router'
 import styled from 'styled-components'
 import { colors } from 'themes'
 

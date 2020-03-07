@@ -5,9 +5,9 @@ import {
 } from '@front10/landing-page-book/dist/components'
 import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
+import { RouteComponentProps, withRouter } from 'react-router-dom'
 import { Button, Icon } from 'semantic-ui-react'
 import styled from 'styled-components'
-import { withRouter, RouteComponentProps } from 'react-router-dom'
 import { images } from 'themes'
 import { strings } from 'tools'
 

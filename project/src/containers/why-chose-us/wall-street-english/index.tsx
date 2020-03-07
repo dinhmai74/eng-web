@@ -1,8 +1,8 @@
+import { Container, Section } from '@front10/landing-page-book/dist/components'
 import * as React from 'react'
 import { Box, Flex } from 'rebass'
 import { Divider } from 'semantic-ui-react'
 import { images } from 'themes'
-import { Section, Container } from '@front10/landing-page-book/dist/components'
 
 import { tran } from 'localization/i18n'
 import styled from 'styled-components'

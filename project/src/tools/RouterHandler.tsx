@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { withRouter, RouteComponentProps } from 'react-router'
+import { RouteComponentProps, withRouter } from 'react-router'
 
 export class RouteHandler extends React.Component<RouteComponentProps> {
 

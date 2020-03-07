@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import { colors } from 'themes'
-import styled from 'styled-components'
 import { Container } from '@front10/landing-page-book/dist/components'
 // import { makeStyles } from '@material-ui/core/styles'
 import TextField from '@material-ui/core/TextField'
-import { connect } from 'react-redux'
 import InputAnswer from 'components/Input/InputAnswer'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import styled from 'styled-components'
+import { colors } from 'themes'
 
 const StyledText = styled.div`
   padding-top: 20px;

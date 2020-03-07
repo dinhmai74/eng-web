@@ -1,8 +1,8 @@
-import React from 'react'
+import Button from '@material-ui/core/Button'
 import { withStyles } from '@material-ui/core/styles'
 import TextField from '@material-ui/core/TextField'
-import Button from '@material-ui/core/Button'
 import { tran } from 'localization/i18n'
+import React from 'react'
 
 const styles = (theme) => ({
   textField: {

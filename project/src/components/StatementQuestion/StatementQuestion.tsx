@@ -1,9 +1,9 @@
+import { Container, Section } from '@front10/landing-page-book/dist/components'
 import React, { Component } from 'react'
-import { colors } from 'themes'
 import Countdown from 'react-countdown-now'
 import styled from 'styled-components'
-import { Container, Section } from '@front10/landing-page-book/dist/components'
 import { color } from 'styled-system'
+import { colors } from 'themes'
 import Checkboxes from './Checkboxes'
 interface IProps {}
 

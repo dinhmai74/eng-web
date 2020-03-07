@@ -7,10 +7,10 @@ import { Container } from '@front10/landing-page-book/dist/components'
 import Button from '@material-ui/core/Button'
 import {
   BrowserRouter as Router,
-  Route,
   NavLink,
-  withRouter,
-  RouteComponentProps
+  Route,
+  RouteComponentProps,
+  withRouter
 } from 'react-router-dom'
 import { IRoute } from 'tools/routes'
 

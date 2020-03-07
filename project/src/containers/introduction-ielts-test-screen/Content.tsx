@@ -1,16 +1,16 @@
+import { Section } from '@front10/landing-page-book/dist/components'
 import { tran } from 'localization/i18n'
 import * as React from 'react'
-import styled from 'styled-components'
-import { images } from 'themes'
-import { Section } from '@front10/landing-page-book/dist/components'
-import { Button, Icon } from 'semantic-ui-react'
 import {
   BrowserRouter as Router,
-  Route,
   NavLink,
-  withRouter,
-  RouteComponentProps
+  Route,
+  RouteComponentProps,
+  withRouter
 } from 'react-router-dom'
+import { Button, Icon } from 'semantic-ui-react'
+import styled from 'styled-components'
+import { images } from 'themes'
 import { IRoute } from 'tools/routes'
 import OptionalTest from './OptionalTest'
 

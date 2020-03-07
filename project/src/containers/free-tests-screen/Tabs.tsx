@@ -1,10 +1,10 @@
+import { tran } from 'localization/i18n'
 import _ from 'lodash'
 import React, { Component } from 'react'
 import { Divider, Tab } from 'semantic-ui-react'
-import MenuItem from '../../components/MenuItem/MenuItem'
 import styled from 'styled-components'
-import { tran } from 'localization/i18n'
 import { images } from 'themes/images'
+import MenuItem from '../../components/MenuItem/MenuItem'
 
 const colors = [
   'red',

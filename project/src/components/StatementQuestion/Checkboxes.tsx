@@ -1,5 +1,5 @@
-import React from 'react'
 import Checkbox from '@material-ui/core/Checkbox'
+import React from 'react'
 import { connect } from 'react-redux'
 
 class Checkboxes extends React.Component<any, any> {

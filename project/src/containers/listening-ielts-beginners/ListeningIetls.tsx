@@ -1,12 +1,12 @@
+import {
+  Container,
+  Image,
+  Section
+} from '@front10/landing-page-book/dist/components'
 import { tran } from 'localization/i18n'
 import * as React from 'react'
 import styled from 'styled-components'
 import { colors, images } from 'themes/index'
-import {
-  Section,
-  Container,
-  Image
-} from '@front10/landing-page-book/dist/components'
 import TotalStep from './TotalStepListening'
 
 export interface IGeneralCourseState {}

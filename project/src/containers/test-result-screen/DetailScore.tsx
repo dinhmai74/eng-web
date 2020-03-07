@@ -1,10 +1,10 @@
+import LevelNumber from 'containers/general-course-screen/components/LevelNumber'
 import { tran } from 'localization/i18n'
 import * as React from 'react'
+import { Container } from 'react-bootstrap'
+import { connect } from 'react-redux'
 import styled from 'styled-components'
 import { colors, images } from 'themes/index'
-import { Container } from 'react-bootstrap'
-import LevelNumber from 'containers/general-course-screen/components/LevelNumber'
-import { connect } from 'react-redux'
 // import TestResult from './TestResult'
 
 const DetailScore = styled.div`

@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { images } from 'themes/images'
 import { tran } from 'localization/i18n'
+import * as React from 'react'
 import { Button } from 'semantic-ui-react'
 import styled from 'styled-components'
+import { images } from 'themes/images'
 
 const Container = styled.div`
   display: flex;

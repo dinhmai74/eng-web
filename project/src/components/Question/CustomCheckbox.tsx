@@ -1,12 +1,12 @@
-import React from 'react'
-import { withStyles } from '@material-ui/core/styles'
+import FormControl from '@material-ui/core/FormControl'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
+import FormLabel from '@material-ui/core/FormLabel'
 import Radio from '@material-ui/core/Radio'
 import RadioGroup from '@material-ui/core/RadioGroup'
-import FormControlLabel from '@material-ui/core/FormControlLabel'
-import FormControl from '@material-ui/core/FormControl'
-import FormLabel from '@material-ui/core/FormLabel'
-import styled from 'styled-components'
+import { withStyles } from '@material-ui/core/styles'
+import React from 'react'
 import { connect } from 'react-redux'
+import styled from 'styled-components'
 
 const TitleQuestion = styled(FormLabel)`
   font-weight: bold;

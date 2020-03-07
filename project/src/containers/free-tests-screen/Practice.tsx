@@ -3,19 +3,19 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { colors, images } from 'themes/index'
 
-import OptionalTest from '../../components/OptionalTest/OptionalTest'
-import Title from 'components/InformationForm/Title'
 import {
+  Card,
+  Column,
+  Container,
   Header,
   Hero,
   Image,
-  Row,
-  Column,
-  Section,
-  Container,
   Paragraph,
-  Card
+  Row,
+  Section
 } from '@front10/landing-page-book/dist/components'
+import Title from 'components/InformationForm/Title'
+import OptionalTest from '../../components/OptionalTest/OptionalTest'
 // import { IProps } from 'containers/find-course-screens/feeling-step/QuestionComponent/Header';
 
 export interface IGeneralCourseState {}

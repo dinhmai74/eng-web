@@ -2,18 +2,18 @@
 import AnimatedNumber from 'react-animated-number'
 
 import {
+  Column,
+  Container,
   Header,
   Hero,
   Image,
   Row,
-  Column,
-  Container,
   Section
 } from '@front10/landing-page-book/dist/components'
 import React, { PureComponent } from 'react'
 import { Box, Flex } from 'rebass'
 import { Icon, SemanticICONS } from 'semantic-ui-react'
-import { StyledNumber, StyledFlex , Text} from './Atoms'
+import { StyledFlex, StyledNumber , Text} from './Atoms'
 
 function formatNumber(num) {
   return num.toFixed(0).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')

@@ -1,9 +1,9 @@
+import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
 import { Button } from 'semantic-ui-react'
-import { tran } from 'localization/i18n'
 import styled from 'styled-components'
-import Area from './area/area'
 import { images } from 'themes'
+import Area from './area/area'
 
 const Container = styled('div')`
   height: 70vh;

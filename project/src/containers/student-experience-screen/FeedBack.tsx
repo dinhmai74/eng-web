@@ -3,18 +3,18 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { colors, images } from 'themes/index'
 
-import FormInput from '../../components/FormInput/FormInput'
 import {
+  Card,
+  Column,
+  Container,
   Header,
   Hero,
   Image,
-  Row,
-  Column,
-  Section,
-  Container,
   Paragraph,
-  Card
+  Row,
+  Section
 } from '@front10/landing-page-book/dist/components'
+import FormInput from '../../components/FormInput/FormInput'
 import ItemDescription from './ItemDescription'
 
 const Wrapper = styled(Container)`

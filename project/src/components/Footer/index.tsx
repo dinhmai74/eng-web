@@ -1,12 +1,12 @@
+import {
+  Container,
+  Footer as HeroFooter,
+  Hero,
+  Row
+} from '@front10/landing-page-book/dist/components'
 import Column, { IContent } from 'components/Footer/Column'
 import { tran } from 'localization/i18n'
 import React, { Component } from 'react'
-import {
-  Hero,
-  Footer as HeroFooter,
-  Row,
-  Container
-} from '@front10/landing-page-book/dist/components'
 import { Flex } from 'rebass'
 import styled from 'styled-components'
 import { colors } from 'themes'

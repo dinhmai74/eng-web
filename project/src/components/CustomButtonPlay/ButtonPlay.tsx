@@ -1,11 +1,11 @@
-import * as React from 'react'
 import {
+  Button,
   Container,
-  Image,
-  Button
+  Image
 } from '@front10/landing-page-book/dist/components'
+import * as React from 'react'
+import { controls, Media, Player } from 'react-media-player'
 import styled from 'styled-components'
-import { Media, Player, controls } from 'react-media-player'
 const { PlayPause, MuteUnmute } = controls
 import { withMediaProps } from 'react-media-player'
 

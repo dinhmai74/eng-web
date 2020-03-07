@@ -1,14 +1,14 @@
-import { tran } from 'localization/i18n'
-import * as React from 'react'
-import styled from 'styled-components'
-import { colors, images } from 'themes/index'
 import {
-  Section,
+  Button,
   Container,
   Image,
-  Button
+  Section
 } from '@front10/landing-page-book/dist/components'
+import { tran } from 'localization/i18n'
+import * as React from 'react'
 import { connect } from 'react-redux'
+import styled from 'styled-components'
+import { colors, images } from 'themes/index'
 
 export interface IGeneralCourseState {}
 export interface IGeneralCourseProps {
