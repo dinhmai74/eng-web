@@ -1,21 +1,21 @@
 // import '@front10/landing-page-book/dist/themeos/default/index.legacy_browsers.css'
-import '@front10/landing-page-book/dist/themes/default/index.scss'
-import 'App.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { Footer, InformationForm, ResponsiveNav } from 'components'
-import 'font-awesome/css/font-awesome.min.css'
-import React from 'react'
-import Countdown from 'react-countdown-now'
-import { withTranslation } from 'react-i18next'
-import { Route } from 'react-router-dom'
-import { CSSTransition } from 'react-transition-group'
-import { routes } from 'tools/routes'
-import './semantic/dist/semantic.min.css'
+import "@front10/landing-page-book/dist/themes/default/index.scss"
+import "App.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+import { Footer, InformationForm, ResponsiveNav } from "components"
+import "font-awesome/css/font-awesome.min.css"
+import React from "react"
+import { withTranslation } from "react-i18next"
+import { Route } from "react-router-dom"
+import { CSSTransition } from "react-transition-group"
+import { routes } from "tools/routes"
+import "./semantic/dist/semantic.min.css"
+import "./tailwind.css"
 
 // import GeneralScreen from './containers/general-course-screen/GeneralCourse'
 
-import AOS from 'aos'
-import 'aos/dist/aos.css' // You can also use <link> for styles
+import AOS from "aos"
+import "aos/dist/aos.css" // You can also use <link> for styles
 import {
   CambridgeTest,
   IntroductionIeltsTest,
@@ -23,17 +23,17 @@ import {
   ReadingIeltsBeginners,
   Result,
   TestQuestion,
-  TestResult
-} from 'containers'
-import Intro from 'containers/introduction-ielts-advanced/Intro'
-import ListeningIelts from 'containers/listening-ielts-beginners/ListeningIetls'
-import Listening from 'containers/listening-section-advanced/Listening'
-import PartTwo from 'containers/listening-section-advanced/Part2/PartTwo'
-import ListeningSection from 'containers/listening-section/ListeningSection'
-import ResultIelts from 'containers/result-ielts-advanced/ResultIelts'
-import SpeakingIelts from 'containers/speaking-ielts-beginners/SpeakingIelts'
-import WritingIeltsBeginners from 'containers/writing-ielts-beginners/WritingIeltsBeginners'
-import { strings } from 'tools'
+  TestResult,
+} from "containers"
+import Intro from "containers/introduction-ielts-advanced/Intro"
+import ListeningIelts from "containers/listening-ielts-beginners/ListeningIetls"
+import Listening from "containers/listening-section-advanced/Listening"
+import PartTwo from "containers/listening-section-advanced/Part2/PartTwo"
+import ListeningSection from "containers/listening-section/ListeningSection"
+import ResultIelts from "containers/result-ielts-advanced/ResultIelts"
+import SpeakingIelts from "containers/speaking-ielts-beginners/SpeakingIelts"
+import WritingIeltsBeginners from "containers/writing-ielts-beginners/WritingIeltsBeginners"
+import { strings } from "tools"
 
 AOS.init()
 
@@ -53,12 +53,7 @@ const App = (props) => {
         {routes.map(({ path, Component: Comp }) => (
           <Route key={path} exact path={baseUrl + path}>
             {({ match }) => (
-              <CSSTransition
-                in={match != null}
-                timeout={300}
-                classNames="page"
-                unmountOnExit
-              >
+              <CSSTransition in={match != null} timeout={300} classNames="page" unmountOnExit>
                 <div className="page">
                   <Comp />
                 </div>
@@ -72,14 +67,8 @@ const App = (props) => {
         <Route path="/cambridge-test" component={TestQuestion} />
         <Route path="/ielts-test" component={PreparationIelts} />
         <Route path="/intro-test-ielts" component={IntroductionIeltsTest} />
-        <Route
-          path="/reading-ielts-beginner"
-          component={ReadingIeltsBeginners}
-        />
-        <Route
-          path="/writing-ielts-beginner"
-          component={WritingIeltsBeginners}
-        />
+        <Route path="/reading-ielts-beginner" component={ReadingIeltsBeginners} />
+        <Route path="/writing-ielts-beginner" component={WritingIeltsBeginners} />
         <Route path="/speaking-ielts-beginner" component={SpeakingIelts} />
         <Route path="/listening-ielts-beginner" component={ListeningIelts} />
         <Route path="/intro-ielts-advanced" component={Intro} />

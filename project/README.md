@@ -3,9 +3,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Prerequisite
 ### Install env
-1. Install nodejs: https://nodejs.org/en/
+1. Install nodejs: https://nodejs.org/en/ 
+  - Important: the node version should lower than 10
 3. Install gulp: npm install -g gulp
 2. Install static server serv ( use your terminal) : `npm install -g serve`
+
 
 # Available Scripts
 
