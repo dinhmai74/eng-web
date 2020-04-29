@@ -1,7 +1,7 @@
 // import '@front10/landing-page-book/dist/themeos/default/index.legacy_browsers.css'
 import "@front10/landing-page-book/dist/themes/default/index.scss"
 import "App.css"
-import "bootstrap/dist/css/bootstrap.min.css"
+// import "bootstrap/dist/css/bootstrap.min.css"
 import { Footer, InformationForm, ResponsiveNav } from "components"
 import "font-awesome/css/font-awesome.min.css"
 import React from "react"
