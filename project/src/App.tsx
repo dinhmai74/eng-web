@@ -8,7 +8,7 @@ import React from "react"
 import { withTranslation } from "react-i18next"
 import { Route } from "react-router-dom"
 import { CSSTransition } from "react-transition-group"
-import { routes } from "tools/routes"
+import { navRoutes } from "tools/routes"
 import "./semantic/dist/semantic.min.css"
 import "./tailwind.css"
 
@@ -48,9 +48,9 @@ const App = (props) => {
   return (
     <div>
       <Route component={ScrollToTop} />
-      <ResponsiveNav routes={routes} hiddenRoute={[strings.routeWhyChoseUs]} />
+      <ResponsiveNav routes={navRoutes} hiddenRoute={[strings.routeWhyChoseUs]} />
       <div>
-        {routes.map(({ path, Component: Comp }) => (
+        {navRoutes.map(({ path, Component: Comp }) => (
           <Route key={path} exact path={baseUrl + path}>
             {({ match }) => (
               <CSSTransition in={match != null} timeout={300} classNames="page" unmountOnExit>

@@ -1,24 +1,14 @@
-import {
-  Container,
-  Image,
-  Section
-} from '@front10/landing-page-book/dist/components'
-import { tran } from 'localization/i18n'
-import * as React from 'react'
-import {
-  BrowserRouter as Router,
-  NavLink,
-  Route,
-  RouteComponentProps,
-  withRouter
-} from 'react-router-dom'
-import { Button, Icon } from 'semantic-ui-react'
-import styled from 'styled-components'
-import { colors, images } from 'themes'
-import { IRoute } from 'tools/routes'
+import { Container } from "@front10/landing-page-book/dist/components"
+import { tran } from "localization/i18n"
+import * as React from "react"
+import { RouteComponentProps, withRouter } from "react-router-dom"
+import { Button } from "semantic-ui-react"
+import styled from "styled-components"
+import { colors } from "themes"
+import { NavRoute } from "tools/routes"
 export interface IGeneralCourseProps extends RouteComponentProps {
   /*** @property {propTypes.array} routes - display route */
-  routes?: IRoute[]
+  routes?: NavRoute[]
   /*** @property {propTypes.string} home icon - icon home display */
   homeIcon?: string
   /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
@@ -69,15 +59,12 @@ const StyledButton = styled.div`
 `
 export interface IGeneralCourseState {}
 
-class ListeningSection extends React.Component<
-  IGeneralCourseProps,
-  IGeneralCourseState
-> {
+class ListeningSection extends React.Component<IGeneralCourseProps, IGeneralCourseState> {
   handleChange = () => {
     const { history } = this.props
     if (history) {
       history.push({
-        pathname: '/listening-test-advanced'
+        pathname: "/listening-test-advanced",
         // search: 'name=jhon&amp;age=24'
       })
     }
@@ -87,23 +74,23 @@ class ListeningSection extends React.Component<
       <Containers>
         <Title>INTRODUCTION</Title>
         <Paragraph>
-          {tran('goingTo')} <LisSection>LISTENING SECTION.</LisSection>
+          {tran("goingTo")} <LisSection>LISTENING SECTION.</LisSection>
         </Paragraph>
         <Paragraph>
-          {tran('sectionInclues')} <SubSection>2 sub-sections</SubSection>
-          {tran('total')}
-          {tran('youHave')} <Minutes>8 minutes</Minutes>
-          {tran('finish')}
-          {tran('listen')}
+          {tran("sectionInclues")} <SubSection>2 sub-sections</SubSection>
+          {tran("total")}
+          {tran("youHave")} <Minutes>8 minutes</Minutes>
+          {tran("finish")}
+          {tran("listen")}
         </Paragraph>
         <Paragraph>
-          <Paragraph>{tran('section')}</Paragraph>
-          <Paragraph>{tran('choice')}</Paragraph>
-          <Paragraph>{tran('summary')}</Paragraph>
+          <Paragraph>{tran("section")}</Paragraph>
+          <Paragraph>{tran("choice")}</Paragraph>
+          <Paragraph>{tran("summary")}</Paragraph>
         </Paragraph>
         <StyledButton>
           <Button color="linkedin" onClick={this.handleChange}>
-            {tran('startNow')}
+            {tran("startNow")}
           </Button>
         </StyledButton>
       </Containers>

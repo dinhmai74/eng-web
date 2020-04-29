@@ -1,24 +1,16 @@
-import FormControl from '@material-ui/core/FormControl'
-import FormControlLabel from '@material-ui/core/FormControlLabel'
-import Radio from '@material-ui/core/Radio'
-import RadioGroup from '@material-ui/core/RadioGroup'
-import { tran } from 'localization/i18n'
-import React from 'react'
-import { Button, Icon } from 'semantic-ui-react'
-
-import { Container, Section } from '@front10/landing-page-book/dist/components'
-import {
-  BrowserRouter as Router,
-  NavLink,
-  Route,
-  RouteComponentProps,
-  withRouter
-} from 'react-router-dom'
-import { IRoute } from 'tools/routes'
+import FormControl from "@material-ui/core/FormControl"
+import FormControlLabel from "@material-ui/core/FormControlLabel"
+import Radio from "@material-ui/core/Radio"
+import RadioGroup from "@material-ui/core/RadioGroup"
+import { tran } from "localization/i18n"
+import React from "react"
+import { RouteComponentProps, withRouter } from "react-router-dom"
+import { Button } from "semantic-ui-react"
+import { NavRoute } from "tools/routes"
 
 export interface IGeneralCourseProps extends RouteComponentProps {
   /*** @property {propTypes.array} routes - display route */
-  routes?: IRoute[]
+  routes?: NavRoute[]
   /*** @property {propTypes.string} home icon - icon home display */
   homeIcon?: string
   /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
@@ -33,46 +25,43 @@ export interface IGeneralCourseState {
   value: string
 }
 
-class OptionalTest extends React.Component<
-  IGeneralCourseProps,
-  IGeneralCourseState
-> {
+class OptionalTest extends React.Component<IGeneralCourseProps, IGeneralCourseState> {
   state = {
-    value: ''
+    value: "",
   }
   handleChange = (event) => {
     this.setState({
-      value: event.target.value
+      value: event.target.value,
     })
-    if (this.state.value === 'reading') {
+    if (this.state.value === "reading") {
       const { history } = this.props
       if (history) {
         history.push({
-          pathname: '/reading-ielts-beginner'
+          pathname: "/reading-ielts-beginner",
           // search: 'name=jhon&amp;age=24'
         })
       }
-    } else if (this.state.value === 'writing') {
+    } else if (this.state.value === "writing") {
       const { history } = this.props
       if (history) {
         history.push({
-          pathname: '/writing-ielts-beginner'
+          pathname: "/writing-ielts-beginner",
           // search: 'name=jhon&amp;age=24'
         })
       }
-    } else if (this.state.value === 'speaking') {
+    } else if (this.state.value === "speaking") {
       const { history } = this.props
       if (history) {
         history.push({
-          pathname: '/speaking-ielts-beginner'
+          pathname: "/speaking-ielts-beginner",
           // search: 'name=jhon&amp;age=24'
         })
       }
-    } else if (this.state.value === 'listening') {
+    } else if (this.state.value === "listening") {
       const { history } = this.props
       if (history) {
         history.push({
-          pathname: '/listening-ielts-beginner'
+          pathname: "/listening-ielts-beginner",
           // search: 'name=jhon&amp;age=24'
         })
       }
@@ -115,7 +104,7 @@ class OptionalTest extends React.Component<
           />
         </RadioGroup>
         <Button color="youtube" onClick={this.handleChange}>
-          {tran('startImmediately')}
+          {tran("startImmediately")}
         </Button>
       </FormControl>
     )

@@ -1,18 +1,10 @@
-import { Section } from '@front10/landing-page-book/dist/components'
-import { tran } from 'localization/i18n'
-import * as React from 'react'
-import {
-  BrowserRouter as Router,
-  NavLink,
-  Route,
-  RouteComponentProps,
-  withRouter
-} from 'react-router-dom'
-import { Button, Icon } from 'semantic-ui-react'
-import styled from 'styled-components'
-import { images } from 'themes'
-import { IRoute } from 'tools/routes'
-import OptionalTest from './OptionalTest'
+import { Section } from "@front10/landing-page-book/dist/components"
+import { tran } from "localization/i18n"
+import * as React from "react"
+import { RouteComponentProps } from "react-router-dom"
+import styled from "styled-components"
+import { NavRoute } from "tools/routes"
+import OptionalTest from "./OptionalTest"
 
 const Wrapper = styled(Section)`
   padding-top: 40px;
@@ -39,7 +31,7 @@ const Introduction = styled.p`
 export interface IGeneralCourseState {}
 export interface IGeneralCourseProps extends RouteComponentProps {
   /*** @property {propTypes.array} routes - display route */
-  routes?: IRoute[]
+  routes?: NavRoute[]
   /*** @property {propTypes.string} home icon - icon home display */
   homeIcon?: string
   /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
@@ -55,7 +47,7 @@ export default class Content extends React.Component<any, IGeneralCourseState> {
     const { history } = this.props
     if (history) {
       history.push({
-        pathname: '/cambridge-test'
+        pathname: "/cambridge-test",
         // search: 'name=jhon&amp;age=24'
       })
     }
@@ -65,27 +57,27 @@ export default class Content extends React.Component<any, IGeneralCourseState> {
     return (
       <Wrapper>
         <Title>
-          {tran('ieltsTest')}
+          {tran("ieltsTest")}
           <br />
-          {tran('forBeginner')}
+          {tran("forBeginner")}
         </Title>
         <Detail>
-          {tran('detailIntroTest1')}
+          {tran("detailIntroTest1")}
           <br />
-          {tran('detailIntroTest2')}
+          {tran("detailIntroTest2")}
           <br />
-          {tran('detailIntroTest3')}
+          {tran("detailIntroTest3")}
         </Detail>
-        <Guide> {tran('guide')}</Guide>
+        <Guide> {tran("guide")}</Guide>
 
         <Introduction>
-          {tran('structrure')}
+          {tran("structrure")}
           <br />
-          {tran('optional')}
+          {tran("optional")}
           <br />
-          {tran('evaluating')}
+          {tran("evaluating")}
           <br />
-          {tran('chooseSkill')}
+          {tran("chooseSkill")}
         </Introduction>
         <OptionalTest />
         <br />

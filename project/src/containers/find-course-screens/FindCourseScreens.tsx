@@ -1,28 +1,19 @@
-import { NavMargin } from 'components'
-import CareerStep from 'containers/find-course-screens/career-step'
-import Question1Step from 'containers/find-course-screens/feeling-step/question1'
-import Question2Step from 'containers/find-course-screens/feeling-step/question2'
-import Question3Step from 'containers/find-course-screens/feeling-step/question3'
-import GeneralStep from 'containers/find-course-screens/general-step'
-import {
-  Field,
-  FieldProps,
-  Form,
-  Formik,
-  FormikActions,
-  FormikProps
-} from 'formik'
-import _ from 'lodash'
-import Steps, { Step } from 'rc-steps'
-import 'rc-steps/assets/iconfont.css'
-import 'rc-steps/assets/index.css'
-import React, { Component } from 'react'
-import { RouteComponentProps, withRouter } from 'react-router-dom'
-import { IRoute } from 'tools/routes'
-import Stepper, { ISteps } from './Stepper'
-import validationSchema from './validation-schema'
-
-import { Container } from './atoms'
+import CareerStep from "containers/find-course-screens/career-step"
+import Question1Step from "containers/find-course-screens/feeling-step/question1"
+import Question2Step from "containers/find-course-screens/feeling-step/question2"
+import Question3Step from "containers/find-course-screens/feeling-step/question3"
+import GeneralStep from "containers/find-course-screens/general-step"
+import { Formik, FormikActions, FormikProps } from "formik"
+import _ from "lodash"
+import Steps, { Step } from "rc-steps"
+import "rc-steps/assets/iconfont.css"
+import "rc-steps/assets/index.css"
+import React, { Component } from "react"
+import { RouteComponentProps, withRouter } from "react-router-dom"
+import { NavRoute } from "tools/routes"
+import { Container } from "./atoms"
+import Stepper, { ISteps } from "./Stepper"
+import validationSchema from "./validation-schema"
 
 export interface IFindCourseFormValues {
   career: string
@@ -35,7 +26,7 @@ export interface IFindCourseFormValues {
 
 interface IProps extends RouteComponentProps {
   /*** @property {propTypes.array} routes - display route */
-  routes: IRoute[]
+  routes: NavRoute[]
   /*** @property {propTypes.string} home icon - icon home display */
   homeIcon?: string
   /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
@@ -43,7 +34,7 @@ interface IProps extends RouteComponentProps {
   /*** @property {propTypes.boolean} render One page - nav for one page or not */
   renderOnePage?: boolean
   /*** @property {propTypes.boolean} disable headroom- */
-  disableHeadroom?: boolean,
+  disableHeadroom?: boolean
   history: any
 }
 
@@ -54,7 +45,7 @@ const steps: ISteps = {
   career: CareerStep,
   question1: Question1Step,
   question2: Question2Step,
-  question3: Question3Step
+  question3: Question3Step,
 }
 
 const StepField = ({ stepKey, ...rest }) => {
@@ -67,13 +58,9 @@ class FindCourseScreen extends Component<IProps, IState> {
   static defaultProps: {}
   state = {}
 
-  handleSubmit = (
-    isLastStep: boolean,
-    resetStepper: () => void,
-    goNext: () => void
-  ) => async (
+  handleSubmit = (isLastStep: boolean, resetStepper: () => void, goNext: () => void) => async (
     values: IFindCourseFormValues,
-    actions: FormikActions<IFindCourseFormValues>
+    actions: FormikActions<IFindCourseFormValues>,
   ) => {
     const { setSubmitting, resetForm } = actions
 
@@ -81,8 +68,8 @@ class FindCourseScreen extends Component<IProps, IState> {
       const { history } = this.props
       if (history) {
         history.push({
-          pathname: '/result',
-          state: { value: values }
+          pathname: "/result",
+          state: { value: values },
         })
       }
     } else {
@@ -95,7 +82,7 @@ class FindCourseScreen extends Component<IProps, IState> {
     stepKey: string,
     setFieldValue,
     handleSubmit: () => void,
-    goToKey: (key: string) => void
+    goToKey: (key: string) => void,
   ) => {
     const keys = Object.keys(steps)
     const index = _.indexOf(keys, stepKey)
@@ -108,7 +95,7 @@ class FindCourseScreen extends Component<IProps, IState> {
             setFieldValue(key, value)
             handleSubmit()
           }}
-          style={{ marginBottom: 30, minHeight: '75vh' }}
+          style={{ marginBottom: 30, minHeight: "75vh" }}
         />
 
         <Steps labelPlacement="vertical" current={index}>
@@ -128,29 +115,19 @@ class FindCourseScreen extends Component<IProps, IState> {
             return (
               <Formik
                 initialValues={{
-                  career: '',
-                  firstName: '',
-                  pill_name: '',
+                  career: "",
+                  firstName: "",
+                  pill_name: "",
                   question_1: 0,
                   question_2: 0,
-                  question_3: 0
+                  question_3: 0,
                 }}
                 validationSchema={validationSchema[stepKey]}
                 validateOnChange={false}
                 onSubmit={this.handleSubmit(isLastStep, resetStepper, goNext)}
                 render={(formikBag: FormikProps<IFindCourseFormValues>) => {
-                  const {
-                    isSubmitting,
-                    errors,
-                    handleSubmit,
-                    setFieldValue
-                  } = formikBag
-                  return this.renderComponent(
-                    stepKey,
-                    setFieldValue,
-                    handleSubmit,
-                    goToKey
-                  )
+                  const { isSubmitting, errors, handleSubmit, setFieldValue } = formikBag
+                  return this.renderComponent(stepKey, setFieldValue, handleSubmit, goToKey)
                 }}
               />
             )

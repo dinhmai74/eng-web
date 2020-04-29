@@ -1,25 +1,15 @@
-import { Container } from '@front10/landing-page-book/dist/components'
-import { Section } from '@front10/landing-page-book/dist/components'
-import TextField from '@material-ui/core/TextField'
-import AudioListening from 'components/AudioListening/AudioListening'
-import { tran } from 'localization/i18n'
-import React, { Component } from 'react'
-import {
-  BrowserRouter as Router,
-  NavLink,
-  Route,
-  RouteComponentProps,
-  withRouter
-} from 'react-router-dom'
-import { Input } from 'semantic-ui-react'
-import { Button, Icon } from 'semantic-ui-react'
-import styled from 'styled-components'
-import { colors } from 'themes'
-import { IRoute } from 'tools/routes'
-import Text from './Text'
+import { Section } from "@front10/landing-page-book/dist/components"
+import { tran } from "localization/i18n"
+import React, { Component } from "react"
+import { RouteComponentProps, withRouter } from "react-router-dom"
+import { Button } from "semantic-ui-react"
+import styled from "styled-components"
+import { colors } from "themes"
+import { NavRoute } from "tools/routes"
+import Text from "./Text"
 export interface IGeneralCourseProps extends RouteComponentProps {
   /*** @property {propTypes.array} routes - display route */
-  routes?: IRoute[]
+  routes?: NavRoute[]
   /*** @property {propTypes.string} home icon - icon home display */
   homeIcon?: string
   /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
@@ -52,7 +42,7 @@ class FinalStep extends Component<IGeneralCourseProps, IState> {
     const { history } = this.props
     if (history) {
       history.push({
-        pathname: '/listening-test-advanced-part2'
+        pathname: "/listening-test-advanced-part2",
         // search: 'name=jhon&amp;age=24'
       })
     }
@@ -61,45 +51,43 @@ class FinalStep extends Component<IGeneralCourseProps, IState> {
     return (
       <Section
         bgColor={colors.lightRed}
-        title={'Question 4-9'}
-        titleStyle={{ fontSize: '22px !important' }}
+        title={"Question 4-9"}
+        titleStyle={{ fontSize: "22px !important" }}
         subTitle={
-          'Complete the form below, using NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.'
+          "Complete the form below, using NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer."
         }
-        subTitleStyle={{ fontSize: '22px' }}
+        subTitleStyle={{ fontSize: "22px" }}
       >
         <Border>
           <Text
-            content1={'1. There is no need to '}
-            content2={' lots of people.  '}
-            correctAnswer={'join'}
+            content1={"1. There is no need to "}
+            content2={" lots of people.  "}
+            correctAnswer={"join"}
           />
           <Text
-            content1={'2.. Pay attention to the    '}
-            content2={' of the final report   '}
-            correctAnswer={'content'}
+            content1={"2.. Pay attention to the    "}
+            content2={" of the final report   "}
+            correctAnswer={"content"}
           />
           <Text
-            content1={'3. Prepare  '}
-            content2={
-              '  one for the teacher, another for the students themselves.   '
-            }
-            correctAnswer={'carefully'}
+            content1={"3. Prepare  "}
+            content2={"  one for the teacher, another for the students themselves.   "}
+            correctAnswer={"carefully"}
           />
           <Text
-            content1={' 4. The deadline of the final paper is '}
-            content2={' '}
-            correctAnswer={'tomorrow'}
+            content1={" 4. The deadline of the final paper is "}
+            content2={" "}
+            correctAnswer={"tomorrow"}
           />
           <Text
-            content1={'5.The students can  '}
-            content2={'their topics before the beginning of Aoril.   '}
-            correctAnswer={'complete'}
+            content1={"5.The students can  "}
+            content2={"their topics before the beginning of Aoril.   "}
+            correctAnswer={"complete"}
           />
         </Border>
         <StyledButton>
           <Button color="linkedin" onClick={this.handleChange}>
-            {tran('Next')}
+            {tran("Next")}
           </Button>
         </StyledButton>
       </Section>

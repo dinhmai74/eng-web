@@ -1,30 +1,30 @@
-import { tran } from "localization/i18n";
-import { IRoute } from "tools/routes";
+import { tran } from "localization/i18n"
+import { NavRoute } from "tools/routes"
 
-export const choseUsRoutes: IRoute[] = [
+export const choseUsRoutes: NavRoute[] = [
   {
     first: tran("reason"),
     second: tran("us"),
-    path: "sectionReasonChoseUs"
+    path: "sectionReasonChoseUs",
   },
   {
     first: tran("unique"),
     second: tran("method"),
-    path: "sectionUniqueMethod"
+    path: "sectionUniqueMethod",
   },
   {
     first: tran("your"),
     second: tran("benefit"),
-    path: "sectionBenefit"
+    path: "sectionBenefit",
   },
   {
     first: tran("ours"),
     second: tran("certificate"),
-    path: "sectionCertificate"
+    path: "sectionCertificate",
   },
   {
     first: tran("payment"),
     second: tran("methods"),
-    path: "sectionPayment"
-  }
-];
+    path: "sectionPayment",
+  },
+]

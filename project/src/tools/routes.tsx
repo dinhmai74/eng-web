@@ -4,53 +4,54 @@ import {
   GeneralCourse,
   HomeScreen,
   TestQuestion,
-  WhyChoseUs
-} from 'containers'
-import StudentExperience from 'containers/student-experience-screen/StudentExperience'
-import { strings } from './strings'
+  WhyChoseUs,
+} from "containers"
+import StudentExperience from "containers/student-experience-screen/StudentExperience"
+import { strings } from "./strings"
 
-export interface IRoute {
-  path: string,
-  first: string,
-  second: string,
+export interface NavRoute {
+  path: string
+  first: string
+  second: string
   Component?: any
 }
 
-export const routes: IRoute[] = [
+export const navRoutes: NavRoute[] = [
   {
     path: strings.routeHome,
-    first: 'home',
-    second: 'page',
-    Component: HomeScreen
+    first: "home",
+    second: "page",
+    Component: HomeScreen,
   },
   {
     path: strings.routeWhyChoseUs,
-    first: 'chose',
-    second: 'us',
-    Component: WhyChoseUs
+    first: "chose",
+    second: "us",
+    Component: WhyChoseUs,
   },
   {
     path: strings.routeFindCourse,
-    first: 'find',
-    second: 'course',
-    Component: FindCourseScreen
+    first: "find",
+    second: "course",
+    Component: FindCourseScreen,
   },
   {
     path: strings.routeFreeTest,
-    first: 'free',
-    second: 'tests',
-    Component: FreeTest
+    first: "free",
+    second: "tests",
+    Component: FreeTest,
   },
   {
     path: strings.routeGeneralCourse,
-    first: 'general',
-    second: 'course',
-    Component: GeneralCourse
+    first: "general",
+    second: "course",
+    Component: GeneralCourse,
   },
   {
     path: strings.routeRegister,
-    first: 'register',
-    second: '',
-    Component: StudentExperience
+    first: "register",
+    second: "",
+    Component: StudentExperience,
   },
 ]
+

@@ -1,26 +1,15 @@
-import { Container } from '@front10/landing-page-book/dist/components'
-import { Section } from '@front10/landing-page-book/dist/components'
-import TextField from '@material-ui/core/TextField'
-import AudioListening from 'components/AudioListening/AudioListening'
-import StatementQuestion from 'components/StatementQuestion/StatementQuestion'
-import { tran } from 'localization/i18n'
-import React, { Component } from 'react'
-import {
-  BrowserRouter as Router,
-  NavLink,
-  Route,
-  RouteComponentProps,
-  withRouter
-} from 'react-router-dom'
-import { Button, Icon } from 'semantic-ui-react'
-import { Input } from 'semantic-ui-react'
-import styled from 'styled-components'
-import { colors } from 'themes'
-import { IRoute } from 'tools/routes'
-import Text from '../Part1/Text'
+import { Section } from "@front10/landing-page-book/dist/components"
+import StatementQuestion from "components/StatementQuestion/StatementQuestion"
+import { tran } from "localization/i18n"
+import React, { Component } from "react"
+import { RouteComponentProps, withRouter } from "react-router-dom"
+import { Button } from "semantic-ui-react"
+import styled from "styled-components"
+import { colors } from "themes"
+import { NavRoute } from "tools/routes"
 export interface IGeneralCourseProps extends RouteComponentProps {
   /*** @property {propTypes.array} routes - display route */
-  routes?: IRoute[]
+  routes?: NavRoute[]
   /*** @property {propTypes.string} home icon - icon home display */
   homeIcon?: string
   /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
@@ -54,7 +43,7 @@ class FinalStep extends Component<IGeneralCourseProps, IState> {
     const { history } = this.props
     if (history) {
       history.push({
-        pathname: '/result-ielts-advance'
+        pathname: "/result-ielts-advance",
       })
     }
   }
@@ -62,46 +51,40 @@ class FinalStep extends Component<IGeneralCourseProps, IState> {
     return (
       <Section
         bgColor={colors.lightRed}
-        title={'Question 17-20'}
-        titleStyle={{ fontSize: '22px !important' }}
-        subTitle={'Choose FOUR statements which are mentioned in the listening'}
-        subTitleStyle={{ fontSize: '22px' }}
+        title={"Question 17-20"}
+        titleStyle={{ fontSize: "22px !important" }}
+        subTitle={"Choose FOUR statements which are mentioned in the listening"}
+        subTitleStyle={{ fontSize: "22px" }}
       >
         <StatementQuestion
+          statement={"A. Product Life Cycle cannot predict the length of each stage."}
+          correctAnswer={true}
+        />
+        <StatementQuestion
+          statement={"B. Product Life Cycle Model can help forecast sales with accuracy."}
+          correctAnswer={true}
+        />
+        <StatementQuestion
+          statement={"C. The Model can be self-fulfilling."}
+          correctAnswer={true}
+        />
+        <StatementQuestion
           statement={
-            'A. Product Life Cycle cannot predict the length of each stage.'
+            "D. Growth can continue for a long time by improving a product aggressively on an ongoing basis."
           }
           correctAnswer={true}
         />
         <StatementQuestion
           statement={
-            'B. Product Life Cycle Model can help forecast sales with accuracy.'
-          }
-          correctAnswer={true}
-        />
-        <StatementQuestion
-          statement={'C. The Model can be self-fulfilling.'}
-          correctAnswer={true}
-        />
-        <StatementQuestion
-          statement={
-            'D. Growth can continue for a long time by improving a product aggressively on an ongoing basis.'
-          }
-          correctAnswer={true}
-        />
-        <StatementQuestion
-          statement={
-            'E. Producers in PCs market 1990s was successful because they improved products month after month.'
+            "E. Producers in PCs market 1990s was successful because they improved products month after month."
           }
         />
         <StatementQuestion
-          statement={
-            'F. Marketer should not base their decisions on Product Life Cycle Model.'
-          }
+          statement={"F. Marketer should not base their decisions on Product Life Cycle Model."}
         />
         <StyledButton>
           <Button color="linkedin" onClick={this.handleChange}>
-            {tran('Finish the LISTENING part')}
+            {tran("Finish the LISTENING part")}
           </Button>
         </StyledButton>
       </Section>

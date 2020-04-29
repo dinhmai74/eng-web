@@ -1,28 +1,16 @@
-import {
-  Button,
-  Container,
-  Image,
-  Section
-} from '@front10/landing-page-book/dist/components'
-import { tran } from 'localization/i18n'
-import * as React from 'react'
-import { connect } from 'react-redux'
-import {
-  BrowserRouter as Router,
-  NavLink,
-  Route,
-  RouteComponentProps,
-  withRouter
-} from 'react-router-dom'
-import compose from 'recompose/compose'
-import styled from 'styled-components'
-import { colors, images } from 'themes/index'
-import { IRoute } from 'tools/routes'
+import { Button, Image, Section } from "@front10/landing-page-book/dist/components"
+import { tran } from "localization/i18n"
+import * as React from "react"
+import { connect } from "react-redux"
+import { RouteComponentProps, withRouter } from "react-router-dom"
+import compose from "recompose/compose"
+import styled from "styled-components"
+import { NavRoute } from "tools/routes"
 
 export interface IGeneralCourseState {}
 export interface IGeneralCourseProps extends RouteComponentProps {
   /*** @property {propTypes.array} routes - display route */
-  routes?: IRoute[]
+  routes?: NavRoute[]
   /*** @property {propTypes.string} home icon - icon home display */
   homeIcon?: string
   /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
@@ -63,16 +51,16 @@ const StyledIcon = styled.div`
 
 class TestResult extends React.Component<any, IGeneralCourseState> {
   static defaultProps = {
-    checking: true
+    checking: true,
   }
   onChange1 = () => {
     const { history } = this.props
     if (history) {
       history.push({
-        pathname: this.props.url1
+        pathname: this.props.url1,
       })
       if (this.props.point !== 0) {
-        this.props.dispatch({ type: 'RESET_POINT' })
+        this.props.dispatch({ type: "RESET_POINT" })
       }
     }
   }
@@ -80,10 +68,10 @@ class TestResult extends React.Component<any, IGeneralCourseState> {
     const { history } = this.props
     if (history) {
       history.push({
-        pathname: this.props.url2
+        pathname: this.props.url2,
       })
       if (this.props.point !== 0) {
-        this.props.dispatch({ type: 'RESET_POINT' })
+        this.props.dispatch({ type: "RESET_POINT" })
       }
     }
   }
@@ -91,10 +79,10 @@ class TestResult extends React.Component<any, IGeneralCourseState> {
     const { history } = this.props
     if (history) {
       history.push({
-        pathname: this.props.url3
+        pathname: this.props.url3,
       })
       if (this.props.point !== 0) {
-        this.props.dispatch({ type: 'RESET_POINT' })
+        this.props.dispatch({ type: "RESET_POINT" })
       }
     }
   }
@@ -103,10 +91,10 @@ class TestResult extends React.Component<any, IGeneralCourseState> {
     return (
       <Section>
         <Scored>
-          {tran('scored')} {point}/5
+          {tran("scored")} {point}/5
         </Scored>
         <OptionTest>
-          <p>{tran('anotherSKill')}</p>
+          <p>{tran("anotherSKill")}</p>
           <StyledIcon>
             <Button onClick={this.onChange1}>
               <Image src={images1} />
@@ -126,7 +114,7 @@ class TestResult extends React.Component<any, IGeneralCourseState> {
 
 const mapStateToProps = (state) => {
   return {
-    point: state.point
+    point: state.point,
   }
 }
 // export default connect(mapStateToProps)(TestResult)
@@ -135,7 +123,7 @@ const mapStateToProps = (state) => {
 const enhance = compose(
   withRouter,
   // withStyles(styles, 'some style'),
-  connect(mapStateToProps)
+  connect(mapStateToProps),
 )
 
 export default enhance(TestResult)

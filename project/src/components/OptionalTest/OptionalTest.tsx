@@ -1,18 +1,8 @@
-import { tran } from 'localization/i18n'
-import * as React from 'react'
-import styled from 'styled-components'
-import { colors, images } from 'themes/index'
-
-import { Container } from '@front10/landing-page-book/dist/components'
-import Button from '@material-ui/core/Button'
-import {
-  BrowserRouter as Router,
-  NavLink,
-  Route,
-  RouteComponentProps,
-  withRouter
-} from 'react-router-dom'
-import { IRoute } from 'tools/routes'
+import Button from "@material-ui/core/Button"
+import * as React from "react"
+import { RouteComponentProps, withRouter } from "react-router-dom"
+import styled from "styled-components"
+import { NavRoute } from "tools/routes"
 
 export interface IGeneralCourseState {}
 const Containers = styled.div`
@@ -56,7 +46,7 @@ export interface IGeneralCourseProps extends RouteComponentProps {
   subDetail: string
   url: string
   /*** @property {propTypes.array} routes - display route */
-  routes?: IRoute[]
+  routes?: NavRoute[]
   /*** @property {propTypes.string} home icon - icon home display */
   homeIcon?: string
   /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
@@ -68,15 +58,12 @@ export interface IGeneralCourseProps extends RouteComponentProps {
   history: any
 }
 
-class FreeTests extends React.Component<
-  IGeneralCourseProps,
-  IGeneralCourseState
-> {
+class FreeTests extends React.Component<IGeneralCourseProps, IGeneralCourseState> {
   onChanges = () => {
     const { history } = this.props
     if (history) {
       history.push({
-        pathname: this.props.url
+        pathname: this.props.url,
         // search: 'name=jhon&amp;age=24'
       })
     }
@@ -91,13 +78,9 @@ class FreeTests extends React.Component<
           </Title>
           <Introduction>
             <div>{this.props.detail}</div>
-            <div style={{ paddingBottom: '30px' }}>{this.props.subDetail}</div>
+            <div style={{ paddingBottom: "30px" }}>{this.props.subDetail}</div>
           </Introduction>
-          <Button
-            variant="contained"
-            color="secondary"
-            onClick={this.onChanges}
-          >
+          <Button variant="contained" color="secondary" onClick={this.onChanges}>
             Kiểm Tra Ngay
           </Button>
         </Wrapper>

@@ -1,27 +1,26 @@
-import "App.css";
-import "bootstrap";
-import i18n from "i18next";
-import { tran } from "localization/i18n";
-import React from "react";
-import { Nav } from "react-bootstrap";
-import Headroom from "react-headroom";
-import { NavLink } from "react-router-dom";
-import { RouteComponentProps, withRouter } from "react-router-dom";
-import { Link } from "react-scroll";
-import { Button, Flag } from "semantic-ui-react";
-import styled from "styled-components";
-import { colors, images } from "themes";
-import { strings } from "tools";
-import { IRoute } from "tools/routes";
-import "./button.scss";
-import "./style.scss";
+import "App.css"
+import "bootstrap"
+import i18n from "i18next"
+import { tran } from "localization/i18n"
+import React from "react"
+import { Nav } from "react-bootstrap"
+import Headroom from "react-headroom"
+import { NavLink, RouteComponentProps, withRouter } from "react-router-dom"
+import { Link } from "react-scroll"
+import { Button, Flag } from "semantic-ui-react"
+import styled from "styled-components"
+import { colors, images } from "themes"
+import { strings } from "tools"
+import { NavRoute } from "tools/routes"
+import "./button.scss"
+import "./style.scss"
 
-const StyledFlag = styled(Flag)``;
+const StyledFlag = styled(Flag)``
 
 const StyledButton = styled(Button)`
   background: transparent;
   border: 1px solid ${colors.main};
-`;
+`
 
 const Background = styled.div`
   position: absolute;
@@ -31,28 +30,28 @@ const Background = styled.div`
   bottom: 0;
   right: 0;
   background: black;
-`;
+`
 
 interface IProps extends RouteComponentProps {
   /*** @property {propTypes.array} routes - display route */
-  routes: IRoute[];
+  routes: NavRoute[]
   /*** @property {propTypes.string} home icon - icon home display */
-  homeIcon?: string;
+  homeIcon?: string
   /*** @property {propTypes.string} hiddenRoute - list route that hide nav bar */
-  hiddenRoute?: string[];
+  hiddenRoute?: string[]
   /*** @property {propTypes.boolean} render One page - nav for one page or not */
-  renderOnePage?: boolean;
+  renderOnePage?: boolean
   /*** @property {propTypes.boolean} disable headroom- */
-  disableHeadroom?: boolean;
+  disableHeadroom?: boolean
 
-  [rest: string]: any;
+  [rest: string]: any
 }
 
 interface IState {
-  isToggled: boolean;
-  isTop: boolean;
-  bg: string;
-  path: string;
+  isToggled: boolean
+  isTop: boolean
+  bg: string
+  path: string
 }
 
 class ResponsiveNav extends React.Component<IProps, IState> {
@@ -60,65 +59,65 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     routes: [],
     homeIcon: images.logo,
     hiddenRoute: [],
-    renderOnePage: false
-  };
+    renderOnePage: false,
+  }
 
   state = {
     isToggled: false,
     isTop: true,
     bg: "black",
-    path: "/"
-  };
-  unlisten: any;
+    path: "/",
+  }
+  unlisten: any
 
   componentDidMount() {
     document.addEventListener("scroll", () => {
-      const isTop = window.scrollY < 100;
+      const isTop = window.scrollY < 100
       if (isTop !== this.state.isTop) {
-        this.setState({ isTop });
+        this.setState({ isTop })
       }
-    });
+    })
 
-    this.setBg();
+    this.setBg()
   }
 
   componentWillMount(): void {
     this.unlisten = this.props.history.listen((location, action) => {
       this.setState({
-        path: location.pathname
-      });
-    });
+        path: location.pathname,
+      })
+    })
   }
 
   componentWillUnmount() {
-    this.unlisten();
+    this.unlisten()
   }
 
   setBg = () => {
-    const { pathname } = this.props.location;
+    const { pathname } = this.props.location
     this.setState({
-      path: pathname
-    });
-  };
+      path: pathname,
+    })
+  }
 
   handleToggleButtonPress = (event: React.MouseEvent<HTMLElement>) => {
     this.setState((state: IState) => ({
-      isToggled: !state.isToggled
-    }));
-  };
+      isToggled: !state.isToggled,
+    }))
+  }
 
   handleChangeLang = () => {
-    const currentLang = i18n.language;
-    const newLang = currentLang === "en" ? "vi" : "en";
+    const currentLang = i18n.language
+    const newLang = currentLang === "en" ? "vi" : "en"
     i18n.changeLanguage(newLang, (err, t) => {
       if (err) {
-        alert("something went wrong loading" + err);
+        alert("something went wrong loading" + err)
       }
-      i18n.reloadResources(); // -> returns a Promise
-    });
-  };
+      i18n.reloadResources() // -> returns a Promise
+    })
+  }
 
-  renderRouteContent = r => {
+  renderRouteContent = (r) => {
     return (
       <span className="menu__title">
         <span className="menu__first-word" data-hover={tran(r.first)}>
@@ -128,12 +127,12 @@ class ResponsiveNav extends React.Component<IProps, IState> {
           {tran(r.second)}
         </span>
       </span>
-    );
-  };
+    )
+  }
 
-  renderNormalNav = routes => {
+  renderNormalNav = (routes) => {
     return routes.map((r, i) => {
-      const routeContent = this.renderRouteContent(r);
+      const routeContent = this.renderRouteContent(r)
       return (
         <li className={`menu__item`} key={i}>
           <Nav.Link
@@ -147,13 +146,13 @@ class ResponsiveNav extends React.Component<IProps, IState> {
             {routeContent}
           </Nav.Link>
         </li>
-      );
-    });
-  };
+      )
+    })
+  }
 
-  renderOnePageNav = routes => {
+  renderOnePageNav = (routes) => {
     return routes.map((r, i) => {
-      const routeContent = this.renderRouteContent(r);
+      const routeContent = this.renderRouteContent(r)
       return (
         <li className={`menu__item`} key={i}>
           <Link
@@ -170,31 +169,31 @@ class ResponsiveNav extends React.Component<IProps, IState> {
             {routeContent}
           </Link>
         </li>
-      );
-    });
-  };
+      )
+    })
+  }
 
   renderListRouteItems = () => {
-    const { routes, renderOnePage } = this.props;
+    const { routes, renderOnePage } = this.props
     if (renderOnePage) {
-      return this.renderOnePageNav(routes);
+      return this.renderOnePageNav(routes)
     }
-    return this.renderNormalNav(routes);
-  };
+    return this.renderNormalNav(routes)
+  }
 
   render() {
-    const { isToggled, isTop, bg, path } = this.state;
-    const { routes, homeIcon, hiddenRoute, disableHeadroom } = this.props;
+    const { isToggled, isTop, bg, path } = this.state
+    const { routes, homeIcon, hiddenRoute, disableHeadroom } = this.props
     if (hiddenRoute && hiddenRoute.includes(path)) {
-      return null;
+      return null
     }
 
-    const listItems = this.renderListRouteItems();
+    const listItems = this.renderListRouteItems()
 
-    const fixTopNav = disableHeadroom ? "sticky-top" : null;
+    const fixTopNav = disableHeadroom ? "sticky-top" : null
 
-    const currentLang = i18n.language;
-    const iconName = currentLang === "en" ? "gb" : "vn";
+    const currentLang = i18n.language
+    const iconName = currentLang === "en" ? "gb" : "vn"
 
     return (
       <Headroom
@@ -235,19 +234,15 @@ class ResponsiveNav extends React.Component<IProps, IState> {
           <div className={`collapse navbar-collapse ${isToggled && "show"}`}>
             <ul className="navbar-nav menu">{listItems}</ul>
             <ul className="navbar-nav menu">
-              <StyledButton
-                color="yellow"
-                basic
-                onClick={this.handleChangeLang}
-              >
+              <StyledButton color="yellow" basic onClick={this.handleChangeLang}>
                 <StyledFlag name={iconName} />
               </StyledButton>
             </ul>
           </div>
         </nav>
       </Headroom>
-    );
+    )
   }
 }
 
-export default withRouter(ResponsiveNav);
+export default withRouter(ResponsiveNav)
