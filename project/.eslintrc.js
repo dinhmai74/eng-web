@@ -24,6 +24,7 @@ module.exports = {
     "@typescript-eslint/no-empty-function": 0,
     "@typescript-eslint/no-non-null-assertion": 0,
     "@typescript-eslint/no-unused-vars": 0,
+    "@typescript-eslint/interface-name-prefix": 0,
   },
   settings: {
     react: {
@@ -31,4 +32,3 @@ module.exports = {
     },
   },
 }
-

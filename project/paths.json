@@ -2,11 +2,24 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "*": [
-        "node_modules/*",
-        "src/*"
-      ],
-      "stories/*" : ["src/components/stories/*"]
+      "*": ["node_modules/*", "src/*"],
+      "stories/*": ["src/components/stories/*"],
+      "screens": ["src/screens"],
+      "screens/*": ["src/screens/*"],
+      "containers/*": ["src/screens/*"],
+      "containers": ["src/screens"],
+      "components": ["src/components"],
+      "components/*": ["src/components/*"],
+      "router": ["src/router"],
+      "router/*": ["src/router/*"],
+      "services": ["src/services"],
+      "services/*": ["src/services/*"],
+      "themes": ["src/themes"],
+      "themes/*": ["src/themes/*"],
+      "tools": ["src/tools"],
+      "tools/*": ["src/tools/*"],
+      "localization": ["src/localization"],
+      "localization/*": ["src/localization/*"]
     }
   }
 }

@@ -1,6 +1,7 @@
 // eslint-disable-next-line
 const plugin = require("tailwindcss/plugin")
 module.exports = {
+  prefix: "tw-",
   theme: {
     extend: {
       colors: {
