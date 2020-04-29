@@ -1,13 +1,12 @@
-import _ from 'lodash'
-import * as React from 'react'
-import { colors, images } from 'themes'
-
-import { Section, Wizard } from '@front10/landing-page-book/dist/components'
-import AudioListening from 'components/AudioListening/AudioListening'
-import Question from 'components/QuestionIelts/Question.tsx'
-import TitleQuestion from 'containers/reading-ielts-beginners/title-question/TitleQuestion'
-import styled from 'styled-components'
-import stepsDataListening from '../stepsDataListening.json'
+import { Section, Wizard } from "@front10/landing-page-book/dist/components"
+import AudioListening from "components/AudioListening/AudioListening"
+import Question from "components/QuestionIelts/Question.tsx"
+import { stepsDataListening } from "containers/listening-ielts-beginners/TotalStepListening"
+import TitleQuestion from "containers/reading-ielts-beginners/title-question/TitleQuestion"
+import _ from "lodash"
+import * as React from "react"
+import styled from "styled-components"
+import { colors, images } from "themes"
 
 export interface IState {
   play: boolean
@@ -43,7 +42,7 @@ const resultStep = _.map(stepsDataListening, (e) => ({
         level={e.level}
       />
     </div>
-  )
+  ),
 }))
 
 export default class StageOne extends React.Component<any, IState> {
@@ -51,10 +50,10 @@ export default class StageOne extends React.Component<any, IState> {
     return (
       <Section
         bgColor={colors.lightBlue}
-        title={'Questions 1-3'}
+        title={"Questions 1-3"}
         titleStyle={{ color: colors.lightRed }}
-        subTitleStyle={{ fontSize: '22px' }}
-        subTitle={'Choose the appropriate answer.'}
+        subTitleStyle={{ fontSize: "22px" }}
+        subTitle={"Choose the appropriate answer."}
       >
         <Wizard
           contentAlign="left"
