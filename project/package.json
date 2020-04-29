@@ -65,7 +65,8 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "format": "npm-run-all tslint:* prettier:* ",
-    "prettier:fix": "prettier --write --config ./.prettierrc './src/**/*.{ts,tsx}'"
+    "prettier:fix": "prettier --write --config ./.prettierrc './src/**/*.{ts,tsx}'",
+    "tail": "tailwind build src/tailwind/style.css -c tailwind.config.js -o src/tailwind.css"
   },
   "eslintConfig": {
     "extends": "react-app"

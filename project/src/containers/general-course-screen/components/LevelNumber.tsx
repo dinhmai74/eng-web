@@ -1,9 +1,7 @@
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import { tran } from 'localization/i18n'
-import React, { Component } from 'react'
-import styled from 'styled-components'
-import { colors } from 'themes/index'
+import AOS from "aos"
+import "aos/dist/aos.css"
+import React, { Component } from "react"
+import styled from "styled-components"
 AOS.init()
 interface IProps {}
 
@@ -18,6 +16,7 @@ const NumberLevel = styled.div`
   margin: 0 2px 0 4px;
   float: left;
   border-radius: 20px;
+  margin-right: 4px;
 `
 const TextChart = styled.span`
   position: absolute;
@@ -35,14 +34,7 @@ class LevelNumber extends Component<any, any> {
   render() {
     const { style, color, ...rest } = this.props
     return (
-      <NumberLevel
-        style={style}
-        color={color}
-        data-aos="fade-up"
-        data-aos-once="true"
-        data-aos-duration="1500"
-        data-aos-anchor-placement="bottom-center"
-      >
+      <NumberLevel style={style} color={color} className="mr-1">
         <TextChart>{this.props.number}</TextChart>
       </NumberLevel>
     )

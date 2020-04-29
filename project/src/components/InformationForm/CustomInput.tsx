@@ -1,12 +1,12 @@
-import _ from 'lodash'
-import React, { Component } from 'react'
-import { TextArea } from 'semantic-ui-react'
-import styled from 'styled-components'
-import { colors } from 'themes'
+import _ from "lodash"
+import React, { Component } from "react"
+import { TextArea } from "semantic-ui-react"
+import styled from "styled-components"
+import { colors } from "themes"
 
 interface IStyledFormInputProps {
   borderColor: string
-  width: string | number,
+  width: string | number
   error: boolean
 }
 
@@ -15,7 +15,8 @@ const StyledFormInput = styled.input`
   display: block;
   margin: 20px auto;
   border: 0;
-  border-bottom: 1px solid ${(props: IStyledFormInputProps) => props.error ? colors.error : colors.gray};
+  border-bottom: 1px solid
+    ${(props: IStyledFormInputProps) => (props.error ? colors.error : colors.gray)};
   padding: 20px 25px;
   color: white;
   background: transparent;
@@ -24,7 +25,7 @@ const StyledFormInput = styled.input`
   :focus {
     outline: none;
     border-bottom: 1px
-      ${(props: IStyledFormInputProps) => props.error ? colors.error : colors.white};
+      ${(props: IStyledFormInputProps) => (props.error ? colors.error : colors.white)};
     border-style: solid;
     text-align: center;
   }
@@ -32,10 +33,11 @@ const StyledFormInput = styled.input`
 
 const StyledTextArea = styled(TextArea)`
   width: ${(p) => p.width};
+  min-height: 200px;
   height: 90%;
   display: block;
   margin: auto;
-  border: 1px solid ${(props: IStyledFormInputProps) => props.error ? colors.error : colors.gray};
+  border: 1px solid ${(props: IStyledFormInputProps) => (props.error ? colors.error : colors.gray)};
   padding: 20px 25px;
   color: white;
   background: transparent;
@@ -44,7 +46,7 @@ const StyledTextArea = styled(TextArea)`
   :focus {
     outline: none;
     border-bottom: 1px
-      ${(props: IStyledFormInputProps) => props.error ? colors.error : colors.white};
+      ${(props: IStyledFormInputProps) => (props.error ? colors.error : colors.white)};
     border-style: solid;
     text-align: center;
   }
@@ -55,33 +57,34 @@ export interface IFormCondition {
   message: string
 }
 
-export type ICustomInputType = 'input' | 'textarea'
+export type ICustomInputType = "input" | "textarea"
 
 interface IProps {
-  error: boolean,
-  errorConditions: IFormCondition[],
-  isShowError: boolean,
+  error: boolean
+  errorConditions: IFormCondition[]
+  isShowError: boolean
   onChange: (e: string) => void
   type?: ICustomInputType
 }
 
 interface IState {
-  warningText: string | null,
-  error: boolean,
-  value: string,
+  warningText: string | null
+  error: boolean
+  value: string
   isEligible: boolean
 }
 
 class CustomInput extends Component<
   // @ts-ignore
   IProps & JSX.IntrinsicElements.input,
-  IState > {
+  IState
+> {
   static defaultProps: {}
   state = {
-    warningText: '',
+    warningText: "",
     error: false,
-    value: '',
-    isEligible: true
+    value: "",
+    isEligible: true,
   }
 
   validate = (): boolean => {
@@ -92,7 +95,7 @@ class CustomInput extends Component<
       if (r) {
         this.setState({
           warningText: value.message,
-          isEligible: true
+          isEligible: true,
         })
         validateResult = true
         return
@@ -100,7 +103,7 @@ class CustomInput extends Component<
 
       this.setState({
         warningText: value.message,
-        isEligible: false
+        isEligible: false,
       })
       validateResult = false
     })
@@ -109,46 +112,60 @@ class CustomInput extends Component<
   }
 
   onChange = (e: any): void => {
-    this.setState({
-      value: e.target.value
-    }, () => {
-      this.validate()
-    })
+    this.setState(
+      {
+        value: e.target.value,
+      },
+      () => {
+        this.validate()
+      },
+    )
     if (this.props.onChange) {
       this.props.onChange(e.target.value)
     }
   }
 
   render() {
-    const {error, isShowError, width, type, ...rest} = this.props
+    const { error, isShowError, width, type, ...rest } = this.props
     const borderColor = colors.white
-    const {isEligible} = this.state
+    const { isEligible } = this.state
 
     let localError = false
     if ((!isEligible && isShowError) || error) {
       localError = true
     }
 
-    if (type === 'textarea') {
+    if (type === "textarea") {
       return (
-        <StyledTextArea {...rest} borderColor={borderColor} width={width} error={localError}
-                        onChange={this.onChange}/>
+        <StyledTextArea
+          {...rest}
+          borderColor={borderColor}
+          width={width}
+          error={localError}
+          onChange={this.onChange}
+        />
       )
     }
 
-    return <StyledFormInput {...rest} borderColor={borderColor} width={width} error={localError}
-                            onChange={this.onChange}/>
+    return (
+      <StyledFormInput
+        {...rest}
+        borderColor={borderColor}
+        width={width}
+        error={localError}
+        onChange={this.onChange}
+      />
+    )
   }
 }
 
 CustomInput.defaultProps = {
   error: false,
-  width: '98%',
+  width: "98%",
   errorConditions: [],
-  onChange: (e: string) => {
-  },
+  onChange: (e: string) => {},
   isShowError: false,
-  type: 'input'
+  type: "input",
 }
 
 export default CustomInput
