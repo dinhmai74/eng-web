@@ -1,4 +1,4 @@
-import { Header, Hero, Image } from "@front10/landing-page-book/dist/components"
+import { Header, Hero } from "@front10/landing-page-book/dist/components"
 import { tran } from "localization/i18n"
 import React, { Component } from "react"
 import { RouteComponentProps, withRouter } from "react-router-dom"
@@ -51,7 +51,7 @@ class Introduction extends Component<IProps, IState> {
           <StyledHeader textAlign="center" textColor="white">
             {tran("learnEnglishForBusyPeople")}
           </StyledHeader>
-          <div className="mt-5" style={{ zIndex: -9 }}>
+          <div className="mt-5 " style={{ zIndex: -9 }}>
             <Button animated secondary onClick={this.handleExplore}>
               <Button.Content visible>{tran("explore")}</Button.Content>
               <Button.Content hidden>

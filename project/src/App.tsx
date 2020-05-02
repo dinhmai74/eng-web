@@ -1,23 +1,15 @@
 // import '@front10/landing-page-book/dist/themeos/default/index.legacy_browsers.css'
 import "@front10/landing-page-book/dist/themes/default/index.scss"
+// import GeneralScreen from './containers/general-course-screen/GeneralCourse'
+import AOS from "aos"
+import "aos/dist/aos.css" // You can also use <link> for styles
 import "App.css"
 // import "bootstrap/dist/css/bootstrap.min.css"
 import { Footer, InformationForm, ResponsiveNav } from "components"
-import "font-awesome/css/font-awesome.min.css"
-import React from "react"
-import { withTranslation } from "react-i18next"
-import { Route } from "react-router-dom"
-import { CSSTransition } from "react-transition-group"
-import { navRoutes } from "tools/routes"
-import "./semantic/dist/semantic.min.css"
-import "./tailwind.css"
-
-// import GeneralScreen from './containers/general-course-screen/GeneralCourse'
-
-import AOS from "aos"
-import "aos/dist/aos.css" // You can also use <link> for styles
 import {
   CambridgeTest,
+  CourseDetailScreen,
+  CourseSuggestDetailScreen,
   IntroductionIeltsTest,
   PreparationIelts,
   ReadingIeltsBeginners,
@@ -33,7 +25,15 @@ import ListeningSection from "containers/listening-section/ListeningSection"
 import ResultIelts from "containers/result-ielts-advanced/ResultIelts"
 import SpeakingIelts from "containers/speaking-ielts-beginners/SpeakingIelts"
 import WritingIeltsBeginners from "containers/writing-ielts-beginners/WritingIeltsBeginners"
+import "font-awesome/css/font-awesome.min.css"
+import React from "react"
+import { withTranslation } from "react-i18next"
+import { Route } from "react-router-dom"
+import { CSSTransition } from "react-transition-group"
 import { strings } from "tools"
+import { navRoutes } from "tools/routes"
+import "./semantic/dist/semantic.min.css"
+import "./tailwind.css"
 
 AOS.init()
 
@@ -61,6 +61,9 @@ const App = (props) => {
             )}
           </Route>
         ))}
+        <Route path={`${strings.routeSugestionCourse}/:id`} component={CourseSuggestDetailScreen} />
+        <Route path={`${strings.routeDetailCourse}/:id`} component={CourseDetailScreen} />
+
         <Route path="/test-result" component={TestResult} />
         <Route path="/result" component={Result} />
         <Route path="/level-test" component={CambridgeTest} />

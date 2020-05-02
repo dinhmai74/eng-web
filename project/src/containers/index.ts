@@ -27,3 +27,5 @@ export {
   CambridgeTest,
   TestScreen
 }
+export * from "./course-suggest-detail-screen/CourseSuggestDetailScreen"
+export * from "./course-detail-screen/CourseDetailScreen"

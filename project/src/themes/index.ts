@@ -1,3 +1,3 @@
-export * from './colors'
-export * from './images'
-export * from './metrics'
+export * from "./colors"
+export * from "./images/images"
+export * from "./metrics"

@@ -1,21 +1,21 @@
-import i18n from 'i18next'
-import { initReactI18next, useTranslation } from 'react-i18next'
+import i18n from "i18next"
+import { initReactI18next, useTranslation } from "react-i18next"
 
 // the translations
 // (tip move them in a JSON file and import them)
 
-export const tran = (text: string): string => {
+export const tran = (text?: string): string => {
   const currentLang = i18n.language
-  return i18n.t(text, {lng: currentLang})
+  return i18n.t(text || "", { lng: currentLang })
 }
 
 const resources = {
   en: {
-    translation: require('./languages/en.json')
+    translation: require("./languages/en.json"),
   },
   vi: {
-    translation: require('./languages/vi.json')
-  }
+    translation: require("./languages/vi.json"),
+  },
 }
 
 i18n
@@ -23,13 +23,14 @@ i18n
   .init({
     resources,
     // tslint:disable-next-line: object-literal-sort-keys
-    lng: 'en',
+    lng: "en",
 
-    keySeparator: false, // we do not use keys in form messages.welcome
+    // keySeparator: false, // we do not use keys in form messages.welcome
+    keySeparator: ".",
 
     interpolation: {
-      escapeValue: false // react already safes from xss
-    }
+      escapeValue: false, // react already safes from xss
+    },
   })
 
 export default i18n

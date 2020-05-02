@@ -297,5 +297,43 @@
   "secondReason": "Active learning time and flexible programs allow you to re-study missed modules.",
   "thirdReason": "The class only has a maximum of 10 students to optimize the opportunities for interaction.",
   "fourthReason": "Commit yourself to achieve the desired results or you can re-learn completely for free",
-  "fifReason": "You are more confident when entering the real exam with 120 IELTS exam simulation exercises from My English Lab (MEL) system."
+  "fifReason": "You are more confident when entering the real exam with 120 IELTS exam simulation exercises from My English Lab (MEL) system.",
+
+  "generalCourseScreen": {
+    "ourCourse": "Our courses:",
+    "toeic": {
+      "title": "The toeic's courses",
+      "content": "The Test of English for International Communication (TOEIC) is an international standardized test of English language proficiency for non-native speakers. "
+    },
+    "ielts": {
+      "title": "The ielts's courses",
+      "content": "The International English Language Testing System (IELTS) is the world's most popular English language proficiency test for higher education and global migration."
+    },
+    "toefl": {
+      "title": "The toefl's courses",
+      "content": "Test of English as a Foreign Language is a standardized test to measure the English language ability of non-native speakers wishing to enroll in English-speaking universities. "
+    },
+    "busyPeople": {
+      "title": "English for busy people",
+      "content": "You don't have enought time, busy for work? Try this course. With our experience teacher, you will save a ton of time. Speaking, writting, listening are just simple."
+    }
+  },
+  "sugestionCourseScreen": {
+    "toeicA": {
+      "title": "TOEIC A Course (450-500 + GOALS)",
+      "content": "Course for the person who has basic knowledge, commitment to output at least 500 TOEIC after 2 months"
+    },
+    "toeicB": {
+      "title": "TOEIC B Course (600-650 + TARGET)",
+      "content": "The TOEIC course is aimed at high-end players, ensuring 650 + TOEIC. Ms Hoa's English is committed to 100% output."
+    },
+    "toeicAPLUS": {
+      "title": "TOEIC COURSE 4 SKILLS A ",
+      "content": "TOEIC Course 4 Skills A Plus Not only helps students ensure the TOEIC high score 2 LISTENING-READING skills, but also helps students to be confident when presenting, communicating, or drafting text in English"
+    },
+    "toeicBPLUS": {
+      "title": "TOEIC COURSE 4 SKILLS B ",
+      "content": "The TOEIC 4 skill course B Plus not only helps students ensure 650 TOEIC scores 2 LISTENING-READING skills, but also helps students to be confident when presenting, communicating or drafting texts in English"
+    }
+  }
 }
