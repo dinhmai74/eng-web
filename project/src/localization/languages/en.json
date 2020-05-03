@@ -335,5 +335,10 @@
       "title": "TOEIC COURSE 4 SKILLS B ",
       "content": "The TOEIC 4 skill course B Plus not only helps students ensure 650 TOEIC scores 2 LISTENING-READING skills, but also helps students to be confident when presenting, communicating or drafting texts in English"
     }
+  },
+  "detailCourseScreen": {
+    "toeicA": {
+      "content": "Course for the person who has basic knowledge, commitment to output at least 500 TOEIC after 2 months.\n\nThe TOEIC A Preparation course is designed for students who achieve A minimum score of 350/990 input Test points . The course provides advanced knowledge, techniques and avoidance <b>of</b> test traps to <b>help</b> students increase their scores quickly after only 2 months."
+    }
   }
 }
