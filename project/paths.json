@@ -18,6 +18,8 @@
       "themes/*": ["src/themes/*"],
       "tools": ["src/tools"],
       "tools/*": ["src/tools/*"],
+      "utils": ["src/utils"],
+      "utils/*": ["src/utils/*"],
       "localization": ["src/localization"],
       "localization/*": ["src/localization/*"]
     }
