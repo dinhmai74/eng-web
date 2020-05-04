@@ -1,5 +1,178 @@
-@tailwind base;
+@import "tailwindcss/base";
 
-@tailwind components;
+@import "tailwindcss/components";
 
-@tailwind utilities;
+@import "tailwindcss/utilities";
+
+.btn{
+ @apply px-4 py-2 font-bold rounded outline-none border-none
+}
+
+.btn-primary{
+  @apply text-white bg-primary-500 ;
+}
+.btn-primary:hover {
+  @apply bg-primary-700;
+}
+
+
+/** some custom **/
+
+.app__background--transparent {
+  background: transparent;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.app__text--white{
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.container {
+}
+
+.page {
+}
+
+.page-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+    opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+  }
+
+
+  @-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+:root {
+    --off-white: #fafafa;
+}
+.nav {
+    background-color: var(--off-white);
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+}
+
+.nav-logo {
+    height: 60px;
+    width: 60px;
+}
+
+.nav-logo:hover {
+    cursor: pointer;
+}
+
+.nav .nav-content {
+    max-width: 900px;
+    padding: 0rem 3rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    display: inline;
+    margin-left: 2rem;
+    color: #333;
+}
+
+.nav-item:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.section {
+}
+
+.section-dark {
+    background: #333;
+    color: white;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.headroom {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+}
+.headroom--scrolled {
+  transition: transform 200ms ease-in-out;
+}
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0%);
+}
+

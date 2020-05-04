@@ -3,7 +3,6 @@ import "@front10/landing-page-book/dist/themes/default/index.scss"
 // import GeneralScreen from './containers/general-course-screen/GeneralCourse'
 import AOS from "aos"
 import "aos/dist/aos.css" // You can also use <link> for styles
-import "App.css"
 // import "bootstrap/dist/css/bootstrap.min.css"
 import { Footer, InformationForm, ResponsiveNav } from "components"
 import {

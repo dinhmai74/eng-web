@@ -338,7 +338,11 @@
   },
   "detailCourseScreen": {
     "toeicA": {
-      "content": "Course for the person who has basic knowledge, commitment to output at least 500 TOEIC after 2 months.\n\nThe TOEIC A Preparation course is designed for students who achieve A minimum score of 350/990 input Test points . The course provides advanced knowledge, techniques and avoidance <b>of</b> test traps to <b>help</b> students increase their scores quickly after only 2 months."
+      "content": {
+        "general": "Course for the person who has basic knowledge, commitment to output at least <b>500 TOEIC after 2 months .</b> \n\nThe TOEIC A Preparation course is designed for students who achieve A minimum score of 350/990 input Test points .\n The course provides advanced knowledge, techniques and avoidance of test traps to help students increase their scores quickly after only 2 months.",
+        "afterQuestion": "<b>Toeic 450, toeic 500,</b> toeic 550 is a SCORE of TOEIC that requires the output of many universities in Vietnam and is also the desired point of people who want to ask for a job or need a certificate to advance in work. \n \n \n\n <b>BUT you are experiencing the following PROBLEM...</b>",
+        "worry": "► Object: All you haven't learned English ever or lost English roots despite years of learning, but the basic knowledge is still very poor, the ability to hear is weak.\n\n► Course : undergo two courses in Ms Hoa's English: Pre toeic and TOEIC A\n\n► Target Output : regain English basic knowledge (Pre-TOEIC course) and 550 + (TOEIC A)"
+      }
     }
   }
 }
