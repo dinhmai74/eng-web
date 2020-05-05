@@ -51,6 +51,7 @@
     "redux": "^4.0.1",
     "redux-immutable": "^4.0.0",
     "redux-saga": "^1.0.2",
+    "resize-observer-polyfill": "^1.5.1",
     "semantic-ui-css": "^2.2.4",
     "semantic-ui-react": "^0.86.0",
     "styled-components": "^4.2.0",

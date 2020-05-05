@@ -5,6 +5,9 @@ import {
   HomeScreen,
   TestQuestion,
   WhyChoseUs,
+  CoursePaymentScreen,
+  CourseSuggestDetailScreen,
+  CourseDetailScreen,
 } from "containers"
 import StudentExperience from "containers/student-experience-screen/StudentExperience"
 import { strings } from "./strings"
@@ -14,6 +17,11 @@ export interface NavRoute {
   first: string
   second: string
   Component?: any
+}
+
+export interface Route {
+  path: string
+  Component: any
 }
 
 export const navRoutes: NavRoute[] = [
@@ -52,6 +60,21 @@ export const navRoutes: NavRoute[] = [
     first: "register",
     second: "",
     Component: StudentExperience,
+  },
+]
+
+export const routes: Route[] = [
+  {
+    path: `${strings.routePaymentCourse}/:id`,
+    Component: CoursePaymentScreen,
+  },
+  {
+    path: `${strings.routeSugestionCourse}/:id`,
+    Component: CourseSuggestDetailScreen,
+  },
+  {
+    path: `${strings.routeDetailCourse}/:id`,
+    Component: CourseDetailScreen,
   },
 ]
 

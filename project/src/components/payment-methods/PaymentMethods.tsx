@@ -1,14 +1,16 @@
-import { ChevronRight as ArrowForwardIos, ChevronLeft as ArrowBackIos } from "react-feather"
+import cx from "classnames"
 import React from "react"
+import { ChevronLeft as ArrowBackIos, ChevronRight as ArrowForwardIos } from "react-feather"
 import ScrollMenu from "react-horizontal-scrolling-menu"
 import { animated } from "react-spring"
 import { useCss } from "react-use"
 import styled from "styled-components"
+import { v4 } from "uuid"
 import { useHoverEffect } from "utils/animations/useAnimations"
 
 interface Props {
   className?: string
-  onChange: () => void
+  onChange: (paymentProvider: PaymentProvider) => void
 }
 
 export const PaymentMethods: React.FC<Props> = (props) => {
@@ -17,13 +19,13 @@ export const PaymentMethods: React.FC<Props> = (props) => {
 
   const setSelected = (idx: number) => {
     setUselectedIdx(idx)
-    onChange()
+    onChange(paymentProvider[idx])
   }
 
   const data = ListMethods(setSelected, selectedIdx)
   return (
     <div className={className}>
-      <p className="text__h3 color__steel ">Methods: </p>
+      <p className="text-2xl text-gray-700">Methods: </p>
 
       <ScrollMenu
         alignCenter={false}
@@ -37,13 +39,44 @@ export const PaymentMethods: React.FC<Props> = (props) => {
 }
 
 const baseURL = process.env.PUBLIC_URL + "/asset/images/payment/"
-const paymentSrc: string[] = [
+const paymentSrc: any[] = [
   baseURL + "meo.png",
   baseURL + "acb.png",
   baseURL + "visa.png",
   baseURL + "vietcom@3x.png",
   baseURL + "mb@3x.png",
   baseURL + "city.png",
+]
+
+export interface PaymentProvider {
+  id: string
+  name: string
+}
+const paymentProvider: PaymentProvider[] = [
+  {
+    id: v4(),
+    name: "Meo meo",
+  },
+  {
+    id: v4(),
+    name: "Acb bank",
+  },
+  {
+    id: v4(),
+    name: "Visa ",
+  },
+  {
+    id: v4(),
+    name: "Vietcombank",
+  },
+  {
+    id: v4(),
+    name: "MB bank",
+  },
+  {
+    id: v4(),
+    name: "City bank",
+  },
 ]
 
 const ArrowLeft = () => <ArrowBackIos />
@@ -66,7 +99,7 @@ const PaymentCard: React.FC<{
   const [props, set, calc, trans] = useHoverEffect()
   let hlight = ""
   if (selectedIdx === idx) {
-    hlight += " border-primary border border-solid"
+    hlight += " border border-solid"
   } else if (selectedIdx !== -1) {
     hlight = " opacity-25"
   }
@@ -76,21 +109,18 @@ const PaymentCard: React.FC<{
   })
   return (
     <animated.div
-      className={
-        "max-w-sm rounded overflow-hidden shadow-card cursor-pointer  my-12 mx-8 " +
-        className +
-        hlight
-      }
+      className={cx(
+        "max-w-sm rounded overflow-hidden shadow-card cursor-pointer  my-12 mx-8 !outline-none border-orange-500",
+        className,
+        hlight,
+      )}
       key={idx}
       onClick={() => onChange(idx)}
-      // @ts-ignore
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-      // @ts-ignore
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
-      // @ts-ignore
       style={{ transform: props.xys.interpolate(trans) }}
     >
-      <StyledImg src={val} alt="logo" className="mx-8 my-4" />
+      <StyledImg src={val} alt="logo" className="mx-8 my-4 !outline-none" />
     </animated.div>
   )
 }

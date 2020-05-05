@@ -145,4 +145,13 @@ export const images = {
   illuFolder: require("./undraw_folder_files_nweq.svg"),
   illuTree: require("./undraw_Tree_swing_646s.svg"),
   illuRoad: require("./undraw_by_the_road_4rfk.svg"),
+  illuFly: require("./undraw_i_can_fly_7egl.svg"),
+
+  // paymentT
+  paymentAcb: require("./payment/acb.png"),
+  paymentMeo: require("./payment/meo.png"),
+  paymentVisa: require("./payment/visa.png"),
+  paymentVetcon: require("./payment/vietcom.png"),
+  paymentMb: require("./payment/mb.png"),
+  paymentCity: require("./payment/city.png"),
 }

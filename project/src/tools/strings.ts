@@ -1,11 +1,13 @@
+const baseURL = process.env.PUBLIC_URL
 export const strings = {
-  routeHome: "/",
-  routeFindCourse: "/find-course",
-  routeWhyChoseUs: "/chose-us",
+  routeHome: baseURL + "/",
+  routeFindCourse: baseURL + "/find-course",
+  routeWhyChoseUs: baseURL + "/chose-us",
   // routeTest: '/free-test',
-  routeGeneralCourse: "/general-course",
-  routeFreeTest: "/free-test",
-  routeRegister: "/register",
-  routeSugestionCourse: "/sugestion-course",
-  routeDetailCourse: "/detail-course",
+  routeGeneralCourse: baseURL + "/general-course",
+  routeFreeTest: baseURL + "/free-test",
+  routeRegister: baseURL + "/register",
+  routeSugestionCourse: baseURL + "/sugestion-course",
+  routeDetailCourse: baseURL + "/detail-course",
+  routePaymentCourse: baseURL + "/payment/course",
 }

@@ -1,42 +1,18 @@
 import { Screen, Text } from "components"
 import { CourseSuggestDetailData } from "containers/course-suggest-detail-screen/CourseSuggestDetailScreen"
 import React from "react"
-import { useParams } from "react-router-dom"
+import { useParams, useHistory } from "react-router-dom"
 import cx from "classnames"
 import { ChevronsRight } from "react-feather"
 import { Button, Icon } from "semantic-ui-react"
 import styled from "styled-components"
-import tw from "tailwind.macro"
+import { strings } from "tools"
 
 interface CourseDetailScreenProps {}
 
-const StyledForm = styled.main.attrs({
-  className: "flex flex-col h-screen justify-center items-center bg-gray-100",
-})`
-  & {
-    h1 {
-      ${tw`font-sans text-6xl font-hairline text-6xl text-teal-500`}
-    }
-    p {
-      ${tw`text-gray-700 text-lg`}
-    }
-    h2 {
-      ${tw`text-2xl font-hairline mt-5 text-teal-500`}
-    }
-    ul {
-      ${tw`inline-flex`}
-    }
-    li {
-      ${tw`mr-5`}
-    }
-    a {
-      ${tw`text-blue-500 hover:text-gray-500 hover:underline`}
-    }
-  }
-`
-
 export const CourseDetailScreen: React.FC<CourseDetailScreenProps> = (props) => {
   const { id } = useParams()
+  const history = useHistory()
   const convertCourseSuggestion = CourseSuggestDetailData.map((i) => i.data)[0]
   return (
     <Screen className="flex flex-col items-center !px-32 pb-32 bg-gray-100">
@@ -82,7 +58,11 @@ export const CourseDetailScreen: React.FC<CourseDetailScreenProps> = (props) => 
       </div>
 
       <div className={cx("my-8")}>
-        <Button animated secondary>
+        <Button
+          animated
+          secondary
+          onClick={() => history.push(strings.routePaymentCourse + "/" + id)}
+        >
           <Button.Content visible>Register</Button.Content>
           <Button.Content hidden>
             <Icon name="shop" />

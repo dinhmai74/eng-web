@@ -16,6 +16,26 @@
 }
 
 
+.menu-item {
+  padding: 0 40px;
+  margin: 5px 10px;
+  user-select: none;
+  @apply border-none cursor-pointer;
+}
+
+
+.menu-item-wrapper {
+  @apply border-none outline-none;
+}
+  .menu-item-wrapper .active {
+  @apply border-none outline-none;
+  }
+
+.menu-item.active {
+  @apply border-none outline-none;
+}
+
+
 /** some custom **/
 
 .app__background--transparent {
@@ -175,4 +195,5 @@
   position: fixed;
   transform: translateY(0%);
 }
+
 

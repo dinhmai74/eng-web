@@ -7,3 +7,7 @@ export { InformationForm, ResponsiveNav, Footer, NavMargin }
 export * from "./screen/Screen"
 export * from "./text/Text"
 export * from "./payment-methods/PaymentMethods"
+export * from "./information-card/InformationCard"
+export * from "./divider/Divider"
+export * from "./fee-row/FeeRow"
+export * from "./row-text-space-between/RowTextSpaceBetween"

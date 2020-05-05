@@ -30,7 +30,7 @@ import { withTranslation } from "react-i18next"
 import { Route } from "react-router-dom"
 import { CSSTransition } from "react-transition-group"
 import { strings } from "tools"
-import { navRoutes } from "tools/routes"
+import { navRoutes, routes } from "tools/routes"
 import "./semantic/dist/semantic.min.css"
 import "./tailwind.css"
 
@@ -41,16 +41,14 @@ const ScrollToTop = () => {
   return null
 }
 
-const baseUrl = process.env.PUBLIC_URL
-
-const App = (props) => {
+const App = () => {
   return (
     <div>
       <Route component={ScrollToTop} />
       <ResponsiveNav routes={navRoutes} hiddenRoute={[strings.routeWhyChoseUs]} />
       <div>
         {navRoutes.map(({ path, Component: Comp }) => (
-          <Route key={path} exact path={baseUrl + path}>
+          <Route key={path} exact path={path}>
             {({ match }) => (
               <CSSTransition in={match != null} timeout={300} classNames="page" unmountOnExit>
                 <div className="page">
@@ -60,8 +58,17 @@ const App = (props) => {
             )}
           </Route>
         ))}
-        <Route path={`${strings.routeSugestionCourse}/:id`} component={CourseSuggestDetailScreen} />
-        <Route path={`${strings.routeDetailCourse}/:id`} component={CourseDetailScreen} />
+        {routes.map(({ path, Component: Comp }) => (
+          <Route key={path} path={path}>
+            {({ match }) => (
+              <CSSTransition in={match != null} timeout={300} classNames="page" unmountOnExit>
+                <div className="page">
+                  <Comp />
+                </div>
+              </CSSTransition>
+            )}
+          </Route>
+        ))}
 
         <Route path="/test-result" component={TestResult} />
         <Route path="/result" component={Result} />
