@@ -8,6 +8,7 @@ import {
   CoursePaymentScreen,
   CourseSuggestDetailScreen,
   CourseDetailScreen,
+  CoursePurchaseSuccessfullyScreen,
 } from "containers"
 import StudentExperience from "containers/student-experience-screen/StudentExperience"
 import { strings } from "./strings"
@@ -76,5 +77,8 @@ export const routes: Route[] = [
     path: `${strings.routeDetailCourse}/:id`,
     Component: CourseDetailScreen,
   },
+  {
+    path: `${strings.routeCoursePurchaseSuccessfully}/:id`,
+    Component: CoursePurchaseSuccessfullyScreen,
+  },
 ]
-

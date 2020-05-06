@@ -146,6 +146,8 @@ export const images = {
   illuTree: require("./undraw_Tree_swing_646s.svg"),
   illuRoad: require("./undraw_by_the_road_4rfk.svg"),
   illuFly: require("./undraw_i_can_fly_7egl.svg"),
+  illuPitching: require("./undraw_pitching_36ol.svg"),
+  illuWorking: require("./work_2_dribbble-01_4x.png"),
 
   // paymentT
   paymentAcb: require("./payment/acb.png"),

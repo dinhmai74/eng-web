@@ -10,4 +10,7 @@ export const strings = {
   routeSugestionCourse: baseURL + "/sugestion-course",
   routeDetailCourse: baseURL + "/detail-course",
   routePaymentCourse: baseURL + "/payment/course",
+  routeCoursePurchaseSuccessfully: baseURL + "/purchase-success/course",
+  formatDateDisplayWithTime: "hh:mm a - DD/MM/YYYY",
+  formatDateDisplay: "DD-MM-YYYY",
 }

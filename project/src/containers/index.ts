@@ -30,3 +30,4 @@ export {
 export * from "./course-suggest-detail-screen/CourseSuggestDetailScreen"
 export * from "./course-detail-screen/CourseDetailScreen"
 export * from "./course-payment-screen/CoursePaymentScreen"
+export * from "./course-purchase-successfully-screen/CoursePurchaseSuccessfullyScreen"

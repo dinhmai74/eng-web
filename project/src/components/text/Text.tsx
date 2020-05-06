@@ -16,6 +16,7 @@ export const Text: React.FC<TextProps> = ({ className, children, text }) => {
       return <p className={cx("text-gray-800 leading-loose", className)}>{children}</p>
 
     tx = tran(children)
+    console.log(`%c tx`, `color: blue; font-weight: 600`, tx)
   }
 
   const txArr = tx.split("\n")

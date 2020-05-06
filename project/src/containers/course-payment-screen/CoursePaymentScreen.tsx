@@ -10,14 +10,18 @@ import {
 import { useScaleAndFadeIn } from "utils/animations/useAnimations"
 import cx from "classnames"
 import { images } from "themes"
-import { formatMoney } from "tools"
+import { formatMoney, strings } from "tools"
 import { useMeasure, usePrevious } from "react-use"
 import { useSpring, a, animated } from "react-spring"
+import { useHistory, useParams } from "react-router-dom"
 
 interface CoursePaymentScreenProps {}
 
 export const CoursePaymentScreen: React.FC<CoursePaymentScreenProps> = (props) => {
   const [payment, setPayment] = React.useState<PaymentProvider | null>(null)
+  const { id } = useParams()
+  const history = useHistory()
+
   const onChangeMethods = (item: PaymentProvider) => {
     setPayment(item)
   }
@@ -25,7 +29,7 @@ export const CoursePaymentScreen: React.FC<CoursePaymentScreenProps> = (props) =
 
   const price = 400
   const onSubmit = () => {
-    return null
+    history.push(`${strings.routeCoursePurchaseSuccessfully}/${id}`)
   }
 
   const [ref, { height: viewHeight }] = useMeasure()

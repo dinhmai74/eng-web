@@ -347,5 +347,19 @@
         "worry": "► Object: All you haven't learned English ever or lost English roots despite years of learning, but the basic knowledge is still very poor, the ability to hear is weak.\n\n► Course : undergo two courses in Ms Hoa's English: Pre toeic and TOEIC A\n\n► Target Output : regain English basic knowledge (Pre-TOEIC course) and 550 + (TOEIC A)"
       }
     }
+  },
+  "purchaseSuccess": {
+    "toeicA": {
+      "congrad": "Course successfully purchase",
+      "note": {
+        "title": "Here is some note:",
+        "mustDo": "<ul class='my-2 pl-8 list-disc children:mb-2'><li>Go to school in full class sessions</li><li>Full and hard homework</li><li>On the academic working class as instructed by the teacher</li></ul>"
+      },
+      "info": {
+        "title": "Your course info:",
+        "canPick": "Time you can pick: ",
+        "feelFree": "Feel free to pick a class, show your teacher this code below then they will register you into class"
+      }
+    }
   }
 }
