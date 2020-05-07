@@ -1,17 +1,10 @@
-import {
-  Button,
-  Container,
-  Image
-} from '@front10/landing-page-book/dist/components'
-import { TLevel } from 'components/LevelIelts/Level'
-import CustomCheckbox from 'components/Question/CustomCheckbox'
-import TestResult from 'components/TestResult/TestResult'
-import {
-  IQuestion,
-  TQuestion
-} from 'containers/reading-ielts-beginners/Question/type'
-import { FirebaseWorker } from 'DataFirebase'
-import * as React from 'react'
+import { Button, Container, Image } from "@front10/landing-page-book/dist/components"
+import { TLevel } from "components/LevelIelts/Level"
+import CustomCheckbox from "components/Question/CustomCheckbox"
+import TestResult from "components/TestResult/TestResult"
+import { IQuestion, TQuestion } from "containers/reading-ielts-beginners/Question/type"
+import { FirebaseWorker } from "DataFirebase"
+import * as React from "react"
 
 export interface IQuestionState {
   question: IQuestion
@@ -29,28 +22,25 @@ interface IQuestionProps {
   url3: string
 }
 
-export default class Question extends React.Component<
-  IQuestionProps,
-  IQuestionState
-> {
+export default class Question extends React.Component<IQuestionProps, IQuestionState> {
   static defaultProps = {
     questionNumber: 1,
-    type: 'reading',
-    level: 'ielts_beginner',
-    images1: '',
-    images2: '',
-    images3: '',
-    url1: '',
-    url2: '',
-    url3: ''
+    type: "reading",
+    level: "ielts_beginner",
+    images1: "",
+    images2: "",
+    images3: "",
+    url1: "",
+    url2: "",
+    url3: "",
   }
   state = {
     question: {
-      a: '',
-      b: '',
-      c: '',
-      d: ''
-    }
+      a: "",
+      b: "",
+      c: "",
+      d: "",
+    },
   }
   async componentDidMount() {
     this.fetchData(this.props)
@@ -62,28 +52,17 @@ export default class Question extends React.Component<
 
   fetchData = async (props) => {
     const { questionNumber, type } = props
-    const question = await FirebaseWorker.getQuestions(
-      `question_${questionNumber}`,
-      type
-    )
-    this.setState({
-      question
-    })
+    const question = await FirebaseWorker.getQuestions(`question_${questionNumber}`, type)
+    if (question)
+      this.setState({
+        question,
+      })
   }
 
   render() {
     const question: IQuestion = this.state.question
-    const {
-      questionNumber,
-      type,
-      images1,
-      images2,
-      images3,
-      url1,
-      url2,
-      url3
-    } = this.props
-    if (questionNumber === 6 && String(type) === 'result') {
+    const { questionNumber, type, images1, images2, images3, url1, url2, url3 } = this.props
+    if (questionNumber === 6 && String(type) === "result") {
       return (
         <TestResult
           images1={images1}

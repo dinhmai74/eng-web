@@ -6,6 +6,7 @@ export const FirebaseWorker = {
 
     const questionRef = await firebase.database().ref(link)
     const snapshot = await questionRef.once("value")
+    console.log("snapshot", snapshot.val())
 
     return snapshot.val()
   },

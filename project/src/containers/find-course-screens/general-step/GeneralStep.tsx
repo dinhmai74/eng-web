@@ -1,9 +1,9 @@
-import { NavMargin } from 'components'
-import { tran } from 'localization/i18n'
-import React, { Component } from 'react'
-import { Button } from 'semantic-ui-react'
-import styled from 'styled-components'
-import { colors, images } from 'themes/index'
+import { NavMargin } from "components"
+import { tran } from "localization/i18n"
+import React, { Component } from "react"
+import { Button } from "semantic-ui-react"
+import styled from "styled-components"
+import { colors, images } from "themes/index"
 
 const Wrapper = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ const Content = styled.p`
   color: ${colors.lightRed};
 `
 
-const Container = styled('div')`
+const Container = styled("div")`
   background-image: url(${images.bgFindCourse});
   height: 70vh;
   background-size: cover;
@@ -39,28 +39,29 @@ interface IProps {
   [rest: string]: any
 }
 
-interface IState {
-}
+interface IState {}
 
 class FindCourseScreen extends Component<IProps, IState> {
   static defaultProps: {
-    onClick: () => {},
+    onClick: () => {}
     onChange: (key, value) => {}
   }
   state = {}
 
   onChange = () => {
-    this.props.onChange('pill_name', 'butang ina mo')
+    this.props.onChange("pill_name", "butang ina mo")
   }
 
   render() {
-    const {style} = this.props
+    const { style } = this.props
     return (
       <Container style={style}>
         <Wrapper>
-          <LogoImage src={images.logoFindCourse}/>
-          <Content> {tran('contentFinderCourse')}</Content>
-          <Button onClick={this.onChange} type={'submit'}>{tran('start')}</Button>
+          <LogoImage src={images.logoFindCourse} />
+          <Content> {tran("contentFinderCourse")}</Content>
+          <Button onClick={this.onChange} type={"submit"} className="my-4">
+            {tran("start")}
+          </Button>
         </Wrapper>
       </Container>
     )

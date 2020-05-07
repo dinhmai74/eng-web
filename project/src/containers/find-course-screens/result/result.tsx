@@ -1,11 +1,8 @@
-import { Container } from '@front10/landing-page-book/dist/components'
-import CerBlock from 'components/CerBlock'
-import { tran } from 'localization/i18n'
-import * as React from 'react'
-import { Box, Flex } from 'rebass'
-import styled from 'styled-components'
-import { colors, images } from 'themes/index'
-import { IFindCourseFormValues } from '../FindCourseScreens'
+import { Container } from "@front10/landing-page-book/dist/components"
+import * as React from "react"
+import styled from "styled-components"
+import { images } from "themes/index"
+import { IFindCourseFormValues } from "../FindCourseScreens"
 
 const H2 = styled.h2`
   text-align: center;
@@ -54,8 +51,8 @@ const ContainerImage = styled.div`
 
 export interface IProps {
   location: {
-    state: IState;
-    [rest: string]: any;
+    state: IState
+    [rest: string]: any
   }
 }
 
@@ -69,24 +66,24 @@ export default class Result extends React.Component<IProps, IState> {
 
     this.state = {
       value: {
-        career: '',
-        firstName: '',
-        pill_name: '',
+        career: "",
+        firstName: "",
+        pill_name: "",
         question_1: 0,
         question_2: 0,
-        question_3: 0
-      }
+        question_3: 0,
+      },
     }
   }
 
   renderImage = () => {
     const career = this.props.location.state.value.career
-    if (career === 'study') {
-    } else if (career === 'business') {
+    if (career === "study") {
+    } else if (career === "business") {
       return <img src={images.business} />
-    } else if (career === 'career') {
+    } else if (career === "career") {
       return <img src={images.career} />
-    } else if (career === 'travel') {
+    } else if (career === "travel") {
       return <img src={images.travel} />
     }
   }
@@ -95,34 +92,36 @@ export default class Result extends React.Component<IProps, IState> {
     const value = this.props.location.state.value
     const point = value.question_1 + value.question_2 + value.question_3
 
-    let level = ''
+    let level = ""
 
     if (point <= 0) {
-      level = 'A1'
+      level = "A1"
     } else if (point > 0 && point <= 3) {
-      level = 'A2'
+      level = "A2"
     } else if (point > 4 && point <= 5) {
-      level = 'B1'
+      level = "B1"
     } else if (point > 5 && point <= 6) {
-      level = 'B2'
+      level = "B2"
     } else if (point > 6 && point <= 7) {
-      level = 'C1'
+      level = "C1"
     } else if (point > 7 && point <= 8) {
-      level = 'C2'
+      level = "C2"
     }
 
     return (
-      <ContainerS>
+      <ContainerS className="py-12">
         <Header>
           <h2>Hi</h2>
           <h2>We have found the right course for you!</h2>
         </Header>
         <FlexContainer>
           <ContainerImage>{this.renderImage()}</ContainerImage>
-          <div style={{ width: '60%' }}>
+          <div style={{ width: "60%" }}>
             <h2>ENGLISH FIT {value.career.toUpperCase()}</h2>
           </div>
         </FlexContainer>
+        <br />
+
         <H2>YOUR ENGLISH LEVEL: {level}</H2>
       </ContainerS>
     )

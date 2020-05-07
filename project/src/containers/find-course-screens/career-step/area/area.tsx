@@ -35,7 +35,9 @@ export default class Area extends React.Component<IProps, IState> {
       <Container>
         <img src={this.props.image} />
         <P>{this.props.title}</P>
-        <Button onClick={this.props.onclick}>Choose</Button>
+        <Button onClick={this.props.onclick} className="my-4">
+          Choose
+        </Button>
       </Container>
     )
   }

@@ -1,23 +1,23 @@
-import { InformationForm } from "components";
-import { ResponsiveNav } from "components";
-import ArchivedOverview from "containers/home-screen/components/ArchivedOverview";
-import TeamMember from "containers/home-screen/components/TeamMember";
-import WallStreetEnglish from "containers/why-chose-us/wall-street-english";
-import React, { Component } from "react";
-import styled from "styled-components";
-import CourseGeneral from "./components/CourseGeneral";
-import Introduction from "./components/Introduction";
+import { InformationForm } from "components"
+import { ResponsiveNav } from "components"
+import ArchivedOverview from "containers/home-screen/components/ArchivedOverview"
+import TeamMember from "containers/home-screen/components/TeamMember"
+import WallStreetEnglish from "containers/why-chose-us/wall-street-english"
+import React, { Component } from "react"
+import styled from "styled-components"
+import CourseGeneral from "./components/CourseGeneral"
+import Introduction from "./components/Introduction"
 
 const IntroStyle = {
   position: "absolute",
   top: 0,
   left: 0,
-  right: 0
-};
+  right: 0,
+}
 
 const Tracker = styled("div")`
   min-height: 100vh;
-`;
+`
 
 class HomeScreen extends Component {
   render() {
@@ -30,8 +30,8 @@ class HomeScreen extends Component {
         <ArchivedOverview />
         <TeamMember />
       </div>
-    );
+    )
   }
 }
 
-export default HomeScreen;
+export default HomeScreen

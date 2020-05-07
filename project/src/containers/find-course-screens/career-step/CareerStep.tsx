@@ -1,18 +1,18 @@
-import { tran } from 'localization/i18n'
-import React, { Component } from 'react'
-import { Button } from 'semantic-ui-react'
-import styled from 'styled-components'
-import { images } from 'themes'
-import Area from './area/area'
+import { tran } from "localization/i18n"
+import React, { Component } from "react"
+import { Button } from "semantic-ui-react"
+import styled from "styled-components"
+import { images } from "themes"
+import Area from "./area/area"
 
-const Container = styled('div')`
+const Container = styled("div")`
   height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 `
 
-const AreaContainer = styled('div')`
+const AreaContainer = styled("div")`
   display: flex;
   flex-wrap: wrap;
 `
@@ -28,7 +28,7 @@ const P = styled.p`
   padding-bottom: 30px;
 `
 
-export type TCareerValue = 'study' | 'travel' | 'business' | 'career'
+export type TCareerValue = "study" | "travel" | "business" | "career"
 
 interface ICareerStepProps {
   style?: any
@@ -47,7 +47,7 @@ class CareerStep extends Component<ICareerStepProps, ICareerStepState> {
   state = {}
 
   onChange = (value: TCareerValue) => {
-    this.props.onChange('career', value)
+    this.props.onChange("career", value)
   }
 
   render() {
@@ -62,28 +62,28 @@ class CareerStep extends Component<ICareerStepProps, ICareerStepState> {
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
       >
-        <H1>{tran('purpose')}</H1>
-        <P>{tran('choose')}</P>
-        <AreaContainer>
+        <H1>{tran("purpose")}</H1>
+        <P>{tran("choose")}</P>
+        <AreaContainer className="mt-8">
           <Area
             image={images.study}
-            title={tran('studyAbroad')}
-            onclick={() => this.onChange('study')}
+            title={tran("studyAbroad")}
+            onclick={() => this.onChange("study")}
           />
           <Area
             image={images.travel}
-            title={tran('travel')}
-            onclick={() => this.onChange('travel')}
+            title={tran("travel")}
+            onclick={() => this.onChange("travel")}
           />
           <Area
             image={images.business}
-            title={tran('business')}
-            onclick={() => this.onChange('business')}
+            title={tran("business")}
+            onclick={() => this.onChange("business")}
           />
           <Area
             image={images.career}
-            title={tran('career')}
-            onclick={() => this.onChange('career')}
+            title={tran("career")}
+            onclick={() => this.onChange("career")}
           />
         </AreaContainer>
       </Container>

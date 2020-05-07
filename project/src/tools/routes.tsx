@@ -9,6 +9,7 @@ import {
   CourseSuggestDetailScreen,
   CourseDetailScreen,
   CoursePurchaseSuccessfullyScreen,
+  BookGeneralScreen,
 } from "containers"
 import StudentExperience from "containers/student-experience-screen/StudentExperience"
 import { strings } from "./strings"
@@ -57,9 +58,16 @@ export const navRoutes: NavRoute[] = [
     Component: GeneralCourse,
   },
   {
-    path: strings.routeRegister,
-    first: "register",
+    path: strings.routeBook,
+    first: "book",
     second: "",
+    Component: BookGeneralScreen,
+  },
+
+  {
+    path: strings.routeRegister,
+    first: "",
+    second: "register",
     Component: StudentExperience,
   },
 ]

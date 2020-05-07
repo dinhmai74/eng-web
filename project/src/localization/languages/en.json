@@ -102,6 +102,7 @@
   "findCourses": "Find courses",
   "infoTitle": "Do you want to experience the unique learning method?",
   "submit": "Submit",
+
   "home": "Home",
   "page": "Page",
   "find": "Find",
@@ -112,6 +113,8 @@
   "program": "Program",
   "Overview": "Overview",
   "Levels": "Levels",
+  "book": "Book",
+
   "generalCoursesContent": "Duckie English is the top choice of busy adults. Over 45 years of existence and development globally, Duckie English has become a system of professional English training centers with more than 3 million students. 97% of them were successful.",
   "titlePreparation": "IELTS Preparation",
   "descriptionLevel": "Based on the results of your entrance test and goals, Duckie English will advise the course and the appropriate route so that you can achieve your goals in the shortest time with the highest results.",
@@ -361,5 +364,8 @@
         "feelFree": "Feel free to pick a class, show your teacher this code below then they will register you into class"
       }
     }
+  },
+  "bookGeneral": {
+    "title": "English books:"
   }
 }
