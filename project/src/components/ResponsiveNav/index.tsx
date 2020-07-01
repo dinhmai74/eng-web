@@ -1,5 +1,6 @@
 import "App.css"
 import "bootstrap"
+import { RightItems } from "components/ResponsiveNav/RightItems"
 import i18n from "i18next"
 import { tran } from "localization/i18n"
 import React from "react"
@@ -24,7 +25,7 @@ const StyledButton = styled(Button)`
 
 const Background = styled.div`
   position: absolute;
-  z-index: -999;
+  z-index: -1;
   top: 0;
   left: 0;
   bottom: 0;
@@ -183,7 +184,7 @@ class ResponsiveNav extends React.Component<IProps, IState> {
 
   render() {
     const { isToggled, isTop, bg, path } = this.state
-    const { routes, homeIcon, hiddenRoute, disableHeadroom } = this.props
+    const { routes, homeIcon, hiddenRoute, disableHeadroom, history } = this.props
     if (hiddenRoute && hiddenRoute.includes(path)) {
       return null
     }
@@ -198,7 +199,7 @@ class ResponsiveNav extends React.Component<IProps, IState> {
     return (
       <Headroom
         className={fixTopNav}
-        style={{ background: "transparent", zIndex: 9999 }}
+        style={{ background: "transparent", zIndex: 30 }}
         disable={disableHeadroom}
       >
         <nav className={`navigation navbar navbar-expand-lg`}>
@@ -233,6 +234,9 @@ class ResponsiveNav extends React.Component<IProps, IState> {
           </button>
           <div className={`collapse navbar-collapse ${isToggled && "show"}`}>
             <ul className="navbar-nav menu">{listItems}</ul>
+            <ul className="navbar-nav menu">
+              <RightItems />
+            </ul>
             <ul className="navbar-nav menu">
               <StyledButton color="yellow" basic onClick={this.handleChangeLang}>
                 <StyledFlag name={iconName} />

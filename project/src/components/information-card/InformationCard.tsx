@@ -40,7 +40,7 @@ export const InformationCard: React.FC<Props> = (props) => {
           leftTx="Total amount"
           leftClassName="text-gray-600 font-medium"
           className="my-4 mt-8 mb-8 font-medium"
-          rightTx={formatMoney.format(totalAmount)}
+          rightTx={formatMoney(totalAmount)}
           rightClassName="text-primary-500"
         />
 

@@ -1,19 +1,19 @@
-import React from "react"
+import cx from "classnames"
 import {
-  Screen,
-  PaymentMethods,
   InformationCard,
-  RowTextSpaceBetween,
+  PaymentMethods,
   PaymentProvider,
+  RowTextSpaceBetween,
+  Screen,
   Text,
 } from "components"
-import { useScaleAndFadeIn } from "utils/animations/useAnimations"
-import cx from "classnames"
+import React from "react"
+import { useHistory, useParams } from "react-router-dom"
+import { animated, useSpring } from "react-spring"
+import { useMeasure, usePrevious } from "react-use"
 import { images } from "themes"
 import { formatMoney, strings } from "tools"
-import { useMeasure, usePrevious } from "react-use"
-import { useSpring, a, animated } from "react-spring"
-import { useHistory, useParams } from "react-router-dom"
+import { useScaleAndFadeIn } from "utils/animations/useAnimations"
 
 interface CoursePaymentScreenProps {}
 
@@ -77,7 +77,7 @@ export const CoursePaymentScreen: React.FC<CoursePaymentScreenProps> = (props) =
             <RowTextSpaceBetween
               leftTx="Price:"
               leftClassName="font-normal"
-              rightTx={formatMoney.format(400) + "/ months"}
+              rightTx={formatMoney(400) + "/ months"}
               className="mb-8 "
             />
             <animated.div ref={ref} style={bankDivStyle}>

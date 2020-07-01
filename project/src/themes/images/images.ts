@@ -156,4 +156,11 @@ export const images = {
   paymentVetcon: require("./payment/vietcom.png"),
   paymentMb: require("./payment/mb.png"),
   paymentCity: require("./payment/city.png"),
+  pageNotFound: require("./page_not_found.png"),
+  cele: require("./cele.svg"),
+  empty: require("./empty.svg"),
+  shopping: require("./shopping.svg"),
+  profileThought: require("./though.svg"),
+  profileNoItem: require("./no_item.svg"),
+  loading: require("./undraw_fast_loading_0lbh.svg"),
 }

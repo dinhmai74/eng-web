@@ -12,6 +12,7 @@
     "animate.css": "^3.7.0",
     "animated-number-react": "0.0.2",
     "aos": "^3.0.0-beta.6",
+    "axios": "^0.19.2",
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
     "emailjs-com": "^2.3.2",
@@ -23,22 +24,26 @@
     "interweave": "^12.5.0",
     "moment": "^2.25.3",
     "node-sass": "^4.11.0",
+    "notistack": "^0.9.17",
     "rc-steps": "^3.3.1",
-    "react": "^16.8.6",
+    "react": "^16.13.1",
     "react-animated-number": "^0.4.4",
     "react-bootstrap": "^1.0.0-beta.6",
     "react-countdown-now": "^2.1.1",
     "react-dom": "^16.8.6",
     "react-feather": "^2.0.8",
     "react-headroom": "^2.2.8",
+    "react-hook-form": "^6.0.0",
     "react-horizontal-scrolling-menu": "^0.7.7",
     "react-i18next": "^10.7.0",
     "react-icons": "^3.10.0",
     "react-intl": "^2.8.0",
     "react-landing-page": "^2.0.2",
+    "react-lazy-load-image-component": "^1.5.0",
     "react-media-player": "^0.7.7",
     "react-multistep": "^3.6.4",
     "react-pose": "^4.0.8",
+    "react-query": "^2.4.7",
     "react-redux": "^6.0.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "2.1.8",
@@ -59,8 +64,10 @@
     "semantic-ui-react": "^0.86.0",
     "styled-components": "^4.2.0",
     "tailwindcss-bg-alpha": "^2.1.0",
+    "typescript": "^3.9.5",
     "uuid": "^8.0.0",
-    "yup": "^0.27.0"
+    "yup": "^0.27.0",
+    "zustand": "^2.2.3"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -124,8 +131,7 @@
     "tailwind.macro": "^1.0.0-alpha.10",
     "tailwindcss": "^1.4.4",
     "tailwindcss-children": "^2.0.0",
-    "tailwindcss-typography": "^3.0.1",
-    "typescript": "^3.8.3"
+    "tailwindcss-typography": "^3.0.1"
   },
   "resolutions": {
     "graceful-fs": "4.2.2"

@@ -31,9 +31,7 @@ export const SugestionCourseDetailItem: React.FC<SugestionCourseDetailItemProps>
       <img src={imgUri} alt="thumbnail" className="mr-8 w-48 " />
       <div className=" text-gray-600 inline-block px-24 py-8 ">
         <Text className="text-gray-800 font-semibold text-2xl">{title}</Text>
-        <Text className="text-gray-500 font-semibold text-orange-500">
-          {formatMoney.format(price)}
-        </Text>
+        <Text className="text-gray-500 font-semibold text-orange-500">{formatMoney(price)}</Text>
         <br />
         <Text text={content} />
       </div>

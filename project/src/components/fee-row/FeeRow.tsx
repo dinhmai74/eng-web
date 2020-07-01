@@ -14,7 +14,7 @@ export const FeeRow: React.FC<Props> = (props) => {
     <RowTextSpaceBetween
       leftTx="Fee:"
       leftClassName="text-blueGrey font-medium"
-      rightTx={value || formatMoney.format(0)}
+      rightTx={value || formatMoney(0)}
       rightClassName="font-medium"
       className={className}
       {...rest}
