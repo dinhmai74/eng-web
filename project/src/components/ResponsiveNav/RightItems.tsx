@@ -8,17 +8,19 @@ import { useHistory } from "react-router-dom"
 import { apiWorker } from "services/api/api-worker"
 import { strings } from "tools"
 import { useAccountStore } from "zustands"
+import { useQueryGetCartItemLength } from "services/api"
 interface Props {}
 
 export const RightItems: React.FC<Props> = (props) => {
   /* ------------- hooks ------------- */
   const { account } = useAccountStore()
   //   const { length } = useCartStore()
-  const lenght = 1
+  let length = 1
   // eslint-disable-next-line
   // const classes = useStyles()
   const history = useHistory()
   const { openForm } = useFormModal()
+  const { data: cartLength, isFetching } = useQueryGetCartItemLength()
   /* ------------- fields ------------- */
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
   const openMenu = Boolean(anchorEl)
@@ -32,6 +34,9 @@ export const RightItems: React.FC<Props> = (props) => {
   const token = localStorage.getItem(strings.token)
 
   const textColor = { "text-white": true }
+
+  if (isFetching) return null
+  length = cartLength
 
   /* ------------- renders ------------- */
 
@@ -54,7 +59,7 @@ export const RightItems: React.FC<Props> = (props) => {
           <Badge badgeContent={length} color="primary">
             <ShoppingCart
               className={cx("cursor-pointer ", textColor)}
-              //   onClick={() => history.push(orderGeneral)}
+              onClick={() => history.push(strings.routeOrderGeneral)}
             />
           </Badge>
         )}

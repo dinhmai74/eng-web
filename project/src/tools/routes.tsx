@@ -11,6 +11,7 @@ import {
   CoursePurchaseSuccessfullyScreen,
   BookGeneralScreen,
   BookDetailScreen,
+  OrderGeneralScreen,
 } from "containers"
 import StudentExperience from "containers/student-experience-screen/StudentExperience"
 import { strings } from "./strings"
@@ -93,5 +94,9 @@ export const routes: Route[] = [
   {
     path: `${strings.routeDetailBook}:id`,
     Component: BookDetailScreen,
+  },
+  {
+    path: `${strings.routeOrderGeneral}`,
+    Component: OrderGeneralScreen,
   },
 ]

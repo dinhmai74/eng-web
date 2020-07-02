@@ -20,14 +20,14 @@ export const getCart = async (): Promise<API.CartResponse> => {
 }
 
 export const useQueryGetCart = () => {
-  return useQuery("carts", getCart)
+  return useQuery("get-carts", getCart)
 }
 export const getCartItemsLength = async (): Promise<number> => {
   return await AppAPI.get(detailUrls.countItems)
 }
 
 export const useQueryGetCartItemLength = () => {
-  return useQuery("carts", getCartItemsLength)
+  return useQuery("get-cart-length", getCartItemsLength)
 }
 
 export const addCart = async (product: API.Cart) => {

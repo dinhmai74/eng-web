@@ -7,11 +7,11 @@ import React from "react"
 import { AiOutlineShoppingCart } from "react-icons/ai"
 import { IoIosAdd, IoIosRemove } from "react-icons/io"
 import { TiStarFullOutline, TiStarHalfOutline, TiStarOutline } from "react-icons/ti"
-import { useMutation } from "react-query"
+import { queryCache, useMutation } from "react-query"
 import { addCart } from "services/api"
+import { typography } from "themes"
 import { formatMoney } from "tools"
 import { calcRating } from "utils"
-import { typography } from "themes"
 
 interface ProductInfoProps {
   product: API.ProductData
@@ -47,6 +47,7 @@ export const ProductInfo: React.FC<ProductInfoProps> = (props) => {
     onError,
     onSuccess() {
       enqueueSnackbar("Add to cart successfully")
+      queryCache.invalidateQueries("get-cart-length")
     },
   })
   /* ------------- renders ------------- */

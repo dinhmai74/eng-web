@@ -13,6 +13,7 @@ export const strings = {
   routeCoursePurchaseSuccessfully: baseURL + "/purchase-success/course",
   routeBook: baseURL + "/book",
   routeDetailBook: baseURL + "/book-detail/",
+  routeOrderGeneral: baseURL + "/order-general",
 
   formatDateDisplayWithTime: "hh:mm a - DD/MM/YYYY",
   formatDateDisplay: "DD-MM-YYYY",
